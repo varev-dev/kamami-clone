@@ -1,0 +1,5250 @@
+[
+  {
+    "name": "ARDUINO",
+    "url": "https://kamami.pl/13004-arduino",
+    "subcategories": [
+      {
+        "name": "Akcesoria do Arduino",
+        "url": "https://kamami.pl/13021-akcesoria-do-arduino",
+        "subcategories": []
+      },
+      {
+        "name": "Arduino Shield - rozszerzenia",
+        "url": "https://kamami.pl/13010-arduino-shield---rozszerzenia",
+        "subcategories": [
+          {
+            "name": "Moduły audio dla Arduino",
+            "url": "https://kamami.pl/13511-moduly-audio-dla-arduino",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły komunikacyjne dla Arduino",
+            "url": "https://kamami.pl/15524-moduly-komunikacyjne-dla-arduino",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły sensorów dla Arduino",
+            "url": "https://kamami.pl/13518-moduly-sensorow-dla-arduino",
+            "subcategories": []
+          },
+          {
+            "name": "Pozostałe moduły dla Arduino",
+            "url": "https://kamami.pl/13508-pozostale-moduly-dla-arduino",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki silników dla Arduino",
+            "url": "https://kamami.pl/13507-sterowniki-silnikow-dla-arduino",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Kamery do Arduino",
+        "url": "https://kamami.pl/15359-kamery-do-arduino",
+        "subcategories": [
+          {
+            "name": "Kamery",
+            "url": "https://kamami.pl/15543-kamery",
+            "subcategories": []
+          },
+          {
+            "name": "Obiektywy i akcesoria do kamer",
+            "url": "https://kamami.pl/15544-obiektywy-i-akcesoria-do-kamer",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Obudowy do Arduino",
+        "url": "https://kamami.pl/13011-obudowy-do-arduino",
+        "subcategories": []
+      },
+      {
+        "name": "Programatory do Arduino",
+        "url": "https://kamami.pl/13374-programatory-do-arduino",
+        "subcategories": []
+      },
+      {
+        "name": "Przewody i złącza do Arduino",
+        "url": "https://kamami.pl/13022-przewody-i-zlacza-do-arduino",
+        "subcategories": [
+          {
+            "name": "Przewody do płytek stykowych",
+            "url": "https://kamami.pl/15550-przewody-do-plytek-stykowych",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody USB",
+            "url": "https://kamami.pl/15549-przewody-usb",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza",
+            "url": "https://kamami.pl/15551-zlacza",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Płytki bazowe Arduino",
+        "url": "https://kamami.pl/13005-plytki-bazowe-arduino",
+        "subcategories": [
+          {
+            "name": "Arduino - oryginalne płytki",
+            "url": "https://kamami.pl/15361-arduino-oryginalne-plytki",
+            "subcategories": []
+          },
+          {
+            "name": "Płytki zgodne z Arduino",
+            "url": "https://kamami.pl/15362-plytki-zgodne-z-arduino",
+            "subcategories": [
+              {
+                "name": "Płytki zgodne z Arduino - Adafruit",
+                "url": "https://kamami.pl/15367-plytki-zgodne-z-arduino-adafruit",
+                "subcategories": []
+              },
+              {
+                "name": "Płytki zgodne z Arduino - DFRobot",
+                "url": "https://kamami.pl/15365-plytki-zgodne-z-arduino-dfrobot",
+                "subcategories": []
+              },
+              {
+                "name": "Płytki zgodne z Arduino - Inne",
+                "url": "https://kamami.pl/15366-plytki-zgodne-z-arduino-inne",
+                "subcategories": []
+              },
+              {
+                "name": "Płytki zgodne z Arduino - Pololu",
+                "url": "https://kamami.pl/15363-plytki-zgodne-z-arduino-pololu",
+                "subcategories": []
+              },
+              {
+                "name": "Płytki zgodne z Arduino - Sparkfun",
+                "url": "https://kamami.pl/15364-plytki-zgodne-z-arduino-sparkfun",
+                "subcategories": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Płytki prototypowe do Arduino",
+        "url": "https://kamami.pl/10634-plytki-prototypowe-do-arduino",
+        "subcategories": []
+      },
+      {
+        "name": "Wyświetlacze do Arduino",
+        "url": "https://kamami.pl/13013-wyswietlacze-do-arduino",
+        "subcategories": []
+      },
+      {
+        "name": "Zasilanie Arduino",
+        "url": "https://kamami.pl/13558-zasilanie-arduino",
+        "subcategories": []
+      },
+      {
+        "name": "Zestawy startowe do Arduino",
+        "url": "https://kamami.pl/13008-zestawy-startowe-do-arduino",
+        "subcategories": [
+          {
+            "name": "Oryginalne zestawy",
+            "url": "https://kamami.pl/15692-oryginalne-zestawy",
+            "subcategories": []
+          },
+          {
+            "name": "Pozostałe zestawy",
+            "url": "https://kamami.pl/15693-pozostale-zestawy",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AUTOMATYKA",
+    "url": "https://kamami.pl/15487-automatyka",
+    "subcategories": [
+      {
+        "name": "Automatyka domowa",
+        "url": "https://kamami.pl/15225-automatyka-domowa",
+        "subcategories": [
+          {
+            "name": "Adaprox",
+            "url": "https://kamami.pl/15848-adaprox",
+            "subcategories": []
+          },
+          {
+            "name": "BleBox",
+            "url": "https://kamami.pl/15390-blebox",
+            "subcategories": []
+          },
+          {
+            "name": "Inode",
+            "url": "https://kamami.pl/15226-inode",
+            "subcategories": []
+          },
+          {
+            "name": "Shelly",
+            "url": "https://kamami.pl/15512-shelly",
+            "subcategories": []
+          },
+          {
+            "name": "Sonoff",
+            "url": "https://kamami.pl/15403-sonoff",
+            "subcategories": []
+          },
+          {
+            "name": "TUYA",
+            "url": "https://kamami.pl/15914-tuya",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Automatyka przemysłowa",
+        "url": "https://kamami.pl/15488-automatyka-przemyslowa",
+        "subcategories": [
+          {
+            "name": "Czujniki zbliżeniowe",
+            "url": "https://kamami.pl/15900-czujniki-zblizeniowe",
+            "subcategories": []
+          },
+          {
+            "name": "Inne",
+            "url": "https://kamami.pl/15522-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Konwertery przemysłowe",
+            "url": "https://kamami.pl/15902-konwertery-przemyslowe",
+            "subcategories": [
+              {
+                "name": "Konwertery CAN",
+                "url": "https://kamami.pl/15903-konwertery-can",
+                "subcategories": []
+              },
+              {
+                "name": "Konwertery Ethernet",
+                "url": "https://kamami.pl/15907-konwertery-ethernet",
+                "subcategories": []
+              },
+              {
+                "name": "Konwertery RS485",
+                "url": "https://kamami.pl/15905-konwertery-rs485",
+                "subcategories": []
+              },
+              {
+                "name": "Konwertery USB - UART / RS232",
+                "url": "https://kamami.pl/15906-konwertery-usb-uart-rs232",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły 4G",
+                "url": "https://kamami.pl/15908-moduly-4g",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły 5G",
+                "url": "https://kamami.pl/15911-moduly-5g",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły LoRa",
+                "url": "https://kamami.pl/15910-moduly-lora",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły WiFi",
+                "url": "https://kamami.pl/15909-moduly-wifi",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Moduły dla sterowników PLC",
+            "url": "https://kamami.pl/15491-moduly-dla-sterownikow-plc",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki PLC",
+            "url": "https://kamami.pl/15518-sterowniki-plc",
+            "subcategories": []
+          },
+          {
+            "name": "Zasilacze na szynę DIN",
+            "url": "https://kamami.pl/15357-zasilacze-na-szyne-din",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy startowe/ edukacyjne",
+            "url": "https://kamami.pl/15490-zestawy-startowe-edukacyjne",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CYBERBEZPIECZEŃSTWO",
+    "url": "https://kamami.pl/15712-cyberbezpieczenstwo",
+    "subcategories": [
+      {
+        "name": "Flipper Zero",
+        "url": "https://kamami.pl/15740-flipper-zero",
+        "subcategories": []
+      },
+      {
+        "name": "Hak5",
+        "url": "https://kamami.pl/15750-hak5",
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "name": "DRUK 3D",
+    "url": "https://kamami.pl/12819-druk-3d",
+    "subcategories": [
+      {
+        "name": "Drukarki 3D",
+        "url": "https://kamami.pl/12820-drukarki-3d",
+        "subcategories": []
+      },
+      {
+        "name": "Dysze",
+        "url": "https://kamami.pl/15711-dysze",
+        "subcategories": []
+      },
+      {
+        "name": "Filamenty",
+        "url": "https://kamami.pl/15192-filamenty",
+        "subcategories": [
+          {
+            "name": "Filamenty ABS",
+            "url": "https://kamami.pl/15728-filamenty-abs",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty ASA",
+            "url": "https://kamami.pl/15729-filamenty-asa",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty CPE",
+            "url": "https://kamami.pl/15822-filamenty-cpe",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty elastyczne",
+            "url": "https://kamami.pl/15730-filamenty-elastyczne",
+            "subcategories": [
+              {
+                "name": "Filamenty TPE 30D",
+                "url": "https://kamami.pl/15825-filamenty-tpe-30d",
+                "subcategories": []
+              },
+              {
+                "name": "Filamenty TPE 40D",
+                "url": "https://kamami.pl/15826-filamenty-tpe-40d",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Filamenty Nylon",
+            "url": "https://kamami.pl/15734-filamenty-nylon",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty PCTG",
+            "url": "https://kamami.pl/15732-filamenty-pctg",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty PET-G",
+            "url": "https://kamami.pl/15731-filamenty-pet-g",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty PLA",
+            "url": "https://kamami.pl/15727-filamenty-pla",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty PP (polipropylen)",
+            "url": "https://kamami.pl/15735-filamenty-pp-polipropylen",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty PVB",
+            "url": "https://kamami.pl/15736-filamenty-pvb",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty Refill - bez szpuli",
+            "url": "https://kamami.pl/15737-filamenty-refill-bez-szpuli-",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty Satin",
+            "url": "https://kamami.pl/15733-filamenty-satin",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty specjalistyczne",
+            "url": "https://kamami.pl/15824-filamenty-specjalistyczne",
+            "subcategories": []
+          },
+          {
+            "name": "Filamenty Wood",
+            "url": "https://kamami.pl/15823-filamenty-wood",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Podkładki adhezyjne",
+        "url": "https://kamami.pl/15764-podkladki-adhezyjne",
+        "subcategories": []
+      },
+      {
+        "name": "Podzespoły do drukarek 3D",
+        "url": "https://kamami.pl/15301-podzespoly-do-drukarek-3d",
+        "subcategories": [
+          {
+            "name": "Akcesoria bowden",
+            "url": "https://kamami.pl/15742-akcesoria-bowden",
+            "subcategories": []
+          },
+          {
+            "name": "Bloki grzewcze",
+            "url": "https://kamami.pl/15739-bloki-grzewcze",
+            "subcategories": []
+          },
+          {
+            "name": "Części mechaniczne do drukarek 3D",
+            "url": "https://kamami.pl/15745-czesci-mechaniczne-do-drukarek-3d",
+            "subcategories": []
+          },
+          {
+            "name": "Ekstrudery",
+            "url": "https://kamami.pl/15743-ekstrudery",
+            "subcategories": []
+          },
+          {
+            "name": "Elektronika",
+            "url": "https://kamami.pl/13455-elektronika",
+            "subcategories": []
+          },
+          {
+            "name": "Grzałki do drukarek 3D",
+            "url": "https://kamami.pl/15738-grzalki-do-drukarek-3d",
+            "subcategories": []
+          },
+          {
+            "name": "Heatbreak",
+            "url": "https://kamami.pl/15741-heatbreak",
+            "subcategories": []
+          },
+          {
+            "name": "Kontrolery drukarek 3D",
+            "url": "https://kamami.pl/15725-kontrolery-drukarek-3d",
+            "subcategories": []
+          },
+          {
+            "name": "StepStick - sterowniki silników krokowych",
+            "url": "https://kamami.pl/15724-stepstick-sterowniki-silnikow-krokowych",
+            "subcategories": []
+          },
+          {
+            "name": "Termistory",
+            "url": "https://kamami.pl/15744-termistory",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Przydatne akcesoria",
+        "url": "https://kamami.pl/15318-przydatne-akcesoria",
+        "subcategories": [
+          {
+            "name": "Akcesoria do czyszczenia",
+            "url": "https://kamami.pl/15746-akcesoria-do-czyszczenia",
+            "subcategories": []
+          },
+          {
+            "name": "Inserty do wydruków 3D",
+            "url": "https://kamami.pl/15749-inserty-do-wydrukow-3d",
+            "subcategories": []
+          },
+          {
+            "name": "Izolacja do drukarek 3D",
+            "url": "https://kamami.pl/15765-izolacja-do-drukarek-3d",
+            "subcategories": []
+          },
+          {
+            "name": "Obróbka wydruków",
+            "url": "https://kamami.pl/15763-obrobka-wydrukow",
+            "subcategories": []
+          },
+          {
+            "name": "Osłonki do bloku grzewczego",
+            "url": "https://kamami.pl/15747-oslonki-do-bloku-grzewczego",
+            "subcategories": []
+          },
+          {
+            "name": "Pozostałe akcesoria do druku 3D",
+            "url": "https://kamami.pl/15766-pozostale-akcesoria-do-druku-3d",
+            "subcategories": []
+          },
+          {
+            "name": "Uchwyty do mocowania szyby",
+            "url": "https://kamami.pl/15748-uchwyty-do-mocowania-szyby",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Środki adhezyjne",
+        "url": "https://kamami.pl/15726-srodki-adhezyjne",
+        "subcategories": []
+      },
+      {
+        "name": "Żywice do druku 3D",
+        "url": "https://kamami.pl/15820-zywice-do-druku-3d",
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "name": "EDUKACJA",
+    "url": "https://kamami.pl/15755-edukacja",
+    "subcategories": [
+      {
+        "name": "Elektronika analogowa",
+        "url": "https://kamami.pl/9834-elektronika-analogowa",
+        "subcategories": []
+      },
+      {
+        "name": "Oferta akademicka",
+        "url": "https://kamami.pl/13428-oferta-akademicka",
+        "subcategories": [
+          {
+            "name": "Inne",
+            "url": "https://kamami.pl/13431-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki PLC",
+            "url": "https://kamami.pl/15387-sterowniki-plc",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy z mikrokontrolerami",
+            "url": "https://kamami.pl/13429-zestawy-z-mikrokontrolerami",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy z układami programowalnymi",
+            "url": "https://kamami.pl/13430-zestawy-z-ukladami-programowalnymi",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Robotyka",
+        "url": "https://kamami.pl/13355-robotyka",
+        "subcategories": [
+          {
+            "name": "Kontrolery robotów",
+            "url": "https://kamami.pl/13371-kontrolery-robotow",
+            "subcategories": []
+          },
+          {
+            "name": "Pololu 3pi+",
+            "url": "https://kamami.pl/15623-pololu-3pi",
+            "subcategories": []
+          },
+          {
+            "name": "Pololu Balboa",
+            "url": "https://kamami.pl/15581-pololu-balboa",
+            "subcategories": []
+          },
+          {
+            "name": "Pololu Zumo",
+            "url": "https://kamami.pl/13367-pololu-zumo",
+            "subcategories": []
+          },
+          {
+            "name": "Ramiona robotów",
+            "url": "https://kamami.pl/13362-ramiona-robotow",
+            "subcategories": []
+          },
+          {
+            "name": "RedBot Kit",
+            "url": "https://kamami.pl/13365-redbot-kit",
+            "subcategories": []
+          },
+          {
+            "name": "Roboty z Arduino",
+            "url": "https://kamami.pl/15608-roboty-z-arduino",
+            "subcategories": []
+          },
+          {
+            "name": "Roboty z BBC micro:bit",
+            "url": "https://kamami.pl/15611-roboty-z-bbc-microbit",
+            "subcategories": []
+          },
+          {
+            "name": "Roboty z FPGA",
+            "url": "https://kamami.pl/15609-roboty-z-fpga",
+            "subcategories": []
+          },
+          {
+            "name": "Roboty z Nvidia Jetson",
+            "url": "https://kamami.pl/15767-roboty-z-nvidia-jetson",
+            "subcategories": []
+          },
+          {
+            "name": "Roboty z Raspberry Pi",
+            "url": "https://kamami.pl/15610-roboty-z-raspberry-pi",
+            "subcategories": []
+          },
+          {
+            "name": "Roboty/Zestawy dla początkujących",
+            "url": "https://kamami.pl/15480-robotyzestawy-dla-poczatkujacych",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Zestawy do montażu",
+        "url": "https://kamami.pl/1421-zestawy-do-montazu",
+        "subcategories": [
+          {
+            "name": "Kity AVT",
+            "url": "https://kamami.pl/1423-kity-avt",
+            "subcategories": [
+              {
+                "name": "Audio",
+                "url": "https://kamami.pl/15644-audio",
+                "subcategories": []
+              },
+              {
+                "name": "Dom",
+                "url": "https://kamami.pl/10004-dom",
+                "subcategories": []
+              },
+              {
+                "name": "Efekty świetlne",
+                "url": "https://kamami.pl/10008-efekty-swietlne",
+                "subcategories": []
+              },
+              {
+                "name": "Hobby i zabawa",
+                "url": "https://kamami.pl/10013-hobby-i-zabawa",
+                "subcategories": []
+              },
+              {
+                "name": "Interfejsy",
+                "url": "https://kamami.pl/10016-interfejsy",
+                "subcategories": []
+              },
+              {
+                "name": "Komputer PC",
+                "url": "https://kamami.pl/10019-komputer-pc",
+                "subcategories": []
+              },
+              {
+                "name": "Mierniki",
+                "url": "https://kamami.pl/10014-mierniki",
+                "subcategories": []
+              },
+              {
+                "name": "Programatory",
+                "url": "https://kamami.pl/10044-programatory",
+                "subcategories": []
+              },
+              {
+                "name": "Płytki drukowane (PCB)",
+                "url": "https://kamami.pl/15640-plytki-drukowane-pcb",
+                "subcategories": []
+              },
+              {
+                "name": "Regulatory, sterowniki",
+                "url": "https://kamami.pl/10051-regulatory-sterowniki",
+                "subcategories": []
+              },
+              {
+                "name": "Samochód",
+                "url": "https://kamami.pl/10054-samochod",
+                "subcategories": []
+              },
+              {
+                "name": "Układy zaprogramowane",
+                "url": "https://kamami.pl/10067-uklady-zaprogramowane",
+                "subcategories": []
+              },
+              {
+                "name": "Wyświetlacze",
+                "url": "https://kamami.pl/10072-wyswietlacze",
+                "subcategories": []
+              },
+              {
+                "name": "Zasilacze",
+                "url": "https://kamami.pl/10078-zasilacze",
+                "subcategories": []
+              },
+              {
+                "name": "Zdalne sterowanie",
+                "url": "https://kamami.pl/10080-zdalne-sterowanie",
+                "subcategories": []
+              },
+              {
+                "name": "Zegary, timery i włączniki czasowe",
+                "url": "https://kamami.pl/10081-zegary-timery-i-wlaczniki-czasowe",
+                "subcategories": []
+              },
+              {
+                "name": "Zestawy startowe dla początkujących",
+                "url": "https://kamami.pl/10082-zestawy-startowe-dla-poczatkujacych",
+                "subcategories": []
+              },
+              {
+                "name": "Zestawy uruchomieniowe i moduły",
+                "url": "https://kamami.pl/15643-zestawy-uruchomieniowe-i-moduly",
+                "subcategories": []
+              },
+              {
+                "name": "Ładowarki",
+                "url": "https://kamami.pl/10027-adowarki",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Pozostałe zestawy",
+            "url": "https://kamami.pl/15344-pozostale-zestawy",
+            "subcategories": []
+          },
+          {
+            "name": "Totem",
+            "url": "https://kamami.pl/15642-totem",
+            "subcategories": []
+          },
+          {
+            "name": "Velleman",
+            "url": "https://kamami.pl/1761-velleman",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELEKTRONIKA",
+    "url": "https://kamami.pl/13071-elektronika",
+    "subcategories": [
+      {
+        "name": "Akcesoria PC",
+        "url": "https://kamami.pl/15190-akcesoria-pc",
+        "subcategories": [
+          {
+            "name": "Czytniki kart",
+            "url": "https://kamami.pl/15213-czytniki-kart",
+            "subcategories": []
+          },
+          {
+            "name": "Huby USB",
+            "url": "https://kamami.pl/15212-huby-usb",
+            "subcategories": []
+          },
+          {
+            "name": "Izolatory USB",
+            "url": "https://kamami.pl/15880-izolatory-usb",
+            "subcategories": []
+          },
+          {
+            "name": "Karty sieciowe USB",
+            "url": "https://kamami.pl/15841-karty-sieciowe-usb",
+            "subcategories": []
+          },
+          {
+            "name": "Klawiatury",
+            "url": "https://kamami.pl/15191-klawiatury",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły 4G/5G",
+            "url": "https://kamami.pl/15889-moduly-4g5g",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły Bluetooth",
+            "url": "https://kamami.pl/15254-moduly-bluetooth",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły WiFi",
+            "url": "https://kamami.pl/15255-moduly-wifi",
+            "subcategories": []
+          },
+          {
+            "name": "Monitory pracy komputera",
+            "url": "https://kamami.pl/15894-monitory-pracy-komputera",
+            "subcategories": []
+          },
+          {
+            "name": "Myszy USB",
+            "url": "https://kamami.pl/15201-myszy-usb",
+            "subcategories": []
+          },
+          {
+            "name": "Tunery DVB-T",
+            "url": "https://kamami.pl/15333-tunery-dvb-t",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Chłodzenie",
+        "url": "https://kamami.pl/15183-chlodzenie",
+        "subcategories": [
+          {
+            "name": "Maskownice",
+            "url": "https://kamami.pl/15838-maskownice",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły Peltiera",
+            "url": "https://kamami.pl/15164-moduly-peltiera",
+            "subcategories": []
+          },
+          {
+            "name": "Radiatory i osprzęt",
+            "url": "https://kamami.pl/11994-radiatory-i-osprzet",
+            "subcategories": []
+          },
+          {
+            "name": "Wentylatory",
+            "url": "https://kamami.pl/15184-wentylatory",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Czujniki",
+        "url": "https://kamami.pl/13505-czujniki",
+        "subcategories": [
+          {
+            "name": "Czujniki 6DOF/9DOF/10DOF",
+            "url": "https://kamami.pl/13484-czujniki-6dof-9dof-10dof",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki ciśnienia",
+            "url": "https://kamami.pl/13074-czujniki-cisnienia",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki gazów",
+            "url": "https://kamami.pl/13075-czujniki-gazow",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki Halla",
+            "url": "https://kamami.pl/13541-czujniki-halla",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki jakości cieczy",
+            "url": "https://kamami.pl/15302-czujniki-jakosci-cieczy",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki jakości powietrza",
+            "url": "https://kamami.pl/15683-czujniki-jakosci-powietrza",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki magnetyczne (kompasy)",
+            "url": "https://kamami.pl/13095-czujniki-magnetyczne-kompasy",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki medyczne",
+            "url": "https://kamami.pl/13079-czujniki-medyczne",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki nacisku",
+            "url": "https://kamami.pl/13078-czujniki-nacisku",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki odbiciowe",
+            "url": "https://kamami.pl/13080-czujniki-odbiciowe",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki odległości",
+            "url": "https://kamami.pl/13081-czujniki-odleglosci",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki PH",
+            "url": "https://kamami.pl/12575-czujniki-ph",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki podczerwieni",
+            "url": "https://kamami.pl/13487-czujniki-podczerwieni",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki poziomu cieczy",
+            "url": "https://kamami.pl/15241-czujniki-poziomu-cieczy",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki położenia",
+            "url": "https://kamami.pl/13537-czujniki-polozenia",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki prądu",
+            "url": "https://kamami.pl/13087-czujniki-pradu",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki przepływu",
+            "url": "https://kamami.pl/13088-czujniki-przeplywu",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki przyspieszenia (akcelerometry)",
+            "url": "https://kamami.pl/13073-czujniki-przyspieszenia-akcelerometry",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki ruchu",
+            "url": "https://kamami.pl/13089-czujniki-ruchu",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki światła i koloru",
+            "url": "https://kamami.pl/13077-czujniki-swiatla-i-koloru",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki temperatury",
+            "url": "https://kamami.pl/13090-czujniki-temperatury",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki wibracji",
+            "url": "https://kamami.pl/7755-czujniki-wibracji",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki wilgotności gleby",
+            "url": "https://kamami.pl/13091-czujniki-wilgotnosci-gleby",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki wilgotności powietrza",
+            "url": "https://kamami.pl/15639-czujniki-wilgotnosci-powietrza",
+            "subcategories": []
+          },
+          {
+            "name": "Skanery laserowe",
+            "url": "https://kamami.pl/15493-skanery-laserowe",
+            "subcategories": []
+          },
+          {
+            "name": "Żyroskopy",
+            "url": "https://kamami.pl/13097-zyroskopy",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Drukarki",
+        "url": "https://kamami.pl/12598-drukarki",
+        "subcategories": []
+      },
+      {
+        "name": "Elementy pasywne",
+        "url": "https://kamami.pl/13114-elementy-pasywne",
+        "subcategories": [
+          {
+            "name": "Bezpieczniki",
+            "url": "https://kamami.pl/15697-bezpieczniki",
+            "subcategories": []
+          },
+          {
+            "name": "Dławiki",
+            "url": "https://kamami.pl/13115-dlawiki",
+            "subcategories": []
+          },
+          {
+            "name": "Kondensatory",
+            "url": "https://kamami.pl/13116-kondensatory",
+            "subcategories": []
+          },
+          {
+            "name": "Potencjometry",
+            "url": "https://kamami.pl/13123-potencjometry",
+            "subcategories": []
+          },
+          {
+            "name": "Rezonatory kwarcowe",
+            "url": "https://kamami.pl/13125-rezonatory-kwarcowe",
+            "subcategories": []
+          },
+          {
+            "name": "Rezystory",
+            "url": "https://kamami.pl/13124-rezystory",
+            "subcategories": [
+              {
+                "name": "Rezystory THT 1/4W",
+                "url": "https://kamami.pl/13555-rezystory-tht-14w",
+                "subcategories": []
+              },
+              {
+                "name": "Zestawy rezystorów",
+                "url": "https://kamami.pl/13554-zestawy-rezystorow",
+                "subcategories": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gadżety",
+        "url": "https://kamami.pl/15163-gadzety",
+        "subcategories": []
+      },
+      {
+        "name": "GPS",
+        "url": "https://kamami.pl/13152-gps",
+        "subcategories": [
+          {
+            "name": "Anteny",
+            "url": "https://kamami.pl/7614-anteny",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły",
+            "url": "https://kamami.pl/7613-moduly",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Inteligentne ubrania",
+        "url": "https://kamami.pl/12795-inteligentne-ubrania",
+        "subcategories": [
+          {
+            "name": "Materiały/Farby",
+            "url": "https://kamami.pl/12796-materialyfarby",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły",
+            "url": "https://kamami.pl/15335-moduly",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Kamery i akcesoria",
+        "url": "https://kamami.pl/13503-kamery-i-akcesoria",
+        "subcategories": [
+          {
+            "name": "Kamery",
+            "url": "https://kamami.pl/15540-kamery",
+            "subcategories": []
+          },
+          {
+            "name": "Obiektywy do kamer",
+            "url": "https://kamami.pl/15541-obiektywy-do-kamer",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody, obudowy i inne akcesoria do kamer",
+            "url": "https://kamami.pl/15542-przewody-obudowy-i-inne-akcesoria-do-kamer",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Karty pamięci i inne nośniki danych",
+        "url": "https://kamami.pl/15615-karty-pamieci-i-inne-nosniki-danych",
+        "subcategories": [
+          {
+            "name": "Dyski SSD",
+            "url": "https://kamami.pl/15616-dyski-ssd",
+            "subcategories": []
+          },
+          {
+            "name": "Karty pamięci",
+            "url": "https://kamami.pl/13126-karty-pamieci",
+            "subcategories": []
+          },
+          {
+            "name": "Pendrive",
+            "url": "https://kamami.pl/15218-pendrive",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Komunikacja",
+        "url": "https://kamami.pl/13131-komunikacja",
+        "subcategories": [
+          {
+            "name": "Anteny i akcesoria",
+            "url": "https://kamami.pl/15424-anteny-i-akcesoria",
+            "subcategories": []
+          },
+          {
+            "name": "Meshtastic",
+            "url": "https://kamami.pl/15895-meshtastic",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły 4G",
+            "url": "https://kamami.pl/15890-moduly-4g",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły 5G",
+            "url": "https://kamami.pl/15891-moduly-5g",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły Bluetooth",
+            "url": "https://kamami.pl/13132-moduly-bluetooth",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły GSM/GPRS",
+            "url": "https://kamami.pl/13133-moduly-gsmgprs",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły IR",
+            "url": "https://kamami.pl/13520-moduly-ir",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły LoRa",
+            "url": "https://kamami.pl/15633-moduly-lora",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły radiowe ISM433/868/2400",
+            "url": "https://kamami.pl/13134-moduly-radiowe-ism4338682400",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły sieciowe Ethernet",
+            "url": "https://kamami.pl/13135-moduly-sieciowe-ethernet",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły WiFi",
+            "url": "https://kamami.pl/13136-moduly-wifi",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły Wixel",
+            "url": "https://kamami.pl/13512-moduly-wixel",
+            "subcategories": []
+          },
+          {
+            "name": "OBD2",
+            "url": "https://kamami.pl/15624-obd2",
+            "subcategories": []
+          },
+          {
+            "name": "RFID",
+            "url": "https://kamami.pl/13137-rfid",
+            "subcategories": []
+          },
+          {
+            "name": "Routery i punkty dostępowe",
+            "url": "https://kamami.pl/15888-routery-i-punkty-dostepowe",
+            "subcategories": []
+          },
+          {
+            "name": "Switche sieciowe",
+            "url": "https://kamami.pl/15892-switche-sieciowe",
+            "subcategories": []
+          },
+          {
+            "name": "XBee/ZigBee",
+            "url": "https://kamami.pl/13138-xbee-zigbee",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "LED - diody, wyświetlacze, paski",
+        "url": "https://kamami.pl/13098-led-diody-wyswietlacze-paski",
+        "subcategories": [
+          {
+            "name": "Diody IR (podczerwone)",
+            "url": "https://kamami.pl/13110-diody-ir-podczerwone",
+            "subcategories": []
+          },
+          {
+            "name": "Diody laserowe",
+            "url": "https://kamami.pl/12597-diody-laserowe",
+            "subcategories": []
+          },
+          {
+            "name": "Diody LED - linijki",
+            "url": "https://kamami.pl/15851-diody-led-linijki",
+            "subcategories": []
+          },
+          {
+            "name": "Diody LED - matryce",
+            "url": "https://kamami.pl/13101-diody-led-matryce",
+            "subcategories": []
+          },
+          {
+            "name": "Diody LED - taśmy",
+            "url": "https://kamami.pl/13535-diody-led-tasmy",
+            "subcategories": []
+          },
+          {
+            "name": "Diody LED mocy",
+            "url": "https://kamami.pl/12214-diody-led-mocy",
+            "subcategories": []
+          },
+          {
+            "name": "Diody LED SMD",
+            "url": "https://kamami.pl/13099-diody-led-smd",
+            "subcategories": []
+          },
+          {
+            "name": "Diody LED THT",
+            "url": "https://kamami.pl/10334-diody-led-tht",
+            "subcategories": [
+              {
+                "name": "Jednokolorowe",
+                "url": "https://kamami.pl/15565-jednokolorowe",
+                "subcategories": []
+              },
+              {
+                "name": "Wielokolorowe",
+                "url": "https://kamami.pl/15566-wielokolorowe",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Elastyczne diody LED",
+            "url": "https://kamami.pl/15705-elastyczne-diody-led",
+            "subcategories": []
+          },
+          {
+            "name": "Kontrolki LED",
+            "url": "https://kamami.pl/15628-kontrolki-led",
+            "subcategories": []
+          },
+          {
+            "name": "Listwy montażowe do taśm LED",
+            "url": "https://kamami.pl/15879-listwy-montazowe-do-tasm-led",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły diod LED",
+            "url": "https://kamami.pl/15708-moduly-diod-led",
+            "subcategories": []
+          },
+          {
+            "name": "Pierścienie LED",
+            "url": "https://kamami.pl/15706-pierscienie-led",
+            "subcategories": []
+          },
+          {
+            "name": "Wskaźniki sygnalizacyjne LED",
+            "url": "https://kamami.pl/15847-wskazniki-sygnalizacyjne-led",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Materiały przewodzące",
+        "url": "https://kamami.pl/15382-materialy-przewodzace",
+        "subcategories": []
+      },
+      {
+        "name": "Moduły elektroniczne",
+        "url": "https://kamami.pl/13072-moduly-elektroniczne",
+        "subcategories": [
+          {
+            "name": "Akcesoria JTAG",
+            "url": "https://kamami.pl/13540-akcesoria-jtag",
+            "subcategories": []
+          },
+          {
+            "name": "Audio",
+            "url": "https://kamami.pl/13480-audio",
+            "subcategories": [
+              {
+                "name": "Filtry LC",
+                "url": "https://kamami.pl/15878-filtry-lc",
+                "subcategories": []
+              },
+              {
+                "name": "Izolatory audio",
+                "url": "https://kamami.pl/15886-izolatory-audio",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły do rejestrowania dźwięku",
+                "url": "https://kamami.pl/13531-moduly-do-rejestrowania-dzwieku",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły generowania mowy",
+                "url": "https://kamami.pl/13557-moduly-generowania-mowy",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły odtwarzania MP3/WAV",
+                "url": "https://kamami.pl/13482-moduly-odtwarzania-mp3wav",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły radiowe FM",
+                "url": "https://kamami.pl/13483-moduly-radiowe-fm",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły wzmacniaczy",
+                "url": "https://kamami.pl/13481-moduly-wzmacniaczy",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły z mikrofonami i detektory dźwięku",
+                "url": "https://kamami.pl/13532-moduly-z-mikrofonami-i-detektory-dzwieku",
+                "subcategories": []
+              },
+              {
+                "name": "Odbiorniki audio Bluetooth",
+                "url": "https://kamami.pl/15885-odbiorniki-audio-bluetooth",
+                "subcategories": []
+              },
+              {
+                "name": "Rozpoznawanie mowy",
+                "url": "https://kamami.pl/13489-rozpoznawanie-mowy",
+                "subcategories": []
+              },
+              {
+                "name": "Wskaźniki wysterowania",
+                "url": "https://kamami.pl/15881-wskazniki-wysterowania",
+                "subcategories": []
+              },
+              {
+                "name": "Zwrotnice głośnikowe",
+                "url": "https://kamami.pl/15882-zwrotnice-glosnikowe",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Czytniki kart pamięci",
+            "url": "https://kamami.pl/13504-czytniki-kart-pamieci",
+            "subcategories": []
+          },
+          {
+            "name": "Czytniki kodów paskowych",
+            "url": "https://kamami.pl/13536-czytniki-kodow-paskowych",
+            "subcategories": []
+          },
+          {
+            "name": "Czytniki linii papilarnych",
+            "url": "https://kamami.pl/13092-czytniki-linii-papilarnych",
+            "subcategories": []
+          },
+          {
+            "name": "Ekspandery linii I/O",
+            "url": "https://kamami.pl/13556-ekspandery-linii-io",
+            "subcategories": []
+          },
+          {
+            "name": "Enkodery",
+            "url": "https://kamami.pl/13093-enkodery",
+            "subcategories": []
+          },
+          {
+            "name": "Generatory DDS/PLL",
+            "url": "https://kamami.pl/15189-generatory-ddspll",
+            "subcategories": []
+          },
+          {
+            "name": "Klawiatury, przyciski",
+            "url": "https://kamami.pl/13499-klawiatury-przyciski",
+            "subcategories": []
+          },
+          {
+            "name": "Konwertery CAN",
+            "url": "https://kamami.pl/15511-konwertery-can",
+            "subcategories": []
+          },
+          {
+            "name": "Konwertery napięć",
+            "url": "https://kamami.pl/13142-konwertery-napiec",
+            "subcategories": []
+          },
+          {
+            "name": "Konwertery RS485",
+            "url": "https://kamami.pl/13145-konwertery-rs485",
+            "subcategories": []
+          },
+          {
+            "name": "Konwertery USB - I2C / 1-Wire / SPI",
+            "url": "https://kamami.pl/15167-konwertery-usb-i2c-1-wire-spi-",
+            "subcategories": []
+          },
+          {
+            "name": "Konwertery USB - UART / RS232",
+            "url": "https://kamami.pl/13143-konwertery-usb---uart--rs232",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły HMI",
+            "url": "https://kamami.pl/15686-moduly-hmi",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły izolacji galwanicznej",
+            "url": "https://kamami.pl/15912-moduly-izolacji-galwanicznej",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły kryptograficzne",
+            "url": "https://kamami.pl/15685-moduly-kryptograficzne",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły pamięci",
+            "url": "https://kamami.pl/15162-moduly-pamieci",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły RTC",
+            "url": "https://kamami.pl/13500-moduly-rtc",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły z wyjściami mocy",
+            "url": "https://kamami.pl/13496-moduly-z-wyjsciami-mocy",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły zasilające",
+            "url": "https://kamami.pl/15374-moduly-zasilajace",
+            "subcategories": [
+              {
+                "name": "Moduły BMS",
+                "url": "https://kamami.pl/15678-moduly-bms-elektronika",
+                "subcategories": []
+              },
+              {
+                "name": "Przetwornice",
+                "url": "https://kamami.pl/15375-przetwornice",
+                "subcategories": []
+              },
+              {
+                "name": "Wyzwalacze USB PD",
+                "url": "https://kamami.pl/15635-wyzwalacze-usb-pd-elektonika",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Obraz i wideo",
+            "url": "https://kamami.pl/10975-obraz-i-wideo",
+            "subcategories": []
+          },
+          {
+            "name": "Odbiorniki podczerwieni TSOP",
+            "url": "https://kamami.pl/13096-odbiorniki-podczerwieni-tsop",
+            "subcategories": []
+          },
+          {
+            "name": "Potencjometry cyfrowe",
+            "url": "https://kamami.pl/15347-potencjometry-cyfrowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przetworniki A/C i C/A",
+            "url": "https://kamami.pl/13144-przetworniki-ac-i-ca",
+            "subcategories": []
+          },
+          {
+            "name": "Rejestratory danych (data logger)",
+            "url": "https://kamami.pl/13420-rejestratory-danych-data-logger",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki LED",
+            "url": "https://kamami.pl/13538-sterowniki-led",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki serw",
+            "url": "https://kamami.pl/13190-sterowniki-serw",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki silników",
+            "url": "https://kamami.pl/13191-sterowniki-silnikow",
+            "subcategories": [
+              {
+                "name": "Kontrolery prędkości (ESC)",
+                "url": "https://kamami.pl/11631-kontrolery-predkosci-esc",
+                "subcategories": []
+              },
+              {
+                "name": "Sterowniki silników bezszczotkowych (BLDC)",
+                "url": "https://kamami.pl/15470-sterowniki-silnikow-bezszczotkowych-bldc",
+                "subcategories": []
+              },
+              {
+                "name": "Sterowniki silników DC",
+                "url": "https://kamami.pl/15468-sterowniki-silnikow-dc",
+                "subcategories": []
+              },
+              {
+                "name": "Sterowniki silników krokowych",
+                "url": "https://kamami.pl/15469-sterowniki-silnikow-krokowych",
+                "subcategories": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Półprzewodniki",
+        "url": "https://kamami.pl/87-polprzewodniki",
+        "subcategories": [
+          {
+            "name": "Button",
+            "url": "https://kamami.pl/12135-button",
+            "subcategories": []
+          },
+          {
+            "name": "Czujniki",
+            "url": "https://kamami.pl/3001-czujniki",
+            "subcategories": [
+              {
+                "name": "Ciśnienia",
+                "url": "https://kamami.pl/7493-cisnienia",
+                "subcategories": []
+              },
+              {
+                "name": "Gazu",
+                "url": "https://kamami.pl/15159-gazu",
+                "subcategories": []
+              },
+              {
+                "name": "Koloru",
+                "url": "https://kamami.pl/7644-koloru",
+                "subcategories": []
+              },
+              {
+                "name": "Kompasy",
+                "url": "https://kamami.pl/7980-kompasy",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrofony MEMS",
+                "url": "https://kamami.pl/7981-mikrofony-mems",
+                "subcategories": []
+              },
+              {
+                "name": "Obiektów",
+                "url": "https://kamami.pl/7658-obiektow",
+                "subcategories": []
+              },
+              {
+                "name": "Obrazu",
+                "url": "https://kamami.pl/9974-obrazu",
+                "subcategories": []
+              },
+              {
+                "name": "Odległości",
+                "url": "https://kamami.pl/7646-odleglosci",
+                "subcategories": []
+              },
+              {
+                "name": "Położenia",
+                "url": "https://kamami.pl/7982-polozenia",
+                "subcategories": []
+              },
+              {
+                "name": "Prądu",
+                "url": "https://kamami.pl/7621-pradu",
+                "subcategories": []
+              },
+              {
+                "name": "Przyspieszenia (akcelerometry)",
+                "url": "https://kamami.pl/13545-przyspieszenia-akcelerometry",
+                "subcategories": []
+              },
+              {
+                "name": "Światła",
+                "url": "https://kamami.pl/7513-wiatla",
+                "subcategories": []
+              },
+              {
+                "name": "Temperatury",
+                "url": "https://kamami.pl/3005-temperatury",
+                "subcategories": []
+              },
+              {
+                "name": "Wilgotności",
+                "url": "https://kamami.pl/7673-wilgotnosci",
+                "subcategories": []
+              },
+              {
+                "name": "Żyroskopy",
+                "url": "https://kamami.pl/7979-zyroskopy",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Czujniki dotykowe (Touch)",
+            "url": "https://kamami.pl/7474-czujniki-dotykowe-touch",
+            "subcategories": []
+          },
+          {
+            "name": "Diody",
+            "url": "https://kamami.pl/13546-diody",
+            "subcategories": [
+              {
+                "name": "Diody prostownicze",
+                "url": "https://kamami.pl/13111-diody-prostownicze",
+                "subcategories": []
+              },
+              {
+                "name": "Diody Schottky",
+                "url": "https://kamami.pl/13112-diody-schottky",
+                "subcategories": []
+              },
+              {
+                "name": "Diody Zenera",
+                "url": "https://kamami.pl/12637-diody-zenera",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Energy harvesting",
+            "url": "https://kamami.pl/7756-energy-harvesting",
+            "subcategories": []
+          },
+          {
+            "name": "Generatory PLL",
+            "url": "https://kamami.pl/15277-generatory-pll",
+            "subcategories": []
+          },
+          {
+            "name": "Inne",
+            "url": "https://kamami.pl/55-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Konwertery logiczne",
+            "url": "https://kamami.pl/7393-konwertery-logiczne",
+            "subcategories": []
+          },
+          {
+            "name": "Liczniki energii",
+            "url": "https://kamami.pl/10214-liczniki-energii",
+            "subcategories": []
+          },
+          {
+            "name": "Mikrokontrolery",
+            "url": "https://kamami.pl/86-mikrokontrolery",
+            "subcategories": [
+              {
+                "name": "Mikrokontrolery 68HC",
+                "url": "https://kamami.pl/128-mikrokontrolery-68hc",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery ARM",
+                "url": "https://kamami.pl/6-mikrokontrolery-arm",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery AVR",
+                "url": "https://kamami.pl/8-mikrokontrolery-avr",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery EZ-USB",
+                "url": "https://kamami.pl/724-mikrokontrolery-ez-usb",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery MCS51",
+                "url": "https://kamami.pl/12-mikrokontrolery-mcs51",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery MSP",
+                "url": "https://kamami.pl/9-mikrokontrolery-msp",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery PIC",
+                "url": "https://kamami.pl/10-mikrokontrolery-pic",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery SPC56",
+                "url": "https://kamami.pl/10734-mikrokontrolery-spc56",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery ST7",
+                "url": "https://kamami.pl/7-mikrokontrolery-st7",
+                "subcategories": []
+              },
+              {
+                "name": "Mikrokontrolery STM8L/8S",
+                "url": "https://kamami.pl/2416-mikrokontrolery-stm8l8s",
+                "subcategories": []
+              },
+              {
+                "name": "RP2040 / RP235x",
+                "url": "https://kamami.pl/15852-rp2040-rp235x",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Mikroprocesory DSP",
+            "url": "https://kamami.pl/9994-mikroprocesory-dsp",
+            "subcategories": []
+          },
+          {
+            "name": "Mostki prostownicze",
+            "url": "https://kamami.pl/12296-mostki-prostownicze",
+            "subcategories": []
+          },
+          {
+            "name": "Optotriaki i transoptory",
+            "url": "https://kamami.pl/69-optotriaki-i-transoptory",
+            "subcategories": []
+          },
+          {
+            "name": "Pamięci",
+            "url": "https://kamami.pl/74-pamieci",
+            "subcategories": [
+              {
+                "name": "Pamięci DataFlash",
+                "url": "https://kamami.pl/17-pamieci-dataflash",
+                "subcategories": []
+              },
+              {
+                "name": "Pamięci EEPROM",
+                "url": "https://kamami.pl/16-pamieci-eeprom",
+                "subcategories": []
+              },
+              {
+                "name": "Pamięci Flash",
+                "url": "https://kamami.pl/1330-pamieci-flash",
+                "subcategories": []
+              },
+              {
+                "name": "Pamięci FRAM",
+                "url": "https://kamami.pl/15276-pamieci-fram",
+                "subcategories": []
+              },
+              {
+                "name": "Pamięci SDRAM",
+                "url": "https://kamami.pl/1327-pamieci-sdram",
+                "subcategories": []
+              },
+              {
+                "name": "Pamięci SRAM",
+                "url": "https://kamami.pl/129-pamieci-sram",
+                "subcategories": []
+              },
+              {
+                "name": "Pamięci ZeroPower",
+                "url": "https://kamami.pl/12014-pamieci-zeropower",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Przetworniki a/c (ADC)",
+            "url": "https://kamami.pl/7616-przetworniki-ac-adc",
+            "subcategories": []
+          },
+          {
+            "name": "Przetworniki c/a (DAC)",
+            "url": "https://kamami.pl/7617-przetworniki-ca-dac",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki i mostki IGBT",
+            "url": "https://kamami.pl/12655-sterowniki-i-mostki-igbt",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki LED",
+            "url": "https://kamami.pl/3009-sterowniki-led",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki silników",
+            "url": "https://kamami.pl/3008-sterowniki-silnikow",
+            "subcategories": []
+          },
+          {
+            "name": "Syntezery DDS",
+            "url": "https://kamami.pl/7656-syntezery-dds",
+            "subcategories": []
+          },
+          {
+            "name": "Timery",
+            "url": "https://kamami.pl/71-timery",
+            "subcategories": []
+          },
+          {
+            "name": "Tranzystory",
+            "url": "https://kamami.pl/7660-tranzystory",
+            "subcategories": [
+              {
+                "name": "Bipolarne",
+                "url": "https://kamami.pl/7661-bipolarne",
+                "subcategories": []
+              },
+              {
+                "name": "Unipolarne",
+                "url": "https://kamami.pl/7662-unipolarne",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Układy analogowe",
+            "url": "https://kamami.pl/75-uklady-analogowe",
+            "subcategories": [
+              {
+                "name": "Cyfrowe potencjometry",
+                "url": "https://kamami.pl/7990-cyfrowe-potencjometry",
+                "subcategories": []
+              },
+              {
+                "name": "Klucze analogowe",
+                "url": "https://kamami.pl/7992-klucze-analogowe",
+                "subcategories": []
+              },
+              {
+                "name": "Komparatory",
+                "url": "https://kamami.pl/7989-komparatory",
+                "subcategories": []
+              },
+              {
+                "name": "Wzmacniacze operacyjne",
+                "url": "https://kamami.pl/7988-wzmacniacze-operacyjne",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Układy audio",
+            "url": "https://kamami.pl/2484-uklady-audio",
+            "subcategories": []
+          },
+          {
+            "name": "Układy cyfrowe",
+            "url": "https://kamami.pl/123-uklady-cyfrowe",
+            "subcategories": [
+              {
+                "name": "Driver",
+                "url": "https://kamami.pl/9354-driver",
+                "subcategories": []
+              },
+              {
+                "name": "Single Gates",
+                "url": "https://kamami.pl/1335-single-gates",
+                "subcategories": []
+              },
+              {
+                "name": "Układy z serii 4000",
+                "url": "https://kamami.pl/125-uklady-z-serii-4000",
+                "subcategories": []
+              },
+              {
+                "name": "Układy z serii 74HCT",
+                "url": "https://kamami.pl/127-uklady-z-serii-74hct",
+                "subcategories": []
+              },
+              {
+                "name": "Układy z serii 74LVC/AC",
+                "url": "https://kamami.pl/122-uklady-serii-74lvcac",
+                "subcategories": []
+              },
+              {
+                "name": "Układy z serii 74VHC/HC",
+                "url": "https://kamami.pl/126-uklady-z-serii-74vhchc",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Układy interfejsowe",
+            "url": "https://kamami.pl/72-uklady-interfejsowe",
+            "subcategories": [
+              {
+                "name": "CAN",
+                "url": "https://kamami.pl/368-can",
+                "subcategories": []
+              },
+              {
+                "name": "Ekspandery IO",
+                "url": "https://kamami.pl/3010-ekspandery-io",
+                "subcategories": []
+              },
+              {
+                "name": "Ethernet",
+                "url": "https://kamami.pl/364-ethernet",
+                "subcategories": []
+              },
+              {
+                "name": "I2C",
+                "url": "https://kamami.pl/3004-i2c",
+                "subcategories": []
+              },
+              {
+                "name": "Inne",
+                "url": "https://kamami.pl/376-inne",
+                "subcategories": []
+              },
+              {
+                "name": "IrDA",
+                "url": "https://kamami.pl/372-irda",
+                "subcategories": []
+              },
+              {
+                "name": "Modemy Smart Grid",
+                "url": "https://kamami.pl/12297-modemy-smart-grid",
+                "subcategories": []
+              },
+              {
+                "name": "RS232",
+                "url": "https://kamami.pl/7651-rs232",
+                "subcategories": []
+              },
+              {
+                "name": "RS485",
+                "url": "https://kamami.pl/7657-rs485",
+                "subcategories": []
+              },
+              {
+                "name": "Separatory galwaniczne",
+                "url": "https://kamami.pl/10204-separatory-galwaniczne",
+                "subcategories": []
+              },
+              {
+                "name": "UART",
+                "url": "https://kamami.pl/374-uart",
+                "subcategories": []
+              },
+              {
+                "name": "USB",
+                "url": "https://kamami.pl/362-usb",
+                "subcategories": []
+              },
+              {
+                "name": "Wireless",
+                "url": "https://kamami.pl/366-wireless",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Układy programowalne",
+            "url": "https://kamami.pl/76-uklady-programowalne",
+            "subcategories": [
+              {
+                "name": "CPLD (Altera)",
+                "url": "https://kamami.pl/1334-cpld-altera",
+                "subcategories": []
+              },
+              {
+                "name": "CPLD (Xilinx)",
+                "url": "https://kamami.pl/21-cpld-xilinx",
+                "subcategories": []
+              },
+              {
+                "name": "FPGA (Altera)",
+                "url": "https://kamami.pl/1333-fpga-altera",
+                "subcategories": []
+              },
+              {
+                "name": "FPGA (Xilinx)",
+                "url": "https://kamami.pl/20-fpga-xilinx",
+                "subcategories": []
+              },
+              {
+                "name": "Konfiguratory FPGA",
+                "url": "https://kamami.pl/22-konfiguratory-fpga",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Układy RF",
+            "url": "https://kamami.pl/7994-uklady-rf",
+            "subcategories": []
+          },
+          {
+            "name": "Układy RTC",
+            "url": "https://kamami.pl/282-uklady-rtc",
+            "subcategories": []
+          },
+          {
+            "name": "Układy SoC",
+            "url": "https://kamami.pl/11335-uklady-soc",
+            "subcategories": []
+          },
+          {
+            "name": "Układy zasilające",
+            "url": "https://kamami.pl/70-uklady-zasilajace",
+            "subcategories": [
+              {
+                "name": "Bezpieczniki i filtry",
+                "url": "https://kamami.pl/12294-bezpieczniki-i-filtry",
+                "subcategories": []
+              },
+              {
+                "name": "Inne",
+                "url": "https://kamami.pl/141-inne",
+                "subcategories": []
+              },
+              {
+                "name": "Power Switch",
+                "url": "https://kamami.pl/3006-power-switch",
+                "subcategories": []
+              },
+              {
+                "name": "Przetwornice DC/DC",
+                "url": "https://kamami.pl/12495-przetwornice-dcdc",
+                "subcategories": []
+              },
+              {
+                "name": "Stabilizatory 78/79 i 78L/79L",
+                "url": "https://kamami.pl/13-stabilizatory-78-79-i-78l-79l",
+                "subcategories": []
+              },
+              {
+                "name": "Stabilizatory LDO",
+                "url": "https://kamami.pl/15-stabilizatory-ldo",
+                "subcategories": []
+              },
+              {
+                "name": "Źródła napięcia odniesienia",
+                "url": "https://kamami.pl/7620-rodla-napiecia-odniesienia",
+                "subcategories": []
+              },
+              {
+                "name": "Ładowarki",
+                "url": "https://kamami.pl/7619-ladowarki",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Układy zerujące",
+            "url": "https://kamami.pl/222-uklady-zerujace",
+            "subcategories": []
+          },
+          {
+            "name": "Zabezpieczenia ESD",
+            "url": "https://kamami.pl/3011-zabezpieczenia-esd",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Programatory czasowe",
+        "url": "https://kamami.pl/15901-programatory-czasowe",
+        "subcategories": []
+      },
+      {
+        "name": "Przekaźniki",
+        "url": "https://kamami.pl/15808-przekazniki",
+        "subcategories": []
+      },
+      {
+        "name": "Przetworniki dźwięku",
+        "url": "https://kamami.pl/10494-przetworniki-dzwieku",
+        "subcategories": [
+          {
+            "name": "Generatory dźwięku",
+            "url": "https://kamami.pl/10554-generatory-dzwieku",
+            "subcategories": []
+          },
+          {
+            "name": "Głośniki",
+            "url": "https://kamami.pl/13485-glosniki",
+            "subcategories": []
+          },
+          {
+            "name": "Przetworniki piezo",
+            "url": "https://kamami.pl/10495-przetworniki-piezo",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Przewody",
+        "url": "https://kamami.pl/13153-przewody",
+        "subcategories": [
+          {
+            "name": "Akcesoria HDMI",
+            "url": "https://kamami.pl/15478-akcesoria-hdmi",
+            "subcategories": []
+          },
+          {
+            "name": "Organizery przewodów",
+            "url": "https://kamami.pl/15593-organizery-przewodow",
+            "subcategories": []
+          },
+          {
+            "name": "Patchordy światłowodowe",
+            "url": "https://kamami.pl/15850-patchordy-swiatlowodowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody audio",
+            "url": "https://kamami.pl/13158-przewody-audio",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody do płytek stykowych",
+            "url": "https://kamami.pl/13157-przewody-do-plytek-stykowych",
+            "subcategories": [
+              {
+                "name": "Przewody F-F",
+                "url": "https://kamami.pl/15306-przewody-f-f",
+                "subcategories": []
+              },
+              {
+                "name": "Przewody M-F",
+                "url": "https://kamami.pl/15305-przewody-m-f",
+                "subcategories": []
+              },
+              {
+                "name": "Przewody M-M",
+                "url": "https://kamami.pl/15304-przewody-m-m",
+                "subcategories": []
+              },
+              {
+                "name": "Zestawy przewodów",
+                "url": "https://kamami.pl/15311-zestawy-przewodow",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Przewody do serw",
+            "url": "https://kamami.pl/13156-przewody-do-serw",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody Ethernet",
+            "url": "https://kamami.pl/13162-przewody-ethernet",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody IDC",
+            "url": "https://kamami.pl/13164-przewody-idc",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody inne",
+            "url": "https://kamami.pl/13519-przewody-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody jednożyłowe",
+            "url": "https://kamami.pl/15680-przewody-jednozylowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody JST",
+            "url": "https://kamami.pl/15353-przewody-jst",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody micro 5264",
+            "url": "https://kamami.pl/15828-przewody-micro-5264",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody pomiarowe",
+            "url": "https://kamami.pl/13161-przewody-pomiarowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody RF",
+            "url": "https://kamami.pl/15334-przewody-rf",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody USB",
+            "url": "https://kamami.pl/13165-przewody-usb",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody wideo",
+            "url": "https://kamami.pl/13159-przewody-wideo",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody zasilające",
+            "url": "https://kamami.pl/13163-przewody-zasilajace",
+            "subcategories": []
+          },
+          {
+            "name": "Taśmy FFC/FPC",
+            "url": "https://kamami.pl/15208-tasmy-ffc-fpc",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Przewody świecące i akcesoria",
+        "url": "https://kamami.pl/13492-przewody-swiecace-i-akcesoria",
+        "subcategories": [
+          {
+            "name": "Akcesoria",
+            "url": "https://kamami.pl/15546-akcesoria",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody świecące",
+            "url": "https://kamami.pl/15545-przewody-swiecace",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Przełączniki i przyciski",
+        "url": "https://kamami.pl/13174-przelaczniki-i-przyciski",
+        "subcategories": [
+          {
+            "name": "DIP switch",
+            "url": "https://kamami.pl/13175-dip-switch",
+            "subcategories": []
+          },
+          {
+            "name": "Joystick",
+            "url": "https://kamami.pl/13176-joystick",
+            "subcategories": []
+          },
+          {
+            "name": "Przełączniki cyfrowe",
+            "url": "https://kamami.pl/13179-przelaczniki-cyfrowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przełączniki dźwigniowe",
+            "url": "https://kamami.pl/15394-przelaczniki-dzwigniowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przełączniki i przyciski do klawiatur mechanicznych",
+            "url": "https://kamami.pl/15696-przelaczniki-i-przyciski-do-klawiatur-mechanicznych",
+            "subcategories": []
+          },
+          {
+            "name": "Przełączniki krańcowe",
+            "url": "https://kamami.pl/13178-przelaczniki-krancowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przełączniki suwakowe",
+            "url": "https://kamami.pl/15407-przelaczniki-suwakowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przyciski",
+            "url": "https://kamami.pl/13182-przyciski",
+            "subcategories": []
+          },
+          {
+            "name": "Przyciski dotykowe",
+            "url": "https://kamami.pl/13180-przyciski-dotykowe",
+            "subcategories": []
+          },
+          {
+            "name": "Tact Switch",
+            "url": "https://kamami.pl/13181-tact-switch",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Płytki prototypowe",
+        "url": "https://kamami.pl/13184-plytki-prototypowe",
+        "subcategories": [
+          {
+            "name": "Akcesoria do płytek stykowych",
+            "url": "https://kamami.pl/13470-akcesoria-do-plytek-stykowych",
+            "subcategories": []
+          },
+          {
+            "name": "Przejściówki SMD - DIP",
+            "url": "https://kamami.pl/13188-przejsciowki-smd---dip",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody do płytek stykowych",
+            "url": "https://kamami.pl/13185-przewody-do-plytek-stykowych",
+            "subcategories": [
+              {
+                "name": "Przewody F-F",
+                "url": "https://kamami.pl/15307-przewody-f-f",
+                "subcategories": []
+              },
+              {
+                "name": "Przewody M-F",
+                "url": "https://kamami.pl/15308-przewody-m-f",
+                "subcategories": []
+              },
+              {
+                "name": "Przewody M-M",
+                "url": "https://kamami.pl/15309-przewody-m-m",
+                "subcategories": []
+              },
+              {
+                "name": "Zestawy przewodów",
+                "url": "https://kamami.pl/15310-zestawy-przewodow",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Płytki stykowe",
+            "url": "https://kamami.pl/13186-plytki-stykowe",
+            "subcategories": []
+          },
+          {
+            "name": "Płytki uniwersalne",
+            "url": "https://kamami.pl/13187-plytki-uniwersalne",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy startowe",
+            "url": "https://kamami.pl/1522-zestawy-startowe",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Wizja maszynowa (MV)",
+        "url": "https://kamami.pl/15835-wizja-maszynowa-mv",
+        "subcategories": [
+          {
+            "name": "Akcesoria do MV",
+            "url": "https://kamami.pl/15836-akcesoria-do-mv",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły inteligentnych kamer",
+            "url": "https://kamami.pl/15834-moduly-inteligentnych-kamer",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Wyświetlacze",
+        "url": "https://kamami.pl/13231-wyswietlacze",
+        "subcategories": [
+          {
+            "name": "Akcesoria i moduły peryferyjne",
+            "url": "https://kamami.pl/15517-akcesoria-i-moduly-peryferyjne",
+            "subcategories": []
+          },
+          {
+            "name": "Obudowy do wyświetlaczy",
+            "url": "https://kamami.pl/15206-obudowy-do-wyswietlaczy",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze COG",
+            "url": "https://kamami.pl/7558-wyswietlacze-cog-",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze E-Paper",
+            "url": "https://kamami.pl/12798-wyswietlacze-e-paper",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze inne",
+            "url": "https://kamami.pl/10274-wyswietlacze-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze LCD alfanumeryczne",
+            "url": "https://kamami.pl/73-wyswietlacze-lcd-alfanumeryczne",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze LCD graficzne",
+            "url": "https://kamami.pl/378-wyswietlacze-lcd-graficzne",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze LED",
+            "url": "https://kamami.pl/10375-wyswietlacze-led",
+            "subcategories": [
+              {
+                "name": "Matrycowe",
+                "url": "https://kamami.pl/10379-matrycowe",
+                "subcategories": []
+              },
+              {
+                "name": "Segmentowe",
+                "url": "https://kamami.pl/10376-segmentowe",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Wyświetlacze OLED alfanumeryczne",
+            "url": "https://kamami.pl/7413-wyswietlacze-oled-alfanumeryczne",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze OLED graficzne",
+            "url": "https://kamami.pl/7434-wyswietlacze-oled-graficzne",
+            "subcategories": []
+          },
+          {
+            "name": "Wyświetlacze TFT/IPS",
+            "url": "https://kamami.pl/7593-wyswietlacze-tftips",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Złącza",
+        "url": "https://kamami.pl/10234-zlacza",
+        "subcategories": [
+          {
+            "name": "Adaptery USB PD do laptopów",
+            "url": "https://kamami.pl/15827-adaptery-usb-pd-do-laptopow",
+            "subcategories": []
+          },
+          {
+            "name": "Gniazda do kart pamięci",
+            "url": "https://kamami.pl/13127-gniazda-do-kart-pamieci",
+            "subcategories": []
+          },
+          {
+            "name": "Igły testowe (pogo pin)",
+            "url": "https://kamami.pl/15687-igly-testowe-pogo-pin",
+            "subcategories": []
+          },
+          {
+            "name": "Konektory",
+            "url": "https://kamami.pl/15356-konektory",
+            "subcategories": []
+          },
+          {
+            "name": "Podstawki",
+            "url": "https://kamami.pl/10240-podstawki",
+            "subcategories": []
+          },
+          {
+            "name": "Szybkozłącza",
+            "url": "https://kamami.pl/15589-szybkozlacza",
+            "subcategories": []
+          },
+          {
+            "name": "Zworki",
+            "url": "https://kamami.pl/15215-zworki",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza ARK (Terminal Block)",
+            "url": "https://kamami.pl/10934-zlacza-ark-terminal-block",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza bananowe",
+            "url": "https://kamami.pl/15921-zlacza-bananowe",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza FFC / FPC ZIF",
+            "url": "https://kamami.pl/13168-zlacza-ffc--fpc-zif",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza goldpin",
+            "url": "https://kamami.pl/10236-zlacza-goldpin",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza IDC",
+            "url": "https://kamami.pl/10242-zlacza-idc",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza inne",
+            "url": "https://kamami.pl/12515-zlacza-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza Jack",
+            "url": "https://kamami.pl/15239-zlacza-jack",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza JST",
+            "url": "https://kamami.pl/15354-zlacza-jst",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza koncentryczne (RF)",
+            "url": "https://kamami.pl/11795-zlacza-koncentryczne-rf",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza krokodylkowe",
+            "url": "https://kamami.pl/13169-zlacza-krokodylkowe",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza obrotowe",
+            "url": "https://kamami.pl/13502-zlacza-obrotowe",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza RJ-45",
+            "url": "https://kamami.pl/386-zlacza-rj-45",
+            "subcategories": [
+              {
+                "name": "Gniazda natynkowe",
+                "url": "https://kamami.pl/15844-gniazda-natynkowe",
+                "subcategories": []
+              },
+              {
+                "name": "Gniazda RJ-45",
+                "url": "https://kamami.pl/15846-gniazda-rj-45",
+                "subcategories": []
+              },
+              {
+                "name": "Osłonki na wtyki RJ-45",
+                "url": "https://kamami.pl/15842-oslonki-na-wtyki-rj-45",
+                "subcategories": []
+              },
+              {
+                "name": "Rozdzielacze i adaptery",
+                "url": "https://kamami.pl/15845-rozdzielacze-i-adaptery",
+                "subcategories": []
+              },
+              {
+                "name": "Wtyki RJ-45",
+                "url": "https://kamami.pl/15843-wtyki-rj-45",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Złącza szufladowe D-Sub",
+            "url": "https://kamami.pl/10235-zlacza-szufladowe-d-sub",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza USB",
+            "url": "https://kamami.pl/10243-zlacza-usb",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza WF",
+            "url": "https://kamami.pl/15920-zlacza-wf",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza zasilania DC",
+            "url": "https://kamami.pl/10241-zlacza-zasilania-dc",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "KSIĄŻKI",
+    "url": "https://kamami.pl/56-ksiazki",
+    "subcategories": [
+      {
+        "name": "Automatyka",
+        "url": "https://kamami.pl/202-automatyka",
+        "subcategories": [
+          {
+            "name": "CNC",
+            "url": "https://kamami.pl/7272-cnc",
+            "subcategories": []
+          },
+          {
+            "name": "Robotyka",
+            "url": "https://kamami.pl/7271-robotyka",
+            "subcategories": []
+          },
+          {
+            "name": "Sieci przemysłowe",
+            "url": "https://kamami.pl/7273-sieci-przemyslowe",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki PLC",
+            "url": "https://kamami.pl/7274-sterowniki-plc",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Bascom",
+        "url": "https://kamami.pl/7244-bascom",
+        "subcategories": []
+      },
+      {
+        "name": "EBOOKI",
+        "url": "https://kamami.pl/15396-ebooki",
+        "subcategories": [
+          {
+            "name": "Automatyka",
+            "url": "https://kamami.pl/15398-automatyka",
+            "subcategories": []
+          },
+          {
+            "name": "Elektronika",
+            "url": "https://kamami.pl/15397-elektronika",
+            "subcategories": []
+          },
+          {
+            "name": "Elektrotechnika",
+            "url": "https://kamami.pl/15404-elektrotechnika",
+            "subcategories": []
+          },
+          {
+            "name": "Informatyka",
+            "url": "https://kamami.pl/15399-informatyka",
+            "subcategories": []
+          },
+          {
+            "name": "Matematyka",
+            "url": "https://kamami.pl/15400-matematyka",
+            "subcategories": []
+          },
+          {
+            "name": "Zarządzanie",
+            "url": "https://kamami.pl/15402-zarzadzanie",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Elektronika",
+        "url": "https://kamami.pl/200-elektronika",
+        "subcategories": [
+          {
+            "name": "DSP",
+            "url": "https://kamami.pl/7667-dsp",
+            "subcategories": []
+          },
+          {
+            "name": "Elektroakustyka",
+            "url": "https://kamami.pl/3400-elektroakustyka",
+            "subcategories": []
+          },
+          {
+            "name": "Elementy i układy",
+            "url": "https://kamami.pl/3402-elementy-i-uklady",
+            "subcategories": []
+          },
+          {
+            "name": "Inne",
+            "url": "https://kamami.pl/3419-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Komputery PC",
+            "url": "https://kamami.pl/3406-komputery-pc",
+            "subcategories": []
+          },
+          {
+            "name": "Mikroprocesory",
+            "url": "https://kamami.pl/3410-mikroprocesory",
+            "subcategories": [
+              {
+                "name": "68HC08",
+                "url": "https://kamami.pl/3443-68hc08",
+                "subcategories": []
+              },
+              {
+                "name": "8051",
+                "url": "https://kamami.pl/3444-8051",
+                "subcategories": []
+              },
+              {
+                "name": "ARM",
+                "url": "https://kamami.pl/3442-arm",
+                "subcategories": []
+              },
+              {
+                "name": "AVR",
+                "url": "https://kamami.pl/3439-avr",
+                "subcategories": []
+              },
+              {
+                "name": "Inne",
+                "url": "https://kamami.pl/3446-inne",
+                "subcategories": []
+              },
+              {
+                "name": "PIC",
+                "url": "https://kamami.pl/3445-pic",
+                "subcategories": []
+              },
+              {
+                "name": "ST7",
+                "url": "https://kamami.pl/3447-st7",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Podręczniki",
+            "url": "https://kamami.pl/3459-podreczniki",
+            "subcategories": []
+          },
+          {
+            "name": "Podstawy elektroniki",
+            "url": "https://kamami.pl/3411-podstawy-elektroniki",
+            "subcategories": []
+          },
+          {
+            "name": "Programy komputerowe",
+            "url": "https://kamami.pl/3418-programy-komputerowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przetwarzanie sygnałów",
+            "url": "https://kamami.pl/3417-przetwarzanie-sygnalow",
+            "subcategories": []
+          },
+          {
+            "name": "Układy cyfrowe",
+            "url": "https://kamami.pl/3448-uklady-cyfrowe",
+            "subcategories": []
+          },
+          {
+            "name": "Układy programowalne",
+            "url": "https://kamami.pl/7245-uklady-programowalne",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Elektrotechnika",
+        "url": "https://kamami.pl/11078-elektrotechnika",
+        "subcategories": []
+      },
+      {
+        "name": "Informatyka",
+        "url": "https://kamami.pl/203-informatyka",
+        "subcategories": [
+          {
+            "name": "Hardware",
+            "url": "https://kamami.pl/3499-hardware",
+            "subcategories": []
+          },
+          {
+            "name": "Inne",
+            "url": "https://kamami.pl/7146-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Programowanie",
+            "url": "https://kamami.pl/3500-programowanie",
+            "subcategories": []
+          },
+          {
+            "name": "Programowanie mobilne",
+            "url": "https://kamami.pl/12675-programowanie-mobilne",
+            "subcategories": []
+          },
+          {
+            "name": "Programy komputerowe",
+            "url": "https://kamami.pl/3501-programy-komputerowe",
+            "subcategories": []
+          },
+          {
+            "name": "Przetwarzanie obrazów",
+            "url": "https://kamami.pl/7082-przetwarzanie-obrazow",
+            "subcategories": []
+          },
+          {
+            "name": "Sieci komputerowe",
+            "url": "https://kamami.pl/3502-sieci-komputerowe",
+            "subcategories": []
+          },
+          {
+            "name": "Systemy operacyjne",
+            "url": "https://kamami.pl/7147-systemy-operacyjne",
+            "subcategories": []
+          },
+          {
+            "name": "Webmaster",
+            "url": "https://kamami.pl/7150-webmaster",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Książki obcojęzyczne",
+        "url": "https://kamami.pl/6001-ksiazki-obcojezyczne",
+        "subcategories": []
+      },
+      {
+        "name": "Matematyka",
+        "url": "https://kamami.pl/1582-matematyka",
+        "subcategories": []
+      },
+      {
+        "name": "MODELARSTWO R/C",
+        "url": "https://kamami.pl/15169-modelarstwo-rc",
+        "subcategories": []
+      },
+      {
+        "name": "Zarządzanie",
+        "url": "https://kamami.pl/7976-zarzadzanie",
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "name": "MECHANIKA",
+    "url": "https://kamami.pl/13240-mechanika",
+    "subcategories": [
+      {
+        "name": "Akcesoria do obudów",
+        "url": "https://kamami.pl/15837-akcesoria-do-obudow",
+        "subcategories": []
+      },
+      {
+        "name": "Aktuatory liniowe",
+        "url": "https://kamami.pl/13522-aktuatory-liniowe",
+        "subcategories": []
+      },
+      {
+        "name": "Chwytaki i uchwyty",
+        "url": "https://kamami.pl/13242-chwytaki-i-uchwyty",
+        "subcategories": []
+      },
+      {
+        "name": "Elektromagnesy",
+        "url": "https://kamami.pl/15751-elektromagnesy",
+        "subcategories": []
+      },
+      {
+        "name": "Elektrozawory",
+        "url": "https://kamami.pl/15753-elektrozawory",
+        "subcategories": []
+      },
+      {
+        "name": "Elementy montażowe",
+        "url": "https://kamami.pl/13241-elementy-montazowe",
+        "subcategories": [
+          {
+            "name": "Dystanse",
+            "url": "https://kamami.pl/13243-dystanse",
+            "subcategories": []
+          },
+          {
+            "name": "Opaski zaciskowe",
+            "url": "https://kamami.pl/13238-opaski-zaciskowe",
+            "subcategories": []
+          },
+          {
+            "name": "Śrubki i nakrętki",
+            "url": "https://kamami.pl/13248-srubki-i-nakretki",
+            "subcategories": [
+              {
+                "name": "Nakrętki",
+                "url": "https://kamami.pl/15651-nakretki",
+                "subcategories": []
+              },
+              {
+                "name": "Śruby",
+                "url": "https://kamami.pl/15650-sruby",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Zestawy wkrętów",
+            "url": "https://kamami.pl/15601-zestawy-wkretow",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Gąsienice",
+        "url": "https://kamami.pl/13616-gasienice",
+        "subcategories": []
+      },
+      {
+        "name": "Koła",
+        "url": "https://kamami.pl/13606-kola",
+        "subcategories": [
+          {
+            "name": "Adaptery do kół",
+            "url": "https://kamami.pl/15584-adaptery-do-kol",
+            "subcategories": []
+          },
+          {
+            "name": "Koła Dagu",
+            "url": "https://kamami.pl/13615-kola-dagu",
+            "subcategories": []
+          },
+          {
+            "name": "Koła inne",
+            "url": "https://kamami.pl/13617-kola-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Koła omni wheel",
+            "url": "https://kamami.pl/13618-kola-omni-wheel",
+            "subcategories": []
+          },
+          {
+            "name": "Koła Pololu",
+            "url": "https://kamami.pl/13619-kola-pololu",
+            "subcategories": []
+          },
+          {
+            "name": "Koła Solarbotics",
+            "url": "https://kamami.pl/13620-kola-solarbotics",
+            "subcategories": []
+          },
+          {
+            "name": "Koła Tamiya",
+            "url": "https://kamami.pl/13621-kola-tamiya",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Kulki podporowe",
+        "url": "https://kamami.pl/13607-kulki-podporowe",
+        "subcategories": []
+      },
+      {
+        "name": "Magnesy trwałe",
+        "url": "https://kamami.pl/15626-magnesy-trwale",
+        "subcategories": []
+      },
+      {
+        "name": "Mocowania",
+        "url": "https://kamami.pl/13608-mocowania",
+        "subcategories": []
+      },
+      {
+        "name": "Modelarstwo R/C",
+        "url": "https://kamami.pl/11056-modelarstwo-rc",
+        "subcategories": [
+          {
+            "name": "Aparatury nadawczo-odbiorcze",
+            "url": "https://kamami.pl/11062-aparatury-nadawczo-odbiorcze",
+            "subcategories": []
+          },
+          {
+            "name": "FPV, telemetria, video",
+            "url": "https://kamami.pl/11085-fpv-telemetria-video",
+            "subcategories": []
+          },
+          {
+            "name": "Helikoptery i części",
+            "url": "https://kamami.pl/11096-helikoptery-i-czesci",
+            "subcategories": []
+          },
+          {
+            "name": "Multicoptery i części",
+            "url": "https://kamami.pl/11057-multicoptery-i-czesci",
+            "subcategories": []
+          },
+          {
+            "name": "Samochody i części",
+            "url": "https://kamami.pl/11097-samochody-i-czesci",
+            "subcategories": []
+          },
+          {
+            "name": "Silniki elektryczne",
+            "url": "https://kamami.pl/11099-silniki-elektryczne",
+            "subcategories": []
+          },
+          {
+            "name": "Śmigła",
+            "url": "https://kamami.pl/12394-migla",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza, przewody",
+            "url": "https://kamami.pl/11074-zlacza-przewody",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Obudowy",
+        "url": "https://kamami.pl/13380-obudowy",
+        "subcategories": []
+      },
+      {
+        "name": "Podwozia robotów",
+        "url": "https://kamami.pl/13364-podwozia-robotow",
+        "subcategories": [
+          {
+            "name": "Mocowania silników",
+            "url": "https://kamami.pl/15586-mocowania-silnikow",
+            "subcategories": []
+          },
+          {
+            "name": "Podwozia Dagu Rover 5",
+            "url": "https://kamami.pl/13609-podwozia-dagu-rover-5",
+            "subcategories": [
+              {
+                "name": "Akcesoria",
+                "url": "https://kamami.pl/13605-akcesoria",
+                "subcategories": []
+              },
+              {
+                "name": "Podwozia",
+                "url": "https://kamami.pl/15580-podwozia",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Podwozia DFRobot",
+            "url": "https://kamami.pl/13611-podwozia-dfrobot",
+            "subcategories": []
+          },
+          {
+            "name": "Podwozia i akcesoria Tamiya",
+            "url": "https://kamami.pl/15585-podwozia-i-akcesoria-tamiya",
+            "subcategories": []
+          },
+          {
+            "name": "Podwozia inne",
+            "url": "https://kamami.pl/13612-podwozia-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Podwozia Pololu",
+            "url": "https://kamami.pl/13613-podwozia-pololu",
+            "subcategories": [
+              {
+                "name": "Akcesoria Romi",
+                "url": "https://kamami.pl/15583-akcesoria-romi",
+                "subcategories": []
+              },
+              {
+                "name": "Podwozia Romi",
+                "url": "https://kamami.pl/15582-podwozia-romi",
+                "subcategories": []
+              },
+              {
+                "name": "Podwozia Zumo",
+                "url": "https://kamami.pl/13614-podwozia-zumo",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Podwozia z kołami Mecanum",
+            "url": "https://kamami.pl/15768-podwozia-z-kolami-mecanum",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Polymorph",
+        "url": "https://kamami.pl/13524-polymorph",
+        "subcategories": []
+      },
+      {
+        "name": "Pompy",
+        "url": "https://kamami.pl/13291-pompy-mechanika",
+        "subcategories": []
+      },
+      {
+        "name": "Serwa",
+        "url": "https://kamami.pl/13266-serwa",
+        "subcategories": [
+          {
+            "name": "Akcesoria do serw",
+            "url": "https://kamami.pl/13267-akcesoria-do-serw",
+            "subcategories": []
+          },
+          {
+            "name": "Mocowania serw",
+            "url": "https://kamami.pl/13514-mocowania-serw",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody do serw",
+            "url": "https://kamami.pl/15200-przewody-do-serw",
+            "subcategories": []
+          },
+          {
+            "name": "Serwa - praca ciągła 360°",
+            "url": "https://kamami.pl/13271-serwa---praca-ciagla-360",
+            "subcategories": []
+          },
+          {
+            "name": "Serwa giant",
+            "url": "https://kamami.pl/13517-serwa-giant",
+            "subcategories": []
+          },
+          {
+            "name": "Serwa micro",
+            "url": "https://kamami.pl/13270-serwa-micro",
+            "subcategories": []
+          },
+          {
+            "name": "Serwa mini",
+            "url": "https://kamami.pl/13515-serwa-mini",
+            "subcategories": []
+          },
+          {
+            "name": "Serwa standard",
+            "url": "https://kamami.pl/13268-serwa-standard",
+            "subcategories": []
+          },
+          {
+            "name": "Serwa sub-micro",
+            "url": "https://kamami.pl/13516-serwa-sub-micro",
+            "subcategories": []
+          },
+          {
+            "name": "Testery serw",
+            "url": "https://kamami.pl/15752-testery-serw",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Silniki",
+        "url": "https://kamami.pl/13276-silniki",
+        "subcategories": [
+          {
+            "name": "Akcesoria do silników",
+            "url": "https://kamami.pl/13245-akcesoria-do-silnikow",
+            "subcategories": []
+          },
+          {
+            "name": "Enkodery do silników",
+            "url": "https://kamami.pl/15754-enkodery-do-silnikow",
+            "subcategories": []
+          },
+          {
+            "name": "Kompletne napędy",
+            "url": "https://kamami.pl/13521-kompletne-napedy",
+            "subcategories": []
+          },
+          {
+            "name": "Mocowania silników",
+            "url": "https://kamami.pl/15587-mocowania-silnikow-mechanika",
+            "subcategories": []
+          },
+          {
+            "name": "Napędy tunelowe EDF",
+            "url": "https://kamami.pl/13290-napedy-tunelowe-edf",
+            "subcategories": []
+          },
+          {
+            "name": "Przejściówki do silników",
+            "url": "https://kamami.pl/13247-przejsciowki-do-silnikow",
+            "subcategories": []
+          },
+          {
+            "name": "Silniki BLDC bezszczotkowe",
+            "url": "https://kamami.pl/13289-silniki-bldc-bezszczotkowe",
+            "subcategories": []
+          },
+          {
+            "name": "Silniki DC - prąd stały",
+            "url": "https://kamami.pl/15342-silniki-dc-prad-staly",
+            "subcategories": [
+              {
+                "name": "Silniki 20D",
+                "url": "https://kamami.pl/15572-silniki-20d-mechanika",
+                "subcategories": []
+              },
+              {
+                "name": "Silniki 25D",
+                "url": "https://kamami.pl/15574-silniki-25d-mechanika",
+                "subcategories": []
+              },
+              {
+                "name": "Silniki 37D",
+                "url": "https://kamami.pl/15576-silniki-37d-mechanika",
+                "subcategories": []
+              },
+              {
+                "name": "Silniki DC bez przekładni",
+                "url": "https://kamami.pl/13530-silniki-dc-bez-przekladni",
+                "subcategories": []
+              },
+              {
+                "name": "Silniki DC sub-micro z przekładnią",
+                "url": "https://kamami.pl/15339-silniki-dc-sub-micro-z-przekladnia-mechanika",
+                "subcategories": []
+              },
+              {
+                "name": "Silniki DC z przekładnią ślimakową",
+                "url": "https://kamami.pl/15352-silniki-dc-z-przekladnia-slimakowa-mechanika",
+                "subcategories": []
+              },
+              {
+                "name": "Silniki micro z metalową przekładnią",
+                "url": "https://kamami.pl/15570-silniki-micro-z-metalowa-przekladnia-mechanika",
+                "subcategories": []
+              },
+              {
+                "name": "Silniki z plastikową przekładnią",
+                "url": "https://kamami.pl/13526-silniki-z-plastikowa-przekladnia",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Silniki i przekładnie Tamiya",
+            "url": "https://kamami.pl/13523-silniki-i-przekladnie-tamiya",
+            "subcategories": []
+          },
+          {
+            "name": "Silniki krokowe",
+            "url": "https://kamami.pl/13287-silniki-krokowe",
+            "subcategories": []
+          },
+          {
+            "name": "Silniki wibracyjne",
+            "url": "https://kamami.pl/13288-silniki-wibracyjne",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MINIKOMPUTERY (SBC)",
+    "url": "https://kamami.pl/15761-minikomputery-sbc",
+    "subcategories": [
+      {
+        "name": "BeagleBone",
+        "url": "https://kamami.pl/13377-beaglebone",
+        "subcategories": []
+      },
+      {
+        "name": "Cubieboard",
+        "url": "https://kamami.pl/13388-cubieboard",
+        "subcategories": []
+      },
+      {
+        "name": "FriendlyELEC",
+        "url": "https://kamami.pl/13378-friendlyelec",
+        "subcategories": [
+          {
+            "name": "Akcesoria",
+            "url": "https://kamami.pl/15457-akcesoria",
+            "subcategories": []
+          },
+          {
+            "name": "Micro Board",
+            "url": "https://kamami.pl/15456-micro-board",
+            "subcategories": []
+          },
+          {
+            "name": "Nano Pi Board",
+            "url": "https://kamami.pl/15454-nano-pi-board",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "LattePanda",
+        "url": "https://kamami.pl/15392-lattepanda",
+        "subcategories": [
+          {
+            "name": "Akcesoria do LattePanda",
+            "url": "https://kamami.pl/15771-akcesoria-do-lattepanda",
+            "subcategories": []
+          },
+          {
+            "name": "Komputery LattePanda",
+            "url": "https://kamami.pl/15770-komputery-lattepanda",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Nvidia Jetson",
+        "url": "https://kamami.pl/15492-nvidia-jetson",
+        "subcategories": [
+          {
+            "name": "Akcesoria NVIDIA Jetson",
+            "url": "https://kamami.pl/15553-akcesoria-nvidia-jetson",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły Jetson (SOM)",
+            "url": "https://kamami.pl/15772-moduly-jetson-som",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy deweloperskie Jetson",
+            "url": "https://kamami.pl/15552-zestawy-deweloperskie-jetson",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Odroid",
+        "url": "https://kamami.pl/13395-odroid",
+        "subcategories": [
+          {
+            "name": "Akcesoria do Odroid",
+            "url": "https://kamami.pl/15525-akcesoria-do-odroid",
+            "subcategories": []
+          },
+          {
+            "name": "Komputery Odroid",
+            "url": "https://kamami.pl/15526-komputery-odroid",
+            "subcategories": []
+          },
+          {
+            "name": "Konsole Odroid",
+            "url": "https://kamami.pl/15773-konsole-odroid",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły rozszerzające do Odroid",
+            "url": "https://kamami.pl/15527-moduly-rozszerzajace-do-odroid",
+            "subcategories": []
+          },
+          {
+            "name": "Obudowy do Odroid",
+            "url": "https://kamami.pl/15528-obudowy-do-odroid",
+            "subcategories": []
+          },
+          {
+            "name": "Pamięci microSD i eMMC do Odroid",
+            "url": "https://kamami.pl/15530-pamieci-microsd-i-emmc-do-odroid",
+            "subcategories": [
+              {
+                "name": "Pamięci eMMC",
+                "url": "https://kamami.pl/15533-pamieci-emmc-odroid",
+                "subcategories": []
+              },
+              {
+                "name": "Pamięci microSD",
+                "url": "https://kamami.pl/15534-pamieci-microsd-odroid",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Zasilanie do Odroid",
+            "url": "https://kamami.pl/15529-zasilanie-do-odroid",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "ODYSSEY",
+        "url": "https://kamami.pl/15578-odyssey",
+        "subcategories": []
+      },
+      {
+        "name": "SBC Embest",
+        "url": "https://kamami.pl/13467-sbc-embest",
+        "subcategories": []
+      },
+      {
+        "name": "SBC inne",
+        "url": "https://kamami.pl/13469-sbc-inne",
+        "subcategories": []
+      },
+      {
+        "name": "SBC MYIR",
+        "url": "https://kamami.pl/13468-sbc-myir",
+        "subcategories": [
+          {
+            "name": "Akcesoria MYIR",
+            "url": "https://kamami.pl/13491-akcesoria-myir",
+            "subcategories": []
+          },
+          {
+            "name": "Komputery (SBC)",
+            "url": "https://kamami.pl/13493-komputery-sbc",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "SoMLabs",
+        "url": "https://kamami.pl/15413-somlabs",
+        "subcategories": [
+          {
+            "name": "Akcesoria",
+            "url": "https://kamami.pl/15423-akcesoria",
+            "subcategories": [
+              {
+                "name": "Anteny",
+                "url": "https://kamami.pl/15426-anteny",
+                "subcategories": []
+              },
+              {
+                "name": "Inne",
+                "url": "https://kamami.pl/15437-inne",
+                "subcategories": []
+              },
+              {
+                "name": "Wyświetlacze",
+                "url": "https://kamami.pl/15613-wyswietlacze",
+                "subcategories": []
+              },
+              {
+                "name": "Zasilacze",
+                "url": "https://kamami.pl/15425-zasilacze",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Moduły (SOM)",
+            "url": "https://kamami.pl/15414-moduly-som",
+            "subcategories": []
+          },
+          {
+            "name": "Płytki bazowe",
+            "url": "https://kamami.pl/15415-plytki-bazowe",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy startowe",
+            "url": "https://kamami.pl/15416-zestawy-startowe",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PRZYRZĄDY POMIAROWE",
+    "url": "https://kamami.pl/13307-przyrzady-pomiarowe",
+    "subcategories": [
+      {
+        "name": "Analizatory logiczne",
+        "url": "https://kamami.pl/15242-analizatory-logiczne",
+        "subcategories": [
+          {
+            "name": "Analizatory logiczne Analog Discovery",
+            "url": "https://kamami.pl/15248-analizatory-logiczne-analog-discovery",
+            "subcategories": [
+              {
+                "name": "Analog Discovery 3",
+                "url": "https://kamami.pl/15802-analog-discovery-3",
+                "subcategories": []
+              },
+              {
+                "name": "Analog Discovery Pro",
+                "url": "https://kamami.pl/15803-analog-discovery-pro",
+                "subcategories": []
+              },
+              {
+                "name": "Analog Discovery przewody pomiarowe",
+                "url": "https://kamami.pl/15806-analog-discovery-przewody-pomiarowe",
+                "subcategories": []
+              },
+              {
+                "name": "Analog Discovery rozszerzenia i adaptery",
+                "url": "https://kamami.pl/15805-analog-discovery-rozszerzenia-i-adaptery",
+                "subcategories": []
+              },
+              {
+                "name": "Analog Discovery Studio",
+                "url": "https://kamami.pl/15804-analog-discovery-studio",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Analizatory logiczne DSLogic",
+            "url": "https://kamami.pl/15807-analizatory-logiczne-dslogic",
+            "subcategories": []
+          },
+          {
+            "name": "Analizatory logiczne Saleae",
+            "url": "https://kamami.pl/15245-analizatory-logiczne-saleae",
+            "subcategories": []
+          },
+          {
+            "name": "Inne analizatory logiczne",
+            "url": "https://kamami.pl/15247-inne-analizatory-logiczne",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Analizatory sieci",
+        "url": "https://kamami.pl/15928-analizatory-sieci",
+        "subcategories": []
+      },
+      {
+        "name": "Detektory napięcia",
+        "url": "https://kamami.pl/15224-detektory-napiecia",
+        "subcategories": []
+      },
+      {
+        "name": "Detektory promieniowania",
+        "url": "https://kamami.pl/15926-detektory-promieniowania",
+        "subcategories": []
+      },
+      {
+        "name": "Generatory",
+        "url": "https://kamami.pl/15223-generatory",
+        "subcategories": []
+      },
+      {
+        "name": "Miary i suwmiarki",
+        "url": "https://kamami.pl/15430-miary-i-suwmiarki",
+        "subcategories": []
+      },
+      {
+        "name": "Mierniki dźwięku",
+        "url": "https://kamami.pl/15925-mierniki-dzwieku",
+        "subcategories": []
+      },
+      {
+        "name": "Mierniki LCR",
+        "url": "https://kamami.pl/15927-mierniki-lcr",
+        "subcategories": []
+      },
+      {
+        "name": "Mierniki pozostałe",
+        "url": "https://kamami.pl/15509-mierniki-pozostale",
+        "subcategories": []
+      },
+      {
+        "name": "Mierniki rezystancji izolacji",
+        "url": "https://kamami.pl/15197-mierniki-rezystancji-izolacji",
+        "subcategories": []
+      },
+      {
+        "name": "Mierniki tablicowe",
+        "url": "https://kamami.pl/13424-mierniki-tablicowe",
+        "subcategories": [
+          {
+            "name": "Amperomierze",
+            "url": "https://kamami.pl/13425-amperomierze",
+            "subcategories": []
+          },
+          {
+            "name": "Woltomierze",
+            "url": "https://kamami.pl/13426-woltomierze",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Multimetry",
+        "url": "https://kamami.pl/13381-multimetry",
+        "subcategories": [
+          {
+            "name": "Mierniki cęgowe",
+            "url": "https://kamami.pl/15559-mierniki-cegowe",
+            "subcategories": []
+          },
+          {
+            "name": "Mierniki laboratoryjne",
+            "url": "https://kamami.pl/15560-mierniki-laboratoryjne",
+            "subcategories": []
+          },
+          {
+            "name": "Mierniki uniwersalne",
+            "url": "https://kamami.pl/15561-mierniki-uniwersalne",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody pomiarowe do multimetrów",
+            "url": "https://kamami.pl/15562-przewody-pomiarowe-do-multimetrow",
+            "subcategories": []
+          },
+          {
+            "name": "Sondy pomiaru temperatury",
+            "url": "https://kamami.pl/15563-sondy-pomiaru-temperatury",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Obciążenia elektroniczne",
+        "url": "https://kamami.pl/15564-obciazenia-elektroniczne",
+        "subcategories": []
+      },
+      {
+        "name": "Oscyloskopy",
+        "url": "https://kamami.pl/13387-oscyloskopy",
+        "subcategories": [
+          {
+            "name": "Oscyloskopy budżetowe",
+            "url": "https://kamami.pl/15800-oscyloskopy-budzetowe",
+            "subcategories": []
+          },
+          {
+            "name": "Oscyloskopy cyfrowe",
+            "url": "https://kamami.pl/15567-oscyloskopy-cyfrowe",
+            "subcategories": []
+          },
+          {
+            "name": "Oscyloskopy PC",
+            "url": "https://kamami.pl/15797-oscyloskopy-pc",
+            "subcategories": []
+          },
+          {
+            "name": "Oscyloskopy przenośne",
+            "url": "https://kamami.pl/15801-oscyloskopy-przenosne",
+            "subcategories": []
+          },
+          {
+            "name": "Oscyloskopy samochodowe",
+            "url": "https://kamami.pl/15796-oscyloskopy-samochodowe",
+            "subcategories": []
+          },
+          {
+            "name": "Sondy pomiarowe",
+            "url": "https://kamami.pl/15568-sondy-pomiarowe",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Pomiar odległości",
+        "url": "https://kamami.pl/13384-pomiar-odleglosci",
+        "subcategories": []
+      },
+      {
+        "name": "Pomiar temperatury",
+        "url": "https://kamami.pl/13385-pomiar-temperatury",
+        "subcategories": []
+      },
+      {
+        "name": "Testery okablowania",
+        "url": "https://kamami.pl/13383-testery-okablowania",
+        "subcategories": []
+      },
+      {
+        "name": "Testery USB",
+        "url": "https://kamami.pl/15558-testery-usb",
+        "subcategories": []
+      },
+      {
+        "name": "Wagi",
+        "url": "https://kamami.pl/13308-wagi",
+        "subcategories": []
+      },
+      {
+        "name": "Watomierze",
+        "url": "https://kamami.pl/15554-watomierze",
+        "subcategories": []
+      },
+      {
+        "name": "Wiatromierze",
+        "url": "https://kamami.pl/15555-wiatromierze",
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "name": "RASPBERRY PI",
+    "url": "https://kamami.pl/15238-raspberry-pi",
+    "subcategories": [
+      {
+        "name": "Akcesoria do Raspberry Pi",
+        "url": "https://kamami.pl/15440-akcesoria-do-raspberry-pi",
+        "subcategories": []
+      },
+      {
+        "name": "Chłodzenie do Raspberry Pi",
+        "url": "https://kamami.pl/15441-chlodzenie-do-raspberry-pi",
+        "subcategories": []
+      },
+      {
+        "name": "Kamery do Raspberry Pi",
+        "url": "https://kamami.pl/15442-kamery-do-raspberry-pi",
+        "subcategories": [
+          {
+            "name": "Kamery",
+            "url": "https://kamami.pl/15539-kamery",
+            "subcategories": []
+          },
+          {
+            "name": "Obiektywy do kamer",
+            "url": "https://kamami.pl/15538-obiektywy-do-kamer",
+            "subcategories": []
+          },
+          {
+            "name": "Przewody, obudowy i inne akcesoria do kamer",
+            "url": "https://kamami.pl/15536-przewody-obudowy-i-inne-akcesoria-do-kamer",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Karty pamięci do Raspberry Pi",
+        "url": "https://kamami.pl/15443-karty-pamieci-do-raspberry-pi",
+        "subcategories": []
+      },
+      {
+        "name": "Moduły rozszerzające do Raspberry Pi",
+        "url": "https://kamami.pl/15447-moduly-rozszerzajace-do-raspberry-pi",
+        "subcategories": [
+          {
+            "name": "Akceleratory AI",
+            "url": "https://kamami.pl/15830-akceleratory-ai",
+            "subcategories": []
+          },
+          {
+            "name": "Ekspandery portów I/O",
+            "url": "https://kamami.pl/15660-ekspandery-portow-io",
+            "subcategories": []
+          },
+          {
+            "name": "Matryce LED",
+            "url": "https://kamami.pl/15661-matryce-led",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły audio",
+            "url": "https://kamami.pl/15659-moduly-audio",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły GPS",
+            "url": "https://kamami.pl/15665-moduly-gps",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły komunikacyjne",
+            "url": "https://kamami.pl/15657-moduly-komunikacyjne",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły konsol do gier",
+            "url": "https://kamami.pl/15669-moduly-konsol-do-gier",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły pomiarowe",
+            "url": "https://kamami.pl/15662-moduly-pomiarowe",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły RTC",
+            "url": "https://kamami.pl/15667-moduly-rtc",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły z czujnikami",
+            "url": "https://kamami.pl/15664-moduly-z-czujnikami",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły z przekaźnikami",
+            "url": "https://kamami.pl/15666-moduly-z-przekaznikami",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły z wyświetlaczami",
+            "url": "https://kamami.pl/15663-moduly-z-wyswietlaczami",
+            "subcategories": []
+          },
+          {
+            "name": "Pozostałe moduły",
+            "url": "https://kamami.pl/15668-pozostale-moduly",
+            "subcategories": []
+          },
+          {
+            "name": "Sterowniki silników i serw",
+            "url": "https://kamami.pl/15658-sterowniki-silnikow-i-serw",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Obudowy do Raspberry Pi",
+        "url": "https://kamami.pl/15448-obudowy-do-raspberry-pi",
+        "subcategories": []
+      },
+      {
+        "name": "Prototypowanie Raspberry Pi",
+        "url": "https://kamami.pl/15449-prototypowanie-raspberry-pi",
+        "subcategories": []
+      },
+      {
+        "name": "Przewody audio-wideo do Raspberry Pi",
+        "url": "https://kamami.pl/15450-przewody-audio-wideo-do-raspberry-pi",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi 3 model A+",
+        "url": "https://kamami.pl/15495-raspberry-pi-3-model-a",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi 3 model B",
+        "url": "https://kamami.pl/15500-raspberry-pi-3-model-b-",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi 3 model B+",
+        "url": "https://kamami.pl/15498-raspberry-pi-3-model-b_",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi 4 model B",
+        "url": "https://kamami.pl/15505-raspberry-pi-4-model-b",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi 400",
+        "url": "https://kamami.pl/15617-raspberry-pi-400",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi 5",
+        "url": "https://kamami.pl/15703-raspberry-pi-5",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi 500",
+        "url": "https://kamami.pl/15840-raspberry-pi-500",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi Compute Module",
+        "url": "https://kamami.pl/15481-raspberry-pi-compute-module",
+        "subcategories": [
+          {
+            "name": "Płytki bazowe i akcesoria",
+            "url": "https://kamami.pl/15654-plytki-bazowe-i-akcesoria",
+            "subcategories": []
+          },
+          {
+            "name": "Raspberry Pi Compute Module 1",
+            "url": "https://kamami.pl/15899-raspberry-pi-compute-module-1",
+            "subcategories": []
+          },
+          {
+            "name": "Raspberry Pi Compute Module 3",
+            "url": "https://kamami.pl/15897-raspberry-pi-compute-module-3",
+            "subcategories": []
+          },
+          {
+            "name": "Raspberry Pi Compute Module 4",
+            "url": "https://kamami.pl/15653-raspberry-pi-compute-module-4",
+            "subcategories": []
+          },
+          {
+            "name": "Raspberry Pi Compute Module 5",
+            "url": "https://kamami.pl/15829-raspberry-pi-compute-module-5",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Raspberry Pi model A/B+/2",
+        "url": "https://kamami.pl/15501-raspberry-pi-model-ab2-",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi Pico",
+        "url": "https://kamami.pl/15625-raspberry-pi-pico",
+        "subcategories": [
+          {
+            "name": "Moduły rozszerzeń",
+            "url": "https://kamami.pl/15637-moduly-rozszerzen",
+            "subcategories": [
+              {
+                "name": "Ekspandery portów I/O",
+                "url": "https://kamami.pl/15675-ekspandery-portow-io",
+                "subcategories": []
+              },
+              {
+                "name": "Matryce LED",
+                "url": "https://kamami.pl/15673-matryce-led",
+                "subcategories": []
+              },
+              {
+                "name": "Moduły komunikacyjne",
+                "url": "https://kamami.pl/15672-moduly-komunikacyjne",
+                "subcategories": []
+              },
+              {
+                "name": "Pozostałe moduły",
+                "url": "https://kamami.pl/15676-pozostale-moduly",
+                "subcategories": []
+              },
+              {
+                "name": "Płytki rozwojowe",
+                "url": "https://kamami.pl/15674-plytki-rozwojowe",
+                "subcategories": []
+              },
+              {
+                "name": "Wyświetlacze e-papier",
+                "url": "https://kamami.pl/15671-wyswietlacze-e-papier",
+                "subcategories": []
+              },
+              {
+                "name": "Wyświetlacze LCD / OLED",
+                "url": "https://kamami.pl/15670-wyswietlacze-lcd-oled",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Płytki bazowe z RP2040 i RP235x",
+            "url": "https://kamami.pl/15638-plytki-bazowe-z-rp2040-i-rp235x",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Raspberry Pi Zero",
+        "url": "https://kamami.pl/15694-raspberry-pi-zero",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi Zero 2 W",
+        "url": "https://kamami.pl/15656-raspberry-pi-zero-2-w",
+        "subcategories": []
+      },
+      {
+        "name": "Wyświetlacze do Raspberry Pi",
+        "url": "https://kamami.pl/15452-wyswietlacze-do-raspberry-pi",
+        "subcategories": []
+      },
+      {
+        "name": "Zasilanie do Raspberry Pi",
+        "url": "https://kamami.pl/15453-zasilanie-do-raspberry-pi",
+        "subcategories": [
+          {
+            "name": "Moduły",
+            "url": "https://kamami.pl/15603-moduly",
+            "subcategories": []
+          },
+          {
+            "name": "Zasilacze",
+            "url": "https://kamami.pl/15604-zasilacze",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WARSZTAT",
+    "url": "https://kamami.pl/13292-warsztat",
+    "subcategories": [
+      {
+        "name": "Chemia",
+        "url": "https://kamami.pl/13293-chemia",
+        "subcategories": [
+          {
+            "name": "Alkohol izopropylowy (IPA)",
+            "url": "https://kamami.pl/15817-alkohol-izopropylowy-ipa",
+            "subcategories": []
+          },
+          {
+            "name": "Farby i lakiery przewodzące",
+            "url": "https://kamami.pl/15249-farby-i-lakiery-przewodzace",
+            "subcategories": []
+          },
+          {
+            "name": "Gaz do zapalniczek i palników",
+            "url": "https://kamami.pl/15874-gaz-do-zapalniczek-i-palnikow",
+            "subcategories": []
+          },
+          {
+            "name": "Pasty i kleje termoprzewodzące",
+            "url": "https://kamami.pl/15250-pasty-i-kleje-termoprzewodzace",
+            "subcategories": []
+          },
+          {
+            "name": "Smary, oleje",
+            "url": "https://kamami.pl/15251-smary-oleje",
+            "subcategories": []
+          },
+          {
+            "name": "Sprężone powietrze",
+            "url": "https://kamami.pl/15317-sprezone-powietrze",
+            "subcategories": []
+          },
+          {
+            "name": "Środki czyszczące i konserwujące",
+            "url": "https://kamami.pl/15253-srodki-czyszczace-i-konserwujace",
+            "subcategories": []
+          },
+          {
+            "name": "Środki do czyszczenia PCB",
+            "url": "https://kamami.pl/15819-srodki-do-czyszczenia-pcb",
+            "subcategories": []
+          },
+          {
+            "name": "Środki do zabezpieczania elektroniki",
+            "url": "https://kamami.pl/15629-srodki-do-zabezpieczania-elektroniki",
+            "subcategories": []
+          },
+          {
+            "name": "Termopady - taśmy termoprzewodzące",
+            "url": "https://kamami.pl/15821-termopady-tasmy-termoprzewodzace",
+            "subcategories": []
+          },
+          {
+            "name": "Woda destylowana",
+            "url": "https://kamami.pl/15521-woda-destylowana",
+            "subcategories": []
+          },
+          {
+            "name": "Wytrawiacze",
+            "url": "https://kamami.pl/15320-wytrawiacze",
+            "subcategories": []
+          },
+          {
+            "name": "Zamrażacze",
+            "url": "https://kamami.pl/15252-zamrazacze",
+            "subcategories": []
+          },
+          {
+            "name": "Zmywacze etykiet",
+            "url": "https://kamami.pl/15818-zmywacze-etykiet",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Elektronarzędzia",
+        "url": "https://kamami.pl/15713-elektronarzedzia",
+        "subcategories": []
+      },
+      {
+        "name": "Igły dozownicze",
+        "url": "https://kamami.pl/15315-igly-dozownicze",
+        "subcategories": []
+      },
+      {
+        "name": "Imadła",
+        "url": "https://kamami.pl/15411-imadla",
+        "subcategories": []
+      },
+      {
+        "name": "Klejarki",
+        "url": "https://kamami.pl/15853-klejarki",
+        "subcategories": []
+      },
+      {
+        "name": "Kleje",
+        "url": "https://kamami.pl/15854-kleje",
+        "subcategories": []
+      },
+      {
+        "name": "Kleje do pistoletów na gorąco",
+        "url": "https://kamami.pl/15923-kleje-do-pistoletow-na-goraco",
+        "subcategories": []
+      },
+      {
+        "name": "Lutowanie",
+        "url": "https://kamami.pl/13296-lutowanie",
+        "subcategories": [
+          {
+            "name": "Akcesoria do lutowania",
+            "url": "https://kamami.pl/15531-akcesoria-do-lutowania",
+            "subcategories": []
+          },
+          {
+            "name": "Akcesoria SMD",
+            "url": "https://kamami.pl/15590-akcesoria-smd",
+            "subcategories": []
+          },
+          {
+            "name": "Chemia lutownicza",
+            "url": "https://kamami.pl/13300-chemia-lutownicza",
+            "subcategories": [
+              {
+                "name": "Kalafonia",
+                "url": "https://kamami.pl/15775-kalafonia",
+                "subcategories": []
+              },
+              {
+                "name": "Kwas lutowniczy",
+                "url": "https://kamami.pl/15778-kwas-lutowniczy",
+                "subcategories": []
+              },
+              {
+                "name": "Topnik w płynie",
+                "url": "https://kamami.pl/15777-topnik-w-plynie",
+                "subcategories": []
+              },
+              {
+                "name": "Topnik w żelu",
+                "url": "https://kamami.pl/15776-topnik-w-zelu",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Cyna",
+            "url": "https://kamami.pl/13297-cyna",
+            "subcategories": [
+              {
+                "name": "Cyna bezołowiowa",
+                "url": "https://kamami.pl/15794-cyna-bezolowiowa",
+                "subcategories": []
+              },
+              {
+                "name": "Cyna bezołowiowa niskotemperaturowa",
+                "url": "https://kamami.pl/15795-cyna-bezolowiowa-niskotemperaturowa",
+                "subcategories": []
+              },
+              {
+                "name": "Cyna ołowiowa",
+                "url": "https://kamami.pl/15793-cyna-olowiowa",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Gąbki i czyściki",
+            "url": "https://kamami.pl/13298-gabki-i-czysciki",
+            "subcategories": []
+          },
+          {
+            "name": "Groty do lutownic",
+            "url": "https://kamami.pl/15532-groty-do-lutownic",
+            "subcategories": []
+          },
+          {
+            "name": "Grzałki oraz kolby lutownicze",
+            "url": "https://kamami.pl/13299-grzalki-oraz-kolby-lutownicze",
+            "subcategories": [
+              {
+                "name": "Grzałki do lutownic",
+                "url": "https://kamami.pl/15790-grzalki-do-lutownic",
+                "subcategories": []
+              },
+              {
+                "name": "Kolby lutownicze",
+                "url": "https://kamami.pl/15791-kolby-lutownicze",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Kulki BGA",
+            "url": "https://kamami.pl/15507-kulki-bga",
+            "subcategories": []
+          },
+          {
+            "name": "Laminaty",
+            "url": "https://kamami.pl/13295-laminaty",
+            "subcategories": []
+          },
+          {
+            "name": "Lutownice kolbowe",
+            "url": "https://kamami.pl/15161-lutownice-kolbowe",
+            "subcategories": []
+          },
+          {
+            "name": "Lutownice przenośne",
+            "url": "https://kamami.pl/15779-lutownice-przenosne",
+            "subcategories": [
+              {
+                "name": "Lutownice przenośne Miniware",
+                "url": "https://kamami.pl/15780-lutownice-przenosne-miniware",
+                "subcategories": []
+              },
+              {
+                "name": "Lutownice przenośne Pinecil",
+                "url": "https://kamami.pl/15781-lutownice-przenosne-pinecil",
+                "subcategories": []
+              },
+              {
+                "name": "Lutownice przenośne pozostałe",
+                "url": "https://kamami.pl/15782-lutownice-przenosne-pozostale",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Maty i akcesoria antystatyczne (ESD)",
+            "url": "https://kamami.pl/15328-maty-i-akcesoria-antystatyczne-esd",
+            "subcategories": []
+          },
+          {
+            "name": "Myjki ultradźwiękowe",
+            "url": "https://kamami.pl/15319-myjki-ultradzwiekowe",
+            "subcategories": []
+          },
+          {
+            "name": "Odsysacze do usuwania cyny",
+            "url": "https://kamami.pl/13301-odsysacze-do-usuwania-cyny",
+            "subcategories": []
+          },
+          {
+            "name": "Opalarki",
+            "url": "https://kamami.pl/15792-opalarki",
+            "subcategories": []
+          },
+          {
+            "name": "Pasty lutownicze",
+            "url": "https://kamami.pl/15789-pasty-lutownicze",
+            "subcategories": []
+          },
+          {
+            "name": "Pędzle i szczotki ESD",
+            "url": "https://kamami.pl/15321-pedzle-i-szczotki-esd",
+            "subcategories": []
+          },
+          {
+            "name": "Plecionki do usuwania cyny",
+            "url": "https://kamami.pl/15774-plecionki-do-usuwania-cyny",
+            "subcategories": []
+          },
+          {
+            "name": "Podgrzewacze",
+            "url": "https://kamami.pl/15520-podgrzewacze",
+            "subcategories": []
+          },
+          {
+            "name": "Podstawki pod lutownice",
+            "url": "https://kamami.pl/15303-podstawki-pod-lutownice",
+            "subcategories": []
+          },
+          {
+            "name": "Silikonowe maty do lutowania",
+            "url": "https://kamami.pl/15788-silikonowe-maty-do-lutowania",
+            "subcategories": []
+          },
+          {
+            "name": "Stacje lutownicze",
+            "url": "https://kamami.pl/13303-stacje-lutownicze",
+            "subcategories": [
+              {
+                "name": "Pozostałe stacje lutownicze",
+                "url": "https://kamami.pl/15787-pozostale-stacje-lutownicze",
+                "subcategories": []
+              },
+              {
+                "name": "Stacje lutownicze Elwik",
+                "url": "https://kamami.pl/15784-stacje-lutownicze-elwik",
+                "subcategories": []
+              },
+              {
+                "name": "Stacje lutownicze Quick",
+                "url": "https://kamami.pl/15785-stacje-lutownicze-quick",
+                "subcategories": []
+              },
+              {
+                "name": "Stacje lutownicze Weller",
+                "url": "https://kamami.pl/15783-stacje-lutownicze-weller",
+                "subcategories": []
+              },
+              {
+                "name": "Stacje lutownicze WEP/YIHUA",
+                "url": "https://kamami.pl/15786-stacje-lutownicze-wepyihua",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Tygle lutownicze",
+            "url": "https://kamami.pl/15519-tygle-lutownicze",
+            "subcategories": []
+          },
+          {
+            "name": "Uchwyty, lupy",
+            "url": "https://kamami.pl/13302-uchwyty-lupy",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Mikroskopy",
+        "url": "https://kamami.pl/15548-mikroskopy",
+        "subcategories": []
+      },
+      {
+        "name": "Miniwiertarki, miniszlifierki",
+        "url": "https://kamami.pl/13304-miniwiertarki-miniszlifierki",
+        "subcategories": []
+      },
+      {
+        "name": "Narzędzia",
+        "url": "https://kamami.pl/15798-narzedzia",
+        "subcategories": [
+          {
+            "name": "Artykuły do znakowania",
+            "url": "https://kamami.pl/15915-artykuly-do-znakowania",
+            "subcategories": []
+          },
+          {
+            "name": "Bity",
+            "url": "https://kamami.pl/15862-bity",
+            "subcategories": []
+          },
+          {
+            "name": "Klucze",
+            "url": "https://kamami.pl/15596-klucze",
+            "subcategories": [
+              {
+                "name": "Grzechotki",
+                "url": "https://kamami.pl/15857-grzechotki",
+                "subcategories": []
+              },
+              {
+                "name": "Klucze imbusowe",
+                "url": "https://kamami.pl/15856-klucze-imbusowe",
+                "subcategories": []
+              },
+              {
+                "name": "Klucze nastawne",
+                "url": "https://kamami.pl/15860-klucze-nastawne",
+                "subcategories": []
+              },
+              {
+                "name": "Klucze oczkowe",
+                "url": "https://kamami.pl/15861-klucze-oczkowe",
+                "subcategories": []
+              },
+              {
+                "name": "Klucze płaskie",
+                "url": "https://kamami.pl/15858-klucze-plaskie",
+                "subcategories": []
+              },
+              {
+                "name": "Klucze płasko-oczkowe",
+                "url": "https://kamami.pl/15855-klucze-plasko-oczkowe",
+                "subcategories": []
+              },
+              {
+                "name": "Klucze specjalne",
+                "url": "https://kamami.pl/15859-klucze-specjalne",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Narzędzia pozostałe",
+            "url": "https://kamami.pl/15873-narzedzia-pozostale",
+            "subcategories": []
+          },
+          {
+            "name": "Nitowanie",
+            "url": "https://kamami.pl/15602-nitowanie",
+            "subcategories": [
+              {
+                "name": "Nitonakrętki",
+                "url": "https://kamami.pl/15868-nitonakretki",
+                "subcategories": []
+              },
+              {
+                "name": "Nitownice",
+                "url": "https://kamami.pl/15866-nitownice",
+                "subcategories": []
+              },
+              {
+                "name": "Nity",
+                "url": "https://kamami.pl/15867-nity",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Pilniki",
+            "url": "https://kamami.pl/15600-pilniki",
+            "subcategories": []
+          },
+          {
+            "name": "Poziomice",
+            "url": "https://kamami.pl/15924-poziomice",
+            "subcategories": []
+          },
+          {
+            "name": "Punktaki",
+            "url": "https://kamami.pl/15718-punktaki",
+            "subcategories": []
+          },
+          {
+            "name": "Ściski sprężynowe",
+            "url": "https://kamami.pl/15865-sciski-sprezynowe",
+            "subcategories": []
+          },
+          {
+            "name": "Ściski stolarskie",
+            "url": "https://kamami.pl/15715-sciski-stolarskie",
+            "subcategories": []
+          },
+          {
+            "name": "Szczypce i cążki",
+            "url": "https://kamami.pl/15605-szczypce-i-cazki",
+            "subcategories": [
+              {
+                "name": "Cążki",
+                "url": "https://kamami.pl/15597-cazki",
+                "subcategories": []
+              },
+              {
+                "name": "Szczypce",
+                "url": "https://kamami.pl/15598-szczypce",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Tarcze szlifierskie",
+            "url": "https://kamami.pl/15716-tarcze-szlifierskie",
+            "subcategories": []
+          },
+          {
+            "name": "Wiertła",
+            "url": "https://kamami.pl/13309-wiertla",
+            "subcategories": [
+              {
+                "name": "Wiertła do drewna",
+                "url": "https://kamami.pl/15870-wiertla-do-drewna",
+                "subcategories": []
+              },
+              {
+                "name": "Wiertła do metalu",
+                "url": "https://kamami.pl/15869-wiertla-do-metalu",
+                "subcategories": []
+              },
+              {
+                "name": "Wiertła pozostałe",
+                "url": "https://kamami.pl/15872-wiertla-pozostale",
+                "subcategories": []
+              },
+              {
+                "name": "Wiertła precyzyjne",
+                "url": "https://kamami.pl/15871-wiertla-precyzyjne",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Wkrętaki i zestawy wkrętaków",
+            "url": "https://kamami.pl/13310-wkretaki-i-zestawy-wkretakow",
+            "subcategories": [
+              {
+                "name": "Wkrętaki",
+                "url": "https://kamami.pl/15594-wkretaki",
+                "subcategories": []
+              },
+              {
+                "name": "Zestawy",
+                "url": "https://kamami.pl/15595-zestawy",
+                "subcategories": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Noże",
+        "url": "https://kamami.pl/15863-noze",
+        "subcategories": []
+      },
+      {
+        "name": "Nożyczki",
+        "url": "https://kamami.pl/15864-nozyczki",
+        "subcategories": []
+      },
+      {
+        "name": "Ochrona osobista (BHP)",
+        "url": "https://kamami.pl/15916-ochrona-osobista-bhp",
+        "subcategories": [
+          {
+            "name": "Nauszniki ochronne",
+            "url": "https://kamami.pl/15917-nauszniki-ochronne",
+            "subcategories": []
+          },
+          {
+            "name": "Okulary ochronne",
+            "url": "https://kamami.pl/15714-okulary-ochronne",
+            "subcategories": []
+          },
+          {
+            "name": "Rękawice ochronne",
+            "url": "https://kamami.pl/15918-rekawice-ochronne",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Organizery",
+        "url": "https://kamami.pl/13312-organizery",
+        "subcategories": []
+      },
+      {
+        "name": "Oświetlenie warsztatowe",
+        "url": "https://kamami.pl/15893-oswietlenie-warsztatowe",
+        "subcategories": []
+      },
+      {
+        "name": "Papiery ścierne",
+        "url": "https://kamami.pl/15887-papiery-scierne",
+        "subcategories": []
+      },
+      {
+        "name": "Pęsety",
+        "url": "https://kamami.pl/13306-pesety",
+        "subcategories": []
+      },
+      {
+        "name": "Plotery i Frezarki CNC",
+        "url": "https://kamami.pl/15681-plotery-i-frezarki-cnc",
+        "subcategories": []
+      },
+      {
+        "name": "Rurki termokurczliwe",
+        "url": "https://kamami.pl/15409-rurki-termokurczliwe",
+        "subcategories": []
+      },
+      {
+        "name": "Ściągacze izolacji",
+        "url": "https://kamami.pl/15599-sciagacze-izolacji",
+        "subcategories": []
+      },
+      {
+        "name": "Taśmy",
+        "url": "https://kamami.pl/15316-tasmy",
+        "subcategories": []
+      },
+      {
+        "name": "Zaciskarki",
+        "url": "https://kamami.pl/13305-zaciskarki",
+        "subcategories": []
+      },
+      {
+        "name": "Zasilacze laboratoryjne",
+        "url": "https://kamami.pl/13386-zasilacze-laboratoryjne",
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "name": "WYCOFANE Z OFERTY",
+    "url": "https://kamami.pl/12821-wycofane-z-oferty",
+    "subcategories": []
+  },
+  {
+    "name": "WYPRZEDAŻ",
+    "url": "https://kamami.pl/13458-wyprzedaz",
+    "subcategories": []
+  },
+  {
+    "name": "ZASILANIE",
+    "url": "https://kamami.pl/13315-zasilanie",
+    "subcategories": [
+      {
+        "name": "Akcesoria do akumulatorów",
+        "url": "https://kamami.pl/13316-akcesoria-do-akumulatorow",
+        "subcategories": [
+          {
+            "name": "Koszyki na baterie",
+            "url": "https://kamami.pl/13317-koszyki-na-baterie",
+            "subcategories": []
+          },
+          {
+            "name": "Pokrowce ochronne",
+            "url": "https://kamami.pl/15877-pokrowce-ochronne",
+            "subcategories": []
+          },
+          {
+            "name": "Wskaźniki rozładowania",
+            "url": "https://kamami.pl/13320-wskazniki-rozladowania",
+            "subcategories": []
+          },
+          {
+            "name": "Złącza, adaptery",
+            "url": "https://kamami.pl/13321-zlacza-adaptery",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Akumulatory",
+        "url": "https://kamami.pl/15388-akumulatory",
+        "subcategories": []
+      },
+      {
+        "name": "Balansery",
+        "url": "https://kamami.pl/13488-balansery",
+        "subcategories": []
+      },
+      {
+        "name": "Baterie",
+        "url": "https://kamami.pl/13337-baterie",
+        "subcategories": []
+      },
+      {
+        "name": "Generatory prądu",
+        "url": "https://kamami.pl/15467-generatory-pradu",
+        "subcategories": []
+      },
+      {
+        "name": "Listwy zasilające",
+        "url": "https://kamami.pl/15523-listwy-zasilajace",
+        "subcategories": []
+      },
+      {
+        "name": "Mobilne baterie (PowerBank)",
+        "url": "https://kamami.pl/13338-mobilne-baterie-powerbank",
+        "subcategories": []
+      },
+      {
+        "name": "Moduły zasilające",
+        "url": "https://kamami.pl/13345-moduly-zasilajace",
+        "subcategories": [
+          {
+            "name": "Filtry EMI",
+            "url": "https://kamami.pl/15883-filtry-emi",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły BMS",
+            "url": "https://kamami.pl/15677-moduly-bms",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły zasilające do płytek stykowych",
+            "url": "https://kamami.pl/15370-moduly-zasilajace-do-plytek-stykowych",
+            "subcategories": []
+          },
+          {
+            "name": "Przetwornice",
+            "url": "https://kamami.pl/15368-przetwornice",
+            "subcategories": [
+              {
+                "name": "Step-Down",
+                "url": "https://kamami.pl/15372-step-down",
+                "subcategories": []
+              },
+              {
+                "name": "Step-Up",
+                "url": "https://kamami.pl/15371-step-up",
+                "subcategories": []
+              },
+              {
+                "name": "Step-Up/Step-Down",
+                "url": "https://kamami.pl/15373-step-upstep-down",
+                "subcategories": []
+              }
+            ]
+          },
+          {
+            "name": "Przetwornice z rezystorem bocznikowym",
+            "url": "https://kamami.pl/15884-przetwornice-z-rezystorem-bocznikowym",
+            "subcategories": []
+          },
+          {
+            "name": "Stabilizatory",
+            "url": "https://kamami.pl/15369-stabilizatory",
+            "subcategories": []
+          },
+          {
+            "name": "Wyzwalacze USB PD",
+            "url": "https://kamami.pl/15634-wyzwalacze-usb-pd",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Ogniwa słoneczne",
+        "url": "https://kamami.pl/13478-ogniwa-sloneczne",
+        "subcategories": []
+      },
+      {
+        "name": "Zasilacze",
+        "url": "https://kamami.pl/13346-zasilacze",
+        "subcategories": [
+          {
+            "name": "Wymienne wtyki do zasilaczy (adaptery)",
+            "url": "https://kamami.pl/15181-wymienne-wtyki-do-zasilaczy-adaptery",
+            "subcategories": []
+          },
+          {
+            "name": "Zasilacze montażowe",
+            "url": "https://kamami.pl/15484-zasilacze-montazowe",
+            "subcategories": []
+          },
+          {
+            "name": "Zasilacze samochodowe",
+            "url": "https://kamami.pl/13353-zasilacze-samochodowe",
+            "subcategories": []
+          },
+          {
+            "name": "Zasilacze sieciowe",
+            "url": "https://kamami.pl/13350-zasilacze-sieciowe",
+            "subcategories": []
+          },
+          {
+            "name": "Ładowarki USB",
+            "url": "https://kamami.pl/13348-ladowarki-usb",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Zasilanie bezprzewodowe",
+        "url": "https://kamami.pl/13479-zasilanie-bezprzewodowe",
+        "subcategories": []
+      },
+      {
+        "name": "Zasilanie PoE",
+        "url": "https://kamami.pl/15389-zasilanie-poe",
+        "subcategories": []
+      },
+      {
+        "name": "Ładowarki",
+        "url": "https://kamami.pl/13339-ladowarki",
+        "subcategories": [
+          {
+            "name": "Ładowarki akumulatorów cylindrycznych",
+            "url": "https://kamami.pl/13343-ladowarki-akumulatorow-cylindrycznych",
+            "subcategories": []
+          },
+          {
+            "name": "Ładowarki Li-Po - moduły",
+            "url": "https://kamami.pl/13342-ladowarki-li-po-moduly",
+            "subcategories": []
+          },
+          {
+            "name": "Ładowarki uniwersalne",
+            "url": "https://kamami.pl/13472-ladowarki-uniwersalne",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Ładowarki do samochodów elektrycznych",
+        "url": "https://kamami.pl/15682-ladowarki-do-samochodow-elektrycznych",
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "name": "ZESTAWY URUCHOMIENIOWE",
+    "url": "https://kamami.pl/13003-zestawy-uruchomieniowe",
+    "subcategories": [
+      {
+        "name": "Atmel SAM",
+        "url": "https://kamami.pl/13432-atmel-sam",
+        "subcategories": [
+          {
+            "name": "Programatory",
+            "url": "https://kamami.pl/13433-programatory",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy uruchomieniowe SAM9",
+            "url": "https://kamami.pl/13436-sam9",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy uruchomieniowe SAMD21/SAMD51",
+            "url": "https://kamami.pl/15607-zestawy-uruchomieniowe-samd21samd51",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Atmel Xplain",
+        "url": "https://kamami.pl/13375-atmel-xplain",
+        "subcategories": []
+      },
+      {
+        "name": "AVR",
+        "url": "https://kamami.pl/13050-avr",
+        "subcategories": [
+          {
+            "name": "Książki AVR",
+            "url": "https://kamami.pl/13054-ksiazki-avr",
+            "subcategories": []
+          },
+          {
+            "name": "Minimoduły AVR",
+            "url": "https://kamami.pl/13559-minimoduly-avr",
+            "subcategories": []
+          },
+          {
+            "name": "Programatory AVR",
+            "url": "https://kamami.pl/13053-programatory-avr",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy AVR",
+            "url": "https://kamami.pl/13051-zestawy-avr",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy AVR32",
+            "url": "https://kamami.pl/13437-zestawy-avr32",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "DFRobot FireBeetle",
+        "url": "https://kamami.pl/15684-dfrobot-firebeetle",
+        "subcategories": [
+          {
+            "name": "FireBeetle",
+            "url": "https://kamami.pl/15831-firebeetle",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły rozszerzeń do FireBeetle",
+            "url": "https://kamami.pl/15832-moduly-rozszerzen-do-firebeetle",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "ESP32",
+        "url": "https://kamami.pl/15383-esp32",
+        "subcategories": []
+      },
+      {
+        "name": "ESP8266",
+        "url": "https://kamami.pl/15236-esp8266",
+        "subcategories": []
+      },
+      {
+        "name": "Feather / Thing Plus",
+        "url": "https://kamami.pl/15300-feather-thing-plus",
+        "subcategories": [
+          {
+            "name": "Adafruit Feather",
+            "url": "https://kamami.pl/15814-adafruit-feather",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły rozszerzające Feather / Thing Plus",
+            "url": "https://kamami.pl/15816-moduly-rozszerzajace-feather-thing-plus",
+            "subcategories": []
+          },
+          {
+            "name": "SparkFun Thing Plus",
+            "url": "https://kamami.pl/15815-sparkfun-thing-plus",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Freedom (Kinetis)",
+        "url": "https://kamami.pl/13379-freedom-kinetis",
+        "subcategories": []
+      },
+      {
+        "name": "Google Coral",
+        "url": "https://kamami.pl/15514-google-coral",
+        "subcategories": []
+      },
+      {
+        "name": "Inne zestawy uruchomieniowe",
+        "url": "https://kamami.pl/13459-inne-zestawy-uruchomieniowe",
+        "subcategories": [
+          {
+            "name": "Infineon - XMC",
+            "url": "https://kamami.pl/7971-infineon-xmc",
+            "subcategories": []
+          },
+          {
+            "name": "Inne",
+            "url": "https://kamami.pl/13544-inne",
+            "subcategories": []
+          },
+          {
+            "name": "NXP",
+            "url": "https://kamami.pl/7454-nxp",
+            "subcategories": []
+          },
+          {
+            "name": "Spectacle",
+            "url": "https://kamami.pl/15406-spectacle",
+            "subcategories": []
+          },
+          {
+            "name": "STMicroelectronics - ST7",
+            "url": "https://kamami.pl/13393-stmicroelectronics-st7",
+            "subcategories": []
+          },
+          {
+            "name": "Texas Instruments",
+            "url": "https://kamami.pl/7455-texas-instruments",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "M5Stack",
+        "url": "https://kamami.pl/15618-m5stack",
+        "subcategories": [
+          {
+            "name": "Kontrolery M5Stack",
+            "url": "https://kamami.pl/15619-kontrolery-m5stack",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły peryferyjne",
+            "url": "https://kamami.pl/15620-moduly-peryferyjne",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "micro:bit",
+        "url": "https://kamami.pl/15408-microbit",
+        "subcategories": []
+      },
+      {
+        "name": "Moduły peryferyjne",
+        "url": "https://kamami.pl/13055-moduly-peryferyjne",
+        "subcategories": [
+          {
+            "name": "Moduły peryferyjne Gravity (DFRobot)",
+            "url": "https://kamami.pl/15475--moduly-peryferyjne-gravity-dfrobot",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły peryferyjne Grove (Seeed Studio)",
+            "url": "https://kamami.pl/15474-moduly-peryferyjne-grove-seeed-studio",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły peryferyjne KAmod (Kamami)",
+            "url": "https://kamami.pl/13417-kamod-kamami",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły peryferyjne Pmod (Digilent)",
+            "url": "https://kamami.pl/13418-pmod-digilent",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły peryferyjne Qwiic (SparkFun)",
+            "url": "https://kamami.pl/15476-moduly-peryferyjne-qwiic-sparkfun",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły peryferyjne Stemma QT (Adafruit)",
+            "url": "https://kamami.pl/15679-moduly-peryferyjne-stemma-qt-adafruit",
+            "subcategories": []
+          },
+          {
+            "name": "Moduły peryferyjne TerasIC",
+            "url": "https://kamami.pl/13419-terasic",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Nordic nRF",
+        "url": "https://kamami.pl/15429-nordic-nrf",
+        "subcategories": []
+      },
+      {
+        "name": "OPROGRAMOWANIE",
+        "url": "https://kamami.pl/49-oprogramowanie",
+        "subcategories": [
+          {
+            "name": "Bascom",
+            "url": "https://kamami.pl/7290-bascom",
+            "subcategories": []
+          },
+          {
+            "name": "Inne",
+            "url": "https://kamami.pl/7659-inne",
+            "subcategories": []
+          },
+          {
+            "name": "Segger",
+            "url": "https://kamami.pl/10955-segger",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Particle Photon",
+        "url": "https://kamami.pl/15234-particle-photon",
+        "subcategories": []
+      },
+      {
+        "name": "PIC",
+        "url": "https://kamami.pl/13404-pic",
+        "subcategories": []
+      },
+      {
+        "name": "Programatory Segger",
+        "url": "https://kamami.pl/13456-programatory-segger",
+        "subcategories": [
+          {
+            "name": "Adaptery i inne akcesoria",
+            "url": "https://kamami.pl/15722-adaptery-i-inne-akcesoria",
+            "subcategories": []
+          },
+          {
+            "name": "Segger Flasher",
+            "url": "https://kamami.pl/15723-segger-flasher",
+            "subcategories": []
+          },
+          {
+            "name": "Segger J-Link",
+            "url": "https://kamami.pl/15720-segger-j-link",
+            "subcategories": []
+          },
+          {
+            "name": "Segger J-Trace",
+            "url": "https://kamami.pl/15721-segger-j-trace",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "Programatory uniwersalne",
+        "url": "https://kamami.pl/15655-programatory-uniwersalne",
+        "subcategories": []
+      },
+      {
+        "name": "Raspberry Pi RP2040",
+        "url": "https://kamami.pl/15627-raspberry-pi-rp2040",
+        "subcategories": []
+      },
+      {
+        "name": "RFID",
+        "url": "https://kamami.pl/12194-rfid",
+        "subcategories": []
+      },
+      {
+        "name": "RISC-V",
+        "url": "https://kamami.pl/15579-risc-v",
+        "subcategories": []
+      },
+      {
+        "name": "Seeed Studio LinkIt",
+        "url": "https://kamami.pl/15391-seeed-studio-linkit",
+        "subcategories": []
+      },
+      {
+        "name": "Sparkfun MicroMod",
+        "url": "https://kamami.pl/15621-sparkfun-micromod",
+        "subcategories": []
+      },
+      {
+        "name": "STM32",
+        "url": "https://kamami.pl/3267-stm32",
+        "subcategories": [
+          {
+            "name": "Programatory STM32",
+            "url": "https://kamami.pl/3268-programatory-stm32",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy uruchomieniowe STM32",
+            "url": "https://kamami.pl/3269-zestawy-uruchomieniowe-stm32",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "STM32 Discovery",
+        "url": "https://kamami.pl/13047-stm32-discovery",
+        "subcategories": []
+      },
+      {
+        "name": "STM32 MP1",
+        "url": "https://kamami.pl/15506-stm32-mp1",
+        "subcategories": []
+      },
+      {
+        "name": "STM32 Nucleo",
+        "url": "https://kamami.pl/13391-stm32-nucleo",
+        "subcategories": [
+          {
+            "name": "STM Nucleo Shield",
+            "url": "https://kamami.pl/15232-stm-nucleo-shield",
+            "subcategories": []
+          },
+          {
+            "name": "STM Nucleo-144",
+            "url": "https://kamami.pl/15231-stm-nucleo-144",
+            "subcategories": []
+          },
+          {
+            "name": "STM Nucleo-32",
+            "url": "https://kamami.pl/15229-stm-nucleo-32",
+            "subcategories": []
+          },
+          {
+            "name": "STM Nucleo-64",
+            "url": "https://kamami.pl/15230-stm-nucleo-64",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "STM8",
+        "url": "https://kamami.pl/13394-stm8",
+        "subcategories": []
+      },
+      {
+        "name": "Teensy",
+        "url": "https://kamami.pl/15188-teensy",
+        "subcategories": []
+      },
+      {
+        "name": "WRTNode",
+        "url": "https://kamami.pl/15207-wrtnode",
+        "subcategories": []
+      },
+      {
+        "name": "XIAO/Qt PY",
+        "url": "https://kamami.pl/15812-xiaoqt-py",
+        "subcategories": [
+          {
+            "name": "Moduły rozszerzające do Xiao/QT Py",
+            "url": "https://kamami.pl/15813-moduly-rozszerzajace-do-xiaoqt-py",
+            "subcategories": []
+          },
+          {
+            "name": "QT Py",
+            "url": "https://kamami.pl/15799-qt-py",
+            "subcategories": []
+          },
+          {
+            "name": "XIAO",
+            "url": "https://kamami.pl/15769-xiao",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ZESTAWY URUCHOMIENIOWE FPGA",
+    "url": "https://kamami.pl/15756-zestawy-uruchomieniowe-fpga",
+    "subcategories": [
+      {
+        "name": "FPGA Alchitry",
+        "url": "https://kamami.pl/15591-fpga-alchitry",
+        "subcategories": []
+      },
+      {
+        "name": "FPGA Altera",
+        "url": "https://kamami.pl/13443-fpga-altera",
+        "subcategories": [
+          {
+            "name": "Akcesoria FPGA Altera",
+            "url": "https://kamami.pl/13495-akcesoria",
+            "subcategories": []
+          },
+          {
+            "name": "Programatory FPGA Altera",
+            "url": "https://kamami.pl/13444-programatory",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy uruchomieniowe FPGA Altera",
+            "url": "https://kamami.pl/13445-zestawy-uruchomieniowe",
+            "subcategories": []
+          }
+        ]
+      },
+      {
+        "name": "FPGA Digilent",
+        "url": "https://kamami.pl/15760-fpga-digilent",
+        "subcategories": []
+      },
+      {
+        "name": "FPGA Numato",
+        "url": "https://kamami.pl/15757-fpga-numato",
+        "subcategories": []
+      },
+      {
+        "name": "FPGA Sipeed",
+        "url": "https://kamami.pl/15810-fpga-sipeed",
+        "subcategories": []
+      },
+      {
+        "name": "FPGA Terasic",
+        "url": "https://kamami.pl/15758-fpga-terasic",
+        "subcategories": []
+      },
+      {
+        "name": "FPGA Trenz",
+        "url": "https://kamami.pl/15759-fpga-trenz",
+        "subcategories": []
+      },
+      {
+        "name": "FPGA Xilinx",
+        "url": "https://kamami.pl/13446-fpga-xilinx",
+        "subcategories": [
+          {
+            "name": "Akcesoria FPGA Xilinx",
+            "url": "https://kamami.pl/13494-akcesoria",
+            "subcategories": []
+          },
+          {
+            "name": "Programatory FPGA Xilinx",
+            "url": "https://kamami.pl/13447-programatory",
+            "subcategories": []
+          },
+          {
+            "name": "Zestawy uruchomieniowe FPGA Xilinx",
+            "url": "https://kamami.pl/13448-zestawy-uruchomieniowe",
+            "subcategories": []
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -117,20 +117,24 @@ def scrape_product_details(product_url):
     desc_div = main.select_one(".product-description")
     full_description = desc_div.decode_contents() if desc_div else ""
 
-    # --- zdjęcia ---
+    # --- zdjęcia (fix) ---
     images = []
-    main_img = main.select_one("img.js-qv-product-cover.img-fluid")
-    if main_img and main_img.get("src"):
-        images.append(main_img["src"])
-
     thumbs = main.select("ul.product-images li.thumb-container img.thumb")
     for t in thumbs:
-        if t.get("data-image-large-src"):
-            images.append(t["data-image-large-src"])
-        elif t.get("src"):
-            images.append(t["src"])
+        large_src = t.get("data-image-large-src") or t.get("src")
+        if large_src and large_src not in images:
+            images.append(large_src)
 
-    # --- atrybuty (opcjonalne) ---
+    # jeśli brak miniaturek, próbujemy pobrać główne zdjęcie
+    if not images:
+        main_img = main.select_one("img.js-qv-product-cover.img-fluid")
+        if main_img and main_img.get("src"):
+            images.append(main_img["src"])
+
+    # zachowaj tylko 2 największe / unikalne
+    images = images[:2]
+
+    # --- atrybuty ---
     attributes = {}
     for row in main.select(".product-features tr"):
         cells = row.select("td")
@@ -148,19 +152,15 @@ def scrape_product_details(product_url):
         "price_brutto": price_brutto,
         "price_netto": price_netto,
         "attributes": attributes,
-        "images": images[:2],  # tylko dwa zdjęcia, jak w wymaganiach
+        "images": images,
     }
 
-
-# --- helpery ---
 def get_text(soup, selector):
     el = soup.select_one(selector)
     return el.get_text(strip=True) if el else ""
 
-
 def sanitize_filename(name):
     return name.lower().replace(" ", "_").replace("/", "_").replace("\\", "_")
-
 
 def save_json(data, path):
     with open(path, "w", encoding="utf-8") as f:

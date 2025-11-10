@@ -34,11 +34,11 @@ def main():
         print("\n[STEP 2] Scraping products...")
         scrape_all_products(limit=args.items)
 
-    print("\n✅ Done! All data saved to /data directory.")
+    print("\nDone! All data saved to ./data directory.")
 
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n⚠️  Interrupted by user, exiting.")
+        print("\nInterrupted by user, exiting.")
         sys.exit(0)

@@ -2,7 +2,6 @@ import os
 import requests
 
 def download_image(url: str, dest_path: str) -> bool:
-    """Download a single image from URL to destination path."""
     try:
         response = requests.get(url, stream=True, timeout=10)
         response.raise_for_status()
@@ -16,10 +15,6 @@ def download_image(url: str, dest_path: str) -> bool:
 
 
 def download_product_images(product_id: str, image_urls: list[str], base_dir: str = "data/products/images") -> list[str]:
-    """
-    Download all product images to data/products/images/{product_id}/
-    Returns list of local file paths.
-    """
     saved_files = []
     if not image_urls:
         return saved_files

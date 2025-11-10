@@ -12,7 +12,6 @@ DATA_DIR = "data/products"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 def scrape_all_products(categories_json="data/categories.json", limit=None):
-    """Scrape all products from all categories (with optional global limit)"""
     if not os.path.exists(categories_json):
         print("[INFO] Categories file not found. Scraping categories first...")
         scrape_categories()
@@ -36,7 +35,6 @@ def scrape_all_products(categories_json="data/categories.json", limit=None):
             save_json(products, os.path.join(DATA_DIR, sanitize_filename(cat["name"]) + ".json"))
             all_products.extend(products)
 
-        # Rekurencyjnie subkategorie
         for sub in cat.get("subcategories", []):
             if limit is not None and total_scraped >= limit:
                 return
@@ -52,7 +50,6 @@ def scrape_all_products(categories_json="data/categories.json", limit=None):
 
 
 def scrape_category_products(category_url, limit=None):
-    """Scrape products from a single category with pagination and optional limit"""
     page = 1
     products = []
 
@@ -97,7 +94,6 @@ def scrape_category_products(category_url, limit=None):
     return products
 
 def scrape_product_details(product_url):
-    """Scrape single product details"""
     html = fetch_page(product_url)
     if not html:
         return None
@@ -107,18 +103,15 @@ def scrape_product_details(product_url):
     if not main:
         return None
 
-    # --- podstawowe dane ---
     name = get_text(main, "h1.page-title")
     short_desc = get_text(main, "div.product-details-information div.product-description p")
     price_brutto = get_text(main, "span.current-price-value")
     price_netto = get_text(main, "p.product-without-taxes")
     prod_id = get_text(main, "div.prod-id_product").replace("ID:", "").strip()
 
-    # --- pełny opis (HTML zachowujemy) ---
     desc_div = main.select_one(".product-description")
     full_description = desc_div.decode_contents() if desc_div else ""
 
-    # --- zdjęcia (fix) ---
     images = []
     thumbs = main.select("ul.product-images li.thumb-container img.thumb")
     for t in thumbs:
@@ -126,7 +119,6 @@ def scrape_product_details(product_url):
         if large_src and large_src not in images:
             images.append(large_src)
 
-    # jeśli brak miniaturek, próbujemy pobrać główne zdjęcie
     if not images:
         main_img = main.select_one("img.js-qv-product-cover.img-fluid")
         if main_img and main_img.get("src"):

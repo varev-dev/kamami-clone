@@ -4,6 +4,7 @@ import time
 from bs4 import BeautifulSoup
 from utils import fetch_page
 from categories import scrape_categories
+from image_downloader import download_product_images
 
 BASE_URL = "https://kamami.pl"
 DATA_DIR = "data/products"
@@ -84,7 +85,7 @@ def scrape_category_products(category_url, limit=None):
             if product_data:
                 products.append(product_data)
 
-            time.sleep(1)
+            time.sleep(0.5)
 
         if limit is not None and len(products) >= limit:
             break
@@ -132,16 +133,22 @@ def scrape_product_details(product_url):
             images.append(main_img["src"])
 
     # zachowaj tylko 2 największe / unikalne
-    images = images[:2]
+    # images = images[:2]
 
-    # --- atrybuty ---
     attributes = {}
-    for row in main.select(".product-features tr"):
-        cells = row.select("td")
-        if len(cells) >= 2:
-            key = cells[0].get_text(strip=True)
-            value = cells[1].get_text(strip=True)
-            attributes[key] = value
+    data_sheet = main.select_one("section.product-features dl.data-sheet")
+    if data_sheet:
+        elements = data_sheet.find_all(["dt", "dd"])
+        key = None
+        for el in elements:
+            if el.name == "dt":
+                key = el.get_text(strip=True)
+            elif el.name == "dd" and key:
+                value = el.get_text(strip=True)
+                attributes[key] = value
+                key = None
+
+    local_images = download_product_images(prod_id, images)
 
     return {
         "name": name,
@@ -152,12 +159,20 @@ def scrape_product_details(product_url):
         "price_brutto": price_brutto,
         "price_netto": price_netto,
         "attributes": attributes,
-        "images": images,
+        "images": images,                # oryginalne linki
+        "local_images": local_images     # ścieżki do pobranych plików
     }
+
+def clean_text(text: str) -> str:
+    if not text:
+        return ""
+    return text.replace("\xa0", " ").strip()
 
 def get_text(soup, selector):
     el = soup.select_one(selector)
-    return el.get_text(strip=True) if el else ""
+    if not el:
+        return ""
+    return clean_text(el.get_text())
 
 def sanitize_filename(name):
     return name.lower().replace(" ", "_").replace("/", "_").replace("\\", "_")

@@ -7,7 +7,8 @@ start:
 
 stop:
 	@echo "Stopping docker containers..."
-	@docker compose down -v
+	@docker compose down
+	@make dump
 
 permissions:
 	@echo "Changing ownership to www-data..."

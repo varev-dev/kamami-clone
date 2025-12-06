@@ -10,7 +10,7 @@ services:
       - prestashop_network
     volumes:
       - dbdata:/var/lib/mysql
-      - ./db_dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
   prestashop:
     container_name: prestashop
     image: prestashop/prestashop:1.7.8

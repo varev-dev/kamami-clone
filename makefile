@@ -12,12 +12,7 @@ stop:
 permissions:
 	@echo "Changing ownership to www-data..."
 	sudo chown -R 33:33 ./prestashop
-
-files-permissions:
-	@echo "Setting file and directory permissions..."
-	sudo chmod -R 755 ./prestashop
-
-user:
+	sudo chmod -R 775 ./prestashop
 	@echo "Checking if user is in www-data group..."
 	@if ! id -nG "$$(whoami)" | grep -qw "www-data"; then \
 		echo "Adding user to www-data group..."; \

@@ -1,0 +1,6 @@
+.env
+**/venv/
+prestashop/var/cache/*
+prestashop/var/logs/*
+!.gitkeep
+!prestashop/**/.env

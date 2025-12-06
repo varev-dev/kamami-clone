@@ -6,9 +6,9 @@ start:
 	@docker compose up -d
 
 stop:
+	@make dump
 	@echo "Stopping docker containers..."
 	@docker compose down
-	@make dump
 
 permissions:
 	@echo "Changing ownership to www-data..."

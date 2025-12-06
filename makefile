@@ -15,8 +15,7 @@ permissions:
 
 files-permissions:
 	@echo "Setting file and directory permissions..."
-	find ./prestashop -type f -exec sudo chmod 664 {} \;
-	find ./prestashop -type d -exec sudo chmod 775 {} \;
+	sudo chmod -R 755 ./prestashop
 
 user:
 	@echo "Checking if user is in www-data group..."

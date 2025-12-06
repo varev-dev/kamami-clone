@@ -1,0 +1,37 @@
+name: kamami
+display_name: Kamami
+version: 0.0.1
+parent: classic
+author:
+  name: "Zespoł ŁCK"
+
+meta:
+  compatibility:
+    from: 1.7.0.0
+    to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+assets:
+  use_parent_assets: true
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    contact: layout-left-column

@@ -4,3 +4,5 @@ prestashop/var/cache/*
 prestashop/var/logs/*
 !.gitkeep
 !prestashop/**/.env
+tools/data
+__pycache__/

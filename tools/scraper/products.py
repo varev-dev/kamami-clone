@@ -7,7 +7,8 @@ from categories import scrape_categories
 from image_downloader import download_product_images
 
 BASE_URL = "https://kamami.pl"
-DATA_DIR = "data/products"
+DATA_DIR = "data"
+OUTPUT_FILE = "products_all.json"
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -28,12 +29,17 @@ def scrape_all_products(categories_json="data/categories.json", limit=None):
             return
 
         print(f"\n[INFO] Scraping category: {cat['name']} ({cat['url']})")
-        products = scrape_category_products(cat["url"], limit=limit - total_scraped if limit else None)
+
+        current_limit = limit - total_scraped if limit else None
+        products = scrape_category_products(cat["url"], limit=current_limit)
 
         if products:
-            total_scraped += len(products)
-            save_json(products, os.path.join(DATA_DIR, sanitize_filename(cat["name"]) + ".json"))
+            cat_id = cat.get('id')
+            for p in products:
+                p['category_id'] = cat_id
+
             all_products.extend(products)
+            total_scraped += len(products)
 
         for sub in cat.get("subcategories", []):
             if limit is not None and total_scraped >= limit:
@@ -44,6 +50,9 @@ def scrape_all_products(categories_json="data/categories.json", limit=None):
         if limit is not None and total_scraped >= limit:
             break
         process_category(category)
+
+    output_path = os.path.join(DATA_DIR, OUTPUT_FILE)
+    save_json(all_products, output_path)
 
     print(f"\n[FINISHED] Total products scraped: {len(all_products)} (limit={limit})")
     return all_products
@@ -124,9 +133,6 @@ def scrape_product_details(product_url):
         if main_img and main_img.get("src"):
             images.append(main_img["src"])
 
-    # zachowaj tylko 2 największe / unikalne
-    # images = images[:2]
-
     attributes = {}
     data_sheet = main.select_one("section.product-features dl.data-sheet")
     if data_sheet:
@@ -151,8 +157,8 @@ def scrape_product_details(product_url):
         "price_brutto": price_brutto,
         "price_netto": price_netto,
         "attributes": attributes,
-        "images": images,                # oryginalne linki
-        "local_images": local_images     # ścieżki do pobranych plików
+        "images": images,                # original links
+        "local_images": local_images     # paths to downloaded files
     }
 
 def clean_text(text: str) -> str:

@@ -42,7 +42,7 @@ def parse_category_list(ul_element):
 
         # update global ID_CTR
         global ID_CTR
-        cat_id = str(ID_CTR)
+        cat_id = ID_CTR
         ID_CTR += 1
 
         # check for subcategories

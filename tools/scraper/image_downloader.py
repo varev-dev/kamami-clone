@@ -14,7 +14,7 @@ def download_image(url: str, dest_path: str) -> bool:
         return False
 
 
-def download_product_images(product_id: str, image_urls: list[str], base_dir: str = "data/products/images") -> list[str]:
+def download_product_images(product_id: str, image_urls: list[str], base_dir: str = "data/images") -> list[str]:
     saved_files = []
     if not image_urls:
         return saved_files

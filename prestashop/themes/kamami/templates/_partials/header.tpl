@@ -22,7 +22,7 @@
 {/block}
 
 {block name='header_top'}
-  <div class="main-header-container">
+  <div id="header_part" class="main-header-container">
     <div class="main-header">
       <div class="main-header-logo">
         {renderLogo}

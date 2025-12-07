@@ -22,10 +22,10 @@ def scrape_categories():
 
     categories = parse_category_list(menu_items)
 
-    with open("data/categories.json", "w", encoding="utf-8") as f:
+    with open("../data/categories.json", "w", encoding="utf-8") as f:
         json.dump(categories, f, ensure_ascii=False, indent=2)
 
-    print(f"[DONE] Saved {len(categories)} top-level categories to data/categories.json")
+    print(f"[DONE] Saved {len(categories)} top-level categories to ../data/categories.json")
     return categories
 
 def parse_category_list(ul_element):

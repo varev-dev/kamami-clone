@@ -13,7 +13,7 @@ $(document).ready(function () {
 	const sidecart = new SideCart();
 	sidecart.init();
 
-	// Listen f or PrestaShop cart updates
+	// Listen for PrestaShop cart updates
 	if (typeof prestashop !== "undefined") {
 		prestashop.on("updateCart", function (event) {
 			sidecart.refresh();

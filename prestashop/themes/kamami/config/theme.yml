@@ -26,6 +26,20 @@ meta:
 
 assets:
   use_parent_assets: true
+  js:
+    all:
+      - id: theme-lib-dropdown
+        path: assets/js/lib/dropdown.js
+        priority: 200
+        position: bottom
+      - id: theme-lib-sidecart
+        path: assets/js/lib/sidecart.js
+        priority: 201
+        position: bottom
+      - id: user-dropdown
+        path: assets/js/user-dropdown.js
+        priority: 211
+        position: bottom
 
 theme_settings:
   default_layout: layout-full-width

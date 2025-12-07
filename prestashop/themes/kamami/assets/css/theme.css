@@ -5516,6 +5516,10 @@ body.layout-full-width.display-normal .blog_column {
   font-weight: 700
 }
 
+#go_top.visible {
+  display: block;
+}
+
 .compare-added,.wishlist_added {
   position: relative
 }

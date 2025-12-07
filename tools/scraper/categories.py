@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup as BS
 from utils import fetch_page
 import json
 import requests
-import uuid
 
+ID_CTR = 3
 BASE_URL = 'https://kamami.pl/'
 
 def scrape_categories():
@@ -40,8 +40,10 @@ def parse_category_list(ul_element):
         if not url.startswith("http"):
             url = BASE_URL + url
 
-        # generate unique ID
-        cat_id = str(uuid.uuid4())
+        # update global ID_CTR
+        global ID_CTR
+        cat_id = str(ID_CTR)
+        ID_CTR += 1
 
         # check for subcategories
         sub_ul = li.select_one(":scope > div.collapse > ul.category-sub-menu")

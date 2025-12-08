@@ -1,6 +1,7 @@
 import requests
 import random
 from lxml import etree
+import argparse
 
 API_URL = "http://localhost:8080/api"
 API_KEY = ""
@@ -15,7 +16,8 @@ parser.add_argument(
     help="PrestaShop API key (32 characters)"
 )
 args = parser.parse_args()
-API_KEY = args.api_key
+API_KEY = args.api_key.replace(' ', '')
+print(API_KEY)
 
 r = requests.get(f"{API_URL}/products", auth=(API_KEY, ""))
 r.raise_for_status()

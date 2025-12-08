@@ -21,10 +21,8 @@ def upload_category(xml_file, api_url, api_key):
         status = response.status_code
         response_text = response.text
 
-        # Print to console
         print(f"{status} {xml_file.name}")
 
-        # If API reports error → raise exception
         if status >= 400:
             raise Exception(f"API error {status}: {response_text}")
 
@@ -77,60 +75,41 @@ def main():
     print(f"API URL: {args.api_url}")
     print("\nUploading categories one by one...\n")
 
-    # Log file
-    log_path = Path("upload_log.txt")
-    with log_path.open("a", encoding="utf-8") as log:
+    success_count = 0
+    failed_count = 0
+    failed_files = []
 
-        log.write("\n===========================================\n")
-        log.write(f"UPLOAD START: {datetime.now()}\n")
-        log.write("===========================================\n\n")
+    for xml_file in xml_files:
 
-        success_count = 0
-        failed_count = 0
-        failed_files = []
-
-        # Upload sequentially (IMPORTANT!)
-        for xml_file in xml_files:
-
-            success, filename, error, response = upload_category(
-                xml_file, args.api_url, args.api_key
-            )
-
-            if success:
-                msg = f"✓ {filename}"
-                print(msg)
-                log.write(msg + "\n")
-                success_count += 1
-            else:
-                msg = f"✗ {filename}: {error}"
-                print(msg)
-                log.write(msg + "\n")
-                failed_files.append((filename, error))
-                failed_count += 1
-
-        # Summary
-        summary = (
-            f"\n=== SUMMARY ===\n"
-            f"Success: {success_count}\n"
-            f"Failed: {failed_count}\n"
-            f"Total: {len(xml_files)}\n"
+        success, filename, error, response = upload_category(
+            xml_file, args.api_url, args.api_key
         )
 
-        print(summary)
-        log.write(summary + "\n")
+        if success:
+            msg = f"✓ {filename}"
+            print(msg)
+            success_count += 1
+        else:
+            msg = f"✗ {filename}: {error}"
+            print(msg)
+            failed_files.append((filename, error))
+            failed_count += 1
 
-        # Failed file list
-        if failed_files:
-            print("Failed files:")
-            log.write("Failed files:\n")
+    summary = (
+        f"\n=== SUMMARY ===\n"
+        f"Success: {success_count}\n"
+        f"Failed: {failed_count}\n"
+        f"Total: {len(xml_files)}\n"
+    )
 
-            for filename, error in failed_files:
-                msg = f"  - {filename}: {error}"
-                print(msg)
-                log.write(msg + "\n")
+    print(summary)
 
-        log.write("\nUPLOAD END\n")
+    if failed_files:
+        print("Failed files:")
 
+        for filename, error in failed_files:
+            msg = f"  - {filename}: {error}"
+            print(msg)
 
 if __name__ == "__main__":
     try:

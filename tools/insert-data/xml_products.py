@@ -1,109 +1,106 @@
-from pathlib import Path
-from xml.etree.ElementTree import Element, SubElement, tostring, parse
-from xml.dom import minidom
 import json
+import os
+from xml.etree.ElementTree import Element, SubElement, tostring
+import xml.dom.minidom
 import re
+import random
 
-def clean_price(price_str):
-    price_clean = re.sub(r'[^\d,.]', '', price_str.replace(',', '.'))
-    try:
-        return float(price_clean)
-    except ValueError:
-        return 0.0
+JSON_FILE = '../data/products_all.json'
+OUTPUT_DIR = '../data/products_xml'
 
-def create_slug(name):
-    slug = re.sub(r'[^\w\s-]', '', name.lower())
-    slug = re.sub(r'[-\s]+', '-', slug)
-    return slug[:128]
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# --- Wczytaj mapę kategorii ---
-categories_dir = Path('../data/categories_xml')
-category_map = {}  # link_rewrite -> id
-for cat_file in categories_dir.glob('*.xml'):
-    tree = parse(cat_file)
-    root = tree.getroot()
-    cat_el = root.find('category')
-    if cat_el is not None:
-        link_el = cat_el.find('link_rewrite/language')
-        if link_el is not None and link_el.text:
-            link = link_el.text.strip()
-            category_map[link] = cat_file.stem  # id kategorii = nazwa pliku
+def slugify(text):
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    return text.strip('-')
 
-def json_to_prestashop_xml(json_data, lang_id=1, category_id=2):
+def create_product_xml(product):
     prestashop = Element('prestashop')
     prestashop.set('xmlns:xlink', 'http://www.w3.org/1999/xlink')
 
-    product = SubElement(prestashop, 'product')
-    SubElement(product, 'id').text = ''
-    SubElement(product, 'price').text = f"{clean_price(json_data.get('price_netto','0')):.6f}"
-    SubElement(product, 'active').text = '1'
+    product_el = SubElement(prestashop, 'product')
 
-    # Name
-    name_el = SubElement(product, 'name')
-    lang_name = SubElement(name_el, 'language', {'id': str(lang_id)})
-    lang_name.text = json_data.get('name','')
+    SubElement(product_el, 'id')
 
-    # Short description
-    desc_short = SubElement(product, 'description_short')
-    lang_short = SubElement(desc_short, 'language', {'id': str(lang_id)})
-    lang_short.text = json_data.get('short_description','')
+    SubElement(product_el, 'active').text = '1'
+    SubElement(product_el, 'state').text = '1'
+    
+    SubElement(product_el, 'id_tax_rules_group').text = '1' # 23%
 
-    # Full description
-    description = SubElement(product, 'description')
-    lang_desc = SubElement(description, 'language', {'id': str(lang_id)})
-    lang_desc.text = json_data.get('full_description_html','')
+    SubElement(product_el, 'id_shop_default').text = '1'
+    SubElement(product_el, 'advanced_stock_management').text = '1'
 
-    # Link rewrite
-    link_rewrite = SubElement(product, 'link_rewrite')
-    lang_link = SubElement(link_rewrite, 'language', {'id': str(lang_id)})
-    lang_link.text = create_slug(json_data.get('name',''))
+    price_value = product.get('price_netto', '0').replace(' zł', '').replace(' Netto', '').replace(',', '.')
+    try:
+        price_value = f"{float(price_value):.6f}"
+    except:
+        price_value = "0.000000"
 
-    # Associations
-    associations = SubElement(product, 'associations')
-    categories = SubElement(associations, 'categories')
-    category = SubElement(categories, 'category')
-    SubElement(category, 'id').text = str(category_id)
+    SubElement(product_el, 'price').text = price_value
 
-    rough_string = tostring(prestashop, encoding='utf-8')
-    reparsed = minidom.parseString(rough_string)
-    return reparsed.toprettyxml(indent="  ", encoding='utf-8').decode('utf-8')
+    name = SubElement(product_el, 'name')
+    for lang_id in ["1", "2"]:
+        lang_el = SubElement(name, 'language', id=lang_id)
+        lang_el.text = product.get('name')
 
+    slug = slugify(product.get('name', 'product'))
+    link_rewrite = SubElement(product_el, 'link_rewrite')
+    for lang_id in ["1", "2"]:
+        lr = SubElement(link_rewrite, 'language', id=lang_id)
+        lr.text = slug
 
-if __name__ == "__main__":
-    products_dir = Path('../data/products')
-    xml_dir = products_dir / 'xml'
-    xml_dir.mkdir(exist_ok=True)
+    description_long = product.get('description', product.get('short_description', ''))
+    description_short = product.get('short_description', '')
 
-    json_files = list(products_dir.glob('*.json'))
+    desc = SubElement(product_el, 'description')
+    for lang_id in ["1", "2"]:
+        SubElement(desc, 'language', id=lang_id).text = description_long
 
-    total_products = 0
-    total_files = 0
+    desc_short = SubElement(product_el, 'description_short')
+    for lang_id in ["1", "2"]:
+        SubElement(desc_short, 'language', id=lang_id).text = description_short
 
-    for json_file in json_files:
-        try:
-            # Pobierz ID kategorii z nazwy pliku
-            category_link = json_file.stem
-            category_id = category_map.get(category_link, 2)  # default 2 jeśli brak
+    # Meta keywords
+    meta_keywords_el = SubElement(product_el, 'meta_keywords')
+    for lang_id in ["1", "2"]:
+        SubElement(meta_keywords_el, 'language', id=lang_id).text = product.get('meta_keywords', 'test')
 
-            print(f"Processing: {json_file.name} -> category ID {category_id}")
+    category_id = str(product.get('category_id', 2))
 
-            with open(json_file,'r',encoding='utf-8') as f:
-                products = json.load(f)
+    SubElement(product_el, 'id_category_default').text = category_id
+    SubElement(product_el, 'show_price').text = str(product.get('show_price', 1))
+    SubElement(product_el, 'on_sale').text = str(product.get('on_sale', 0))
+    
+    associations = SubElement(product_el, 'associations')
 
-            for product in products:
-                xml = json_to_prestashop_xml(product, lang_id=1, category_id=category_id)
-                output_file = xml_dir / f"{product['id']}.xml"
-                with open(output_file,'w',encoding='utf-8') as f:
-                    f.write(xml)
-                total_products += 1
+    categories_el = SubElement(associations, 'categories')
+    category_el = SubElement(categories_el, 'category')
+    SubElement(category_el, 'id').text = category_id
+    category_el = SubElement(categories_el, 'category')
+    SubElement(category_el, 'id').text = '2'
 
-            total_files += 1
-            print(f"  ✓ Converted {len(products)} products from {json_file.name}\n")
+    return prestashop
 
-        except Exception as e:
-            print(f"  ✗ Error processing {json_file.name}: {e}\n")
+with open(JSON_FILE, 'r', encoding='utf-8') as f:
+    products = json.load(f)
 
-    print(f"\n=== Summary ===")
-    print(f"Processed {total_files} JSON files")
-    print(f"Created {total_products} XML files")
-    print(f"XML files saved to: {xml_dir}")
+for product in products:
+    try:
+        xml_element = create_product_xml(product)
+        xml_data = tostring(xml_element, encoding='utf-8')
+        dom = xml.dom.minidom.parseString(xml_data)
+        pretty_xml = dom.toprettyxml(indent="  ", encoding="utf-8")
+
+        product_id = product.get('id', slugify(product.get('name', 'product')))
+
+        product_id = re.sub(r'[^\w\-]+', '_', product_id)
+        xml_path = os.path.join(OUTPUT_DIR, f"{product_id}.xml")
+
+        with open(xml_path, 'wb') as f:
+            f.write(pretty_xml)
+
+        print(f"Saved XML for '{product.get('name', 'unknown')}' -> {xml_path}")
+    except Exception as e:
+        print(f"Error processing product {product.get('id', product.get('name', 'unknown'))}: {e}")
+

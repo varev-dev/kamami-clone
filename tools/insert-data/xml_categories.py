@@ -14,7 +14,7 @@ def prettify_xml(element):
     rough = tostring(element, encoding='utf-8')
     return minidom.parseString(rough).toprettyxml(indent="  ", encoding="utf-8").decode("utf-8")
 
-def create_category_xml(cat_id, parent_id, name, lang_id=1):
+def create_category_xml(cat_id, parent_id, name, lang_ids=[1,2]):
     prestashop = Element("prestashop")
     prestashop.set("xmlns:xlink", "http://www.w3.org/1999/xlink")
 
@@ -26,24 +26,33 @@ def create_category_xml(cat_id, parent_id, name, lang_id=1):
 
     # NAME
     name_el = SubElement(category, "name")
-    SubElement(name_el, "language", {"id": str(lang_id)}).text = name
+    for lang_id in lang_ids:
+        SubElement(name_el, "language", {"id": str(lang_id)}).text = name
 
     # LINK REWRITE
     link = SubElement(category, "link_rewrite")
-    SubElement(link, "language", {"id": str(lang_id)}).text = create_slug(name)
+    for lang_id in lang_ids:
+        SubElement(link, "language", {"id": str(lang_id)}).text = create_slug(name)
 
-    # DESCRIPTION FIELDS
+    # DESCRIPTION
     desc = SubElement(category, "description")
-    SubElement(desc, "language", {"id": str(lang_id)}).text = ""
+    for lang_id in lang_ids:
+        SubElement(desc, "language", {"id": str(lang_id)}).text = ""
 
+    # META TITLE
     meta_title = SubElement(category, "meta_title")
-    SubElement(meta_title, "language", {"id": str(lang_id)}).text = name
+    for lang_id in lang_ids:
+        SubElement(meta_title, "language", {"id": str(lang_id)}).text = name
 
+    # META DESCRIPTION
     meta_desc = SubElement(category, "meta_description")
-    SubElement(meta_desc, "language", {"id": str(lang_id)}).text = ""
+    for lang_id in lang_ids:
+        SubElement(meta_desc, "language", {"id": str(lang_id)}).text = ""
 
+    # META KEYWORDS
     meta_keywords = SubElement(category, "meta_keywords")
-    SubElement(meta_keywords, "language", {"id": str(lang_id)}).text = ""
+    for lang_id in lang_ids:
+        SubElement(meta_keywords, "language", {"id": str(lang_id)}).text = ""
 
     return prettify_xml(prestashop)
 

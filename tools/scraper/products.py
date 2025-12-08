@@ -9,6 +9,7 @@ from image_downloader import download_product_images
 BASE_URL = "https://kamami.pl"
 DATA_DIR = "../data"
 OUTPUT_FILE = "products_all.json"
+ID = 0
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -162,8 +163,11 @@ def scrape_product_details(product_url):
                 key = None
 
     local_images = download_product_images(prod_id, images)
-
+    global ID 
+    ID += 1
+    
     return {
+        "ps_id": ID,
         "name": name,
         "id": prod_id,
         "url": product_url,

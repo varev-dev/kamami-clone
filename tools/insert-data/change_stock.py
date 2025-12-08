@@ -3,7 +3,7 @@ import random
 from lxml import etree
 
 API_URL = "http://localhost:8080/api"
-API_KEY = "35TNU98SNJ8X79J3T338I84M4GE9M9PU"
+API_KEY = "9IAJTM7V9DLW618UNCAY7P8W5B3BED5Q"
 HEADERS = {"Content-Type": "application/xml"}
 
 # Pobranie wszystkich produktów

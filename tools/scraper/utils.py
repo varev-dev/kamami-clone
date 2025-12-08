@@ -1,7 +1,7 @@
 import requests
 import time
 
-def fetch_page(url, retries=3, delay=2):
+def fetch_page(url, retries=3, delay=0.25):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                       "AppleWebKit/537.36 (KHTML, like Gecko) "

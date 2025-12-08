@@ -1,8 +1,13 @@
 .env
 **/venv/
+
+!.gitkeep
+
 prestashop/var/cache/*
 prestashop/var/logs/*
-!.gitkeep
+prestashop/img/tmp/*
+prestashop/img/tmp/**/
 !prestashop/**/.env
+
 tools/data
 __pycache__/

@@ -11,3 +11,5 @@ prestashop/img/tmp/**/
 
 tools/data
 __pycache__/
+
+new_dump.sql

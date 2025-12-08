@@ -7,12 +7,13 @@ from categories import scrape_categories
 from image_downloader import download_product_images
 
 BASE_URL = "https://kamami.pl"
-DATA_DIR = "data"
+DATA_DIR = "../data"
 OUTPUT_FILE = "products_all.json"
+ID = 0
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
-def scrape_all_products(categories_json="data/categories.json", limit=None):
+def scrape_all_products(categories_json="../data/categories.json", limit=None, per_category_limit=None):
     if not os.path.exists(categories_json):
         print("[INFO] Categories file not found. Scraping categories first...")
         scrape_categories()
@@ -31,7 +32,7 @@ def scrape_all_products(categories_json="data/categories.json", limit=None):
         print(f"\n[INFO] Scraping category: {cat['name']} ({cat['url']})")
 
         current_limit = limit - total_scraped if limit else None
-        products = scrape_category_products(cat["url"], limit=current_limit)
+        products = scrape_category_products(cat["url"], per_category_limit, limit=current_limit)
 
         if products:
             cat_id = cat.get('id')
@@ -58,12 +59,15 @@ def scrape_all_products(categories_json="data/categories.json", limit=None):
     return all_products
 
 
-def scrape_category_products(category_url, limit=None):
+def scrape_category_products(category_url, per_category_limit, limit=None):
     page = 1
     products = []
 
     while True:
-        if limit is not None and len(products) >= limit:
+        if (
+            (limit is not None and len(products) >= limit) or
+            (per_category_limit is not None and len(products) >= per_category_limit)
+        ):
             break
 
         url = f"{category_url}?page={page}"
@@ -77,12 +81,19 @@ def scrape_category_products(category_url, limit=None):
             break
 
         for art in product_articles:
+
+            if per_category_limit is not None and len(products) >= per_category_limit:
+                break
+
             if limit is not None and len(products) >= limit:
                 break
 
-            link_tag = art.select_one("div.thumbnail-container div.product_desc div.product-description div.product-title a.name")
+            link_tag = art.select_one(
+                "div.thumbnail-container div.product_desc div.product-description div.product-title a.name"
+            )
             if not link_tag:
                 continue
+
             product_url = link_tag.get("href")
             product_name = link_tag.get_text(strip=True)
             print(f"  > {product_name}")
@@ -93,8 +104,12 @@ def scrape_category_products(category_url, limit=None):
 
             time.sleep(0.5)
 
-        if limit is not None and len(products) >= limit:
+        if (
+            (limit is not None and len(products) >= limit) or
+            (per_category_limit is not None and len(products) >= per_category_limit)
+        ):
             break
+
         next_page = soup.select_one("ul.pagination a[rel='next']")
         if not next_page:
             break
@@ -147,8 +162,11 @@ def scrape_product_details(product_url):
                 key = None
 
     local_images = download_product_images(prod_id, images)
-
+    global ID 
+    ID += 1
+    
     return {
+        "ps_id": ID,
         "name": name,
         "id": prod_id,
         "url": product_url,

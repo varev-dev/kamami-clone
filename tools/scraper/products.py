@@ -82,7 +82,6 @@ def scrape_category_products(category_url, per_category_limit, limit=None):
 
         for art in product_articles:
 
-            # 🔥 tutaj był MISSING!!!
             if per_category_limit is not None and len(products) >= per_category_limit:
                 break
 

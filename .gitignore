@@ -9,7 +9,9 @@ prestashop/img/tmp/*
 prestashop/img/p/**/
 !prestashop/**/.env
 
-tools/data
+tools/data/products/images
+tools/data/*.zip
+
 __pycache__/
 
 new_dump.sql

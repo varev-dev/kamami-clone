@@ -7,6 +7,8 @@ from categories import scrape_categories
 from image_downloader import download_product_images
 
 BASE_URL = "https://kamami.pl"
+DATA_DIR = "data"
+OUTPUT_FILE = "products_all.json"
 DATA_DIR = "../data/products"
 
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -27,36 +29,18 @@ def scrape_all_products(categories_json="../data/categories.json", limit=None, p
         if limit is not None and total_scraped >= limit:
             return
 
-        # Sprawdź czy plik JSON już istnieje
-        category_filename = os.path.join(DATA_DIR, sanitize_filename(cat["name"]) + ".json")
-        if os.path.exists(category_filename):
-            print(f"\n[SKIP] Category already scraped: {cat['name']} (file exists: {category_filename})")
-            # Wczytaj istniejące produkty do all_products
-            try:
-                with open(category_filename, "r", encoding="utf-8") as f:
-                    existing_products = json.load(f)
-                    all_products.extend(existing_products)
-                    total_scraped += len(existing_products)
-            except Exception as e:
-                print(f"[WARN] Could not load existing file: {e}")
-        else:
-            print(f"\n[INFO] Scraping category: {cat['name']} ({cat['url']})")
-            
-            # Określ limit dla tej kategorii
-            category_limit = per_category_limit
-            if limit is not None:
-                remaining = limit - total_scraped
-                if category_limit is None:
-                    category_limit = remaining
-                else:
-                    category_limit = min(category_limit, remaining)
-            
-            products = scrape_category_products(cat["url"], limit=category_limit)
+        print(f"\n[INFO] Scraping category: {cat['name']} ({cat['url']})")
 
-            if products:
-                total_scraped += len(products)
-                save_json(products, category_filename)
-                all_products.extend(products)
+        current_limit = limit - total_scraped if limit else None
+        products = scrape_category_products(cat["url"], limit=current_limit)
+
+        if products:
+            cat_id = cat.get('id')
+            for p in products:
+                p['category_id'] = cat_id
+
+            all_products.extend(products)
+            total_scraped += len(products)
 
         for sub in cat.get("subcategories", []):
             if limit is not None and total_scraped >= limit:
@@ -68,7 +52,10 @@ def scrape_all_products(categories_json="../data/categories.json", limit=None, p
             break
         process_category(category)
 
-    print(f"\n[FINISHED] Total products scraped: {len(all_products)} (limit={limit}, per_category={per_category_limit})")
+    output_path = os.path.join(DATA_DIR, OUTPUT_FILE)
+    save_json(all_products, output_path)
+
+    print(f"\n[FINISHED] Total products scraped: {len(all_products)} (limit={limit})")
     return all_products
 
 
@@ -147,9 +134,6 @@ def scrape_product_details(product_url):
         if main_img and main_img.get("src"):
             images.append(main_img["src"])
 
-    # zachowaj tylko 2 największe / unikalne
-    # images = images[:2]
-
     attributes = {}
     data_sheet = main.select_one("section.product-features dl.data-sheet")
     if data_sheet:
@@ -174,8 +158,8 @@ def scrape_product_details(product_url):
         "price_brutto": price_brutto,
         "price_netto": price_netto,
         "attributes": attributes,
-        "images": images,
-        "local_images": local_images
+        "images": images,                # original links
+        "local_images": local_images     # paths to downloaded files
     }
 
 def clean_text(text: str) -> str:

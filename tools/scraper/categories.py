@@ -3,6 +3,7 @@ from utils import fetch_page
 import json
 import requests
 
+ID_CTR = 3
 BASE_URL = 'https://kamami.pl/'
 
 def scrape_categories():
@@ -13,7 +14,6 @@ def scrape_categories():
         return []
 
     soup = BS(html, "lxml")
-    categories = []
 
     menu_items = soup.select_one("#left-column > div > .block-categories > ul > li#main-categories > ul.category-sub-menu")
     if not menu_items:
@@ -40,11 +40,17 @@ def parse_category_list(ul_element):
         if not url.startswith("http"):
             url = BASE_URL + url
 
-        # sprawdź, czy ma podkategorie
+        # update global ID_CTR
+        global ID_CTR
+        cat_id = ID_CTR
+        ID_CTR += 1
+
+        # check for subcategories
         sub_ul = li.select_one(":scope > div.collapse > ul.category-sub-menu")
         subcategories = parse_category_list(sub_ul) if sub_ul else []
 
         result.append({
+            "id": cat_id,
             "name": name,
             "url": url,
             "subcategories": subcategories

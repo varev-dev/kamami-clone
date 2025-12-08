@@ -6,7 +6,7 @@
 prestashop/var/cache/*
 prestashop/var/logs/*
 prestashop/img/tmp/*
-prestashop/img/tmp/**/
+prestashop/img/p/**/
 !prestashop/**/.env
 
 tools/data

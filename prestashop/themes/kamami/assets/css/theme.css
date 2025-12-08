@@ -5256,6 +5256,11 @@ article.product-miniature:hover .product-thumbnail-second {
   padding: 4px 0
 }
 
+/* Hide injected wishlist button */
+.side-newproduct button.wishlist-button-add {
+  display: none !important;
+}
+
 #content-wrapper #side-new {
   max-width: 33.33%;
   position: relative;

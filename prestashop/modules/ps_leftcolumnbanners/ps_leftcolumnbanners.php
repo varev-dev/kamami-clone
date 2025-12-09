@@ -23,16 +23,42 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  */
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
 
-header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-header('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT');
+class Ps_LeftColumnBanners extends Module
+{
+    public function __construct()
+    {
+        $this->name = 'ps_leftcolumnbanners';
+        $this->tab = 'front_office_features';
+        $this->version = '1.0.0';
+        $this->author = 'PrestaShop';
+        $this->need_instance = 0;
 
-header('Cache-Control: no-store, no-cache, must-revalidate');
-header('Cache-Control: post-check=0, pre-check=0', false);
-header('Pragma: no-cache');
+        $this->bootstrap = true;
+        parent::__construct();
 
-header('Location: ../');
-exit;
+        $this->displayName = $this->trans('Left Column Banners', [], 'Modules.Leftcolumnbanners.Admin');
+        $this->description = $this->trans('Displays custom banners in the left column.', [], 'Modules.Leftcolumnbanners.Admin');
+        $this->ps_versions_compliancy = ['min' => '1.7.1.0', 'max' => _PS_VERSION_];
+    }
 
+    public function install()
+    {
+        return parent::install()
+            && $this->registerHook('displayLeftColumn');
+    }
 
+    public function uninstall()
+    {
+        return parent::uninstall();
+    }
+
+    public function hookDisplayLeftColumn($params)
+    {
+        return $this->display(__FILE__, 'views/templates/hook/ps_leftcolumnbanners.tpl');
+    }
+}
 

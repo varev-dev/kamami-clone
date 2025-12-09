@@ -162,6 +162,7 @@ class Ps_Shoppingcart extends Module implements WidgetInterface
             'product' => $product,
             'cart' => $data,
             'cart_url' => $this->getCartSummaryURL(),
+            'refresh_url' => $this->context->link->getModuleLink('ps_shoppingcart', 'ajax', [], null, null, null, true),
         ]);
 
         return $this->fetch('module:ps_shoppingcart/modal.tpl');

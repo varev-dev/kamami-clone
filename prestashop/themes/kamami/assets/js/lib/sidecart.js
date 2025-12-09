@@ -1,133 +1,80 @@
 /**
- * SideCart - Shopping cart sidebar component
- * Opens a side panel when clicking on the cart icon with slide-in animation
- *
- * @example
- * const sidecart = new SideCart();
- * sidecart.init();
+ * SideCart - Simple shopping cart sidebar
  */
-class SideCart {
-	constructor(options = {}) {
-		this.options = {
-			cartSelector: ".cart_block_ajax",
-			overlayClass: "cart-overlayer",
-			openClass: "dfx-cart-open",
-			desktopCartSelector: "#_desktop_cart",
-			mobileCartSelector: "#_mobile_cart",
-			closeButtonSelector: ".cartclosebtn",
-			addToCartSelector: ".add-to-cart",
-			removeFromCartSelector: ".remove-from-cart",
-			blockCartSelector: ".blockcart",
-			fadeSpeed: 500,
-			...options,
-		};
-	}
+const SideCart = {
+	cartSelector: ".cart_block_ajax",
+	overlaySelector: ".cart-overlayer",
 
 	init() {
-		this._setupDOM();
-		this._bindOpenCart();
-		this._bindCloseCart();
-		this._bindAddToCart();
-		this._bindRemoveFromCart();
-	}
-
-	_setupDOM() {
-		$(this.options.cartSelector).insertAfter("main");
-
-		if (!$(`.${this.options.overlayClass}`).length) {
-			$(`<div class="${this.options.overlayClass}"></div>`).insertAfter("main");
-		}
-
-		$(`.${this.options.overlayClass}`).not(":first").remove();
-		$(this.options.cartSelector).not(":first").remove();
-	}
-
-	_bindOpenCart() {
-		const { desktopCartSelector, mobileCartSelector } = this.options;
-
-		$(`${desktopCartSelector}, ${mobileCartSelector}`)
-			.off("click.sidecart")
-			.on("click.sidecart", (e) => {
-				e.preventDefault();
-				this.open();
-			});
-	}
-
-	_bindCloseCart() {
-		const { closeButtonSelector, overlayClass } = this.options;
-
-		$(`${closeButtonSelector}, .${overlayClass}`)
-			.off("click.sidecart")
-			.on("click.sidecart", () => {
-				this.close();
-			});
-	}
-
-	_bindAddToCart() {
-		$("body").on("click", this.options.addToCartSelector, function () {
-			const productId = $(this).data("id-product");
-			$(`.add-to-cart[data-id-product="${productId}"]`)
-				.addClass("is-added disabled")
-				.removeClass("no-added");
-			$(this).addClass("is-added disabled").removeClass("no-added");
-		});
-	}
-
-	_bindRemoveFromCart() {
-		$("body").on("click", this.options.removeFromCartSelector, function (e) {
-			const productId = $(this).data("id-product");
-			$(`.add-to-cart[data-id-product="${productId}"]`)
-				.addClass("no-added disabled")
-				.removeClass("is-added");
+		// Open cart on icon click
+		$(document).on("click", "#_desktop_cart, #_mobile_cart", (e) => {
 			e.preventDefault();
+			this.open();
 		});
-	}
+
+		// Close cart
+		$(document).on("click", ".cartclosebtn, .cart-overlayer", () =>
+			this.close(),
+		);
+
+		// Remove item from cart
+		$(document).on("click", ".remove-from-cart", (e) => {
+			e.preventDefault();
+			const $link = $(e.currentTarget);
+			const url = $link.attr("href");
+			if (!url) return;
+
+			$.get(url + (url.includes("?") ? "&" : "?") + "ajax=1", (resp) => {
+				prestashop.emit("updateCart", {
+					reason: {
+						idProduct: $link.data("id-product"),
+						idProductAttribute: $link.data("id-product-attribute") || 0,
+						linkAction: "delete-from-cart",
+					},
+					resp,
+				});
+			});
+		});
+
+		// Refresh cart content on PrestaShop cart update
+		prestashop.on("updateCart", (event) => {
+			this.refresh();
+			// Only auto-open when adding, not when deleting
+			if (event?.reason?.linkAction !== "delete-from-cart") {
+				this.open();
+			}
+		});
+	},
 
 	open() {
-		$("html").addClass(this.options.openClass);
-		$(`.${this.options.overlayClass}`).fadeIn(this.options.fadeSpeed);
-	}
+		$("html").addClass("dfx-cart-open");
+		$(this.overlaySelector).fadeIn(300);
+	},
 
 	close() {
-		$("html").removeClass(this.options.openClass);
-		$(`.${this.options.overlayClass}`).fadeOut(this.options.fadeSpeed);
-	}
+		$("html").removeClass("dfx-cart-open");
+		$(this.overlaySelector).fadeOut(300);
+	},
 
 	refresh() {
-		const refreshUrl = $(this.options.blockCartSelector).data("refresh-url");
+		const refreshUrl = $(".blockcart").data("refresh-url");
 		if (!refreshUrl) return;
 
-		$.ajax({
-			url: refreshUrl,
-			type: "POST",
-			dataType: "json",
-			success: (resp) => this._handleRefreshSuccess(resp),
-			error: (_, __, error) => console.error("Cart refresh error:", error),
-		});
-	}
-
-	_handleRefreshSuccess(resp) {
-		if (resp.cart) {
-			$(".cart-products-count").text(resp.cart.products_count);
-			$(".ajax_cart_total").text(resp.cart.subtotals.products.value);
-
-			if (resp.cart.products_count > 0) {
-				$(this.options.blockCartSelector)
-					.removeClass("inactive")
-					.addClass("active");
-			} else {
-				$(this.options.blockCartSelector)
-					.removeClass("active")
-					.addClass("inactive");
+		$.post(refreshUrl, (resp) => {
+			if (resp.preview) {
+				const $preview = $(resp.preview);
+				// Use filter() to get only the cart element (preview may have multiple root elements)
+				let $newCart = $preview.filter(this.cartSelector);
+				if (!$newCart.length) {
+					$newCart = $preview.find(this.cartSelector);
+				}
+				if ($newCart.length) {
+					$(this.cartSelector).replaceWith($newCart);
+				}
 			}
-		}
-
-		$.get(window.location.href, (html) => {
-			const $newSidebar = $(html).find(this.options.cartSelector);
-			if ($newSidebar.length) {
-				$(this.options.cartSelector).replaceWith($newSidebar);
-				this.init();
+			if (resp.cart) {
+				$(".cart-products-count").text(resp.cart.products_count);
 			}
 		});
-	}
-}
+	},
+};

@@ -1,5 +1,4 @@
-<?php
-/**
+{**
  * Copyright since 2007 PrestaShop SA and Contributors
  * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
  *
@@ -22,17 +21,30 @@
  * @author    PrestaShop SA and Contributors <contact@prestashop.com>
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- */
-
-header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-header('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT');
-
-header('Cache-Control: no-store, no-cache, must-revalidate');
-header('Cache-Control: post-check=0, pre-check=0', false);
-header('Pragma: no-cache');
-
-header('Location: ../');
-exit;
-
-
-
+ *}
+{if $page.page_name != 'index'}
+  <nav data-depth="{$breadcrumb.count}" class="breadcrumb">
+    <div class="breadcrumb-container">
+      <div class="container">
+        <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+          {block name='breadcrumb'}
+            {foreach from=$breadcrumb.links item=path name=breadcrumb}
+              {block name='breadcrumb_item'}
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                  <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
+                  {if not $smarty.foreach.breadcrumb.last}
+                    <a itemprop="item" href="{$path.url}">
+                      <span itemprop="name">{$path.title}</span>
+                    </a>
+                  {else}
+                    <span itemprop="name">{$path.title}</span>
+                  {/if}
+                </li>
+              {/block}
+            {/foreach}
+          {/block}
+        </ol>
+      </div>
+    </div>
+  </nav>
+{/if}

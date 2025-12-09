@@ -27524,7 +27524,8 @@ ul.product_list.grid>li .product-container .functional-buttons .wishlist .popove
   text-align: left;
   position: relative;
   padding: 0 5px;
-  width: 16.66%
+  width: 20%;
+  white-space: nowrap
 }
 
 .topcategory-container .home-title {
@@ -35963,4 +35964,9 @@ body#cms section#wrapper a {
   .np_title_mob {
       display: block
   }
+}
+
+.product-miniature .wishlist-button,
+.product-miniature .wishlist-button-add {
+  display: none
 }

@@ -48,6 +48,10 @@ assets:
         path: assets/js/lib/home-slider.js
         priority: 203
         position: bottom
+      - id: popular-categories
+        path: assets/js/lib/popular-categories.js
+        priority: 204
+        position: bottom
       - id: user-dropdown
         path: assets/js/user-dropdown.js
         priority: 211

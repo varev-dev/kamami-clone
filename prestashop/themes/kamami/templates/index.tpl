@@ -46,6 +46,11 @@
         </div>
       {/block}
 
+      {* Popular categories carousel *}
+      {block name='popular_categories'}
+        {include file='_partials/popular-categories.tpl'}
+      {/block}
+
       {* Rest of home page content (featured products, etc.) *}
       {block name='hook_home'}
         {hook h='displayHome' excl='ps_imageslider'}

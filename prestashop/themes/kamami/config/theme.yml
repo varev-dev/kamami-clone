@@ -44,6 +44,10 @@ assets:
         path: assets/js/lib/brand-carousel.js
         priority: 202
         position: bottom
+      - id: home-slider
+        path: assets/js/lib/home-slider.js
+        priority: 203
+        position: bottom
       - id: user-dropdown
         path: assets/js/user-dropdown.js
         priority: 211
@@ -56,6 +60,7 @@ assets:
 theme_settings:
   default_layout: layout-full-width
   layouts:
+    index: layout-left-column
     category: layout-left-column
     best-sales: layout-left-column
     new-products: layout-left-column

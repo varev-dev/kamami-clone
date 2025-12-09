@@ -29,10 +29,27 @@
     {block name='page_content_top'}{/block}
 
     {block name='page_content'}
+      {* Home content top: Slider + Side banners *}
+      {block name='home_content_top'}
+        <div class="home-content-top">
+          <div class="row">
+            {* Left side: Image slider *}
+            <div class="col-sm-12 col-md-12 col-lg-6 side-slide4">
+              {hook h='displayHome' mod='ps_imageslider'}
+            </div>
+
+            {* Right side: Promotional banners *}
+            <div class="col-sm-12 col-md-12 col-lg-6 side-adv4">
+              {include file='_partials/home-banners.tpl'}
+            </div>
+          </div>
+        </div>
+      {/block}
+
+      {* Rest of home page content (featured products, etc.) *}
       {block name='hook_home'}
-        {$HOOK_HOME nofilter}
+        {hook h='displayHome' excl='ps_imageslider'}
       {/block}
     {/block}
   </section>
 {/block}
-

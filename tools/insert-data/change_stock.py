@@ -1,0 +1,57 @@
+import requests
+import random
+from lxml import etree
+
+API_URL = "http://localhost:8080/api"
+API_KEY = "9IAJTM7V9DLW618UNCAY7P8W5B3BED5Q"
+HEADERS = {"Content-Type": "application/xml"}
+
+# Pobranie wszystkich produktów
+r = requests.get(f"{API_URL}/products", auth=(API_KEY, ""))
+r.raise_for_status()
+root = etree.fromstring(r.content)
+product_ids = [int(prod.get("id")) for prod in root.xpath(".//product")]
+
+print(f"Found {len(product_ids)} products")
+
+for product_id in product_ids:
+    new_quantity = random.randint(0, 10)
+
+    # Pobranie stock_available
+    params = {"filter[id_product]": f"[{product_id}]", "display": "full"}
+    response = requests.get(f"{API_URL}/stock_availables", auth=(API_KEY, ""), headers=HEADERS, params=params)
+    if response.status_code != 200:
+        print(f"Failed to fetch stock_available for product {product_id}")
+        continue
+
+    stock_root = etree.fromstring(response.content)
+    stock_ids = stock_root.xpath("//stock_available/id/text()")
+    if not stock_ids:
+        print(f"No stock_available record for product {product_id}")
+        continue
+
+    stock_id = stock_ids[0]
+
+    # Tworzenie XML do aktualizacji
+    prestashop = etree.Element("prestashop", nsmap={"xlink": "http://www.w3.org/1999/xlink"})
+    stock_available = etree.SubElement(prestashop, "stock_available")
+
+    etree.SubElement(stock_available, "id").text = etree.CDATA(str(stock_id))
+    etree.SubElement(stock_available, "id_product").text = etree.CDATA(str(product_id))
+    etree.SubElement(stock_available, "id_product_attribute").text = etree.CDATA("0")
+    etree.SubElement(stock_available, "id_shop").text = etree.CDATA("1")
+    etree.SubElement(stock_available, "quantity").text = etree.CDATA(str(new_quantity))
+    etree.SubElement(stock_available, "depends_on_stock").text = etree.CDATA("0")
+    etree.SubElement(stock_available, "out_of_stock").text = etree.CDATA("2")
+
+    xml_payload = etree.tostring(prestashop, encoding="utf-8", xml_declaration=True, pretty_print=True)
+
+    # Aktualizacja przez API
+    patch_url = f"{API_URL}/stock_availables/{stock_id}"
+    patch_response = requests.put(patch_url, auth=(API_KEY, ""), headers=HEADERS, data=xml_payload)
+
+    if patch_response.status_code in (200, 201):
+        print(f"Product {product_id}: quantity set to {new_quantity}")
+    else:
+        print(f"Failed to update product {product_id}: {patch_response.status_code}")
+        print(patch_response.text)

@@ -11,7 +11,12 @@ prestashop/img/p/**/
 
 tools/data/products/images
 tools/data/*.zip
+tools/data/*xml/
 
 __pycache__/
 
-new_dump.sql
+*.sql
+!dump.sql
+!prestashop/**/*.sql
+
+ssl/certs/*

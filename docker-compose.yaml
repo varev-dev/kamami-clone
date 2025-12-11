@@ -19,6 +19,7 @@ services:
       - mysql
     ports:
       - ${PS_PORT}:80
+      - 8443:443
     environment:
       PS_DEV_MODE: 1
       DB_SERVER: prestashop-mysql
@@ -29,8 +30,11 @@ services:
       PS_FOLDER_INSTALL: ${PS_FOLDER_INSTALL}
     networks:
       - prestashop_network
+    command: /bin/bash -c "a2enmod ssl && apache2-foreground"
     volumes:
       - ./prestashop:/var/www/html
+      - ./ssl/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./ssl/certs:/etc/ssl/certs
   phpmyadmin:
       image: phpmyadmin/phpmyadmin
       container_name: phpmyadmin

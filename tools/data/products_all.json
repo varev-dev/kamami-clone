@@ -27491,42 +27491,6 @@
     ]
   },
   {
-    "ps_id": 757,
-    "id": "1190206",
-    "name": "Filament Fiberlogy FiberFlex 40D Różowy 1,75mm 0,50kg",
-    "url": "https://kamami.pl/kategorie-glowne/1190206-fiberlogy-fiberflex-40d-pink-fiberlogy-fiberflex-40d-175mm-050kg.html",
-    "breadcrumb_category": "Kategorie główne",
-    "breadcrumb_full": [
-      "Kategorie główne",
-      "Filament Fiberlogy FiberFlex 40D Różowy 1,75mm 0,50kg"
-    ],
-    "short_description": "FiberFlex 40D to wszechstronny i elastyczny filament, który zapewnia szybki i precyzyjny druk 3D. Jest idealny do tworzenia wytrzymałych i elastycznych elementów, a jego właściwości mechaniczne i chemiczne czynią go doskonałym wyborem zarówno dla amatorów, jak i profesjonalistów. Dzięki różnorodności kolorów i łatwości drukowania, FiberFlex 40D spełni wymagania każdego projektu. Fiberlogy FiberFlex 40D Pink",
-    "full_description_html": "<p>FiberFlex 40D to wszechstronny i elastyczny filament, który zapewnia szybki i precyzyjny druk 3D. Jest idealny do tworzenia wytrzymałych i elastycznych elementów, a jego właściwości mechaniczne i chemiczne czynią go doskonałym wyborem zarówno dla amatorów, jak i profesjonalistów. Dzięki różnorodności kolorów i łatwości drukowania, FiberFlex 40D spełni wymagania każdego projektu. Fiberlogy FiberFlex 40D<span class=\"Y2IQFc\" lang=\"en\" xml:lang=\"en\"> Pink<br/></span></p>",
-    "price_brutto": "111,60 zł",
-    "price_netto": "90,73 zł Netto",
-    "attributes": {
-      "Rodzaj filamentu": "Flex",
-      "Ilość filamentu": "0,5 kg",
-      "Średnica": "1,75 mm",
-      "Kolor": "Różowy",
-      "Rodzaj opakowania": "Szpula"
-    },
-    "images": [
-      "https://kamami.pl/103003-large_default/fiberlogy-fiberflex-40d-pink-fiberlogy-fiberflex-40d-175mm-050kg.jpg",
-      "https://kamami.pl/103002-large_default/fiberlogy-fiberflex-40d-pink-fiberlogy-fiberflex-40d-175mm-050kg.jpg",
-      "https://kamami.pl/103000-large_default/fiberlogy-fiberflex-40d-pink-fiberlogy-fiberflex-40d-175mm-050kg.jpg",
-      "https://kamami.pl/103001-large_default/fiberlogy-fiberflex-40d-pink-fiberlogy-fiberflex-40d-175mm-050kg.jpg"
-    ],
-    "local_images": [
-      "../data/products/images/1190206/img_1.jpg",
-      "../data/products/images/1190206/img_2.jpg",
-      "../data/products/images/1190206/img_3.jpg",
-      "../data/products/images/1190206/img_4.jpg"
-    ],
-    "category_id": null,
-    "subcategories": []
-  },
-  {
     "ps_id": 758,
     "id": "1181811",
     "name": "Filament Fiberlogy MattFlex 40D 1,75mm Red",

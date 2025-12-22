@@ -3,7 +3,7 @@ import random
 from lxml import etree
 import argparse
 
-API_URL = "http://localhost:8080/api"
+API_URL = "https://localhost:8443/api"
 API_KEY = ""
 HEADERS = {"Content-Type": "application/xml"}
 
@@ -19,7 +19,7 @@ args = parser.parse_args()
 API_KEY = args.api_key.replace(' ', '')
 print(API_KEY)
 
-r = requests.get(f"{API_URL}/products", auth=(API_KEY, ""))
+r = requests.get(f"{API_URL}/products", auth=(API_KEY, ""), verify='../../apache-conf/certs/server.crt')
 r.raise_for_status()
 root = etree.fromstring(r.content)
 product_ids = [int(prod.get("id")) for prod in root.xpath(".//product")]
@@ -30,7 +30,7 @@ for product_id in product_ids:
     new_quantity = random.randint(0, 10)
 
     params = {"filter[id_product]": f"[{product_id}]", "display": "full"}
-    response = requests.get(f"{API_URL}/stock_availables", auth=(API_KEY, ""), headers=HEADERS, params=params)
+    response = requests.get(f"{API_URL}/stock_availables", auth=(API_KEY, ""), headers=HEADERS, params=params, verify='../../apache-conf/certs/server.crt')
     if response.status_code != 200:
         print(f"Failed to fetch stock_available for product {product_id}")
         continue
@@ -57,7 +57,7 @@ for product_id in product_ids:
     xml_payload = etree.tostring(prestashop, encoding="utf-8", xml_declaration=True, pretty_print=True)
 
     patch_url = f"{API_URL}/stock_availables/{stock_id}"
-    patch_response = requests.put(patch_url, auth=(API_KEY, ""), headers=HEADERS, data=xml_payload)
+    patch_response = requests.put(patch_url, auth=(API_KEY, ""), headers=HEADERS, data=xml_payload, verify='../../apache-conf/certs/server.crt')
 
     if patch_response.status_code in (200, 201):
         print(f"Product {product_id}: quantity set to {new_quantity}")

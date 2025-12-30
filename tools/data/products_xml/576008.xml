@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>166.670000</price>
+    <name>
+      <language id="1">Arduino Uno WiFi Rev2 - ABX00021</language>
+      <language id="2">Arduino Uno WiFi Rev2 - ABX00021</language>
+    </name>
+    <link_rewrite>
+      <language id="1">arduino-uno-wifi-rev2-abx00021</language>
+      <language id="2">arduino-uno-wifi-rev2-abx00021</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Płytka z mikrokontrolerem ATmega4809 z rodziny AVR i modułem WiFi i BT u-blox W102. Do dyspozycji użytkownika jest 14 linii I/O, 5 kanałów PWM, 6 wejść analogowych i układ IMU LSM6DS3TR. Arduino ABX00021</language>
+      <language id="2">Płytka z mikrokontrolerem ATmega4809 z rodziny AVR i modułem WiFi i BT u-blox W102. Do dyspozycji użytkownika jest 14 linii I/O, 5 kanałów PWM, 6 wejść analogowych i układ IMU LSM6DS3TR. Arduino ABX00021</language>
+    </description>
+    <description_short>
+      <language id="1">Płytka z mikrokontrolerem ATmega4809 z rodziny AVR i modułem WiFi i BT u-blox W102. Do dyspozycji użytkownika jest 14 linii I/O, 5 kanałów PWM, 6 wejść analogowych i układ IMU LSM6DS3TR. Arduino ABX00021</language>
+      <language id="2">Płytka z mikrokontrolerem ATmega4809 z rodziny AVR i modułem WiFi i BT u-blox W102. Do dyspozycji użytkownika jest 14 linii I/O, 5 kanałów PWM, 6 wejść analogowych i układ IMU LSM6DS3TR. Arduino ABX00021</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>21</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>21</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

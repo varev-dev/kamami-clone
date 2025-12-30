@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>31.710000</price>
+    <name>
+      <language id="1">Ekstruder Bowden typu Dual‑Drive</language>
+      <language id="2">Ekstruder Bowden typu Dual‑Drive</language>
+    </name>
+    <link_rewrite>
+      <language id="1">ekstruder-bowden-typu-dual-drive</language>
+      <language id="2">ekstruder-bowden-typu-dual-drive</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Ekstruder BMG to jednostka Bowden z napędem dual drive, oferująca przełożenie 3:1 i regulowane napięcie filamentu. Pasuje do drukarek typu Ender 3, CR‑10, Prusa i3 oraz podobnych. Ulepszenie idealne, gdy zależy na lepszej kontroli nad filamentem, szczególnie w przypadku materiałów elastycznych lub przy dużych retrakcjach.</language>
+      <language id="2">Ekstruder BMG to jednostka Bowden z napędem dual drive, oferująca przełożenie 3:1 i regulowane napięcie filamentu. Pasuje do drukarek typu Ender 3, CR‑10, Prusa i3 oraz podobnych. Ulepszenie idealne, gdy zależy na lepszej kontroli nad filamentem, szczególnie w przypadku materiałów elastycznych lub przy dużych retrakcjach.</language>
+    </description>
+    <description_short>
+      <language id="1">Ekstruder BMG to jednostka Bowden z napędem dual drive, oferująca przełożenie 3:1 i regulowane napięcie filamentu. Pasuje do drukarek typu Ender 3, CR‑10, Prusa i3 oraz podobnych. Ulepszenie idealne, gdy zależy na lepszej kontroli nad filamentem, szczególnie w przypadku materiałów elastycznych lub przy dużych retrakcjach.</language>
+      <language id="2">Ekstruder BMG to jednostka Bowden z napędem dual drive, oferująca przełożenie 3:1 i regulowane napięcie filamentu. Pasuje do drukarek typu Ender 3, CR‑10, Prusa i3 oraz podobnych. Ulepszenie idealne, gdy zależy na lepszej kontroli nad filamentem, szczególnie w przypadku materiałów elastycznych lub przy dużych retrakcjach.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>83</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>83</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

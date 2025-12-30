@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>0.000000</price>
+    <name>
+      <language id="1">Bambu Lab A1 3D Printer Combo</language>
+      <language id="2">Bambu Lab A1 3D Printer Combo</language>
+    </name>
+    <link_rewrite>
+      <language id="1">bambu-lab-a1-3d-printer-combo</language>
+      <language id="2">bambu-lab-a1-3d-printer-combo</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Drukarka 3D o obszarze roboczym 256 x 256 x 256 mm, wyposażona w metalowy Hotend z dyszą ze stali nierdzewnej, osiągającą temperaturę do 300°C. Posiada podgrzewany stół roboczy, który może osiągnąć maksymalną temperaturę 100°C. Dzięki maksymalnej prędkości głowicy 500 mm/s, zapewnia szybkie i precyzyjne drukowanie, obsługując różne rodzaje filamentów, takie jak PLA, PETG, TPU, PVA. Dzięki systemowi AMS jest w stanie drukować z czterech różnych kolorów. Wyposażona została również w kamerę oraz czujniki końca filamentu. Bambu Lab A1 3D Printer Combo</language>
+      <language id="2">Drukarka 3D o obszarze roboczym 256 x 256 x 256 mm, wyposażona w metalowy Hotend z dyszą ze stali nierdzewnej, osiągającą temperaturę do 300°C. Posiada podgrzewany stół roboczy, który może osiągnąć maksymalną temperaturę 100°C. Dzięki maksymalnej prędkości głowicy 500 mm/s, zapewnia szybkie i precyzyjne drukowanie, obsługując różne rodzaje filamentów, takie jak PLA, PETG, TPU, PVA. Dzięki systemowi AMS jest w stanie drukować z czterech różnych kolorów. Wyposażona została również w kamerę oraz czujniki końca filamentu. Bambu Lab A1 3D Printer Combo</language>
+    </description>
+    <description_short>
+      <language id="1">Drukarka 3D o obszarze roboczym 256 x 256 x 256 mm, wyposażona w metalowy Hotend z dyszą ze stali nierdzewnej, osiągającą temperaturę do 300°C. Posiada podgrzewany stół roboczy, który może osiągnąć maksymalną temperaturę 100°C. Dzięki maksymalnej prędkości głowicy 500 mm/s, zapewnia szybkie i precyzyjne drukowanie, obsługując różne rodzaje filamentów, takie jak PLA, PETG, TPU, PVA. Dzięki systemowi AMS jest w stanie drukować z czterech różnych kolorów. Wyposażona została również w kamerę oraz czujniki końca filamentu. Bambu Lab A1 3D Printer Combo</language>
+      <language id="2">Drukarka 3D o obszarze roboczym 256 x 256 x 256 mm, wyposażona w metalowy Hotend z dyszą ze stali nierdzewnej, osiągającą temperaturę do 300°C. Posiada podgrzewany stół roboczy, który może osiągnąć maksymalną temperaturę 100°C. Dzięki maksymalnej prędkości głowicy 500 mm/s, zapewnia szybkie i precyzyjne drukowanie, obsługując różne rodzaje filamentów, takie jak PLA, PETG, TPU, PVA. Dzięki systemowi AMS jest w stanie drukować z czterech różnych kolorów. Wyposażona została również w kamerę oraz czujniki końca filamentu. Bambu Lab A1 3D Printer Combo</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>62</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>62</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

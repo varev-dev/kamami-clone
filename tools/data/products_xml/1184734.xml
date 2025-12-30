@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>18.090000</price>
+    <name>
+      <language id="1">Koło pasowe zębate GT2 60T W6 B5</language>
+      <language id="2">Koło pasowe zębate GT2 60T W6 B5</language>
+    </name>
+    <link_rewrite>
+      <language id="1">ko-o-pasowe-z-bate-gt2-60t-w6-b5</language>
+      <language id="2">ko-o-pasowe-z-bate-gt2-60t-w6-b5</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Koło pasowe GT2 60T B5 na wałek o średnicy 5 mm. Ma 60 zębów, odpowiednie na pasek o szerokości 6 mm</language>
+      <language id="2">Koło pasowe GT2 60T B5 na wałek o średnicy 5 mm. Ma 60 zębów, odpowiednie na pasek o szerokości 6 mm</language>
+    </description>
+    <description_short>
+      <language id="1">Koło pasowe GT2 60T B5 na wałek o średnicy 5 mm. Ma 60 zębów, odpowiednie na pasek o szerokości 6 mm</language>
+      <language id="2">Koło pasowe GT2 60T B5 na wałek o średnicy 5 mm. Ma 60 zębów, odpowiednie na pasek o szerokości 6 mm</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>85</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>85</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

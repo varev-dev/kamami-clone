@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>233.340000</price>
+    <name>
+      <language id="1">Filament Fiberlogy HIPS Czarny 1,75mm 2,50kg</language>
+      <language id="2">Filament Fiberlogy HIPS Czarny 1,75mm 2,50kg</language>
+    </name>
+    <link_rewrite>
+      <language id="1">filament-fiberlogy-hips-czarny-1-75mm-2-50kg</language>
+      <language id="2">filament-fiberlogy-hips-czarny-1-75mm-2-50kg</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Filament HIPS to wszechstronny materiał do druku 3D, który sprawdza się zarówno jako główny filament do tworzenia estetycznych modeli, jak i jako rozpuszczalny materiał podporowy. Dzięki matowej powierzchni, możliwości szlifowania i malowania, a także łatwemu usuwaniu podpór, HIPS oferuje szerokie możliwości w tworzeniu skomplikowanych i pięknych wydruków 3D. Fiberlogy HIPS Black</language>
+      <language id="2">Filament HIPS to wszechstronny materiał do druku 3D, który sprawdza się zarówno jako główny filament do tworzenia estetycznych modeli, jak i jako rozpuszczalny materiał podporowy. Dzięki matowej powierzchni, możliwości szlifowania i malowania, a także łatwemu usuwaniu podpór, HIPS oferuje szerokie możliwości w tworzeniu skomplikowanych i pięknych wydruków 3D. Fiberlogy HIPS Black</language>
+    </description>
+    <description_short>
+      <language id="1">Filament HIPS to wszechstronny materiał do druku 3D, który sprawdza się zarówno jako główny filament do tworzenia estetycznych modeli, jak i jako rozpuszczalny materiał podporowy. Dzięki matowej powierzchni, możliwości szlifowania i malowania, a także łatwemu usuwaniu podpór, HIPS oferuje szerokie możliwości w tworzeniu skomplikowanych i pięknych wydruków 3D. Fiberlogy HIPS Black</language>
+      <language id="2">Filament HIPS to wszechstronny materiał do druku 3D, który sprawdza się zarówno jako główny filament do tworzenia estetycznych modeli, jak i jako rozpuszczalny materiał podporowy. Dzięki matowej powierzchni, możliwości szlifowania i malowania, a także łatwemu usuwaniu podpór, HIPS oferuje szerokie możliwości w tworzeniu skomplikowanych i pięknych wydruków 3D. Fiberlogy HIPS Black</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>79</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>79</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

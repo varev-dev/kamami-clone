@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>8.990000</price>
+    <name>
+      <language id="1">Przewód USB typ A - USB typ C QC3.0 miedź oplot 1,8m niebieski</language>
+      <language id="2">Przewód USB typ A - USB typ C QC3.0 miedź oplot 1,8m niebieski</language>
+    </name>
+    <link_rewrite>
+      <language id="1">przew-d-usb-typ-a-usb-typ-c-qc3-0-mied-oplot-1-8m-niebieski</language>
+      <language id="2">przew-d-usb-typ-a-usb-typ-c-qc3-0-mied-oplot-1-8m-niebieski</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Przewód z wtykami USB typ A oraz USB typ C 2.0, zgodność z Quick Charge 3.0 długość przewodu 1,8 m. LANBERG</language>
+      <language id="2">Przewód z wtykami USB typ A oraz USB typ C 2.0, zgodność z Quick Charge 3.0 długość przewodu 1,8 m. LANBERG</language>
+    </description>
+    <description_short>
+      <language id="1">Przewód z wtykami USB typ A oraz USB typ C 2.0, zgodność z Quick Charge 3.0 długość przewodu 1,8 m. LANBERG</language>
+      <language id="2">Przewód z wtykami USB typ A oraz USB typ C 2.0, zgodność z Quick Charge 3.0 długość przewodu 1,8 m. LANBERG</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>436</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>436</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

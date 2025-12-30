@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>159.080000</price>
+    <name>
+      <language id="1">A-Star 32U4 Prime SV microSD - płytka bazowa z mikrokontrolerem ATmega32U4</language>
+      <language id="2">A-Star 32U4 Prime SV microSD - płytka bazowa z mikrokontrolerem ATmega32U4</language>
+    </name>
+    <link_rewrite>
+      <language id="1">a-star-32u4-prime-sv-microsd-p-ytka-bazowa-z-mikrokontrolerem-atmega32u4</language>
+      <language id="2">a-star-32u4-prime-sv-microsd-p-ytka-bazowa-z-mikrokontrolerem-atmega32u4</language>
+    </link_rewrite>
+    <description>
+      <language id="1">A-Star 32U4 Prime LV microSD to płytka bazowa oparta o mikrokontroler ATmega32U4. A-Star Prime oferuje wiele nowych funkcjonalności w tym możliwość zasilania napięciem w zakresie 5-36V. Pololu 3114</language>
+      <language id="2">A-Star 32U4 Prime LV microSD to płytka bazowa oparta o mikrokontroler ATmega32U4. A-Star Prime oferuje wiele nowych funkcjonalności w tym możliwość zasilania napięciem w zakresie 5-36V. Pololu 3114</language>
+    </description>
+    <description_short>
+      <language id="1">A-Star 32U4 Prime LV microSD to płytka bazowa oparta o mikrokontroler ATmega32U4. A-Star Prime oferuje wiele nowych funkcjonalności w tym możliwość zasilania napięciem w zakresie 5-36V. Pololu 3114</language>
+      <language id="2">A-Star 32U4 Prime LV microSD to płytka bazowa oparta o mikrokontroler ATmega32U4. A-Star Prime oferuje wiele nowych funkcjonalności w tym możliwość zasilania napięciem w zakresie 5-36V. Pololu 3114</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>26</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>26</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

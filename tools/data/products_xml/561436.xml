@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>7.360000</price>
+    <name>
+      <language id="1">Sterownik silnika krokowego z układem DRV8825</language>
+      <language id="2">Sterownik silnika krokowego z układem DRV8825</language>
+    </name>
+    <link_rewrite>
+      <language id="1">sterownik-silnika-krokowego-z-uk-adem-drv8825</language>
+      <language id="2">sterownik-silnika-krokowego-z-uk-adem-drv8825</language>
+    </link_rewrite>
+    <description>
+      <language id="1">DRV8825 Stepper Motor Driver Carrier to sterownik silnika krokowego z układem DRV8825, pozwala na zasilanie silnika bipolarnego prądem do 1,5A na fazę, bez użycia radiatora. Układ może być zasilany napięciem do 45V, w zestawie znajduje się radiator. Jest kompatybilny z Pololu 2133</language>
+      <language id="2">DRV8825 Stepper Motor Driver Carrier to sterownik silnika krokowego z układem DRV8825, pozwala na zasilanie silnika bipolarnego prądem do 1,5A na fazę, bez użycia radiatora. Układ może być zasilany napięciem do 45V, w zestawie znajduje się radiator. Jest kompatybilny z Pololu 2133</language>
+    </description>
+    <description_short>
+      <language id="1">DRV8825 Stepper Motor Driver Carrier to sterownik silnika krokowego z układem DRV8825, pozwala na zasilanie silnika bipolarnego prądem do 1,5A na fazę, bez użycia radiatora. Układ może być zasilany napięciem do 45V, w zestawie znajduje się radiator. Jest kompatybilny z Pololu 2133</language>
+      <language id="2">DRV8825 Stepper Motor Driver Carrier to sterownik silnika krokowego z układem DRV8825, pozwala na zasilanie silnika bipolarnego prądem do 1,5A na fazę, bez użycia radiatora. Układ może być zasilany napięciem do 45V, w zestawie znajduje się radiator. Jest kompatybilny z Pololu 2133</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>91</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>91</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>168.000000</price>
+    <name>
+      <language id="1">SDR-120-24 - zasilacz impulsowy Mean Well 120 W, 24 V, 5 A</language>
+      <language id="2">SDR-120-24 - zasilacz impulsowy Mean Well 120 W, 24 V, 5 A</language>
+    </name>
+    <link_rewrite>
+      <language id="1">sdr-120-24-zasilacz-impulsowy-mean-well-120-w-24-v-5-a</language>
+      <language id="2">sdr-120-24-zasilacz-impulsowy-mean-well-120-w-24-v-5-a</language>
+    </link_rewrite>
+    <description>
+      <language id="1">SDR-120-24 to wysokowydajny zasilacz impulsowy 24 V, 5 A, o mocy 120 W, przeznaczony do montażu na szynie DIN, produkowany przez Mean Well. Charakteryzuje się sprawnością 91% i aktywnym układem PFC, co pozwala na efektywne wykorzystanie energii i poprawę współczynnika mocy w instalacjach przemysłowych.</language>
+      <language id="2">SDR-120-24 to wysokowydajny zasilacz impulsowy 24 V, 5 A, o mocy 120 W, przeznaczony do montażu na szynie DIN, produkowany przez Mean Well. Charakteryzuje się sprawnością 91% i aktywnym układem PFC, co pozwala na efektywne wykorzystanie energii i poprawę współczynnika mocy w instalacjach przemysłowych.</language>
+    </description>
+    <description_short>
+      <language id="1">SDR-120-24 to wysokowydajny zasilacz impulsowy 24 V, 5 A, o mocy 120 W, przeznaczony do montażu na szynie DIN, produkowany przez Mean Well. Charakteryzuje się sprawnością 91% i aktywnym układem PFC, co pozwala na efektywne wykorzystanie energii i poprawę współczynnika mocy w instalacjach przemysłowych.</language>
+      <language id="2">SDR-120-24 to wysokowydajny zasilacz impulsowy 24 V, 5 A, o mocy 120 W, przeznaczony do montażu na szynie DIN, produkowany przez Mean Well. Charakteryzuje się sprawnością 91% i aktywnym układem PFC, co pozwala na efektywne wykorzystanie energii i poprawę współczynnika mocy w instalacjach przemysłowych.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>56</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>56</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

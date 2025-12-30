@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>200.000000</price>
+    <name>
+      <language id="1">USR-MB706 - modem LTE Cat M z GNSS</language>
+      <language id="2">USR-MB706 - modem LTE Cat M z GNSS</language>
+    </name>
+    <link_rewrite>
+      <language id="1">usr-mb706-modem-lte-cat-m-z-gnss</language>
+      <language id="2">usr-mb706-modem-lte-cat-m-z-gnss</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł umożliwiający bezprzewodową transmisję danych w sieciach LTE Cat. M1 oraz Cat. NB2. Obsługuje komunikację GSM/EDGE oraz nawigację w ramach systemów GPS, BeiDou, GLONASS, Galileo. USR-MB706</language>
+      <language id="2">Moduł umożliwiający bezprzewodową transmisję danych w sieciach LTE Cat. M1 oraz Cat. NB2. Obsługuje komunikację GSM/EDGE oraz nawigację w ramach systemów GPS, BeiDou, GLONASS, Galileo. USR-MB706</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł umożliwiający bezprzewodową transmisję danych w sieciach LTE Cat. M1 oraz Cat. NB2. Obsługuje komunikację GSM/EDGE oraz nawigację w ramach systemów GPS, BeiDou, GLONASS, Galileo. USR-MB706</language>
+      <language id="2">Moduł umożliwiający bezprzewodową transmisję danych w sieciach LTE Cat. M1 oraz Cat. NB2. Obsługuje komunikację GSM/EDGE oraz nawigację w ramach systemów GPS, BeiDou, GLONASS, Galileo. USR-MB706</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>50</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>50</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

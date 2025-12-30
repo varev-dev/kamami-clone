@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>42.210000</price>
+    <name>
+      <language id="1">Hotend 0,2mm ze stali nierdzewnej do drukarki 3D Bambu Lab A1/A1 mini</language>
+      <language id="2">Hotend 0,2mm ze stali nierdzewnej do drukarki 3D Bambu Lab A1/A1 mini</language>
+    </name>
+    <link_rewrite>
+      <language id="1">hotend-0-2mm-ze-stali-nierdzewnej-do-drukarki-3d-bambu-lab-a1-a1-mini</language>
+      <language id="2">hotend-0-2mm-ze-stali-nierdzewnej-do-drukarki-3d-bambu-lab-a1-a1-mini</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Precyzyjny hotend 0,2 mm ze stali nierdzewnej to niezawodne rozwiązanie dla drukarek 3D Bambu Lab A1/A1 mini, umożliwiające tworzenie szczegółowych wydruków z różnorodnych materiałów. Bambu Lab Hotend - A1 0,2mm Stainless Steel</language>
+      <language id="2">Precyzyjny hotend 0,2 mm ze stali nierdzewnej to niezawodne rozwiązanie dla drukarek 3D Bambu Lab A1/A1 mini, umożliwiające tworzenie szczegółowych wydruków z różnorodnych materiałów. Bambu Lab Hotend - A1 0,2mm Stainless Steel</language>
+    </description>
+    <description_short>
+      <language id="1">Precyzyjny hotend 0,2 mm ze stali nierdzewnej to niezawodne rozwiązanie dla drukarek 3D Bambu Lab A1/A1 mini, umożliwiające tworzenie szczegółowych wydruków z różnorodnych materiałów. Bambu Lab Hotend - A1 0,2mm Stainless Steel</language>
+      <language id="2">Precyzyjny hotend 0,2 mm ze stali nierdzewnej to niezawodne rozwiązanie dla drukarek 3D Bambu Lab A1/A1 mini, umożliwiające tworzenie szczegółowych wydruków z różnorodnych materiałów. Bambu Lab Hotend - A1 0,2mm Stainless Steel</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>63</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>63</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

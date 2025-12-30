@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>158.320000</price>
+    <name>
+      <language id="1">X-NUCLEO-CCA01M1 - shield (ekspander) audio dla Arduino/NUCLEO</language>
+      <language id="2">X-NUCLEO-CCA01M1 - shield (ekspander) audio dla Arduino/NUCLEO</language>
+    </name>
+    <link_rewrite>
+      <language id="1">x-nucleo-cca01m1-shield-ekspander-audio-dla-arduino-nucleo</language>
+      <language id="2">x-nucleo-cca01m1-shield-ekspander-audio-dla-arduino-nucleo</language>
+    </link_rewrite>
+    <description>
+      <language id="1">2-kanałowy shield audio dla STM32 Nucleo oparty na układzie STA350BW, umożliwia odtwarzanie dźwięku wysokiej jakości, głośniki dołącza się bezpośrednio do modułu (wbudowany wzmacniacz 2 x 50 W). Komunikacja przez I2C (sterowanie) i I2S (dane audio)</language>
+      <language id="2">2-kanałowy shield audio dla STM32 Nucleo oparty na układzie STA350BW, umożliwia odtwarzanie dźwięku wysokiej jakości, głośniki dołącza się bezpośrednio do modułu (wbudowany wzmacniacz 2 x 50 W). Komunikacja przez I2C (sterowanie) i I2S (dane audio)</language>
+    </description>
+    <description_short>
+      <language id="1">2-kanałowy shield audio dla STM32 Nucleo oparty na układzie STA350BW, umożliwia odtwarzanie dźwięku wysokiej jakości, głośniki dołącza się bezpośrednio do modułu (wbudowany wzmacniacz 2 x 50 W). Komunikacja przez I2C (sterowanie) i I2S (dane audio)</language>
+      <language id="2">2-kanałowy shield audio dla STM32 Nucleo oparty na układzie STA350BW, umożliwia odtwarzanie dźwięku wysokiej jakości, głośniki dołącza się bezpośrednio do modułu (wbudowany wzmacniacz 2 x 50 W). Komunikacja przez I2C (sterowanie) i I2S (dane audio)</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>1001</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>1001</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

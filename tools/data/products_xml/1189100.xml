@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>527.640000</price>
+    <name>
+      <language id="1">SHARK JACK CABLE - narzędzie do testów bezpieczeństwa sieci LAN</language>
+      <language id="2">SHARK JACK CABLE - narzędzie do testów bezpieczeństwa sieci LAN</language>
+    </name>
+    <link_rewrite>
+      <language id="1">shark-jack-cable-narz-dzie-do-test-w-bezpiecze-stwa-sieci-lan</language>
+      <language id="2">shark-jack-cable-narz-dzie-do-test-w-bezpiecze-stwa-sieci-lan</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Urządzenie w formie niewielkiego modułu służące do testów penetracyjnych sieci LAN. Może być w łatwy sposób podłączone do sieci i zaraz po uruchomieniu udostępnia zaawansowane funkcje ataków. Wersja z przewodem USB typu C pozwala nie tylko na zasilanie urządzenia, ale także daje dostęp do portu szeregowego z logowaniem pracy urządzenia. Hak5 SHARK JACK CABLE</language>
+      <language id="2">Urządzenie w formie niewielkiego modułu służące do testów penetracyjnych sieci LAN. Może być w łatwy sposób podłączone do sieci i zaraz po uruchomieniu udostępnia zaawansowane funkcje ataków. Wersja z przewodem USB typu C pozwala nie tylko na zasilanie urządzenia, ale także daje dostęp do portu szeregowego z logowaniem pracy urządzenia. Hak5 SHARK JACK CABLE</language>
+    </description>
+    <description_short>
+      <language id="1">Urządzenie w formie niewielkiego modułu służące do testów penetracyjnych sieci LAN. Może być w łatwy sposób podłączone do sieci i zaraz po uruchomieniu udostępnia zaawansowane funkcje ataków. Wersja z przewodem USB typu C pozwala nie tylko na zasilanie urządzenia, ale także daje dostęp do portu szeregowego z logowaniem pracy urządzenia. Hak5 SHARK JACK CABLE</language>
+      <language id="2">Urządzenie w formie niewielkiego modułu służące do testów penetracyjnych sieci LAN. Może być w łatwy sposób podłączone do sieci i zaraz po uruchomieniu udostępnia zaawansowane funkcje ataków. Wersja z przewodem USB typu C pozwala nie tylko na zasilanie urządzenia, ale także daje dostęp do portu szeregowego z logowaniem pracy urządzenia. Hak5 SHARK JACK CABLE</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>60</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>60</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

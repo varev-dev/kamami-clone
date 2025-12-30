@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>109.760000</price>
+    <name>
+      <language id="1">Kamera IR ArduCam MT9M001 HD CMOS 1,3Mpx 1280x1024px 30fsp</language>
+      <language id="2">Kamera IR ArduCam MT9M001 HD CMOS 1,3Mpx 1280x1024px 30fsp</language>
+    </name>
+    <link_rewrite>
+      <language id="1">kamera-ir-arducam-mt9m001-hd-cmos-1-3mpx-1280x1024px-30fsp</language>
+      <language id="2">kamera-ir-arducam-mt9m001-hd-cmos-1-3mpx-1280x1024px-30fsp</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł kamery światła podczerwonego 1,3 Mpx z sensorem MT9M001 HD CMOS o rozdzielczości matrycy 1280 x 1024 px i szybkości transmisji w formacie SXGA do 30 FSP. Przystosowana do pracy w warunkach niskiego oświetlenia. ArduCAM B0059</language>
+      <language id="2">Moduł kamery światła podczerwonego 1,3 Mpx z sensorem MT9M001 HD CMOS o rozdzielczości matrycy 1280 x 1024 px i szybkości transmisji w formacie SXGA do 30 FSP. Przystosowana do pracy w warunkach niskiego oświetlenia. ArduCAM B0059</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł kamery światła podczerwonego 1,3 Mpx z sensorem MT9M001 HD CMOS o rozdzielczości matrycy 1280 x 1024 px i szybkości transmisji w formacie SXGA do 30 FSP. Przystosowana do pracy w warunkach niskiego oświetlenia. ArduCAM B0059</language>
+      <language id="2">Moduł kamery światła podczerwonego 1,3 Mpx z sensorem MT9M001 HD CMOS o rozdzielczości matrycy 1280 x 1024 px i szybkości transmisji w formacie SXGA do 30 FSP. Przystosowana do pracy w warunkach niskiego oświetlenia. ArduCAM B0059</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>209</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>209</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

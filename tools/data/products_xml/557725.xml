@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>23.500000</price>
+    <name>
+      <language id="1">KAmodNFC - ekspander z NFC/RFID, kompatybilny z Arduino oraz NUCLEO</language>
+      <language id="2">KAmodNFC - ekspander z NFC/RFID, kompatybilny z Arduino oraz NUCLEO</language>
+    </name>
+    <link_rewrite>
+      <language id="1">kamodnfc-ekspander-z-nfc-rfid-kompatybilny-z-arduino-oraz-nucleo</language>
+      <language id="2">kamodnfc-ekspander-z-nfc-rfid-kompatybilny-z-arduino-oraz-nucleo</language>
+    </link_rewrite>
+    <description>
+      <language id="1">KAmodNFC to płytka rozszerzająca z układem M24LR64E-R - dynamicznym tagiem z pamięcią EEPROM o pojemności 64kb i podwójnym interfejsem komunikacyjnym (I2C / RF). Na płytce umieszczono także sygnalizację działania funkcji odzysku energii (energy harvesting), wbudowanej w układ M24LR64E-R</language>
+      <language id="2">KAmodNFC to płytka rozszerzająca z układem M24LR64E-R - dynamicznym tagiem z pamięcią EEPROM o pojemności 64kb i podwójnym interfejsem komunikacyjnym (I2C / RF). Na płytce umieszczono także sygnalizację działania funkcji odzysku energii (energy harvesting), wbudowanej w układ M24LR64E-R</language>
+    </description>
+    <description_short>
+      <language id="1">KAmodNFC to płytka rozszerzająca z układem M24LR64E-R - dynamicznym tagiem z pamięcią EEPROM o pojemności 64kb i podwójnym interfejsem komunikacyjnym (I2C / RF). Na płytce umieszczono także sygnalizację działania funkcji odzysku energii (energy harvesting), wbudowanej w układ M24LR64E-R</language>
+      <language id="2">KAmodNFC to płytka rozszerzająca z układem M24LR64E-R - dynamicznym tagiem z pamięcią EEPROM o pojemności 64kb i podwójnym interfejsem komunikacyjnym (I2C / RF). Na płytce umieszczono także sygnalizację działania funkcji odzysku energii (energy harvesting), wbudowanej w układ M24LR64E-R</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>972</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>972</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

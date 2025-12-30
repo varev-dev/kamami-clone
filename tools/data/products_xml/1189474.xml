@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>42.050000</price>
+    <name>
+      <language id="1">Konwerter USB TO RS232/485 z układem FT232RNL (USB typu A) - Waveshare 26630</language>
+      <language id="2">Konwerter USB TO RS232/485 z układem FT232RNL (USB typu A) - Waveshare 26630</language>
+    </name>
+    <link_rewrite>
+      <language id="1">konwerter-usb-to-rs232-485-z-uk-adem-ft232rnl-usb-typu-a-waveshare-26630</language>
+      <language id="2">konwerter-usb-to-rs232-485-z-uk-adem-ft232rnl-usb-typu-a-waveshare-26630</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Konwerter USB - RS232/RS485 z oryginalnym układem FT2132RNL. Wykorzystuje złącze USB typu A oraz złącze śrubowe do podłączenia interfejsów RS232 i RS485. Obsługuje szeroki zakres systemów operacyjnych: Mac, Linux, Android oraz Windows 11, 10, 8.1, 8, 7. Waveshare USB TO RS232/485</language>
+      <language id="2">Konwerter USB - RS232/RS485 z oryginalnym układem FT2132RNL. Wykorzystuje złącze USB typu A oraz złącze śrubowe do podłączenia interfejsów RS232 i RS485. Obsługuje szeroki zakres systemów operacyjnych: Mac, Linux, Android oraz Windows 11, 10, 8.1, 8, 7. Waveshare USB TO RS232/485</language>
+    </description>
+    <description_short>
+      <language id="1">Konwerter USB - RS232/RS485 z oryginalnym układem FT2132RNL. Wykorzystuje złącze USB typu A oraz złącze śrubowe do podłączenia interfejsów RS232 i RS485. Obsługuje szeroki zakres systemów operacyjnych: Mac, Linux, Android oraz Windows 11, 10, 8.1, 8, 7. Waveshare USB TO RS232/485</language>
+      <language id="2">Konwerter USB - RS232/RS485 z oryginalnym układem FT2132RNL. Wykorzystuje złącze USB typu A oraz złącze śrubowe do podłączenia interfejsów RS232 i RS485. Obsługuje szeroki zakres systemów operacyjnych: Mac, Linux, Android oraz Windows 11, 10, 8.1, 8, 7. Waveshare USB TO RS232/485</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>49</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>49</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

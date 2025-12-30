@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <category>
+    <id_parent>546</id_parent>
+    <active>1</active>
+    <is_root_category>0</is_root_category>
+    <name>
+      <language id="1">Programowanie</language>
+      <language id="2">Programowanie</language>
+    </name>
+    <link_rewrite>
+      <language id="1">programowanie</language>
+      <language id="2">programowanie</language>
+    </link_rewrite>
+    <description>
+      <language id="1"/>
+      <language id="2"/>
+    </description>
+    <meta_title>
+      <language id="1">Programowanie</language>
+      <language id="2">Programowanie</language>
+    </meta_title>
+    <meta_description>
+      <language id="1"/>
+      <language id="2"/>
+    </meta_description>
+    <meta_keywords>
+      <language id="1"/>
+      <language id="2"/>
+    </meta_keywords>
+  </category>
+</prestashop>

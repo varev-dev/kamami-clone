@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>166.670000</price>
+    <name>
+      <language id="1">Arduino UNO Q 2GB RAM 16GB eMMC – hybrydowa płytka z Qualcomm QRB2210 i STM32U585</language>
+      <language id="2">Arduino UNO Q 2GB RAM 16GB eMMC – hybrydowa płytka z Qualcomm QRB2210 i STM32U585</language>
+    </name>
+    <link_rewrite>
+      <language id="1">arduino-uno-q-2gb-ram-16gb-emmc-hybrydowa-p-ytka-z-qualcomm-qrb2210-i-stm32u585</language>
+      <language id="2">arduino-uno-q-2gb-ram-16gb-emmc-hybrydowa-p-ytka-z-qualcomm-qrb2210-i-stm32u585</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Płytka Arduino UNO Q (ABX00162) integruje mikroprocesor Qualcomm QRB2210 z mikrokontrolerem STM32U585, oferując zaawansowaną platformę do projektowania systemów AI, IoT i robotyki. Obsługa kontenerów Docker, zintegrowane środowisko App Lab oraz bogaty zestaw interfejsów sprawiają, że płytka znajduje zastosowanie w aplikacjach wymagających współdziałania systemów Linux i czasu rzeczywistego.</language>
+      <language id="2">Płytka Arduino UNO Q (ABX00162) integruje mikroprocesor Qualcomm QRB2210 z mikrokontrolerem STM32U585, oferując zaawansowaną platformę do projektowania systemów AI, IoT i robotyki. Obsługa kontenerów Docker, zintegrowane środowisko App Lab oraz bogaty zestaw interfejsów sprawiają, że płytka znajduje zastosowanie w aplikacjach wymagających współdziałania systemów Linux i czasu rzeczywistego.</language>
+    </description>
+    <description_short>
+      <language id="1">Płytka Arduino UNO Q (ABX00162) integruje mikroprocesor Qualcomm QRB2210 z mikrokontrolerem STM32U585, oferując zaawansowaną platformę do projektowania systemów AI, IoT i robotyki. Obsługa kontenerów Docker, zintegrowane środowisko App Lab oraz bogaty zestaw interfejsów sprawiają, że płytka znajduje zastosowanie w aplikacjach wymagających współdziałania systemów Linux i czasu rzeczywistego.</language>
+      <language id="2">Płytka Arduino UNO Q (ABX00162) integruje mikroprocesor Qualcomm QRB2210 z mikrokontrolerem STM32U585, oferując zaawansowaną platformę do projektowania systemów AI, IoT i robotyki. Obsługa kontenerów Docker, zintegrowane środowisko App Lab oraz bogaty zestaw interfejsów sprawiają, że płytka znajduje zastosowanie w aplikacjach wymagających współdziałania systemów Linux i czasu rzeczywistego.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>21</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>21</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

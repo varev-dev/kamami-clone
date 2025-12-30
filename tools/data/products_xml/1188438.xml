@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>216.070000</price>
+    <name>
+      <language id="1">BIGTREETECH Octopus V1.1 - płyta główna do drukarek 3D</language>
+      <language id="2">BIGTREETECH Octopus V1.1 - płyta główna do drukarek 3D</language>
+    </name>
+    <link_rewrite>
+      <language id="1">bigtreetech-octopus-v1-1-p-yta-g-wna-do-drukarek-3d</language>
+      <language id="2">bigtreetech-octopus-v1-1-p-yta-g-wna-do-drukarek-3d</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Octopus V1.1 to wszechstronna i potężna płyta główna, idealna dla zaawansowanych użytkowników drukarek 3D. Dzięki mocnemu mikrokontolerowi, obsłudze wielu interfejsów oraz możliwości kontrolowania 8 osi, płyta ta zapewnia szerokie możliwości rozbudowy i dostosowania urządzenia do indywidualnych potrzeb. BIGTREETECH Octopus V1.1</language>
+      <language id="2">Octopus V1.1 to wszechstronna i potężna płyta główna, idealna dla zaawansowanych użytkowników drukarek 3D. Dzięki mocnemu mikrokontolerowi, obsłudze wielu interfejsów oraz możliwości kontrolowania 8 osi, płyta ta zapewnia szerokie możliwości rozbudowy i dostosowania urządzenia do indywidualnych potrzeb. BIGTREETECH Octopus V1.1</language>
+    </description>
+    <description_short>
+      <language id="1">Octopus V1.1 to wszechstronna i potężna płyta główna, idealna dla zaawansowanych użytkowników drukarek 3D. Dzięki mocnemu mikrokontolerowi, obsłudze wielu interfejsów oraz możliwości kontrolowania 8 osi, płyta ta zapewnia szerokie możliwości rozbudowy i dostosowania urządzenia do indywidualnych potrzeb. BIGTREETECH Octopus V1.1</language>
+      <language id="2">Octopus V1.1 to wszechstronna i potężna płyta główna, idealna dla zaawansowanych użytkowników drukarek 3D. Dzięki mocnemu mikrokontolerowi, obsłudze wielu interfejsów oraz możliwości kontrolowania 8 osi, płyta ta zapewnia szerokie możliwości rozbudowy i dostosowania urządzenia do indywidualnych potrzeb. BIGTREETECH Octopus V1.1</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>90</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>90</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>21.900000</price>
+    <name>
+      <language id="1">CNC Shield V3 + 4x A4988 StepStick - Sterownik silników krokowych do Arduino</language>
+      <language id="2">CNC Shield V3 + 4x A4988 StepStick - Sterownik silników krokowych do Arduino</language>
+    </name>
+    <link_rewrite>
+      <language id="1">cnc-shield-v3-4x-a4988-stepstick-sterownik-silnik-w-krokowych-do-arduino</language>
+      <language id="2">cnc-shield-v3-4x-a4988-stepstick-sterownik-silnik-w-krokowych-do-arduino</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł typu Shield z 4 sterownikami silników krokowych do Arduino. W zestawie znajduje się nakładka CNC Shield V3 oraz 4 StepStick na układach A4988. Zestaw idealnie nadaje się do budowy ploterów CNC, robotów, manipulatorów oraz prostych drukarek 3D. Silniki mogą być zasilane napięciem z zakresu 12 - 36 V, a cześć logiczna 3 - 5 V dzięki czemu moduł może również współpracować mikrokontrolerami zasilanymi napięciem 3,3 V takimi jak STM32</language>
+      <language id="2">Moduł typu Shield z 4 sterownikami silników krokowych do Arduino. W zestawie znajduje się nakładka CNC Shield V3 oraz 4 StepStick na układach A4988. Zestaw idealnie nadaje się do budowy ploterów CNC, robotów, manipulatorów oraz prostych drukarek 3D. Silniki mogą być zasilane napięciem z zakresu 12 - 36 V, a cześć logiczna 3 - 5 V dzięki czemu moduł może również współpracować mikrokontrolerami zasilanymi napięciem 3,3 V takimi jak STM32</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł typu Shield z 4 sterownikami silników krokowych do Arduino. W zestawie znajduje się nakładka CNC Shield V3 oraz 4 StepStick na układach A4988. Zestaw idealnie nadaje się do budowy ploterów CNC, robotów, manipulatorów oraz prostych drukarek 3D. Silniki mogą być zasilane napięciem z zakresu 12 - 36 V, a cześć logiczna 3 - 5 V dzięki czemu moduł może również współpracować mikrokontrolerami zasilanymi napięciem 3,3 V takimi jak STM32</language>
+      <language id="2">Moduł typu Shield z 4 sterownikami silników krokowych do Arduino. W zestawie znajduje się nakładka CNC Shield V3 oraz 4 StepStick na układach A4988. Zestaw idealnie nadaje się do budowy ploterów CNC, robotów, manipulatorów oraz prostych drukarek 3D. Silniki mogą być zasilane napięciem z zakresu 12 - 36 V, a cześć logiczna 3 - 5 V dzięki czemu moduł może również współpracować mikrokontrolerami zasilanymi napięciem 3,3 V takimi jak STM32</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>90</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>90</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

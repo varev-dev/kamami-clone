@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>100.000000</price>
+    <name>
+      <language id="1">Arduino Uno R4 WiFi - ABX00087</language>
+      <language id="2">Arduino Uno R4 WiFi - ABX00087</language>
+    </name>
+    <link_rewrite>
+      <language id="1">arduino-uno-r4-wifi-abx00087</language>
+      <language id="2">arduino-uno-r4-wifi-abx00087</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Nowe Arduino Uno, najnowsza rewizja najpopularniejszego zestawu deweloperskiego na świecie, pozwala twórcom realizować bardziej zaawansowane projekty. Arduino Uno posiada teraz 32-bitowy mikrokontroler Renessas RA4M1 z rdzeniem ARM Cortex M4, a także ESP32-S3-MINI zapewniający łączność WiFi i Bluetooth LE. Kluczową cechą nowego Arduino Uno jest zgodność z wszystkimi shieldami z poprzednich wersji, co pozwala na łatwe uaktualnienie Twoich starych projektów. Arduino Uno jest teraz jeszcze bardziej bezpieczne dzięki rozbudowanym systemom zabezpieczeń, a także zgodności z istniejącymi poradnikami i projektami. Arduino Uno, dzięki swojej elastyczności i dostępności, jest idealnym narzędziem dla początkujących i doświadczonych makerów. Arduino ABX00087</language>
+      <language id="2">Nowe Arduino Uno, najnowsza rewizja najpopularniejszego zestawu deweloperskiego na świecie, pozwala twórcom realizować bardziej zaawansowane projekty. Arduino Uno posiada teraz 32-bitowy mikrokontroler Renessas RA4M1 z rdzeniem ARM Cortex M4, a także ESP32-S3-MINI zapewniający łączność WiFi i Bluetooth LE. Kluczową cechą nowego Arduino Uno jest zgodność z wszystkimi shieldami z poprzednich wersji, co pozwala na łatwe uaktualnienie Twoich starych projektów. Arduino Uno jest teraz jeszcze bardziej bezpieczne dzięki rozbudowanym systemom zabezpieczeń, a także zgodności z istniejącymi poradnikami i projektami. Arduino Uno, dzięki swojej elastyczności i dostępności, jest idealnym narzędziem dla początkujących i doświadczonych makerów. Arduino ABX00087</language>
+    </description>
+    <description_short>
+      <language id="1">Nowe Arduino Uno, najnowsza rewizja najpopularniejszego zestawu deweloperskiego na świecie, pozwala twórcom realizować bardziej zaawansowane projekty. Arduino Uno posiada teraz 32-bitowy mikrokontroler Renessas RA4M1 z rdzeniem ARM Cortex M4, a także ESP32-S3-MINI zapewniający łączność WiFi i Bluetooth LE. Kluczową cechą nowego Arduino Uno jest zgodność z wszystkimi shieldami z poprzednich wersji, co pozwala na łatwe uaktualnienie Twoich starych projektów. Arduino Uno jest teraz jeszcze bardziej bezpieczne dzięki rozbudowanym systemom zabezpieczeń, a także zgodności z istniejącymi poradnikami i projektami. Arduino Uno, dzięki swojej elastyczności i dostępności, jest idealnym narzędziem dla początkujących i doświadczonych makerów. Arduino ABX00087</language>
+      <language id="2">Nowe Arduino Uno, najnowsza rewizja najpopularniejszego zestawu deweloperskiego na świecie, pozwala twórcom realizować bardziej zaawansowane projekty. Arduino Uno posiada teraz 32-bitowy mikrokontroler Renessas RA4M1 z rdzeniem ARM Cortex M4, a także ESP32-S3-MINI zapewniający łączność WiFi i Bluetooth LE. Kluczową cechą nowego Arduino Uno jest zgodność z wszystkimi shieldami z poprzednich wersji, co pozwala na łatwe uaktualnienie Twoich starych projektów. Arduino Uno jest teraz jeszcze bardziej bezpieczne dzięki rozbudowanym systemom zabezpieczeń, a także zgodności z istniejącymi poradnikami i projektami. Arduino Uno, dzięki swojej elastyczności i dostępności, jest idealnym narzędziem dla początkujących i doświadczonych makerów. Arduino ABX00087</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>21</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>21</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

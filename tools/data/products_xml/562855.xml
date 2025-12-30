@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>113.010000</price>
+    <name>
+      <language id="1">Kamera ArduCAM CMOS OV5640C 1/4&quot; 5-Megapikseli</language>
+      <language id="2">Kamera ArduCAM CMOS OV5640C 1/4&quot; 5-Megapikseli</language>
+    </name>
+    <link_rewrite>
+      <language id="1">kamera-arducam-cmos-ov5640c-1-4-5-megapikseli</language>
+      <language id="2">kamera-arducam-cmos-ov5640c-1-4-5-megapikseli</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Nowy moduł kamery z matrycą 5 Megapikseli, autofocusem i sensorem CMOS z wyjściem JPEG.Bazuje na sensorze obrazu firmy Omnivision OV5640 i z powodzeniem może zostać użyty z ekspanderami ArduCAM i innymi platformami takimi jak Freescale i.MX6 develop board. ArduCam U3183</language>
+      <language id="2">Nowy moduł kamery z matrycą 5 Megapikseli, autofocusem i sensorem CMOS z wyjściem JPEG.Bazuje na sensorze obrazu firmy Omnivision OV5640 i z powodzeniem może zostać użyty z ekspanderami ArduCAM i innymi platformami takimi jak Freescale i.MX6 develop board. ArduCam U3183</language>
+    </description>
+    <description_short>
+      <language id="1">Nowy moduł kamery z matrycą 5 Megapikseli, autofocusem i sensorem CMOS z wyjściem JPEG.Bazuje na sensorze obrazu firmy Omnivision OV5640 i z powodzeniem może zostać użyty z ekspanderami ArduCAM i innymi platformami takimi jak Freescale i.MX6 develop board. ArduCam U3183</language>
+      <language id="2">Nowy moduł kamery z matrycą 5 Megapikseli, autofocusem i sensorem CMOS z wyjściem JPEG.Bazuje na sensorze obrazu firmy Omnivision OV5640 i z powodzeniem może zostać użyty z ekspanderami ArduCAM i innymi platformami takimi jak Freescale i.MX6 develop board. ArduCam U3183</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>11</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>11</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>107.590000</price>
+    <name>
+      <language id="1">Motoron M3S550 Triple Motor Controller Shield - 3-kanałowy sterownik silników DC dla Arduino (do montażu)</language>
+      <language id="2">Motoron M3S550 Triple Motor Controller Shield - 3-kanałowy sterownik silników DC dla Arduino (do montażu)</language>
+    </name>
+    <link_rewrite>
+      <language id="1">motoron-m3s550-triple-motor-controller-shield-3-kana-owy-sterownik-silnik-w-dc-dla-arduino-do-monta-u</language>
+      <language id="2">motoron-m3s550-triple-motor-controller-shield-3-kana-owy-sterownik-silnik-w-dc-dla-arduino-do-monta-u</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Sterownik silników DC, który pozwala na kontrolowanie ruchu trzech napędów za pomocą interfejsu I2C. W zestawie płytka ze złączami do montażu. Pololu 5069</language>
+      <language id="2">Sterownik silników DC, który pozwala na kontrolowanie ruchu trzech napędów za pomocą interfejsu I2C. W zestawie płytka ze złączami do montażu. Pololu 5069</language>
+    </description>
+    <description_short>
+      <language id="1">Sterownik silników DC, który pozwala na kontrolowanie ruchu trzech napędów za pomocą interfejsu I2C. W zestawie płytka ze złączami do montażu. Pololu 5069</language>
+      <language id="2">Sterownik silników DC, który pozwala na kontrolowanie ruchu trzech napędów za pomocą interfejsu I2C. W zestawie płytka ze złączami do montażu. Pololu 5069</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>10</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>10</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

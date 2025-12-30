@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>29.700000</price>
+    <name>
+      <language id="1">Gravity: Screw Shield V2 - moduł ze złączami śrubowymi dla Arduino</language>
+      <language id="2">Gravity: Screw Shield V2 - moduł ze złączami śrubowymi dla Arduino</language>
+    </name>
+    <link_rewrite>
+      <language id="1">gravity-screw-shield-v2-modu-ze-z-czami-rubowymi-dla-arduino</language>
+      <language id="2">gravity-screw-shield-v2-modu-ze-z-czami-rubowymi-dla-arduino</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł ze złączami śrubowymi dedykowany dla płytek Arduino. Pozwala w łatwy sposób tworzyć prototypy, zapewniając stabilne połączenie przewodów z płytką. Wyposażony w złącze Gravity. DFRobot DFR0171</language>
+      <language id="2">Moduł ze złączami śrubowymi dedykowany dla płytek Arduino. Pozwala w łatwy sposób tworzyć prototypy, zapewniając stabilne połączenie przewodów z płytką. Wyposażony w złącze Gravity. DFRobot DFR0171</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł ze złączami śrubowymi dedykowany dla płytek Arduino. Pozwala w łatwy sposób tworzyć prototypy, zapewniając stabilne połączenie przewodów z płytką. Wyposażony w złącze Gravity. DFRobot DFR0171</language>
+      <language id="2">Moduł ze złączami śrubowymi dedykowany dla płytek Arduino. Pozwala w łatwy sposób tworzyć prototypy, zapewniając stabilne połączenie przewodów z płytką. Wyposażony w złącze Gravity. DFRobot DFR0171</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>28</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>28</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

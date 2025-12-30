@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>0.000000</price>
+    <name>
+      <language id="1">Bambu Lab P1P 3D Printer</language>
+      <language id="2">Bambu Lab P1P 3D Printer</language>
+    </name>
+    <link_rewrite>
+      <language id="1">bambu-lab-p1p-3d-printer</language>
+      <language id="2">bambu-lab-p1p-3d-printer</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Drukarka 3D Bambu Lab P1P zapewnia powierzchnię roboczą o wymiarach 256 x 256 x 256 mm, co daje dużą przestrzeń do realizacji różnorodnych projektów. Jej zamknięta obudowa gwarantuje stabilne warunki pracy oraz minimalizuje wpływ czynników zewnętrznych na proces drukowania. Wyposażona w metalowy Hot End oraz dyszę ze stali nierdzewnej o średnicy 0,4 mm, umożliwiając precyzyjne i wszechstronne drukowanie. Dzięki maksymalnej temperaturze druku wynoszącej 300℃ oraz maksymalnej temperaturze stołu roboczego sięgającej 100℃, jest idealna do pracy z różnorodnymi materiałami. Bambu Lab P1P 3D Printer</language>
+      <language id="2">Drukarka 3D Bambu Lab P1P zapewnia powierzchnię roboczą o wymiarach 256 x 256 x 256 mm, co daje dużą przestrzeń do realizacji różnorodnych projektów. Jej zamknięta obudowa gwarantuje stabilne warunki pracy oraz minimalizuje wpływ czynników zewnętrznych na proces drukowania. Wyposażona w metalowy Hot End oraz dyszę ze stali nierdzewnej o średnicy 0,4 mm, umożliwiając precyzyjne i wszechstronne drukowanie. Dzięki maksymalnej temperaturze druku wynoszącej 300℃ oraz maksymalnej temperaturze stołu roboczego sięgającej 100℃, jest idealna do pracy z różnorodnymi materiałami. Bambu Lab P1P 3D Printer</language>
+    </description>
+    <description_short>
+      <language id="1">Drukarka 3D Bambu Lab P1P zapewnia powierzchnię roboczą o wymiarach 256 x 256 x 256 mm, co daje dużą przestrzeń do realizacji różnorodnych projektów. Jej zamknięta obudowa gwarantuje stabilne warunki pracy oraz minimalizuje wpływ czynników zewnętrznych na proces drukowania. Wyposażona w metalowy Hot End oraz dyszę ze stali nierdzewnej o średnicy 0,4 mm, umożliwiając precyzyjne i wszechstronne drukowanie. Dzięki maksymalnej temperaturze druku wynoszącej 300℃ oraz maksymalnej temperaturze stołu roboczego sięgającej 100℃, jest idealna do pracy z różnorodnymi materiałami. Bambu Lab P1P 3D Printer</language>
+      <language id="2">Drukarka 3D Bambu Lab P1P zapewnia powierzchnię roboczą o wymiarach 256 x 256 x 256 mm, co daje dużą przestrzeń do realizacji różnorodnych projektów. Jej zamknięta obudowa gwarantuje stabilne warunki pracy oraz minimalizuje wpływ czynników zewnętrznych na proces drukowania. Wyposażona w metalowy Hot End oraz dyszę ze stali nierdzewnej o średnicy 0,4 mm, umożliwiając precyzyjne i wszechstronne drukowanie. Dzięki maksymalnej temperaturze druku wynoszącej 300℃ oraz maksymalnej temperaturze stołu roboczego sięgającej 100℃, jest idealna do pracy z różnorodnymi materiałami. Bambu Lab P1P 3D Printer</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>62</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>62</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

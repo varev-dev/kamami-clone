@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>53.720000</price>
+    <name>
+      <language id="1">Przemysłowy konwerter USB do RS485/RS422 - Waveshare 23949</language>
+      <language id="2">Przemysłowy konwerter USB do RS485/RS422 - Waveshare 23949</language>
+    </name>
+    <link_rewrite>
+      <language id="1">przemys-owy-konwerter-usb-do-rs485-rs422-waveshare-23949</language>
+      <language id="2">przemys-owy-konwerter-usb-do-rs485-rs422-waveshare-23949</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Izolowany konwerter USB do zastosowań w przemyśle. Zapewnia komunikację pomiędzy interfejsem USB a standardem szeregowym RS485 i RS422. Waveshare USB TO RS485/422</language>
+      <language id="2">Izolowany konwerter USB do zastosowań w przemyśle. Zapewnia komunikację pomiędzy interfejsem USB a standardem szeregowym RS485 i RS422. Waveshare USB TO RS485/422</language>
+    </description>
+    <description_short>
+      <language id="1">Izolowany konwerter USB do zastosowań w przemyśle. Zapewnia komunikację pomiędzy interfejsem USB a standardem szeregowym RS485 i RS422. Waveshare USB TO RS485/422</language>
+      <language id="2">Izolowany konwerter USB do zastosowań w przemyśle. Zapewnia komunikację pomiędzy interfejsem USB a standardem szeregowym RS485 i RS422. Waveshare USB TO RS485/422</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>49</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>49</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>129.400000</price>
+    <name>
+      <language id="1">Gravity: Dual Bipolar Stepper Motor Shield - moduł sterownika silnika krokowego DRV8825 dla Arduino</language>
+      <language id="2">Gravity: Dual Bipolar Stepper Motor Shield - moduł sterownika silnika krokowego DRV8825 dla Arduino</language>
+    </name>
+    <link_rewrite>
+      <language id="1">gravity-dual-bipolar-stepper-motor-shield-modu-sterownika-silnika-krokowego-drv8825-dla-arduino</language>
+      <language id="2">gravity-dual-bipolar-stepper-motor-shield-modu-sterownika-silnika-krokowego-drv8825-dla-arduino</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł sterownika silnika krokowego DRV8825 dla Arduino. Pozwala na sterowanie dwoma napędami, wyposażony w złącze XBee. DFRobot DRI0023</language>
+      <language id="2">Moduł sterownika silnika krokowego DRV8825 dla Arduino. Pozwala na sterowanie dwoma napędami, wyposażony w złącze XBee. DFRobot DRI0023</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł sterownika silnika krokowego DRV8825 dla Arduino. Pozwala na sterowanie dwoma napędami, wyposażony w złącze XBee. DFRobot DRI0023</language>
+      <language id="2">Moduł sterownika silnika krokowego DRV8825 dla Arduino. Pozwala na sterowanie dwoma napędami, wyposażony w złącze XBee. DFRobot DRI0023</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>302</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>302</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>114.510000</price>
+    <name>
+      <language id="1">2.8&quot; TFT Touch Shield - moduł z wyświetlaczem 240x320 px i ekranem dotykowym</language>
+      <language id="2">2.8&quot; TFT Touch Shield - moduł z wyświetlaczem 240x320 px i ekranem dotykowym</language>
+    </name>
+    <link_rewrite>
+      <language id="1">2-8-tft-touch-shield-modu-z-wy-wietlaczem-240x320-px-i-ekranem-dotykowym</language>
+      <language id="2">2-8-tft-touch-shield-modu-z-wy-wietlaczem-240x320-px-i-ekranem-dotykowym</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł z wyświetlaczem TFT 2,8&quot; oraz ekranem dotykowym i wbudowanym złączem karty microSD. Posiada rozdzielczość 240x320 pikseli oraz jasne podświetlenie LED. Adafruit 1651</language>
+      <language id="2">Moduł z wyświetlaczem TFT 2,8&quot; oraz ekranem dotykowym i wbudowanym złączem karty microSD. Posiada rozdzielczość 240x320 pikseli oraz jasne podświetlenie LED. Adafruit 1651</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł z wyświetlaczem TFT 2,8&quot; oraz ekranem dotykowym i wbudowanym złączem karty microSD. Posiada rozdzielczość 240x320 pikseli oraz jasne podświetlenie LED. Adafruit 1651</language>
+      <language id="2">Moduł z wyświetlaczem TFT 2,8&quot; oraz ekranem dotykowym i wbudowanym złączem karty microSD. Posiada rozdzielczość 240x320 pikseli oraz jasne podświetlenie LED. Adafruit 1651</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>29</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>29</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

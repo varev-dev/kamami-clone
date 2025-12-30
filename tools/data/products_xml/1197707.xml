@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>166.240000</price>
+    <name>
+      <language id="1">Moduł przekaźników Modbus PoE-ETH (C) 8-kanałowy z 2 portami Ethernet i obudową DIN - Waveshare 30544</language>
+      <language id="2">Moduł przekaźników Modbus PoE-ETH (C) 8-kanałowy z 2 portami Ethernet i obudową DIN - Waveshare 30544</language>
+    </name>
+    <link_rewrite>
+      <language id="1">modu-przeka-nik-w-modbus-poe-eth-c-8-kana-owy-z-2-portami-ethernet-i-obudow-din-waveshare-30544</language>
+      <language id="2">modu-przeka-nik-w-modbus-poe-eth-c-8-kana-owy-z-2-portami-ethernet-i-obudow-din-waveshare-30544</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Modbus POE ETH Relay (C) to moduł przekaźnikowy zaprojektowany z myślą o niezawodności, elastyczności i bezpieczeństwie w środowiskach przemysłowych. Dzięki obsłudze PoE, podwójnym portom Ethernet i bogatym możliwościom sterowania przez Modbus i MQTT, sprawdzi się w automatyce budynkowej, instalacjach przemysłowych oraz systemach zdalnego monitoringu i sterowania. Montaż na szynie DIN i wsparcie dla kaskadowania sieciowego ułatwiają integrację w istniejących systemach automatyki.</language>
+      <language id="2">Modbus POE ETH Relay (C) to moduł przekaźnikowy zaprojektowany z myślą o niezawodności, elastyczności i bezpieczeństwie w środowiskach przemysłowych. Dzięki obsłudze PoE, podwójnym portom Ethernet i bogatym możliwościom sterowania przez Modbus i MQTT, sprawdzi się w automatyce budynkowej, instalacjach przemysłowych oraz systemach zdalnego monitoringu i sterowania. Montaż na szynie DIN i wsparcie dla kaskadowania sieciowego ułatwiają integrację w istniejących systemach automatyki.</language>
+    </description>
+    <description_short>
+      <language id="1">Modbus POE ETH Relay (C) to moduł przekaźnikowy zaprojektowany z myślą o niezawodności, elastyczności i bezpieczeństwie w środowiskach przemysłowych. Dzięki obsłudze PoE, podwójnym portom Ethernet i bogatym możliwościom sterowania przez Modbus i MQTT, sprawdzi się w automatyce budynkowej, instalacjach przemysłowych oraz systemach zdalnego monitoringu i sterowania. Montaż na szynie DIN i wsparcie dla kaskadowania sieciowego ułatwiają integrację w istniejących systemach automatyki.</language>
+      <language id="2">Modbus POE ETH Relay (C) to moduł przekaźnikowy zaprojektowany z myślą o niezawodności, elastyczności i bezpieczeństwie w środowiskach przemysłowych. Dzięki obsłudze PoE, podwójnym portom Ethernet i bogatym możliwościom sterowania przez Modbus i MQTT, sprawdzi się w automatyce budynkowej, instalacjach przemysłowych oraz systemach zdalnego monitoringu i sterowania. Montaż na szynie DIN i wsparcie dla kaskadowania sieciowego ułatwiają integrację w istniejących systemach automatyki.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>47</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>47</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

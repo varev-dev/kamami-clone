@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>80.240000</price>
+    <name>
+      <language id="1">Moduł z czarno-białym wyświetlaczem OLED 0,5&quot; 60x32 dla Arduino Micro</language>
+      <language id="2">Moduł z czarno-białym wyświetlaczem OLED 0,5&quot; 60x32 dla Arduino Micro</language>
+    </name>
+    <link_rewrite>
+      <language id="1">modu-z-czarno-bia-ym-wy-wietlaczem-oled-0-5-60x32-dla-arduino-micro</language>
+      <language id="2">modu-z-czarno-bia-ym-wy-wietlaczem-oled-0-5-60x32-dla-arduino-micro</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł z czarno-białym wyświetlaczem OLED o przekątnej 0,5&quot; i rozdzielczości 60x32 px. Może być bezpośrednio wpięty w płytkę Arduino Micro. DFRobot DFR0376</language>
+      <language id="2">Moduł z czarno-białym wyświetlaczem OLED o przekątnej 0,5&quot; i rozdzielczości 60x32 px. Może być bezpośrednio wpięty w płytkę Arduino Micro. DFRobot DFR0376</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł z czarno-białym wyświetlaczem OLED o przekątnej 0,5&quot; i rozdzielczości 60x32 px. Może być bezpośrednio wpięty w płytkę Arduino Micro. DFRobot DFR0376</language>
+      <language id="2">Moduł z czarno-białym wyświetlaczem OLED o przekątnej 0,5&quot; i rozdzielczości 60x32 px. Może być bezpośrednio wpięty w płytkę Arduino Micro. DFRobot DFR0376</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>29</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>29</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

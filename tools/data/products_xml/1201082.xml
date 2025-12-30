@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>60.440000</price>
+    <name>
+      <language id="1">Moduł przekaźnika 1-kanałowego WiFi z ESP32-S3 i interfejsem RS485 w obudowie na szynę DIN – Waveshare 32152</language>
+      <language id="2">Moduł przekaźnika 1-kanałowego WiFi z ESP32-S3 i interfejsem RS485 w obudowie na szynę DIN – Waveshare 32152</language>
+    </name>
+    <link_rewrite>
+      <language id="1">modu-przeka-nika-1-kana-owego-wifi-z-esp32-s3-i-interfejsem-rs485-w-obudowie-na-szyn-din-waveshare-32152</language>
+      <language id="2">modu-przeka-nika-1-kana-owego-wifi-z-esp32-s3-i-interfejsem-rs485-w-obudowie-na-szyn-din-waveshare-32152</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł przekaźnikowy WiFi z ESP32-S3 i izolowanym interfejsem RS485 w przemysłowej obudowie do montażu na szynie DIN umożliwia zdalne sterowanie urządzeniami sieciowymi i automatyki przez WiFi, Bluetooth lub Modbus RS485. Zintegrowane zabezpieczenia i wsparcie dla Arduino sprawiają, że sprawdza się w projektach IoT, sterownikach lokalnych i aplikacjach przemysłowych.</language>
+      <language id="2">Moduł przekaźnikowy WiFi z ESP32-S3 i izolowanym interfejsem RS485 w przemysłowej obudowie do montażu na szynie DIN umożliwia zdalne sterowanie urządzeniami sieciowymi i automatyki przez WiFi, Bluetooth lub Modbus RS485. Zintegrowane zabezpieczenia i wsparcie dla Arduino sprawiają, że sprawdza się w projektach IoT, sterownikach lokalnych i aplikacjach przemysłowych.</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł przekaźnikowy WiFi z ESP32-S3 i izolowanym interfejsem RS485 w przemysłowej obudowie do montażu na szynie DIN umożliwia zdalne sterowanie urządzeniami sieciowymi i automatyki przez WiFi, Bluetooth lub Modbus RS485. Zintegrowane zabezpieczenia i wsparcie dla Arduino sprawiają, że sprawdza się w projektach IoT, sterownikach lokalnych i aplikacjach przemysłowych.</language>
+      <language id="2">Moduł przekaźnikowy WiFi z ESP32-S3 i izolowanym interfejsem RS485 w przemysłowej obudowie do montażu na szynie DIN umożliwia zdalne sterowanie urządzeniami sieciowymi i automatyki przez WiFi, Bluetooth lub Modbus RS485. Zintegrowane zabezpieczenia i wsparcie dla Arduino sprawiają, że sprawdza się w projektach IoT, sterownikach lokalnych i aplikacjach przemysłowych.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>53</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>53</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

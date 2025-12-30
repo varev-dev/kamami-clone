@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>101.250000</price>
+    <name>
+      <language id="1">ArduCam-Mini 2 MPx 1600 x 1200 px 60 fps SPI OV2640 - moduł z kamerą do płytek Arduino</language>
+      <language id="2">ArduCam-Mini 2 MPx 1600 x 1200 px 60 fps SPI OV2640 - moduł z kamerą do płytek Arduino</language>
+    </name>
+    <link_rewrite>
+      <language id="1">arducam-mini-2-mpx-1600-x-1200-px-60-fps-spi-ov2640-modu-z-kamer-do-p-ytek-arduino</language>
+      <language id="2">arducam-mini-2-mpx-1600-x-1200-px-60-fps-spi-ov2640-modu-z-kamer-do-p-ytek-arduino</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł z kamerą 2 MPx o rozdzielczości matrycy 1600 x 1200 px, maksymalna prędkość 60 fps, interfejs SPI. Moduł pracuje z napięciami 3,3 oraz 5 V. Czułość kamery 0,6 V/(lux*s), kąt widzenia 25°, obiektyw 1/4&quot;. ArduCam B0067</language>
+      <language id="2">Moduł z kamerą 2 MPx o rozdzielczości matrycy 1600 x 1200 px, maksymalna prędkość 60 fps, interfejs SPI. Moduł pracuje z napięciami 3,3 oraz 5 V. Czułość kamery 0,6 V/(lux*s), kąt widzenia 25°, obiektyw 1/4&quot;. ArduCam B0067</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł z kamerą 2 MPx o rozdzielczości matrycy 1600 x 1200 px, maksymalna prędkość 60 fps, interfejs SPI. Moduł pracuje z napięciami 3,3 oraz 5 V. Czułość kamery 0,6 V/(lux*s), kąt widzenia 25°, obiektyw 1/4&quot;. ArduCam B0067</language>
+      <language id="2">Moduł z kamerą 2 MPx o rozdzielczości matrycy 1600 x 1200 px, maksymalna prędkość 60 fps, interfejs SPI. Moduł pracuje z napięciami 3,3 oraz 5 V. Czułość kamery 0,6 V/(lux*s), kąt widzenia 25°, obiektyw 1/4&quot;. ArduCam B0067</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>11</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>11</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

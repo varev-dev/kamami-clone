@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>65.210000</price>
+    <name>
+      <language id="1">Moduł sterownika przemysłowego z ESP32-S3, interfejsami RS485 i CAN, WiFi i Bluetooth – Waveshare 32154</language>
+      <language id="2">Moduł sterownika przemysłowego z ESP32-S3, interfejsami RS485 i CAN, WiFi i Bluetooth – Waveshare 32154</language>
+    </name>
+    <link_rewrite>
+      <language id="1">modu-sterownika-przemys-owego-z-esp32-s3-interfejsami-rs485-i-can-wifi-i-bluetooth-waveshare-32154</language>
+      <language id="2">modu-sterownika-przemys-owego-z-esp32-s3-interfejsami-rs485-i-can-wifi-i-bluetooth-waveshare-32154</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Sterownik przemysłowy z ESP32-S3, komunikacją WiFi/Bluetooth oraz interfejsami RS485 i CAN w obudowie na szynę DIN umożliwia tworzenie rozproszonych systemów automatyki i IoT. Dzięki licznym zabezpieczeniom i wsparciu dla Arduino znajduje zastosowanie w systemach monitoringu, sterowania i akwizycji danych w środowiskach przemysłowych.</language>
+      <language id="2">Sterownik przemysłowy z ESP32-S3, komunikacją WiFi/Bluetooth oraz interfejsami RS485 i CAN w obudowie na szynę DIN umożliwia tworzenie rozproszonych systemów automatyki i IoT. Dzięki licznym zabezpieczeniom i wsparciu dla Arduino znajduje zastosowanie w systemach monitoringu, sterowania i akwizycji danych w środowiskach przemysłowych.</language>
+    </description>
+    <description_short>
+      <language id="1">Sterownik przemysłowy z ESP32-S3, komunikacją WiFi/Bluetooth oraz interfejsami RS485 i CAN w obudowie na szynę DIN umożliwia tworzenie rozproszonych systemów automatyki i IoT. Dzięki licznym zabezpieczeniom i wsparciu dla Arduino znajduje zastosowanie w systemach monitoringu, sterowania i akwizycji danych w środowiskach przemysłowych.</language>
+      <language id="2">Sterownik przemysłowy z ESP32-S3, komunikacją WiFi/Bluetooth oraz interfejsami RS485 i CAN w obudowie na szynę DIN umożliwia tworzenie rozproszonych systemów automatyki i IoT. Dzięki licznym zabezpieczeniom i wsparciu dla Arduino znajduje zastosowanie w systemach monitoringu, sterowania i akwizycji danych w środowiskach przemysłowych.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>53</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>53</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

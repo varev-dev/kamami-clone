@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>569.010000</price>
+    <name>
+      <language id="1">Zestaw startowy Siemens LOGO! 8 z symulatorem KA-LOGO!-IO-Simulator</language>
+      <language id="2">Zestaw startowy Siemens LOGO! 8 z symulatorem KA-LOGO!-IO-Simulator</language>
+    </name>
+    <link_rewrite>
+      <language id="1">zestaw-startowy-siemens-logo-8-z-symulatorem-ka-logo-io-simulator</language>
+      <language id="2">zestaw-startowy-siemens-logo-8-z-symulatorem-ka-logo-io-simulator</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Zestaw uruchomieniowy LOGO! 8 składa się ze sterownika Siemens LOGO! 8, przewodów zasilania i płytki symulacyjnej KA-LOGO!-IO-Simulator wraz z płytką kontrolek wyjść. Dzięki temu zestawowi możliwe jest szybkie i przyjemne rozpoczęcie nauki programowania modułu logicznego.</language>
+      <language id="2">Zestaw uruchomieniowy LOGO! 8 składa się ze sterownika Siemens LOGO! 8, przewodów zasilania i płytki symulacyjnej KA-LOGO!-IO-Simulator wraz z płytką kontrolek wyjść. Dzięki temu zestawowi możliwe jest szybkie i przyjemne rozpoczęcie nauki programowania modułu logicznego.</language>
+    </description>
+    <description_short>
+      <language id="1">Zestaw uruchomieniowy LOGO! 8 składa się ze sterownika Siemens LOGO! 8, przewodów zasilania i płytki symulacyjnej KA-LOGO!-IO-Simulator wraz z płytką kontrolek wyjść. Dzięki temu zestawowi możliwe jest szybkie i przyjemne rozpoczęcie nauki programowania modułu logicznego.</language>
+      <language id="2">Zestaw uruchomieniowy LOGO! 8 składa się ze sterownika Siemens LOGO! 8, przewodów zasilania i płytki symulacyjnej KA-LOGO!-IO-Simulator wraz z płytką kontrolek wyjść. Dzięki temu zestawowi możliwe jest szybkie i przyjemne rozpoczęcie nauki programowania modułu logicznego.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>57</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>57</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

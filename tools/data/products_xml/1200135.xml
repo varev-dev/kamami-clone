@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>32.420000</price>
+    <name>
+      <language id="1">Arduino Modulino Knob - ABX00107</language>
+      <language id="2">Arduino Modulino Knob - ABX00107</language>
+    </name>
+    <link_rewrite>
+      <language id="1">arduino-modulino-knob-abx00107</language>
+      <language id="2">arduino-modulino-knob-abx00107</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł łączący funkcję precyzyjnego pokrętła obrotowego z przyciskiem, idealny do sterowania w projektach IoT, automatyce domowej czy interfejsach użytkownika. Wyposażony w enkoder PEC11J i układ STM32C011, zapewnia dokładne odczyty pozycji oraz rejestrację kliknięć w czasie rzeczywistym przez I2C/Qwiic. Obsługiwany w Arduino Cloud i dedykowanej bibliotece, pozwala szybko rozpocząć pracę zarówno początkującym, jak i zaawansowanym twórcom. Arduino ABX00107</language>
+      <language id="2">Moduł łączący funkcję precyzyjnego pokrętła obrotowego z przyciskiem, idealny do sterowania w projektach IoT, automatyce domowej czy interfejsach użytkownika. Wyposażony w enkoder PEC11J i układ STM32C011, zapewnia dokładne odczyty pozycji oraz rejestrację kliknięć w czasie rzeczywistym przez I2C/Qwiic. Obsługiwany w Arduino Cloud i dedykowanej bibliotece, pozwala szybko rozpocząć pracę zarówno początkującym, jak i zaawansowanym twórcom. Arduino ABX00107</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł łączący funkcję precyzyjnego pokrętła obrotowego z przyciskiem, idealny do sterowania w projektach IoT, automatyce domowej czy interfejsach użytkownika. Wyposażony w enkoder PEC11J i układ STM32C011, zapewnia dokładne odczyty pozycji oraz rejestrację kliknięć w czasie rzeczywistym przez I2C/Qwiic. Obsługiwany w Arduino Cloud i dedykowanej bibliotece, pozwala szybko rozpocząć pracę zarówno początkującym, jak i zaawansowanym twórcom. Arduino ABX00107</language>
+      <language id="2">Moduł łączący funkcję precyzyjnego pokrętła obrotowego z przyciskiem, idealny do sterowania w projektach IoT, automatyce domowej czy interfejsach użytkownika. Wyposażony w enkoder PEC11J i układ STM32C011, zapewnia dokładne odczyty pozycji oraz rejestrację kliknięć w czasie rzeczywistym przez I2C/Qwiic. Obsługiwany w Arduino Cloud i dedykowanej bibliotece, pozwala szybko rozpocząć pracę zarówno początkującym, jak i zaawansowanym twórcom. Arduino ABX00107</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>8</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>8</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

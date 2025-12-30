@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>62.520000</price>
+    <name>
+      <language id="1">BIGTREETECH TFT35 SPI V2.1 - moduł z wyświetlaczem LCD TFT 3,5&quot; i panelem dotykowym</language>
+      <language id="2">BIGTREETECH TFT35 SPI V2.1 - moduł z wyświetlaczem LCD TFT 3,5&quot; i panelem dotykowym</language>
+    </name>
+    <link_rewrite>
+      <language id="1">bigtreetech-tft35-spi-v2-1-modu-z-wy-wietlaczem-lcd-tft-3-5-i-panelem-dotykowym</language>
+      <language id="2">bigtreetech-tft35-spi-v2-1-modu-z-wy-wietlaczem-lcd-tft-3-5-i-panelem-dotykowym</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł z wyświetlaczem LCD TFT 3,5&quot; o rozdzielczości 480 x 320 pikseli oraz rezystancyjnym panelem dotykowym. Może współpracować z płytkami głównymi drukarek 3D Manta M4P/M5P/M8P lub adapterem PI4B. Do obsługi wyświetlacza wykorzystywany jest interfejs SPI, a do panelu dotykowego magistrala I2C. Moduł został zaprojektowany z myślą o drukarkach 3D, ale znajdzie zastosowania także w innych projektach. BIGTREETECH TFT35 SPI V2.1</language>
+      <language id="2">Moduł z wyświetlaczem LCD TFT 3,5&quot; o rozdzielczości 480 x 320 pikseli oraz rezystancyjnym panelem dotykowym. Może współpracować z płytkami głównymi drukarek 3D Manta M4P/M5P/M8P lub adapterem PI4B. Do obsługi wyświetlacza wykorzystywany jest interfejs SPI, a do panelu dotykowego magistrala I2C. Moduł został zaprojektowany z myślą o drukarkach 3D, ale znajdzie zastosowania także w innych projektach. BIGTREETECH TFT35 SPI V2.1</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł z wyświetlaczem LCD TFT 3,5&quot; o rozdzielczości 480 x 320 pikseli oraz rezystancyjnym panelem dotykowym. Może współpracować z płytkami głównymi drukarek 3D Manta M4P/M5P/M8P lub adapterem PI4B. Do obsługi wyświetlacza wykorzystywany jest interfejs SPI, a do panelu dotykowego magistrala I2C. Moduł został zaprojektowany z myślą o drukarkach 3D, ale znajdzie zastosowania także w innych projektach. BIGTREETECH TFT35 SPI V2.1</language>
+      <language id="2">Moduł z wyświetlaczem LCD TFT 3,5&quot; o rozdzielczości 480 x 320 pikseli oraz rezystancyjnym panelem dotykowym. Może współpracować z płytkami głównymi drukarek 3D Manta M4P/M5P/M8P lub adapterem PI4B. Do obsługi wyświetlacza wykorzystywany jest interfejs SPI, a do panelu dotykowego magistrala I2C. Moduł został zaprojektowany z myślą o drukarkach 3D, ale znajdzie zastosowania także w innych projektach. BIGTREETECH TFT35 SPI V2.1</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>481</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>481</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

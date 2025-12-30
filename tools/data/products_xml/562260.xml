@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>29.700000</price>
+    <name>
+      <language id="1">Zasilacz do Raspberry Pi 5V/2.5A microUSB Akyga</language>
+      <language id="2">Zasilacz do Raspberry Pi 5V/2.5A microUSB Akyga</language>
+    </name>
+    <link_rewrite>
+      <language id="1">zasilacz-do-raspberry-pi-5v-2-5a-microusb-akyga</language>
+      <language id="2">zasilacz-do-raspberry-pi-5v-2-5a-microusb-akyga</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Zasilacz do Raspberry Pi 5V/2,5A firmy Akyga z wtykiem microUSB. Wykonany z wysokiej jakości materiału. Posiada zabezpieczenia przed przeładowaniem i przepięciami. Długość kabla wynosi 1,5m.</language>
+      <language id="2">Zasilacz do Raspberry Pi 5V/2,5A firmy Akyga z wtykiem microUSB. Wykonany z wysokiej jakości materiału. Posiada zabezpieczenia przed przeładowaniem i przepięciami. Długość kabla wynosi 1,5m.</language>
+    </description>
+    <description_short>
+      <language id="1">Zasilacz do Raspberry Pi 5V/2,5A firmy Akyga z wtykiem microUSB. Wykonany z wysokiej jakości materiału. Posiada zabezpieczenia przed przeładowaniem i przepięciami. Długość kabla wynosi 1,5m.</language>
+      <language id="2">Zasilacz do Raspberry Pi 5V/2,5A firmy Akyga z wtykiem microUSB. Wykonany z wysokiej jakości materiału. Posiada zabezpieczenia przed przeładowaniem i przepięciami. Długość kabla wynosi 1,5m.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>926</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>926</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

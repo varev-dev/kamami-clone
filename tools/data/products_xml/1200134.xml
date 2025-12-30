@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>25.920000</price>
+    <name>
+      <language id="1">Arduino Modulino Buzzer - ABX00108</language>
+      <language id="2">Arduino Modulino Buzzer - ABX00108</language>
+    </name>
+    <link_rewrite>
+      <language id="1">arduino-modulino-buzzer-abx00108</language>
+      <language id="2">arduino-modulino-buzzer-abx00108</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Kompaktowy moduł dźwiękowy, który umożliwia szybkie dodanie tonów i efektów akustycznych do projektów elektronicznych. Oparty na buzzerze PKLCS1212E4001-R1 i mikrokontrolerze STM32C011, komunikuje się przez I2C/Qwiic, co zapewnia łatwą integrację z Arduino i MicroPython. Dzięki obsłudze w Arduino Cloud oraz dedykowanej bibliotece, moduł nadaje się zarówno dla początkujących, jak i zaawansowanych twórców. Arduino ABX00108</language>
+      <language id="2">Kompaktowy moduł dźwiękowy, który umożliwia szybkie dodanie tonów i efektów akustycznych do projektów elektronicznych. Oparty na buzzerze PKLCS1212E4001-R1 i mikrokontrolerze STM32C011, komunikuje się przez I2C/Qwiic, co zapewnia łatwą integrację z Arduino i MicroPython. Dzięki obsłudze w Arduino Cloud oraz dedykowanej bibliotece, moduł nadaje się zarówno dla początkujących, jak i zaawansowanych twórców. Arduino ABX00108</language>
+    </description>
+    <description_short>
+      <language id="1">Kompaktowy moduł dźwiękowy, który umożliwia szybkie dodanie tonów i efektów akustycznych do projektów elektronicznych. Oparty na buzzerze PKLCS1212E4001-R1 i mikrokontrolerze STM32C011, komunikuje się przez I2C/Qwiic, co zapewnia łatwą integrację z Arduino i MicroPython. Dzięki obsłudze w Arduino Cloud oraz dedykowanej bibliotece, moduł nadaje się zarówno dla początkujących, jak i zaawansowanych twórców. Arduino ABX00108</language>
+      <language id="2">Kompaktowy moduł dźwiękowy, który umożliwia szybkie dodanie tonów i efektów akustycznych do projektów elektronicznych. Oparty na buzzerze PKLCS1212E4001-R1 i mikrokontrolerze STM32C011, komunikuje się przez I2C/Qwiic, co zapewnia łatwą integrację z Arduino i MicroPython. Dzięki obsłudze w Arduino Cloud oraz dedykowanej bibliotece, moduł nadaje się zarówno dla początkujących, jak i zaawansowanych twórców. Arduino ABX00108</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>6</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>6</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

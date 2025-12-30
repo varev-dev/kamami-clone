@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>80.490000</price>
+    <name>
+      <language id="1">Zasilacz impulsowy, 24VDC, 120W, EDR-120-24</language>
+      <language id="2">Zasilacz impulsowy, 24VDC, 120W, EDR-120-24</language>
+    </name>
+    <link_rewrite>
+      <language id="1">zasilacz-impulsowy-24vdc-120w-edr-120-24</language>
+      <language id="2">zasilacz-impulsowy-24vdc-120w-edr-120-24</language>
+    </link_rewrite>
+    <description>
+      <language id="1">EDR-120-24 to wysokowydajny zasilacz impulsowy firmy Mean Well, przeznaczony do montażu na szynie DIN, idealny do zasilania urządzeń w automatyce przemysłowej i systemach sterowania. Oferuje moc 120W przy napięciu 24V DC i prądzie 5A, zapewniając niezawodność działania w trudnych warunkach oraz ochronę przed przeciążeniem, przepięciem i zwarciem.</language>
+      <language id="2">EDR-120-24 to wysokowydajny zasilacz impulsowy firmy Mean Well, przeznaczony do montażu na szynie DIN, idealny do zasilania urządzeń w automatyce przemysłowej i systemach sterowania. Oferuje moc 120W przy napięciu 24V DC i prądzie 5A, zapewniając niezawodność działania w trudnych warunkach oraz ochronę przed przeciążeniem, przepięciem i zwarciem.</language>
+    </description>
+    <description_short>
+      <language id="1">EDR-120-24 to wysokowydajny zasilacz impulsowy firmy Mean Well, przeznaczony do montażu na szynie DIN, idealny do zasilania urządzeń w automatyce przemysłowej i systemach sterowania. Oferuje moc 120W przy napięciu 24V DC i prądzie 5A, zapewniając niezawodność działania w trudnych warunkach oraz ochronę przed przeciążeniem, przepięciem i zwarciem.</language>
+      <language id="2">EDR-120-24 to wysokowydajny zasilacz impulsowy firmy Mean Well, przeznaczony do montażu na szynie DIN, idealny do zasilania urządzeń w automatyce przemysłowej i systemach sterowania. Oferuje moc 120W przy napięciu 24V DC i prądzie 5A, zapewniając niezawodność działania w trudnych warunkach oraz ochronę przed przeciążeniem, przepięciem i zwarciem.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>56</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>56</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

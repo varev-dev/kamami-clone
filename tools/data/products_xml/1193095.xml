@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>444.770000</price>
+    <name>
+      <language id="1">6ED1052-2FB08-0BA2 - sterownik PLC Siemens LOGO! 230RCEo</language>
+      <language id="2">6ED1052-2FB08-0BA2 - sterownik PLC Siemens LOGO! 230RCEo</language>
+    </name>
+    <link_rewrite>
+      <language id="1">6ed1052-2fb08-0ba2-sterownik-plc-siemens-logo-230rceo</language>
+      <language id="2">6ed1052-2fb08-0ba2-sterownik-plc-siemens-logo-230rceo</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Sterownik PLC Siemens LOGO! 230RCEo, idealny do automatyzacji procesów przemysłowych. Oferuje 8 wejść binarnych, 4 wyjścia przekaźnikowe oraz obsługę Ethernet, co umożliwia łatwą integrację z siecią. Wspiera zdalne monitorowanie i zarządzanie dzięki wbudowanemu Web Serwerowi i możliwości logowania danych na karcie pamięci. Siemens 6ED1052-2FB08-0BA2</language>
+      <language id="2">Sterownik PLC Siemens LOGO! 230RCEo, idealny do automatyzacji procesów przemysłowych. Oferuje 8 wejść binarnych, 4 wyjścia przekaźnikowe oraz obsługę Ethernet, co umożliwia łatwą integrację z siecią. Wspiera zdalne monitorowanie i zarządzanie dzięki wbudowanemu Web Serwerowi i możliwości logowania danych na karcie pamięci. Siemens 6ED1052-2FB08-0BA2</language>
+    </description>
+    <description_short>
+      <language id="1">Sterownik PLC Siemens LOGO! 230RCEo, idealny do automatyzacji procesów przemysłowych. Oferuje 8 wejść binarnych, 4 wyjścia przekaźnikowe oraz obsługę Ethernet, co umożliwia łatwą integrację z siecią. Wspiera zdalne monitorowanie i zarządzanie dzięki wbudowanemu Web Serwerowi i możliwości logowania danych na karcie pamięci. Siemens 6ED1052-2FB08-0BA2</language>
+      <language id="2">Sterownik PLC Siemens LOGO! 230RCEo, idealny do automatyzacji procesów przemysłowych. Oferuje 8 wejść binarnych, 4 wyjścia przekaźnikowe oraz obsługę Ethernet, co umożliwia łatwą integrację z siecią. Wspiera zdalne monitorowanie i zarządzanie dzięki wbudowanemu Web Serwerowi i możliwości logowania danych na karcie pamięci. Siemens 6ED1052-2FB08-0BA2</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>55</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>55</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

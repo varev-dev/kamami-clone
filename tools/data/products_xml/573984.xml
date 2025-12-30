@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>70.650000</price>
+    <name>
+      <language id="1">MDR-40-48 - zasilacz impulsowy 40W, 48VDC, 0,83A firmy MEAN WELL</language>
+      <language id="2">MDR-40-48 - zasilacz impulsowy 40W, 48VDC, 0,83A firmy MEAN WELL</language>
+    </name>
+    <link_rewrite>
+      <language id="1">mdr-40-48-zasilacz-impulsowy-40w-48vdc-0-83a-firmy-mean-well</language>
+      <language id="2">mdr-40-48-zasilacz-impulsowy-40w-48vdc-0-83a-firmy-mean-well</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Zasilacz impulsowy firmy MEAN WELL o mocy 40W, napięciu wyjściowym 48VDC oraz prądzie wyjściowym 0,83A. Montaż na listwie DIN. Wbudowane zabezpieczenie przed przeciążeniem i zwarciem. MEAN WELL MDR-40-48</language>
+      <language id="2">Zasilacz impulsowy firmy MEAN WELL o mocy 40W, napięciu wyjściowym 48VDC oraz prądzie wyjściowym 0,83A. Montaż na listwie DIN. Wbudowane zabezpieczenie przed przeciążeniem i zwarciem. MEAN WELL MDR-40-48</language>
+    </description>
+    <description_short>
+      <language id="1">Zasilacz impulsowy firmy MEAN WELL o mocy 40W, napięciu wyjściowym 48VDC oraz prądzie wyjściowym 0,83A. Montaż na listwie DIN. Wbudowane zabezpieczenie przed przeciążeniem i zwarciem. MEAN WELL MDR-40-48</language>
+      <language id="2">Zasilacz impulsowy firmy MEAN WELL o mocy 40W, napięciu wyjściowym 48VDC oraz prądzie wyjściowym 0,83A. Montaż na listwie DIN. Wbudowane zabezpieczenie przed przeciążeniem i zwarciem. MEAN WELL MDR-40-48</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>56</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>56</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

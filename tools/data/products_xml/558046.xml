@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>397.560000</price>
+    <name>
+      <language id="1">Oficjalny zestaw startowy z Arduino UNO K000007</language>
+      <language id="2">Oficjalny zestaw startowy z Arduino UNO K000007</language>
+    </name>
+    <link_rewrite>
+      <language id="1">oficjalny-zestaw-startowy-z-arduino-uno-k000007</language>
+      <language id="2">oficjalny-zestaw-startowy-z-arduino-uno-k000007</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Zestaw podstawowych elementów elektronicznych w komplecie z płytką stykową, przewodami połączeniowymi oraz płytką Arduino UNO R3. Dołączona książka z opisem w języku angielskim pomaga stworzyć na bazie zestawu 15 ciekawych projektów. Arduino K000007</language>
+      <language id="2">Zestaw podstawowych elementów elektronicznych w komplecie z płytką stykową, przewodami połączeniowymi oraz płytką Arduino UNO R3. Dołączona książka z opisem w języku angielskim pomaga stworzyć na bazie zestawu 15 ciekawych projektów. Arduino K000007</language>
+    </description>
+    <description_short>
+      <language id="1">Zestaw podstawowych elementów elektronicznych w komplecie z płytką stykową, przewodami połączeniowymi oraz płytką Arduino UNO R3. Dołączona książka z opisem w języku angielskim pomaga stworzyć na bazie zestawu 15 ciekawych projektów. Arduino K000007</language>
+      <language id="2">Zestaw podstawowych elementów elektronicznych w komplecie z płytką stykową, przewodami połączeniowymi oraz płytką Arduino UNO R3. Dołączona książka z opisem w języku angielskim pomaga stworzyć na bazie zestawu 15 ciekawych projektów. Arduino K000007</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>32</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>32</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

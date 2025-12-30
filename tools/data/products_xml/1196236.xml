@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>51.140000</price>
+    <name>
+      <language id="1">Konwerter RS232 na WiFi 2.4G/5.8G USR-DR162</language>
+      <language id="2">Konwerter RS232 na WiFi 2.4G/5.8G USR-DR162</language>
+    </name>
+    <link_rewrite>
+      <language id="1">konwerter-rs232-na-wifi-2-4g-5-8g-usr-dr162</language>
+      <language id="2">konwerter-rs232-na-wifi-2-4g-5-8g-usr-dr162</language>
+    </link_rewrite>
+    <description>
+      <language id="1">USR-DR162 to przemysłowy konwerter szeregowy RS232 na WiFi obsługujący pasma 2,4 GHz i 5,8 GHz, zapewniający transparentną transmisję danych z urządzeń szeregowych do sieci bezprzewodowej. Zintegrowana bramka Modbus i szerokie wsparcie protokołów komunikacyjnych umożliwiają integrację z systemami SCADA, HMI i chmurą przemysłową. Kompaktowe rozmiary i odporność na trudne warunki środowiskowe sprawiają, że sprawdza się w aplikacjach z ograniczoną przestrzenią montażową, takich jak automatyka zakładowa, inteligentne magazyny czy instalacje mobilne.</language>
+      <language id="2">USR-DR162 to przemysłowy konwerter szeregowy RS232 na WiFi obsługujący pasma 2,4 GHz i 5,8 GHz, zapewniający transparentną transmisję danych z urządzeń szeregowych do sieci bezprzewodowej. Zintegrowana bramka Modbus i szerokie wsparcie protokołów komunikacyjnych umożliwiają integrację z systemami SCADA, HMI i chmurą przemysłową. Kompaktowe rozmiary i odporność na trudne warunki środowiskowe sprawiają, że sprawdza się w aplikacjach z ograniczoną przestrzenią montażową, takich jak automatyka zakładowa, inteligentne magazyny czy instalacje mobilne.</language>
+    </description>
+    <description_short>
+      <language id="1">USR-DR162 to przemysłowy konwerter szeregowy RS232 na WiFi obsługujący pasma 2,4 GHz i 5,8 GHz, zapewniający transparentną transmisję danych z urządzeń szeregowych do sieci bezprzewodowej. Zintegrowana bramka Modbus i szerokie wsparcie protokołów komunikacyjnych umożliwiają integrację z systemami SCADA, HMI i chmurą przemysłową. Kompaktowe rozmiary i odporność na trudne warunki środowiskowe sprawiają, że sprawdza się w aplikacjach z ograniczoną przestrzenią montażową, takich jak automatyka zakładowa, inteligentne magazyny czy instalacje mobilne.</language>
+      <language id="2">USR-DR162 to przemysłowy konwerter szeregowy RS232 na WiFi obsługujący pasma 2,4 GHz i 5,8 GHz, zapewniający transparentną transmisję danych z urządzeń szeregowych do sieci bezprzewodowej. Zintegrowana bramka Modbus i szerokie wsparcie protokołów komunikacyjnych umożliwiają integrację z systemami SCADA, HMI i chmurą przemysłową. Kompaktowe rozmiary i odporność na trudne warunki środowiskowe sprawiają, że sprawdza się w aplikacjach z ograniczoną przestrzenią montażową, takich jak automatyka zakładowa, inteligentne magazyny czy instalacje mobilne.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>53</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>53</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

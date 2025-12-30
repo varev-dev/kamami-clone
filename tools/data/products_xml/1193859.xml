@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>480.220000</price>
+    <name>
+      <language id="1">6ED1052-1FB08-0BA2 - sterownik PLC Siemens LOGO! 230RCE z wyświetlaczem</language>
+      <language id="2">6ED1052-1FB08-0BA2 - sterownik PLC Siemens LOGO! 230RCE z wyświetlaczem</language>
+    </name>
+    <link_rewrite>
+      <language id="1">6ed1052-1fb08-0ba2-sterownik-plc-siemens-logo-230rce-z-wy-wietlaczem</language>
+      <language id="2">6ed1052-1fb08-0ba2-sterownik-plc-siemens-logo-230rce-z-wy-wietlaczem</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Moduł logiczny PLC LOGO! 230RCE z wbudowanym wyświetlaczem, który doskonale sprawdza się w automatyzacji procesów przemysłowych. Zasilany napięciem od 100 do 230 V AC, oferuje 8 wejść binarnych oraz 4 wyjścia przekaźnikowe, każde o maksymalnym prądzie 10 A, a także pamięć na 400 bloków logicznych do tworzenia złożonych programów. Dodatkowo, moduł umożliwia logowanie danych na karcie pamięci microSD, zdalne zarządzanie przez wbudowany serwer WWW oraz integrację z siecią przemysłową dzięki połączeniu Ethernet przez port RJ45. Siemens 6ED1052-1FB08-0BA2</language>
+      <language id="2">Moduł logiczny PLC LOGO! 230RCE z wbudowanym wyświetlaczem, który doskonale sprawdza się w automatyzacji procesów przemysłowych. Zasilany napięciem od 100 do 230 V AC, oferuje 8 wejść binarnych oraz 4 wyjścia przekaźnikowe, każde o maksymalnym prądzie 10 A, a także pamięć na 400 bloków logicznych do tworzenia złożonych programów. Dodatkowo, moduł umożliwia logowanie danych na karcie pamięci microSD, zdalne zarządzanie przez wbudowany serwer WWW oraz integrację z siecią przemysłową dzięki połączeniu Ethernet przez port RJ45. Siemens 6ED1052-1FB08-0BA2</language>
+    </description>
+    <description_short>
+      <language id="1">Moduł logiczny PLC LOGO! 230RCE z wbudowanym wyświetlaczem, który doskonale sprawdza się w automatyzacji procesów przemysłowych. Zasilany napięciem od 100 do 230 V AC, oferuje 8 wejść binarnych oraz 4 wyjścia przekaźnikowe, każde o maksymalnym prądzie 10 A, a także pamięć na 400 bloków logicznych do tworzenia złożonych programów. Dodatkowo, moduł umożliwia logowanie danych na karcie pamięci microSD, zdalne zarządzanie przez wbudowany serwer WWW oraz integrację z siecią przemysłową dzięki połączeniu Ethernet przez port RJ45. Siemens 6ED1052-1FB08-0BA2</language>
+      <language id="2">Moduł logiczny PLC LOGO! 230RCE z wbudowanym wyświetlaczem, który doskonale sprawdza się w automatyzacji procesów przemysłowych. Zasilany napięciem od 100 do 230 V AC, oferuje 8 wejść binarnych oraz 4 wyjścia przekaźnikowe, każde o maksymalnym prądzie 10 A, a także pamięć na 400 bloków logicznych do tworzenia złożonych programów. Dodatkowo, moduł umożliwia logowanie danych na karcie pamięci microSD, zdalne zarządzanie przez wbudowany serwer WWW oraz integrację z siecią przemysłową dzięki połączeniu Ethernet przez port RJ45. Siemens 6ED1052-1FB08-0BA2</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>55</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>55</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

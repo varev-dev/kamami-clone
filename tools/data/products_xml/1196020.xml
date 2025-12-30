@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>137.000000</price>
+    <name>
+      <language id="1">BleBox ShutterBox DIN Sterownik rolet przez smartfon i WiFi</language>
+      <language id="2">BleBox ShutterBox DIN Sterownik rolet przez smartfon i WiFi</language>
+    </name>
+    <link_rewrite>
+      <language id="1">blebox-shutterbox-din-sterownik-rolet-przez-smartfon-i-wifi</language>
+      <language id="2">blebox-shutterbox-din-sterownik-rolet-przez-smartfon-i-wifi</language>
+    </link_rewrite>
+    <description>
+      <language id="1">BleBox shutterBox DIN to sterownik WiFi umożliwiający zdalne sterowanie roletami, żaluzjami, markizami, oknami dachowymi, zasłonami oraz ekranami projekcyjnymi za pomocą smartfona. Dzięki funkcji harmonogramu i zegara astronomicznego, urządzenie pozwala na automatyczne otwieranie i zamykanie osłon o określonych godzinach oraz w zależności od wschodu i zachodu słońca.</language>
+      <language id="2">BleBox shutterBox DIN to sterownik WiFi umożliwiający zdalne sterowanie roletami, żaluzjami, markizami, oknami dachowymi, zasłonami oraz ekranami projekcyjnymi za pomocą smartfona. Dzięki funkcji harmonogramu i zegara astronomicznego, urządzenie pozwala na automatyczne otwieranie i zamykanie osłon o określonych godzinach oraz w zależności od wschodu i zachodu słońca.</language>
+    </description>
+    <description_short>
+      <language id="1">BleBox shutterBox DIN to sterownik WiFi umożliwiający zdalne sterowanie roletami, żaluzjami, markizami, oknami dachowymi, zasłonami oraz ekranami projekcyjnymi za pomocą smartfona. Dzięki funkcji harmonogramu i zegara astronomicznego, urządzenie pozwala na automatyczne otwieranie i zamykanie osłon o określonych godzinach oraz w zależności od wschodu i zachodu słońca.</language>
+      <language id="2">BleBox shutterBox DIN to sterownik WiFi umożliwiający zdalne sterowanie roletami, żaluzjami, markizami, oknami dachowymi, zasłonami oraz ekranami projekcyjnymi za pomocą smartfona. Dzięki funkcji harmonogramu i zegara astronomicznego, urządzenie pozwala na automatyczne otwieranie i zamykanie osłon o określonych godzinach oraz w zależności od wschodu i zachodu słońca.</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>37</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>37</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

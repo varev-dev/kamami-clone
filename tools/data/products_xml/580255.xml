@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>289.350000</price>
+    <name>
+      <language id="1">OM-SE050ARD - płytka rozszerzeń EdgeLock SE050 dla Arduino</language>
+      <language id="2">OM-SE050ARD - płytka rozszerzeń EdgeLock SE050 dla Arduino</language>
+    </name>
+    <link_rewrite>
+      <language id="1">om-se050ard-p-ytka-rozszerze-edgelock-se050-dla-arduino</language>
+      <language id="2">om-se050ard-p-ytka-rozszerze-edgelock-se050-dla-arduino</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Zestaw deweloperski dla produktów EdgeLock SE050 Plug&amp;Trust przeznaczony dla Arduino. Umożliwia implementację funkcji rodziny produktów SE050 i ułatwia opracowywanie bezpiecznych aplikacji IoT. NXP OM-SE050ARD</language>
+      <language id="2">Zestaw deweloperski dla produktów EdgeLock SE050 Plug&amp;Trust przeznaczony dla Arduino. Umożliwia implementację funkcji rodziny produktów SE050 i ułatwia opracowywanie bezpiecznych aplikacji IoT. NXP OM-SE050ARD</language>
+    </description>
+    <description_short>
+      <language id="1">Zestaw deweloperski dla produktów EdgeLock SE050 Plug&amp;Trust przeznaczony dla Arduino. Umożliwia implementację funkcji rodziny produktów SE050 i ułatwia opracowywanie bezpiecznych aplikacji IoT. NXP OM-SE050ARD</language>
+      <language id="2">Zestaw deweloperski dla produktów EdgeLock SE050 Plug&amp;Trust przeznaczony dla Arduino. Umożliwia implementację funkcji rodziny produktów SE050 i ułatwia opracowywanie bezpiecznych aplikacji IoT. NXP OM-SE050ARD</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>9</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>9</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

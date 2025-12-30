@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+  <product>
+    <id/>
+    <active>1</active>
+    <state>1</state>
+    <id_tax_rules_group>1</id_tax_rules_group>
+    <id_shop_default>1</id_shop_default>
+    <advanced_stock_management>1</advanced_stock_management>
+    <price>197.390000</price>
+    <name>
+      <language id="1">6ED1058-0BA08-0YA1 - oprogramowanie SIMATIC LOGO! SOFT Comfort V8</language>
+      <language id="2">6ED1058-0BA08-0YA1 - oprogramowanie SIMATIC LOGO! SOFT Comfort V8</language>
+    </name>
+    <link_rewrite>
+      <language id="1">6ed1058-0ba08-0ya1-oprogramowanie-simatic-logo-soft-comfort-v8</language>
+      <language id="2">6ed1058-0ba08-0ya1-oprogramowanie-simatic-logo-soft-comfort-v8</language>
+    </link_rewrite>
+    <description>
+      <language id="1">Oprogramowanie SIMATIC LOGO! SOFT Comfort V8 firmy Siemens z licencją na jedno urządzenie. Przeznaczone jest do obsługi sterowników LOGO!8. Zestaw zawiera płytę DVD z oprogramowaniem i dokumentacją. Siemens 6ED1058-0BA08-0YA1</language>
+      <language id="2">Oprogramowanie SIMATIC LOGO! SOFT Comfort V8 firmy Siemens z licencją na jedno urządzenie. Przeznaczone jest do obsługi sterowników LOGO!8. Zestaw zawiera płytę DVD z oprogramowaniem i dokumentacją. Siemens 6ED1058-0BA08-0YA1</language>
+    </description>
+    <description_short>
+      <language id="1">Oprogramowanie SIMATIC LOGO! SOFT Comfort V8 firmy Siemens z licencją na jedno urządzenie. Przeznaczone jest do obsługi sterowników LOGO!8. Zestaw zawiera płytę DVD z oprogramowaniem i dokumentacją. Siemens 6ED1058-0BA08-0YA1</language>
+      <language id="2">Oprogramowanie SIMATIC LOGO! SOFT Comfort V8 firmy Siemens z licencją na jedno urządzenie. Przeznaczone jest do obsługi sterowników LOGO!8. Zestaw zawiera płytę DVD z oprogramowaniem i dokumentacją. Siemens 6ED1058-0BA08-0YA1</language>
+    </description_short>
+    <meta_keywords>
+      <language id="1">test</language>
+      <language id="2">test</language>
+    </meta_keywords>
+    <id_category_default>980</id_category_default>
+    <show_price>1</show_price>
+    <on_sale>0</on_sale>
+    <associations>
+      <categories>
+        <category>
+          <id>980</id>
+        </category>
+        <category>
+          <id>2</id>
+        </category>
+      </categories>
+    </associations>
+  </product>
+</prestashop>

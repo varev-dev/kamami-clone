@@ -3,14 +3,14 @@ import requests
 import os
 import argparse
 
-API_URL = "http://localhost:8080/api"
+API_URL = "https://localhost:8443/api"
 HEADERS = {
     "Output-Format": "JSON"
 }
 
 def add_image_to_product(product_id, image_path_or_url, api_key):
     if image_path_or_url.startswith("http"):
-        response = requests.get(image_path_or_url, stream=True)
+        response = requests.get(image_path_or_url, stream=True, verify='../../apache-conf/certs/server.crt')
         if response.status_code != 200:
             print(f"Failed to fetch image {image_path_or_url}")
             return False
@@ -22,7 +22,7 @@ def add_image_to_product(product_id, image_path_or_url, api_key):
         files = {'image': open(image_path_or_url, 'rb')}
 
     url = f"{API_URL}/images/products/{product_id}"
-    r = requests.post(url, auth=(api_key, ''), files=files)
+    r = requests.post(url, auth=(api_key, ''), files=files, verify='../../apache-conf/certs/server.crt')
 
     if not image_path_or_url.startswith("http"):
         files['image'].close()

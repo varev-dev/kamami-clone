@@ -11,7 +11,8 @@ def upload_product(xml_file, api_url, api_key):
             api_url,
             auth=(api_key, ''),
             data=xml_content.encode('utf-8'),
-            headers={'Content-Type': 'application/xml'}
+            headers={'Content-Type': 'application/xml'},
+            verify='../../apache-conf/certs/server.crt'
         )
 
         if response.status_code >= 400:
@@ -29,7 +30,7 @@ def main():
     )
     parser.add_argument(
         "--api-url",
-        default="http://localhost:8080/api/products",
+        default="https://localhost:8443/api/products",
         help="PrestaShop API URL (e.g., https://yourshop.com/api/products)"
     )
     parser.add_argument(

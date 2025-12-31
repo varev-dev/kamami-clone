@@ -13,7 +13,8 @@ def upload_category(xml_file, api_url, api_key):
             data=xml_content.encode("utf-8"),
             auth=(api_key, ""),
             headers={"Content-Type": "application/xml"},
-            timeout=30
+            timeout=30,
+            verify='../../apache-conf/certs/server.crt'
         )
 
         status = response.status_code
@@ -37,7 +38,7 @@ def main():
 
     parser.add_argument(
         "--api-url",
-        default="http://localhost:8080/api/categories",
+        default="https://localhost:8443/api/categories",
         help="PrestaShop API URL (e.g., https://yourshop.com/api/categories)",
     )
 

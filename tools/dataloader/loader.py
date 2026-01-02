@@ -90,10 +90,11 @@ class Loader:
 
             await asyncio.gather(*tasks)
         
-        import json
-        with open(LOADED_CATEGORIES_JSON, "w", encoding="utf-8") as f:
-            data = [cat.to_dict() for cat in top_categories]
-            json.dump(data, f, indent=4, ensure_ascii=False)
+        # FOR DEBUGGING
+        # import json
+        # with open(LOADED_CATEGORIES_JSON, "w", encoding="utf-8") as f:
+        #     data = [cat.to_dict() for cat in top_categories]
+        #     json.dump(data, f, indent=4, ensure_ascii=False)
 
         print("Categories loaded and saved to categories.json file!")
 
@@ -143,11 +144,12 @@ class Loader:
             ]
 
             await asyncio.gather(*tasks)
-            
-        import json
-        with open(LOADED_PRODUCTS_JSON, "w", encoding="utf-8") as f:
-            data = [prod.to_dict() for prod in products]
-            json.dump(data, f, indent=4, ensure_ascii=False)
+          
+        # FOR DEBUGGING  
+        # import json
+        # with open(LOADED_PRODUCTS_JSON, "w", encoding="utf-8") as f:
+        #     data = [prod.to_dict() for prod in products]
+        #     json.dump(data, f, indent=4, ensure_ascii=False)
 
         print("Products loaded and saved to products.json!")
         

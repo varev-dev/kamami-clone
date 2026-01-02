@@ -19,6 +19,9 @@ async def main(args):
     if not args.products and not args.stocks and not args.images:
         return
     
+    if not top_categories:
+        return
+    
     all_categories = []
 
     for cat in top_categories:
@@ -30,6 +33,9 @@ async def main(args):
 
     if args.products:
         await loader.load_products(products)
+    
+    if not products:
+        return
     
     if args.stocks:
         await loader.load_stock(products)

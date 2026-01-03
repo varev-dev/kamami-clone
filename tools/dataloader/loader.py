@@ -62,7 +62,7 @@ class Loader:
             return
 
         for cat in category.subcategories:
-            cat.parentId = category.id
+            cat.parent_id = category.id
 
         tasks = [
             self.load_category_tree(session, subcategory)

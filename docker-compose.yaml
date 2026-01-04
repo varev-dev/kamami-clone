@@ -13,7 +13,7 @@ services:
       - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
   prestashop:
     container_name: prestashop
-    image: prestashop/prestashop:1.7.8
+    build: .
     restart: unless-stopped
     depends_on:
       - mysql

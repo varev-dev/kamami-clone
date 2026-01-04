@@ -13,6 +13,8 @@ tools/data/products/images
 tools/data/*.zip
 tools/data/*xml/
 
+tools/dataloader/*.json
+
 __pycache__/
 
 *.sql

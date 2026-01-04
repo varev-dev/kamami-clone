@@ -3,22 +3,19 @@
 This project allows scraping product and category data from Kamami and adding it to PrestaShop via its API.  
 
 ## Generate Prestashop API Key
-Go to Prestashop admin dashboard → Advanced Parameters → API/Webservice → Generate Key → Full access to `categories`, `images`, `products`, `stocks` → Save → Enable Webservices → Save 
+
+Go to Prestashop admin dashboard → Advanced Parameters → API/Webservice → Generate Key → Full access to `categories`, `images`, `products`, `stocks_availables` → Save → Enable Webservices → Save. After that in `dataloader` copy `example.env` and rename it to `.env`. In this file set the `API_KEY` argument to the key you just created.
 
 ## Installation
 
-Go to `scraper` folder and install required dependencies:
+Go to `scraper` **AND** `dataloader` folders and install required dependencies:
 
 ```bash
 pip3 install -r requirements.txt
 ```
 ## Scraping Data
 
-Use `main.py` to scrape categories and/or products. You must provide your PrestaShop API key for all scripts except the XML converters.
-
-```bash
-python3 main.py --api-key YOUR_API_KEY [OPTIONS]
-```
+Use `scarper/main.py` to scrape categories and/or products.
 
 ### Available Arguments
 
@@ -32,29 +29,22 @@ python3 main.py --api-key YOUR_API_KEY [OPTIONS]
 #### Example
 
 ```bash
-python3 main.py --api-key YOUR_API_KEY --mode all --items 100 --per-category 20
+python3 main.py --mode all --items 100 --per-category 20
 ```
 
-## Converting JSON to XML
+## Loading Data via API
 
-After scraping, convert the JSON output to XML:
+Use `dataloader/main.py` to load categories, products, stocks and images. The data has to be loaded in correct order: `Categories → Products → Stocks or/and Images`.
+
+### Available arguments
+
+- `-c, --categories`: Load categories
+- `-p, --products`: Load products
+- `-s, --stocks`: Load stocks
+- `-i, --images`: Load images
+
+#### Example
+
 ```bash
-python3 xml_categories.py
-python3 xml_products.py
-```
-
-## Adding Data to PrestaShop
-
-Once JSON/XML files are ready, add them to PrestaShop:
-```bash
-python3 add_categories.py --api-key YOUR_API_KEY
-python3 add_products.py --api-key YOUR_API_KEY
-```
-
-## Post-Product Addition Tasks
-
-After adding products, you can update stock and download images:
-```bash
-python3 change_stock.py --api-key YOUR_API_KEY
-python3 add_images.py --api-key YOUR_API_KEY
+python3 main.py -cpsi
 ```

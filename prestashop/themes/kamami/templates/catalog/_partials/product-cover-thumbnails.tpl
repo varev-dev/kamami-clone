@@ -1,6 +1,6 @@
 <div class="images-container js-images-container">
   {block name='product_cover'}
-    <div class="product-cover">
+    <div class="product-cover zoom" id="productZoom">
       {if $product.default_image}
         <img class="js-qv-product-cover img-fluid" src="{$product.default_image.bySize.large_default.url}"
           {if !empty($product.default_image.legend)} alt="{$product.default_image.legend}"

@@ -7,32 +7,78 @@
 			return;
 		}
 
-		$(document).on("click", ".js-thumb", function (e) {
-			e.preventDefault();
-			const $thumb = $(this);
-			const $cover = $(".js-qv-product-cover");
+		const $zoomContainer = $("#productZoom");
+		if ($zoomContainer.length) {
+			$zoomContainer.zoom();
 
-			if ($cover.length === 0) {
-				return;
-			}
+			$(document).on("click", ".js-thumb", function (e) {
+				e.preventDefault();
+				const $thumb = $(this);
+				const $cover = $(".js-qv-product-cover");
+				const largeSrc = $thumb.attr("data-image-large-src");
 
-			const largeSrc =
-				$thumb.data("image-large-src") || $thumb.attr("data-image-large-src");
-			const mediumSrc =
-				$thumb.data("image-medium-src") || $thumb.attr("data-image-medium-src");
+				if ($cover.length && largeSrc) {
+					$cover.attr("src", largeSrc);
+					const alt = $thumb.attr("alt");
+					const title = $thumb.attr("title");
+					if (alt) $cover.attr("alt", alt);
+					if (title) $cover.attr("title", title);
+					$zoomContainer.trigger("zoom.destroy").zoom({ url: largeSrc });
+				}
 
-			if (largeSrc) {
-				$cover.attr("src", largeSrc);
+				$(".js-thumb").removeClass("selected js-thumb-selected");
+				$thumb.addClass("selected js-thumb-selected");
+			});
+		}
 
-				const alt = $thumb.attr("alt");
-				const title = $thumb.attr("title");
-				if (alt) $cover.attr("alt", alt);
-				if (title) $cover.attr("title", title);
-			}
+		$(document).on(
+			"click",
+			".layer[data-toggle='modal'][data-target='#product-modal']",
+			function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				const $modal = $("#product-modal");
+				if ($modal.length === 0) {
+					return;
+				}
 
-			$(".js-thumb").removeClass("selected js-thumb-selected");
-			$thumb.addClass("selected js-thumb-selected");
-		});
+				$(".modal-backdrop").remove();
+				$modal.css("display", "block").addClass("in");
+				$("body").addClass("modal-open");
+				const $backdrop = $(
+					'<div class="modal-backdrop fade in" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1040; background-color: rgba(0,0,0,0.5);"></div>',
+				);
+				$("body").append($backdrop);
+
+				function closeModal() {
+					$modal.css("display", "none").removeClass("in");
+					$("body").removeClass("modal-open");
+					$backdrop.fadeOut(200, function () {
+						$(this).remove();
+					});
+					$(document).off("keydown.productModal");
+				}
+
+				$(document).on("keydown.productModal", function (keyEvent) {
+					if (keyEvent.keyCode === 27) {
+						closeModal();
+					}
+				});
+
+				$backdrop.on("click", closeModal);
+
+				$modal.on("click", function (clickEvent) {
+					if (
+						$(clickEvent.target).is($modal) ||
+						$(clickEvent.target).hasClass("modal-backdrop")
+					) {
+						closeModal();
+					}
+				});
+
+				$modal.find("[data-dismiss='modal'], .close").on("click", closeModal);
+			},
+		);
 
 		$(document).on("click", ".scroll-box-arrows .left", function (e) {
 			e.preventDefault();
@@ -219,11 +265,43 @@
 		initProductImageGallery();
 		initAddToCart();
 		initWishlist();
+		initMagnifier();
 	}
 
-	$(document).ready(function () {
-		init();
-	});
+	function initMagnifier() {
+		$(document).on("click", "#product-modal .js-modal-thumb", function (e) {
+			e.preventDefault();
+			const $thumb = $(this);
+			const largeSrc = $thumb.attr("data-image-large-src");
+			if (largeSrc) {
+				$("#product-modal .js-modal-product-cover").attr("src", largeSrc);
+			}
+			$("#product-modal .js-modal-thumb").removeClass("selected");
+			$thumb.addClass("selected");
+		});
+
+		$(document).on("click", "#product-modal .js-modal-arrow-up", function (e) {
+			e.preventDefault();
+			const $mask = $("#product-modal .js-modal-mask");
+			if ($mask.length) {
+				$mask[0].scrollTop -= 100;
+			}
+		});
+
+		$(document).on(
+			"click",
+			"#product-modal .js-modal-arrow-down",
+			function (e) {
+				e.preventDefault();
+				const $mask = $("#product-modal .js-modal-mask");
+				if ($mask.length) {
+					$mask[0].scrollTop += 100;
+				}
+			},
+		);
+	}
+
+	$(document).ready(init);
 
 	$(document).on("updatedProduct", function () {
 		init();

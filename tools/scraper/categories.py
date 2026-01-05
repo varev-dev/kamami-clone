@@ -79,9 +79,6 @@ def enrich_categories_recursive(categories_list, visited_urls):
             continue
         visited_urls.add(url)
         
-        if not cat['subcategories']:
-            continue
-
         html = fetch_page(cat['url'])
         if not html:
             continue

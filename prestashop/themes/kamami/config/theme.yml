@@ -61,6 +61,10 @@ assets:
         priority: 212
         position: bottom
     product:
+      - id: zoom
+        path: assets/js/vendor/jquery.zoom.min.js
+        priority: 200
+        position: bottom
       - id: product-page
         path: assets/js/product-page.js
         priority: 213

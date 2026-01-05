@@ -157,6 +157,8 @@ def scrape_product_details(product_url):
     price_brutto = get_text(main, "span.current-price-value")
     price_netto = get_text(main, "p.product-without-taxes")
     prod_id = get_text(main, "div.prod-id_product").replace("ID:", "").strip()
+    
+    
 
     breadcrumb_path = []
     breadcrumb_nav = soup.select_one("nav.breadcrumb ol")
@@ -199,6 +201,42 @@ def scrape_product_details(product_url):
     local_images = download_product_images(prod_id, images)
     global ID 
     ID += 1
+
+    weight_kg = None
+
+    scripts = soup.find_all("script", type="application/ld+json")
+    for script in scripts:
+        try:
+            data = json.loads(script.string)
+
+            items = data if isinstance(data, list) else [data]
+
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+
+                if item.get("@type") == "Product":
+                    weight = item.get("weight")
+                    if isinstance(weight, dict):
+                        value = weight.get("value")
+                        unit = weight.get("unitCode", "").lower()
+
+                        if value:
+                            value = float(value)
+
+                            if unit == "g":
+                                weight_kg = value / 1000
+                            elif unit == "kg":
+                                weight_kg = value
+                            elif unit == "mg":
+                                weight_kg = value / 1_000_000
+
+                            break
+        except Exception:
+            continue
+
+        if weight_kg is not None:
+            break
     
     return {
         "ps_id": ID,
@@ -211,6 +249,7 @@ def scrape_product_details(product_url):
         "full_description_html": full_description,
         "price_brutto": price_brutto,
         "price_netto": price_netto,
+        "weight_kg": weight_kg,
         "attributes": attributes,
         "images": images,                # original links
         "local_images": local_images     # paths to downloaded files

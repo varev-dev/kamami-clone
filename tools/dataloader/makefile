@@ -9,15 +9,11 @@ DELETE FROM ps_product_shop; \
 DELETE FROM ps_product_sale; \
 DELETE FROM ps_stock_available; \
 DELETE FROM ps_product_tag; \
-DELETE FROM ps_image_lang; \
-DELETE FROM ps_image_shop; \
-DELETE FROM ps_image; \
 DELETE FROM ps_product_attribute_combination; \
 DELETE FROM ps_product_attribute_shop; \
 DELETE FROM ps_product_attribute; \
 DELETE FROM ps_product; \
 ALTER TABLE ps_product AUTO_INCREMENT = 1; \
-ALTER TABLE ps_image AUTO_INCREMENT = 1; \
 ALTER TABLE ps_stock_available AUTO_INCREMENT = 1; \
 ALTER TABLE ps_product_attribute AUTO_INCREMENT = 1;" | mysql -uroot -p$(MYSQL_ROOT_PASSWORD) prestashop'
 	@echo "All products and images deleted."

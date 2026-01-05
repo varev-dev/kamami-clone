@@ -72,6 +72,8 @@ class Product:
         
         SubElement(product_el, 'price').text = str(self.price)
         SubElement(product_el, 'available_for_order').text = '1'
+        
+        SubElement(product_el, 'weight').text = str(random.randint(0, 50))
 
         name = SubElement(product_el, 'name')
         for lang_id in LANG_IDS:

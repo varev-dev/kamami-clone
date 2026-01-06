@@ -158,8 +158,6 @@ def scrape_product_details(product_url):
     price_netto = get_text(main, "p.product-without-taxes")
     prod_id = get_text(main, "div.prod-id_product").replace("ID:", "").strip()
     
-    
-
     breadcrumb_path = []
     breadcrumb_nav = soup.select_one("nav.breadcrumb ol")
     main_category_name = ""
@@ -170,7 +168,7 @@ def scrape_product_details(product_url):
         if len(breadcrumb_path) >= 2:
             main_category_name = breadcrumb_path[-2]
 
-    desc_div = main.select_one(".product-description")
+    desc_div = main.select_one("#description .product-description")
     full_description = desc_div.decode_contents() if desc_div else ""
 
     images = []

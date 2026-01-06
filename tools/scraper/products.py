@@ -159,8 +159,6 @@ def scrape_product_details(product_url):
     price_netto = get_text(main, "p.product-without-taxes")
     prod_id = get_text(main, "div.prod-id_product").replace("ID:", "").strip()
     
-    
-
     breadcrumb_path = []
     breadcrumb_nav = soup.select_one("nav.breadcrumb ol")
     main_category_name = ""
@@ -171,7 +169,7 @@ def scrape_product_details(product_url):
         if len(breadcrumb_path) >= 2:
             main_category_name = breadcrumb_path[-2]
 
-    desc_div = main.select_one(".product-description")
+    desc_div = main.select_one("#description .product-description")
     full_description = desc_div.decode_contents() if desc_div else ""
 
     images = []
@@ -226,6 +224,17 @@ def scrape_product_details(product_url):
                 "id": v_id,
                 "url": v_url
             })
+
+    related_ids = set()
+    accessories_section = soup.select_one(".product-accessories")
+    if accessories_section:
+        related_articles = accessories_section.select("article[data-id-product]")
+        for art in related_articles:
+            r_id = art.get("data-id-product")
+            if r_id:
+                related_ids.add(r_id)
+
+    related_ids_list = list(related_ids)
 
     local_images = download_product_images(prod_id, images)
     global ID 
@@ -282,6 +291,7 @@ def scrape_product_details(product_url):
         "attributes": attributes,
         "variant_group": variant_group,  # "Wersja Arduino UNO"
         "variants": variants,
+        "related_products_ids": related_ids_list,
         "images": images,                # original links
         "local_images": local_images     # paths to downloaded files
     }

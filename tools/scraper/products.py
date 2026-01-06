@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import re
 from bs4 import BeautifulSoup
 from utils import fetch_page
 from categories import scrape_categories
@@ -198,6 +199,34 @@ def scrape_product_details(product_url):
                 attributes[key] = value
                 key = None
 
+    variant_group = None
+    variants = []
+    
+    variants_wrapper = soup.select_one(".jzrelprods-wrapper")
+    if variants_wrapper:
+        caption_el = variants_wrapper.select_one(".jzrelprods-caption")
+        if caption_el:
+            variant_group = caption_el.get_text(strip=True).replace(":", "")
+        
+        buttons = variants_wrapper.select(".jzrelprods-buttons > *")
+        for btn in buttons:
+            v_name = btn.get_text(strip=True)
+            v_url = btn.get("href")
+            v_id = None
+            
+            if v_url:
+                match = re.search(r'/(\d+)-', v_url) # get id from url
+                if match:
+                    v_id = match.group(1)
+            else:
+                v_id = prod_id 
+
+            variants.append({
+                "name": v_name,
+                "id": v_id,
+                "url": v_url
+            })
+
     local_images = download_product_images(prod_id, images)
     global ID 
     ID += 1
@@ -251,6 +280,8 @@ def scrape_product_details(product_url):
         "price_netto": price_netto,
         "weight_kg": weight_kg,
         "attributes": attributes,
+        "variant_group": variant_group,  # "Wersja Arduino UNO"
+        "variants": variants,
         "images": images,                # original links
         "local_images": local_images     # paths to downloaded files
     }

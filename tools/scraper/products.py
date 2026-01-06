@@ -196,6 +196,17 @@ def scrape_product_details(product_url):
                 attributes[key] = value
                 key = None
 
+    related_ids = set()
+    accessories_section = soup.select_one(".product-accessories")
+    if accessories_section:
+        related_articles = accessories_section.select("article[data-id-product]")
+        for art in related_articles:
+            r_id = art.get("data-id-product")
+            if r_id:
+                related_ids.add(r_id)
+
+    related_ids_list = list(related_ids)
+
     local_images = download_product_images(prod_id, images)
     global ID 
     ID += 1
@@ -249,6 +260,7 @@ def scrape_product_details(product_url):
         "price_netto": price_netto,
         "weight_kg": weight_kg,
         "attributes": attributes,
+        "related_products_ids": related_ids_list,
         "images": images,                # original links
         "local_images": local_images     # paths to downloaded files
     }

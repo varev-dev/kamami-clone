@@ -1,7 +1,3 @@
-{**
- * Kamami theme page template
- * Overrides classic theme page.tpl for custom page-footer
- *}
 {extends file='parent:page.tpl'}
 
 {block name='page_footer_container'}
@@ -11,4 +7,3 @@
     {/block}
   </footer>
 {/block}
-

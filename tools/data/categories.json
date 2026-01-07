@@ -4,8 +4,8 @@
     "name": "ARDUINO",
     "url": "https://kamami.pl/13004-arduino",
     "description": "Arduinoto wszechstronna platforma, która zrewolucjonizowała świat elektroniki DIY. Dzięki niej zarówno hobbystom, jak i profesjonalistom udało się zrealizować niezliczone projekty, od prostych prototypów po skomplikowane systemy. Na stronie Kamami znajdziesz szeroką gamę produktów, które zaspokoją potrzeby każdego entuzjasty elektroniki. Wybierając spośród modeli takich jak Arduino Uno, Arduino Mega, iArduino Nano, masz pewność, że znajdziesz odpowiednie rozwiązanie do swojego projektu. Dodatkowo, nasz asortyment obejmuje akcesoria Arduino, które znacznie rozszerzają możliwości Twojego zestawu, umożliwiając realizację jeszcze bardziej zaawansowanych projektów. Sklep Kamami oferuje również kompleksową pomoc techniczną oraz liczne poradniki, które krok po kroku wprowadzą Cię w świat Arduino.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13004-category_small/arduino.jpg",
+    "local_image": "../data/categories/images/cat_3.jpg",
     "subcategories": [
       {
         "id": 4,
@@ -290,8 +290,8 @@
     "name": "AUTOMATYKA",
     "url": "https://kamami.pl/15487-automatyka",
     "description": "Automatyka to dziedzina, która obejmuje szeroki zakres technologii stosowanych w automatyzacji procesów przemysłowych i domowych. Nasza oferta produktów z zakresu automatyki obejmuje nowoczesne rozwiązania, które wspierają zarówno profesjonalistów, jak i hobbystów. W naszym sklepie znajdziesz wszystko, co potrzebne do tworzenia zaawansowanych systemów automatyki, w tym automatykę domową i przemysłową, zasilacze na szynę DIN, moduły dla sterowników PLC, sterowniki PLC, oraz produkty marek takich jak Sonoff i BleBox.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/15487-category_small/automatyka.jpg",
+    "local_image": "../data/categories/images/cat_34.jpg",
     "subcategories": [
       {
         "id": 35,
@@ -510,8 +510,8 @@
     "name": "CYBERBEZPIECZEŃSTWO",
     "url": "https://kamami.pl/15712-cyberbezpieczenstwo",
     "description": "W dzisiejszym cyfrowym świecie cyberbezpieczeństwo odgrywa kluczową rolę w zapewnieniu ochrony danych i zasobów sieciowych. Na Kamami znajdziesz szeroki wybór narzędzi dedykowanych do testów penetracyjnych i zabezpieczeń sieciowych, które pomogą Ci skutecznie chronić swoją infrastrukturę IT. W naszej ofercie dostępne są zaawansowane urządzenia, takie jak Flipper Zero - wielofunkcyjne narzędzie do testów penetracyjnych Bluetooth/RFID/RF/IR/1-Wire, które umożliwia przeprowadzenie kompleksowych testów zabezpieczeń w różnych technologiach komunikacyjnych.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/15712-category_small/cyberbezpieczenstwo.jpg",
+    "local_image": "../data/categories/images/cat_58.jpg",
     "subcategories": [
       {
         "id": 59,
@@ -538,8 +538,8 @@
     "name": "DRUK 3D",
     "url": "https://kamami.pl/12819-druk-3d",
     "description": "Druk 3D to zaawansowana technologia, która pozwala na tworzenie trójwymiarowych obiektów z różnorodnych materiałów. W sklepie Kamami oferujemy bogaty wybór drukarek 3D, filamentów i akcesoriów, które umożliwiają realizację najbardziej kreatywnych projektów. Niezależnie od tego, czy jesteś początkującym entuzjastą, czy doświadczonym profesjonalistą, znajdziesz u nas produkty dopasowane do swoich potrzeb.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/12819-category_small/druk-3d.jpg",
+    "local_image": "../data/categories/images/cat_61.jpg",
     "subcategories": [
       {
         "id": 62,
@@ -921,8 +921,8 @@
     "name": "EDUKACJA",
     "url": "https://kamami.pl/15755-edukacja",
     "description": "Nasza kategoria edukacyjna jest zaprojektowana, aby wspierać rozwój umiejętności technicznych i inżynieryjnych. Oferujemy szeroką gamę produktów, które są idealne dla studentów, nauczycieli oraz entuzjastów technologii. W naszej ofercie znajdziesz roboty edukacyjne, zestawy do nauki elektroniki, zestawy do montażu oraz elektronikę analogową. Wszystkie produkty są wyselekcjonowane, aby zapewnić wysoką jakość i efektywność nauki.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/15755-category_small/edukacja.jpg",
+    "local_image": "../data/categories/images/cat_103.jpg",
     "subcategories": [
       {
         "id": 104,
@@ -1322,8 +1322,8 @@
     "name": "ELEKTRONIKA",
     "url": "https://kamami.pl/13071-elektronika",
     "description": "Kategoria Elektronika to miejsce, w którym znajdziesz wszystko, czego potrzebujesz do realizacji swoich projektów, niezależnie od ich skali i złożoności. Oferujemy szeroki asortyment, od akcesoriów PC, chłodzenia i drukarek, po inteligentne ubrania, karty pamięci oraz nowoczesne rozwiązania w postaci systemów GPS. Nasze produkty dedykowane są zarówno entuzjastom DIY, jak i profesjonalistom pracującym nad bardziej złożonymi aplikacjami technologicznymi.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13071-category_small/elektronika.jpg",
+    "local_image": "../data/categories/images/cat_147.jpg",
     "subcategories": [
       {
         "id": 148,
@@ -4638,8 +4638,8 @@
     "name": "KSIĄŻKI",
     "url": "https://kamami.pl/56-ksiazki",
     "description": "Nasza oferta to prawdziwa skarbnica wiedzy dla entuzjastów elektroniki, automatyki, informatyki i wielu innych dziedzin technicznych. Znajdziesz u nas zarówno książki obcojęzyczne, jak i polskojęzyczne, które pomogą Ci zgłębić tajniki elektrotechniki, nauczyć się programowania w języku Bascom, a także rozwinąć umiejętności z zakresu modelarstwa R/C. Nasze ebooki to wygodne rozwiązanie dla tych, którzy cenią sobie mobilność i dostęp do literatury w każdym miejscu i czasie. Dzięki szerokiemu asortymentowi publikacji z zakresu matematyki, zarządzania oraz innych nauk, każdy znajdzie coś dla siebie. Zapraszamy do odkrywania wiedzy!",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/56-category_small/ksiazki.jpg",
+    "local_image": "../data/categories/images/cat_511.jpg",
     "subcategories": [
       {
         "id": 512,
@@ -5085,8 +5085,8 @@
     "name": "MECHANIKA",
     "url": "https://kamami.pl/13240-mechanika",
     "description": "Mechanika to dziedzina nauki i technologii zajmująca się ruchem oraz siłami działającymi na ciała fizyczne. Jest kluczowa w wielu dziedzinach inżynierii i technologii, wpływając na projektowanie, analizę i działanie maszyn oraz urządzeń.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13240-category_small/mechanika.jpg",
+    "local_image": "../data/categories/images/cat_560.jpg",
     "subcategories": [
       {
         "id": 561,
@@ -5825,8 +5825,8 @@
     "name": "MINIKOMPUTERY (SBC)",
     "url": "https://kamami.pl/15761-minikomputery-sbc",
     "description": "Minikomputery, znane również jako Single Board Computers (SBC), to wszechstronne urządzenia, które znajdują zastosowanie w szerokim zakresie projektów - od prostych zadań edukacyjnych po zaawansowane aplikacje przemysłowe. W naszym asortymencie znajdziesz najpopularniejsze modele takich producentów jak BeagleBone, Cubieboard, FriendlyELEC, LattePanda, Nvidia Jetson, Odroid, SBC Embest, SBC MYIR i SoMLabs. Dzięki ich kompaktowym rozmiarom i potężnym możliwościom obliczeniowym, te minikomputery są idealne do prototypowania, rozwoju IoT, a nawet jako alternatywa dla tradycyjnych komputerów stacjonarnych.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/15761-category_small/minikomputery-sbc.jpg",
+    "local_image": "../data/categories/images/cat_641.jpg",
     "subcategories": [
       {
         "id": 642,
@@ -6185,8 +6185,8 @@
     "name": "PRZYRZĄDY POMIAROWE",
     "url": "https://kamami.pl/13307-przyrzady-pomiarowe",
     "description": "To nieodzowne narzędzia w każdym laboratorium, warsztacie i na placu budowy. Umożliwiają dokładne i wiarygodne pomiary różnych parametrów, co jest kluczowe dla precyzyjnych prac inżynieryjnych, naukowych i diagnostycznych. W naszej ofercie znajdziesz szeroki wybór przyrządów pomiarowych, które sprostają najbardziej wymagającym zadaniom.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13307-category_small/przyrzady-pomiarowe.jpg",
+    "local_image": "../data/categories/images/cat_680.jpg",
     "subcategories": [
       {
         "id": 681,
@@ -6587,8 +6587,8 @@
     "name": "RASPBERRY PI",
     "url": "https://kamami.pl/15238-raspberry-pi",
     "description": "Raspberry Pi to wszechstronna platforma mikrokomputerów, która rewolucjonizuje sposób, w jaki uczymy się programowania, budujemy projekty DIY oraz wprowadzamy zaawansowane technologie do codziennego użytku. Od modeli takich jak Raspberry Pi 4, przez Raspberry Pi 400, po Raspberry Pi Pico, każdy znajdzie coś dla siebie. Te niewielkie, ale potężne urządzenia umożliwiają realizację złożonych projektów, od inteligentnych domów po edukacyjne roboty. Dzięki różnorodnym akcesoriom, takim jak obudowy, zasilacze, moduły kamery, czy ekrany dotykowe, możliwości są niemal nieograniczone. Dowiedz się więcej, jak Raspberry Pi może odmienić Twoje projekty i dostarczyć nieocenionych narzędzi do nauki i rozwoju.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/15238-category_small/raspberry-pi.jpg",
+    "local_image": "../data/categories/images/cat_724.jpg",
     "subcategories": [
       {
         "id": 725,
@@ -7098,8 +7098,8 @@
     "name": "WARSZTAT",
     "url": "https://kamami.pl/13292-warsztat",
     "description": "Kompleksowe wyposażenie warsztatowe jest kluczowe dla realizacji projektów elektronicznych i precyzyjnych prac montażowych. W naszej ofercie znajdziesz szeroki wybór narzędzi i akcesoriów, w tym plotery i frezarki CNC, mikroskopy do dokładnej analizy elementów, oraz narzędzia do lutowania i klejenia. Profesjonalne igły dozownicze, kleje i klejarki, a także chemia do czyszczenia i konserwacji to niezbędne wyposażenie każdego warsztatu.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13292-category_small/warsztat.jpg",
+    "local_image": "../data/categories/images/cat_780.jpg",
     "subcategories": [
       {
         "id": 781,
@@ -8166,8 +8166,8 @@
     "name": "WYCOFANE Z OFERTY",
     "url": "https://kamami.pl/12821-wycofane-z-oferty",
     "description": "",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/12821-category_small/wycofane-z-oferty.jpg",
+    "local_image": "../data/categories/images/cat_897.jpg",
     "subcategories": []
   },
   {
@@ -8175,8 +8175,8 @@
     "name": "WYPRZEDAŻ",
     "url": "https://kamami.pl/13458-wyprzedaz",
     "description": "Kategoria \"WYPRZEDAŻ\" to doskonała okazja, aby nabyć wysokiej jakości komponenty elektroniczne w atrakcyjnych cenach. W naszej ofercie znajdziesz różnorodne produkty, które są przecenione, ale wciąż oferują pełną funkcjonalność i niezawodność.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13458-category_small/wyprzedaz.jpg",
+    "local_image": "../data/categories/images/cat_898.jpg",
     "subcategories": []
   },
   {
@@ -8184,8 +8184,8 @@
     "name": "ZASILANIE",
     "url": "https://kamami.pl/13315-zasilanie",
     "description": "W kategorii Zasilanie oferujemy szeroki wybór produktów przeznaczonych do zasilania różnorodnych urządzeń – od elektroniki użytkowej po zaawansowane systemy przemysłowe. Nasza oferta obejmuje akumulatory, baterie, balansery, ładowarki oraz inne akcesoria, które zapewniają bezpieczne i wydajne zasilanie w każdej sytuacji. Dzięki bogatej ofercie znajdziesz rozwiązania dopasowane do swoich potrzeb, w tym mobilne baterie (PowerBank), zasilanie bezprzewodowe oraz ładowarki do samochodów elektrycznych.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13315-category_small/zasilanie.jpg",
+    "local_image": "../data/categories/images/cat_899.jpg",
     "subcategories": [
       {
         "id": 900,
@@ -8523,8 +8523,8 @@
     "name": "ZESTAWY URUCHOMIENIOWE",
     "url": "https://kamami.pl/13003-zestawy-uruchomieniowe",
     "description": "Sklep kamami.pl ma w ofercie szeroką paletę zestawów uruchomieniowych dla mikrokontrolerów oraz układów programowalnych. Dostępne są również wszelkie akcesoria (programatory, moduły itp.).",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/13003-category_small/zestawy-uruchomieniowe.jpg",
+    "local_image": "../data/categories/images/cat_936.jpg",
     "subcategories": [
       {
         "id": 937,
@@ -9229,8 +9229,8 @@
     "name": "ZESTAWY URUCHOMIENIOWE FPGA",
     "url": "https://kamami.pl/15756-zestawy-uruchomieniowe-fpga",
     "description": "Nasze zestawy uruchomieniowe FPGA to idealne narzędzia dla inżynierów, projektantów i entuzjastów elektroniki, którzy dążą do tworzenia zaawansowanych aplikacji cyfrowych. FPGA (Field Programmable Gate Array) zapewniają elastyczność i wysoką wydajność, umożliwiając realizację skomplikowanych projektów sprzętowych. W Kamami oferujemy bogatą gamę zestawów uruchomieniowych FPGA, które pozwalają na szybkie prototypowanie i rozwój zaawansowanych aplikacji.",
-    "image_url": null,
-    "local_image": null,
+    "image_url": "https://kamami.pl/c/15756-category_small/zestawy-uruchomieniowe-fpga.jpg",
+    "local_image": "../data/categories/images/cat_1013.jpg",
     "subcategories": [
       {
         "id": 1014,

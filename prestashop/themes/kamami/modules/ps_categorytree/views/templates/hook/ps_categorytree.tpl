@@ -28,28 +28,30 @@
     {if $nodes|count}
       <ul class="category-sub-menu">
         {foreach from=$nodes item=node}
-          <li data-depth="{$depth}" data-catid="{$node.id}">
+          <li data-depth="{$depth}" data-catid="{$node.id}"{if isset($node.isSelected) && $node.isSelected} class="cat-selected"{/if}>
             {if $depth===0}
-              <a href="{$node.link}">{$node.name}</a>
+              <a href="{$node.link}"{if isset($node.isSelected) && $node.isSelected} class="cat-selected"{/if}>{$node.name}</a>
               {if $node.children}
+                {assign var="isExpanded" value=(isset($node.isExpanded) && $node.isExpanded)}
                 <div class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}"
-                  aria-expanded="false">
+                  aria-expanded="{if $isExpanded}true{else}false{/if}">
                   <i class="material-icons add">&#xE145;</i>
                   <i class="material-icons remove">&#xE15B;</i>
                 </div>
-                <div class="collapse" id="exCollapsingNavbar{$node.id}">
+                <div class="collapse{if $isExpanded} in{/if}" id="exCollapsingNavbar{$node.id}">
                   {categories nodes=$node.children depth=$depth+1}
                 </div>
               {/if}
             {else}
-              <a class="category-sub-link" href="{$node.link}">{$node.name}</a>
+              <a class="category-sub-link{if isset($node.isSelected) && $node.isSelected} cat-selected{/if}" href="{$node.link}">{$node.name}</a>
               {if $node.children}
+                {assign var="isExpanded" value=(isset($node.isExpanded) && $node.isExpanded)}
                 <div class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}"
-                  aria-expanded="false">
+                  aria-expanded="{if $isExpanded}true{else}false{/if}">
                   <i class="material-icons add">&#xE145;</i>
                   <i class="material-icons remove">&#xE15B;</i>
                 </div>
-                <div class="collapse" id="exCollapsingNavbar{$node.id}">
+                <div class="collapse{if $isExpanded} in{/if}" id="exCollapsingNavbar{$node.id}">
                   {categories nodes=$node.children depth=$depth+1}
                 </div>
               {/if}

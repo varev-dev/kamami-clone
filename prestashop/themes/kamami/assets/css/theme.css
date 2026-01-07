@@ -18029,6 +18029,10 @@ body#checkout #footer {
   color: #000
 }
 
+.block-categories .collapse.in {
+  display: block !important;
+}
+
 .block-categories .arrows .arrow-down,.block-categories .arrows .arrow-right {
   font-size: .875rem;
   cursor: pointer;

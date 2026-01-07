@@ -223,6 +223,10 @@ function initCategoryTreeCollapse() {
 				$collapse.hasClass("in") ||
 				$collapse.is(":visible");
 			$toggle.attr("aria-expanded", isExpanded ? "true" : "false");
+
+			if ($collapse.hasClass("in") && !$collapse.is(":visible")) {
+				$collapse.css("display", "block");
+			}
 		}
 	});
 

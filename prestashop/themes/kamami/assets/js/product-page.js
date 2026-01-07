@@ -274,16 +274,6 @@
 			return;
 		}
 
-		function setEqualHeights() {
-			const $items = $carousel.find(".owl-item.active .product-miniature");
-			if (!$items.length) return;
-			let maxHeight = 0;
-			$items.css("height", "auto").each(function () {
-				maxHeight = Math.max(maxHeight, $(this).outerHeight());
-			});
-			$items.css("height", maxHeight + "px");
-		}
-
 		$carousel.owlCarousel({
 			loop: false,
 			nav: true,
@@ -291,8 +281,6 @@
 			margin: 0,
 			items: 5,
 			navText: ["‹", "›"],
-			onInitialized: setEqualHeights,
-			onResized: setEqualHeights,
 		});
 	}
 

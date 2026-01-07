@@ -1,8 +1,4 @@
-/**
- * Theme initialization
- */
 $(document).ready(function () {
-	// Initialize dropdowns
 	const $dropdowns = $(".js-dropdown");
 	if ($dropdowns.length) {
 		const dropdown = new DropDown($dropdowns);
@@ -13,26 +9,15 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	// Initialize category tree collapse functionality
 	initCategoryTreeCollapse();
-
-	// Initialize quickview functionality
 	initQuickView();
-
-	// Fix lazy loading for product thumbnails - ensure images load even if lazy load script fails
 	initLazyLoadFallback();
 });
 
-/**
- * Initialize lazy load fallback for product thumbnails
- * Ensures images load even if the lazy loading script doesn't work
- */
 function initLazyLoadFallback() {
-	// Check for images with data-src that haven't loaded after a short delay
 	setTimeout(function () {
 		$(".js-lazyload[data-src]").each(function () {
 			const $img = $(this);
-			// If image hasn't loaded (still showing placeholder or has no natural width)
 			if (
 				!$img.attr("src") ||
 				$img.attr("src").indexOf("data:image/svg+xml") !== -1
@@ -45,7 +30,6 @@ function initLazyLoadFallback() {
 		});
 	}, 500);
 
-	// Also handle images that come into viewport
 	if (typeof IntersectionObserver !== "undefined") {
 		const imageObserver = new IntersectionObserver(
 			function (entries, observer) {
@@ -72,12 +56,7 @@ function initLazyLoadFallback() {
 	}
 }
 
-/**
- * Initialize quickview modal functionality
- * Handles clicks on quick-view links and loads product data via AJAX
- */
 function initQuickView() {
-	// Touchspin quantity buttons (delegated for dynamic modals)
 	$(document).on("click", ".bootstrap-touchspin-up", function () {
 		const $input = $(this).closest(".bootstrap-touchspin").find("input");
 		$input.val(parseInt($input.val() || 1) + 1);
@@ -89,7 +68,6 @@ function initQuickView() {
 		if (val > 1) $input.val(val - 1);
 	});
 
-	// Close quickview modal when cart is updated
 	prestashop.on("updateCart", function () {
 		$(".quickview").css("display", "none").removeClass("in").remove();
 		$("#quickview-backdrop").remove();
@@ -115,7 +93,6 @@ function initQuickView() {
 
 			if (!productId) return;
 
-			// Build quickview URL
 			const $productLink = $productMiniature
 				.find("a.thumbnail, a.name")
 				.first();
@@ -160,7 +137,6 @@ function initQuickView() {
 
 					if ($modal.length === 0) return;
 
-					// Show modal
 					$modal
 						.css("display", "block")
 						.addClass("in")
@@ -187,7 +163,6 @@ function initQuickView() {
 						if (e.keyCode === 27) closeModal();
 					});
 
-					// Handle thumbnail clicks
 					$modal.on("click", ".js-thumb", function () {
 						const $thumb = $(this);
 						const largeSrc =
@@ -210,10 +185,6 @@ function initQuickView() {
 	);
 }
 
-/**
- * Initialize category tree collapse functionality
- * Handles Bootstrap collapse events and updates aria-expanded attribute
- */
 function initCategoryTreeCollapse() {
 	const $categoryTree = $(".block-categories");
 
@@ -221,7 +192,6 @@ function initCategoryTreeCollapse() {
 		return;
 	}
 
-	// Handle Bootstrap collapse events
 	$categoryTree.on("show.bs.collapse", ".collapse", function () {
 		const $collapse = $(this);
 		const collapseId = $collapse.attr("id");
@@ -242,14 +212,12 @@ function initCategoryTreeCollapse() {
 		}
 	});
 
-	// Initialize collapse state on page load
 	$categoryTree.find(".collapse").each(function () {
 		const $collapse = $(this);
 		const collapseId = $collapse.attr("id");
 		const $toggle = $categoryTree.find('[data-target="#' + collapseId + '"]');
 
 		if ($toggle.length) {
-			// Check if collapse is shown (has 'show' or 'in' class, or is visible)
 			const isExpanded =
 				$collapse.hasClass("show") ||
 				$collapse.hasClass("in") ||
@@ -258,7 +226,6 @@ function initCategoryTreeCollapse() {
 		}
 	});
 
-	// Fallback: Manual toggle if Bootstrap collapse isn't working
 	$categoryTree.on("click", ".collapse-icons", function (e) {
 		e.preventDefault();
 		const $toggle = $(this);
@@ -274,11 +241,9 @@ function initCategoryTreeCollapse() {
 			return;
 		}
 
-		// Try Bootstrap collapse first
 		if (typeof $.fn.collapse !== "undefined") {
 			$target.collapse("toggle");
 		} else {
-			// Fallback: manual toggle
 			const isExpanded = $toggle.attr("aria-expanded") === "true";
 
 			if (isExpanded) {

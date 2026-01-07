@@ -29,6 +29,23 @@ def main():
         dest="per_category",
         help="Limit number of products per category (useful for sampling)"
     )
+    parser.add_argument(
+        "--no-variants",
+        action="store_true",
+        help="Skip scraping product variants"
+    )
+    parser.add_argument(
+        "--no-related",
+        action="store_true",
+        help="Skip scraping related products"
+    )
+    parser.add_argument(
+        "-r", "--related-limit",
+        type=int,
+        default=None,
+        dest="related_limit",
+        help="Limit number of related products to scrape per product (e.g., 2 = max 2 related products per item)"
+    )
     args = parser.parse_args()
 
     print("=== Kamami Scraper ===")
@@ -39,7 +56,23 @@ def main():
 
     if args.mode in ("products", "all"):
         print("\n[STEP 2] Scraping products...")
-        scrape_all_products(limit=args.items, per_category_limit=args.per_category)
+        
+        # Display scraping configuration
+        print(f"\nConfiguration:")
+        print(f"  - Total products limit: {args.items if args.items else 'unlimited'}")
+        print(f"  - Per category limit: {args.per_category if args.per_category else 'unlimited'}")
+        print(f"  - Scrape variants: {not args.no_variants}")
+        print(f"  - Scrape related products: {not args.no_related}")
+        if not args.no_related and args.related_limit:
+            print(f"  - Related products limit per product: {args.related_limit}")
+        
+        scrape_all_products(
+            limit=args.items, 
+            per_category_limit=args.per_category,
+            scrape_variants=not args.no_variants,
+            scrape_related=not args.no_related,
+            related_limit=args.related_limit
+        )
 
     print("\nDone! All data saved to ../data directory.")
 

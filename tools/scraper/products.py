@@ -14,7 +14,7 @@ ID = 0
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
-def scrape_all_products(categories_json="../data/categories.json", limit=None, per_category_limit=None):
+def scrape_all_products(categories_json="../data/categories.json", limit=None, per_category_limit=None, scrape_variants=True, scrape_related=True, related_limit=None):
     if not os.path.exists(categories_json):
         print("[INFO] Categories file not found. Scraping categories first...")
         scrape_categories()
@@ -59,6 +59,11 @@ def scrape_all_products(categories_json="../data/categories.json", limit=None, p
             break
         process_category(category)
 
+    # Scrape variants and related products
+    if scrape_variants or scrape_related:
+        print("\n[INFO] Scraping variants and related products...")
+        scrape_additional_products(products_map, url_to_id, scrape_variants, scrape_related, related_limit)
+
     all_products_list = list(products_map.values())
 
     print("[INFO] Assigning final category IDs based on breadcrumb paths...")
@@ -69,6 +74,120 @@ def scrape_all_products(categories_json="../data/categories.json", limit=None, p
 
     print(f"\n[FINISHED] Total products scraped: {len(all_products_list)} (limit={limit})")
     return final_products
+
+def scrape_additional_products(products_map, url_to_id, scrape_variants=True, scrape_related=True, related_limit=None):
+    """
+    Scrapes variants and related products for all products already in products_map.
+    This function works iteratively - newly found products (variants and related) 
+    will also have their variants and related products scraped in subsequent iterations.
+    
+    Args:
+        products_map: Dictionary of product_id -> product_data
+        url_to_id: Dictionary of url -> product_id
+        scrape_variants: Whether to scrape variants
+        scrape_related: Whether to scrape related products
+        related_limit: Maximum number of related products to scrape per product (None = unlimited)
+    """
+    products_to_check = list(products_map.values())
+    processed_ids = set(products_map.keys())
+    
+    iteration = 0
+    max_iterations = 2  # Prevent infinite loops
+    
+    total_variants_scraped = 0
+    total_related_scraped = 0
+    total_related_skipped = 0
+    
+    while products_to_check and iteration < max_iterations:
+        iteration += 1
+        print(f"\n[INFO] === Iteration {iteration}: Checking {len(products_to_check)} products ===")
+        
+        new_products_found = []
+        variants_this_iteration = 0
+        related_this_iteration = 0
+        related_skipped_this_iteration = 0
+        
+        for product in products_to_check:
+            product_name = product.get('name', 'Unknown')
+            
+            # Scrape variants
+            if scrape_variants and product.get('variants'):
+                variants_count = len(product['variants'])
+                print(f"\n  [{product_name}] Found {variants_count} variant(s)")
+                
+                for variant in product['variants']:
+                    v_id = variant.get('id')
+                    v_url = variant.get('url')
+                    
+                    if v_id and v_id not in processed_ids and v_url:
+                        print(f"    → Scraping variant: {variant.get('name')} (ID: {v_id})")
+                        
+                        variant_data = scrape_product_details(v_url)
+                        if variant_data and variant_data['id'] not in processed_ids:
+                            products_map[variant_data['id']] = variant_data
+                            url_to_id[v_url] = variant_data['id']
+                            processed_ids.add(variant_data['id'])
+                            new_products_found.append(variant_data)
+                            variants_this_iteration += 1
+                        
+                        time.sleep(0.25)
+            
+            # Scrape related products
+            if scrape_related and product.get('related_products'):
+                related_count = len(product['related_products'])
+                
+                # Apply related_limit if specified
+                related_to_scrape = product['related_products']
+                if related_limit is not None and related_count > related_limit:
+                    related_to_scrape = product['related_products'][:related_limit]
+                    skipped = related_count - related_limit
+                    related_skipped_this_iteration += skipped
+                    print(f"\n  [{product_name}] Found {related_count} related product(s) (scraping {related_limit}, skipping {skipped})")
+                else:
+                    print(f"\n  [{product_name}] Found {related_count} related product(s)")
+                
+                for related in related_to_scrape:
+                    related_id = related.get('id')
+                    related_url = related.get('url')
+                    
+                    if related_id and related_id not in processed_ids and related_url:
+                        print(f"    → Scraping related: {related.get('name')} (ID: {related_id})")
+                        
+                        related_data = scrape_product_details(related_url)
+                        if related_data and related_data['id'] not in processed_ids:
+                            products_map[related_data['id']] = related_data
+                            url_to_id[related_url] = related_data['id']
+                            processed_ids.add(related_data['id'])
+                            new_products_found.append(related_data)
+                            related_this_iteration += 1
+                        
+                        time.sleep(0.25)
+        
+        total_variants_scraped += variants_this_iteration
+        total_related_scraped += related_this_iteration
+        total_related_skipped += related_skipped_this_iteration
+        
+        print(f"\n[INFO] Iteration {iteration} results:")
+        print(f"  - Variants scraped: {variants_this_iteration}")
+        print(f"  - Related products scraped: {related_this_iteration}")
+        if related_skipped_this_iteration > 0:
+            print(f"  - Related products skipped (limit): {related_skipped_this_iteration}")
+        print(f"  - New products for next iteration: {len(new_products_found)}")
+        
+        # Prepare for next iteration
+        products_to_check = new_products_found
+        
+        if not new_products_found:
+            print(f"\n[INFO] No new products found in iteration {iteration}. Stopping.")
+            break
+    
+    print(f"\n[INFO] === Additional products scraping completed ===")
+    print(f"  - Total variants scraped: {total_variants_scraped}")
+    print(f"  - Total related products scraped: {total_related_scraped}")
+    if total_related_skipped > 0:
+        print(f"  - Total related products skipped (limit): {total_related_skipped}")
+    print(f"  - Total products in database: {len(products_map)}")
+    print(f"  - Iterations completed: {iteration}/{max_iterations}")
 
 def scrape_category_products(category_url, category_id, per_category_limit,  limit=None, products_map=None, url_to_id=None):
     page = 1
@@ -124,9 +243,6 @@ def scrape_category_products(category_url, category_id, per_category_limit,  lim
             product_data = scrape_product_details(product_url)
             if product_data:
                 kamami_id = product_data['id']
-                
-                product_data['category_id'] = category_id
-                product_data['subcategories'] = []
                 
                 products_map[kamami_id] = product_data
                 url_to_id[product_url] = kamami_id
@@ -213,7 +329,11 @@ def scrape_product_details(product_url):
             v_id = None
             
             if v_url:
-                match = re.search(r'/(\d+)-', v_url) # get id from url
+                # Make URL absolute if relative
+                if v_url.startswith('/'):
+                    v_url = BASE_URL + v_url
+                    
+                match = re.search(r'/(\d+)-', v_url)
                 if match:
                     v_id = match.group(1)
             else:
@@ -225,16 +345,33 @@ def scrape_product_details(product_url):
                 "url": v_url
             })
 
-    related_ids = set()
+    related_products = []
     accessories_section = soup.select_one(".product-accessories")
     if accessories_section:
         related_articles = accessories_section.select("article[data-id-product]")
         for art in related_articles:
             r_id = art.get("data-id-product")
+            
+            # Extract URL from the article
+            r_url = None
+            link = art.select_one("a.product-thumbnail")
+            if link:
+                r_url = link.get("href")
+                if r_url and r_url.startswith('/'):
+                    r_url = BASE_URL + r_url
+            
+            # Extract name
+            r_name = ""
+            name_el = art.select_one("h3.h3.product-title a")
+            if name_el:
+                r_name = name_el.get_text(strip=True)
+            
             if r_id:
-                related_ids.add(r_id)
-
-    related_ids_list = list(related_ids)
+                related_products.append({
+                    "id": r_id,
+                    "name": r_name,
+                    "url": r_url
+                })
 
     local_images = download_product_images(prod_id, images)
     global ID 
@@ -281,7 +418,7 @@ def scrape_product_details(product_url):
         "id": prod_id,
         "name": name,
         "url": product_url,
-        "breadcrumb_category": main_category_name, # real main category from breadcrumb
+        "breadcrumb_category": main_category_name,
         "breadcrumb_full": breadcrumb_path,
         "short_description": short_desc,
         "full_description_html": full_description,
@@ -289,11 +426,11 @@ def scrape_product_details(product_url):
         "price_netto": price_netto,
         "weight_kg": weight_kg,
         "attributes": attributes,
-        "variant_group": variant_group,  # "Wersja Arduino UNO"
+        "variant_group": variant_group,
         "variants": variants,
-        "related_products_ids": related_ids_list,
-        "images": images,                # original links
-        "local_images": local_images     # paths to downloaded files
+        "related_products": related_products,
+        "images": images,
+        "local_images": local_images
     }
 
 def clean_text(text: str) -> str:

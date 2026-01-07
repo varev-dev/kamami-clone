@@ -69,6 +69,11 @@ assets:
         path: assets/js/product-page.js
         priority: 213
         position: bottom
+    category:
+      - id: listing-page
+        path: assets/js/listing-page.js
+        priority: 214
+        position: bottom
 
 theme_settings:
   default_layout: layout-left-column

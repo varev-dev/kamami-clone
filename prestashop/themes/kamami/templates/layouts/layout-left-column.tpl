@@ -75,12 +75,15 @@
 
             {block name="content_wrapper"}
               <div id="content-wrapper"
-                class="js-content-wrapper left-column col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
-                {hook h="displayContentWrapperTop"}
-                {block name="content"}
-                  <p>Hello world! This is HTML5 Boilerplate.</p>
-                {/block}
-                {hook h="displayContentWrapperBottom"}
+                class="js-content-wrapper left-column col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 withsidebar"
+                style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+                <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;">
+                  {hook h="displayContentWrapperTop"}
+                  {block name="content"}
+                    <p>Hello world! This is HTML5 Boilerplate.</p>
+                  {/block}
+                  {hook h="displayContentWrapperBottom"}
+                </div>
               </div>
             {/block}
           </div>

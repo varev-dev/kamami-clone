@@ -15,11 +15,9 @@ $(document).ready(function () {
 });
 
 function initLazyLoadFallback() {
-	// Check for images with data-src that haven't loaded after a short delay
 	setTimeout(function () {
 		$(".js-lazyload[data-src]").each(function () {
 			const $img = $(this);
-			// If image hasn't loaded (still showing placeholder or has no natural width)
 			if (
 				!$img.attr("src") ||
 				$img.attr("src").indexOf("data:image/svg+xml") !== -1
@@ -32,7 +30,6 @@ function initLazyLoadFallback() {
 		});
 	}, 500);
 
-	// Also handle images that come into viewport
 	if (typeof IntersectionObserver !== "undefined") {
 		const imageObserver = new IntersectionObserver(
 			function (entries, observer) {
@@ -71,7 +68,6 @@ function initQuickView() {
 		if (val > 1) $input.val(val - 1);
 	});
 
-	// Close quickview modal when cart is updated
 	prestashop.on("updateCart", function () {
 		$(".quickview").css("display", "none").removeClass("in").remove();
 		$("#quickview-backdrop").remove();
@@ -97,7 +93,6 @@ function initQuickView() {
 
 			if (!productId) return;
 
-			// Build quickview URL
 			const $productLink = $productMiniature
 				.find("a.thumbnail, a.name")
 				.first();
@@ -168,7 +163,6 @@ function initQuickView() {
 						if (e.keyCode === 27) closeModal();
 					});
 
-					// Handle thumbnail clicks
 					$modal.on("click", ".js-thumb", function () {
 						const $thumb = $(this);
 						const largeSrc =

@@ -5568,6 +5568,38 @@ body.layout-full-width.display-normal .blog_column {
   position: relative
 }
 
+.product-accessories .owl-carousel,
+.product-accessories .owl-carousel .owl-stage-outer,
+.product-accessories .owl-carousel .owl-stage,
+.product-accessories .owl-carousel .owl-item,
+.product-accessories .owl-carousel .owl-item .product-miniature {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.product-accessories .owl-carousel .owl-stage {
+  display: flex;
+  align-items: stretch;
+}
+
+.product-accessories .owl-carousel .owl-item {
+  display: flex;
+  align-items: stretch;
+}
+
+.product-accessories .owl-carousel .owl-item .product-miniature {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-accessories .owl-carousel .owl-item .product-miniature .border_inside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .product-miniature .shipping-delivery-label {
   display: inline-block;
   background: #FFFCF2;

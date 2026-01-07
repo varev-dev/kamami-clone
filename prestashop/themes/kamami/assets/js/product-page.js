@@ -97,43 +97,6 @@
 		});
 	}
 
-	function initAddToCart() {
-		const $form = $("#add-to-cart-or-refresh");
-		const $button = $('.add-to-cart[data-button-action="add-to-cart"]');
-
-		if ($button.length === 0) {
-			return;
-		}
-
-		$form.on("submit", function (e) {
-			const $btn = $(this).find(".add-to-cart");
-			const $icon = $btn.find(".addcart_ico");
-
-			$btn.addClass("loading").removeClass("no-added");
-			$icon.find(".redfox-loading").show();
-			$icon.find(".redfox-cart").hide();
-			$icon.find(".redfox-checkmark").hide();
-		});
-
-		if (typeof prestashop !== "undefined") {
-			prestashop.on("updateCart", function (event) {
-				const $btn = $('.add-to-cart[data-button-action="add-to-cart"]');
-				const $icon = $btn.find(".addcart_ico");
-
-				$btn.removeClass("loading no-added").addClass("added");
-				$icon.find(".redfox-loading").hide();
-				$icon.find(".redfox-cart").hide();
-				$icon.find(".redfox-checkmark").show();
-
-				setTimeout(function () {
-					$btn.removeClass("added").addClass("no-added");
-					$icon.find(".redfox-checkmark").hide();
-					$icon.find(".redfox-cart").show();
-				}, 2000);
-			});
-		}
-	}
-
 	function showWishlistModal(message) {
 		$(".fancybox-overlay, .fancybox-wrap").remove();
 
@@ -263,9 +226,9 @@
 		}
 
 		initProductImageGallery();
-		initAddToCart();
 		initWishlist();
 		initMagnifier();
+		initProductAccessories();
 	}
 
 	function initMagnifier() {
@@ -299,6 +262,26 @@
 				}
 			},
 		);
+	}
+
+	function initProductAccessories() {
+		const $carousel = $("#product-accessories.product-carousel");
+		if (
+			!$carousel.length ||
+			typeof $.fn.owlCarousel === "undefined" ||
+			$carousel.hasClass("owl-loaded")
+		) {
+			return;
+		}
+
+		$carousel.owlCarousel({
+			loop: false,
+			nav: true,
+			dots: false,
+			margin: 0,
+			items: 5,
+			navText: ["‹", "›"],
+		});
 	}
 
 	$(document).ready(init);

@@ -231,7 +231,7 @@
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">
-          <h3>{l s='You might also like' d='Shop.Theme.Catalog'}</h3>
+          <h3>Powiązane produkty</h3>
           <div id="product-accessories" class="products product-carousel owl-carousel owl-theme">
             {foreach from=$accessories item="product_accessory" key="position"}
               {block name='product_miniature'}

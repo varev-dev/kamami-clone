@@ -26,23 +26,11 @@
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 faceted_padding_top">
     <div class="row">
       <span class="col-sm-7 col-md-7 col-lg-7 hidden-xs-down sort-by">{l s='Ilość:' d='Shop.Theme.Catalog'}</span>
-      {* Calculate items per page from pagination data *}
-      {if $listing.pagination.current_page == $listing.pagination.pages_count}
-        {* On last page, calculate from actual items shown *}
-        {assign var="current_items_per_page" value=($listing.pagination.items_shown_to - $listing.pagination.items_shown_from + 1)}
-      {else}
-        {* On other pages, calculate from range *}
-        {assign var="current_items_per_page" value=($listing.pagination.items_shown_to - $listing.pagination.items_shown_from + 1)}
+      {* Get current items per page from URL parameter or default to 20 *}
+      {assign var="current_items_per_page" value=20}
+      {if isset($smarty.get.resultsPerPage) && $smarty.get.resultsPerPage}
+        {assign var="current_items_per_page" value=$smarty.get.resultsPerPage}
       {/if}
-      {* Fallback to default if calculation fails *}
-      {if $current_items_per_page <= 0 || $current_items_per_page > 100}
-        {assign var="current_items_per_page" value=20}
-      {/if}
-      <select name="n" id="pppsel" style="display: none;">
-        <option value="20" {if $current_items_per_page == 20}selected="true" {/if}>20</option>
-        <option value="50" {if $current_items_per_page == 50}selected="true" {/if}>50</option>
-        <option value="100" {if $current_items_per_page == 100}selected="true" {/if}>100</option>
-      </select>
 
       <div class="col-sm-5 col-xs-12 col-md-5 col-lg-5 products-sort-order dropdown">
         <button id="pppbtn" class="btn-unstyle select-title" rel="nofollow" data-toggle="dropdown"
@@ -52,9 +40,9 @@
         </button>
 
         <div class="dropdown-menu">
-          <a href="#" class="select-list ppiselval" onclick="ppisel(event, 20);">20</a>
-          <a href="#" class="select-list ppiselval" onclick="ppisel(event, 50);">50</a>
-          <a href="#" class="select-list ppiselval" onclick="ppisel(event, 100);">100</a>
+          <a href="#" class="select-list ppiselval">20</a>
+          <a href="#" class="select-list ppiselval">50</a>
+          <a href="#" class="select-list ppiselval">100</a>
         </div>
       </div>
     </div>

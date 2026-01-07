@@ -25,7 +25,7 @@
         {include file='catalog/_partials/subcategories.tpl' subcategories=$subcategories}
       {/if}
     {/block}
-    
+
     {hook h="displayHeaderCategory"}
 
     <section id="products">
@@ -92,4 +92,3 @@
 
   </section>
 {/block}
-

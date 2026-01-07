@@ -12,7 +12,6 @@ $(document).ready(function () {
 	initCategoryTreeCollapse();
 	initQuickView();
 	initLazyLoadFallback();
-	initProductSorting();
 });
 
 function initLazyLoadFallback() {
@@ -254,53 +253,6 @@ function initCategoryTreeCollapse() {
 				$target.slideDown(300);
 				$toggle.attr("aria-expanded", "true");
 			}
-		}
-	});
-}
-
-function initProductSorting() {
-	$(document).on("click", ".products-sort-order .select-title", function (e) {
-		e.preventDefault();
-		e.stopPropagation();
-
-		const $dropdown = $(this).closest(".products-sort-order");
-		const $menu = $dropdown.find(".dropdown-menu");
-		const isOpen = $dropdown.hasClass("open");
-
-		$(".products-sort-order.open")
-			.not($dropdown)
-			.removeClass("open")
-			.find(".dropdown-menu")
-			.hide();
-
-		if (isOpen) {
-			$dropdown.removeClass("open");
-			$menu.hide();
-		} else {
-			$dropdown.addClass("open");
-			$menu.show();
-		}
-	});
-
-	$(document).on(
-		"click",
-		".products-sort-order .select-list, .products-sort-order .js-search-link",
-		function (e) {
-			e.preventDefault();
-
-			const sortUrl = $(this).attr("href");
-			if (sortUrl) {
-				window.location.href = sortUrl;
-			}
-		},
-	);
-
-	$(document).on("click", function (e) {
-		if (!$(e.target).closest(".products-sort-order").length) {
-			$(".products-sort-order")
-				.removeClass("open")
-				.find(".dropdown-menu")
-				.hide();
 		}
 	});
 }

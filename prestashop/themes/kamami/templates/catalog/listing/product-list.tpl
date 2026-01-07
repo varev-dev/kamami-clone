@@ -48,7 +48,10 @@
             <div class="af_pl_wrapper clearfix">
               <div id="js-product-list" class="active_grid">
                 <div class="redfoxProductGrid redfoxProducts block-shadow">
-                  {include file='catalog/_partials/productlist.tpl' products=$listing.products cssClass="row"}
+                  {include file='catalog/_partials/productlist.tpl' products=$listing.products cssClass="row" productClass="col-xs-12 col-sm-6 col-xl-3"}
+                </div>
+                <div class="redfoxProductList redfoxProducts block-shadow">
+                  {include file='catalog/_partials/productlist.tpl' products=$listing.products cssClass="row" productClass="col-xs-12"}
                 </div>
 
                 {block name='pagination'}

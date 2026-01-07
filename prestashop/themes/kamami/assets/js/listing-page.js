@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	initProductSorting();
 	initItemsPerPage();
+	initProductViewToggle();
 });
 
 function initProductSorting() {
@@ -63,5 +64,43 @@ function initItemsPerPage() {
 		currentUrl.searchParams.set("page", "1");
 
 		window.location.href = currentUrl.toString();
+	});
+}
+
+function initProductViewToggle() {
+	// Get saved view preference or default to grid
+	const currentView = localStorage.getItem("productListView") || "grid";
+
+	// Apply saved view on page load
+	if (currentView === "list") {
+		$("#js-product-list").removeClass("active_grid").addClass("active_list");
+		$("#grid").removeClass("selected_grid");
+		$("#list").addClass("selected_list");
+	} else {
+		$("#js-product-list").removeClass("active_list").addClass("active_grid");
+		$("#list").removeClass("selected_list");
+		$("#grid").addClass("selected_grid");
+	}
+
+	// Handle grid view click
+	$(document).on("click", "#grid a", function (e) {
+		e.preventDefault();
+
+		$("#js-product-list").removeClass("active_list").addClass("active_grid");
+		$("#list").removeClass("selected_list");
+		$("#grid").addClass("selected_grid");
+
+		localStorage.setItem("productListView", "grid");
+	});
+
+	// Handle list view click
+	$(document).on("click", "#list a", function (e) {
+		e.preventDefault();
+
+		$("#js-product-list").removeClass("active_grid").addClass("active_list");
+		$("#grid").removeClass("selected_grid");
+		$("#list").addClass("selected_list");
+
+		localStorage.setItem("productListView", "list");
 	});
 }

@@ -136,16 +136,13 @@ class Ps_CategoryTree extends Module implements WidgetInterface
         return $output . $this->renderForm();
     }
 
-    private function getCategories($category)
+    private function getCategories($currentCategoryId = null, $expandedCategories = [])
     {
-        $range = '';
+        // Always start from home category (root)
+        $rootCategory = new Category((int) Configuration::get('PS_HOME_CATEGORY'), $this->context->language->id);
+        
         $maxdepth = Configuration::get('BLOCK_CATEG_MAX_DEPTH');
-        if (Validate::isLoadedObject($category)) {
-            if ($maxdepth > 0) {
-                $maxdepth += $category->level_depth;
-            }
-            $range = 'AND nleft >= ' . (int) $category->nleft . ' AND nright <= ' . (int) $category->nright;
-        }
+        $range = 'AND nleft >= ' . (int) $rootCategory->nleft . ' AND nright <= ' . (int) $rootCategory->nright;
 
         $resultIds = [];
         $resultParents = [];
@@ -169,20 +166,22 @@ class Ps_CategoryTree extends Module implements WidgetInterface
             $resultIds[$row['id_category']] = &$row;
         }
 
-        return $this->getTree($resultParents, $resultIds, $maxdepth, ($category ? $category->id : null));
+        return $this->getTree($resultParents, $resultIds, $maxdepth, $rootCategory->id, 0, $currentCategoryId, $expandedCategories);
     }
 
-    public function getTree($resultParents, $resultIds, $maxDepth, $id_category = null, $currentDepth = 0)
+    public function getTree($resultParents, $resultIds, $maxDepth, $id_category = null, $currentDepth = 0, $currentCategoryId = null, $expandedCategories = [])
     {
         if (is_null($id_category)) {
             $id_category = $this->context->shop->getCategory();
         }
 
         $children = [];
+        $isExpanded = in_array($id_category, $expandedCategories);
+        $isSelected = ($id_category == $currentCategoryId);
 
         if (isset($resultParents[$id_category]) && count($resultParents[$id_category]) && ($maxDepth == 0 || $currentDepth < $maxDepth)) {
             foreach ($resultParents[$id_category] as $subcat) {
-                $children[] = $this->getTree($resultParents, $resultIds, $maxDepth, $subcat['id_category'], $currentDepth + 1);
+                $children[] = $this->getTree($resultParents, $resultIds, $maxDepth, $subcat['id_category'], $currentDepth + 1, $currentCategoryId, $expandedCategories);
             }
         }
 
@@ -200,6 +199,8 @@ class Ps_CategoryTree extends Module implements WidgetInterface
             'name' => $name,
             'desc' => $desc,
             'children' => $children,
+            'isExpanded' => $isExpanded,
+            'isSelected' => $isSelected,
         ];
     }
 
@@ -334,21 +335,36 @@ class Ps_CategoryTree extends Module implements WidgetInterface
 
     public function getWidgetVariables($hookName = null, array $configuration = [])
     {
-        if (Configuration::get('BLOCK_CATEG_ROOT_CATEGORY') && !empty($this->context->cookie->last_visited_category) && $this->context->controller instanceof CategoryController) {
-            $category = new Category($this->context->cookie->last_visited_category, $this->context->language->id);
-        } else {
-            $category = new Category((int) Configuration::get('PS_HOME_CATEGORY'), $this->context->language->id);
+        // Get current category
+        $currentCategoryId = null;
+        $expandedCategories = [];
+        
+        // Try to get current category from controller
+        if (method_exists($this->context->controller, 'getCategory') && ($category = $this->context->controller->getCategory())) {
+            $currentCategoryId = $category->id;
+        } elseif (!empty($this->context->cookie->last_visited_category)) {
+            $currentCategoryId = (int) $this->context->cookie->last_visited_category;
+        } elseif (method_exists($this->context->controller, 'getProduct') && ($product = $this->context->controller->getProduct())) {
+            $currentCategoryId = (int) $product->id_category_default;
         }
-
-        if (Configuration::get('BLOCK_CATEG_ROOT_CATEGORY') == static::CATEGORY_ROOT_PARENT && !$category->is_root_category && $category->id_parent) {
-            $category = new Category($category->id_parent, $this->context->language->id);
-        } elseif (Configuration::get('BLOCK_CATEG_ROOT_CATEGORY') == static::CATEGORY_ROOT_CURRENT_PARENT && !$category->is_root_category && !$category->getSubCategories($category->id, true)) {
-            $category = new Category($category->id_parent, $this->context->language->id);
+        
+        // Get path to current category (all parent categories including current)
+        if ($currentCategoryId) {
+            $currentCategory = new Category($currentCategoryId, $this->context->language->id);
+            if (Validate::isLoadedObject($currentCategory)) {
+                $parents = $currentCategory->getParentsCategories($this->context->language->id);
+                foreach ($parents as $parent) {
+                    if ($parent['id_category'] != Configuration::get('PS_ROOT_CATEGORY')) {
+                        $expandedCategories[] = (int) $parent['id_category'];
+                    }
+                }
+            }
         }
-
+        
         return [
-            'categories' => $this->getCategories($category),
-            'currentCategory' => $category->id,
+            'categories' => $this->getCategories($currentCategoryId, $expandedCategories),
+            'currentCategory' => $currentCategoryId,
+            'expandedCategories' => $expandedCategories,
         ];
     }
 }

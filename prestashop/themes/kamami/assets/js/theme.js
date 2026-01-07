@@ -1,8 +1,4 @@
-/**
- * Theme initialization
- */
 $(document).ready(function () {
-	// Initialize dropdowns
 	const $dropdowns = $(".js-dropdown");
 	if ($dropdowns.length) {
 		const dropdown = new DropDown($dropdowns);
@@ -13,20 +9,11 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	// Initialize category tree collapse functionality
 	initCategoryTreeCollapse();
-
-	// Initialize quickview functionality
 	initQuickView();
-
-	// Fix lazy loading for product thumbnails - ensure images load even if lazy load script fails
 	initLazyLoadFallback();
 });
 
-/**
- * Initialize lazy load fallback for product thumbnails
- * Ensures images load even if the lazy loading script doesn't work
- */
 function initLazyLoadFallback() {
 	// Check for images with data-src that haven't loaded after a short delay
 	setTimeout(function () {
@@ -72,12 +59,7 @@ function initLazyLoadFallback() {
 	}
 }
 
-/**
- * Initialize quickview modal functionality
- * Handles clicks on quick-view links and loads product data via AJAX
- */
 function initQuickView() {
-	// Touchspin quantity buttons (delegated for dynamic modals)
 	$(document).on("click", ".bootstrap-touchspin-up", function () {
 		const $input = $(this).closest(".bootstrap-touchspin").find("input");
 		$input.val(parseInt($input.val() || 1) + 1);
@@ -160,7 +142,6 @@ function initQuickView() {
 
 					if ($modal.length === 0) return;
 
-					// Show modal
 					$modal
 						.css("display", "block")
 						.addClass("in")
@@ -210,10 +191,6 @@ function initQuickView() {
 	);
 }
 
-/**
- * Initialize category tree collapse functionality
- * Handles Bootstrap collapse events and updates aria-expanded attribute
- */
 function initCategoryTreeCollapse() {
 	const $categoryTree = $(".block-categories");
 
@@ -221,7 +198,6 @@ function initCategoryTreeCollapse() {
 		return;
 	}
 
-	// Handle Bootstrap collapse events
 	$categoryTree.on("show.bs.collapse", ".collapse", function () {
 		const $collapse = $(this);
 		const collapseId = $collapse.attr("id");
@@ -242,23 +218,24 @@ function initCategoryTreeCollapse() {
 		}
 	});
 
-	// Initialize collapse state on page load
 	$categoryTree.find(".collapse").each(function () {
 		const $collapse = $(this);
 		const collapseId = $collapse.attr("id");
 		const $toggle = $categoryTree.find('[data-target="#' + collapseId + '"]');
 
 		if ($toggle.length) {
-			// Check if collapse is shown (has 'show' or 'in' class, or is visible)
 			const isExpanded =
 				$collapse.hasClass("show") ||
 				$collapse.hasClass("in") ||
 				$collapse.is(":visible");
 			$toggle.attr("aria-expanded", isExpanded ? "true" : "false");
+
+			if ($collapse.hasClass("in") && !$collapse.is(":visible")) {
+				$collapse.css("display", "block");
+			}
 		}
 	});
 
-	// Fallback: Manual toggle if Bootstrap collapse isn't working
 	$categoryTree.on("click", ".collapse-icons", function (e) {
 		e.preventDefault();
 		const $toggle = $(this);
@@ -274,11 +251,9 @@ function initCategoryTreeCollapse() {
 			return;
 		}
 
-		// Try Bootstrap collapse first
 		if (typeof $.fn.collapse !== "undefined") {
 			$target.collapse("toggle");
 		} else {
-			// Fallback: manual toggle
 			const isExpanded = $toggle.attr("aria-expanded") === "true";
 
 			if (isExpanded) {

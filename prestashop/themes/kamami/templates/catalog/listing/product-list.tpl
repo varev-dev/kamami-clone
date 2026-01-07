@@ -1,0 +1,95 @@
+{**
+ * Product listing template
+ *}
+{extends file=$layout}
+
+{block name='head_microdata_special'}
+  {include file='_partials/microdata/product-list-jsonld.tpl' listing=$listing}
+{/block}
+
+{block name='content'}
+  <section id="main">
+
+    {block name='product_list_header'}
+      <h1 id="js-product-list-header" class="h2">
+        {if isset($category)}
+          Kategoria: {$category.name|upper}
+        {else}
+          {$listing.label}
+        {/if}
+      </h1>
+    {/block}
+
+    {block name='subcategory_list'}
+      {if isset($subcategories) && $subcategories|@count > 0}
+        {include file='catalog/_partials/subcategories.tpl' subcategories=$subcategories}
+      {/if}
+    {/block}
+    
+    {hook h="displayHeaderCategory"}
+
+    <section id="products">
+      {if $listing.products|count}
+
+        <div>
+          {block name='product_list_top'}
+            {include file='catalog/_partials/products-top.tpl' listing=$listing}
+          {/block}
+
+          <div id="" class="hidden-sm-down">
+            {block name='product_list_active_filters'}
+              {$listing.rendered_active_filters nofilter}
+            {/block}
+          </div>
+        </div>
+
+        <div>
+          {block name='product_list'}
+            <div class="af_pl_wrapper clearfix">
+              <div id="js-product-list" class="active_grid">
+                <div class="redfoxProductGrid redfoxProducts block-shadow">
+                  {include file='catalog/_partials/productlist.tpl' products=$listing.products cssClass="row"}
+                </div>
+
+                {block name='pagination'}
+                  {include file='_partials/pagination.tpl' pagination=$listing.pagination}
+                {/block}
+
+                <div class="text-xs-right up">
+                  <a href="#header" class="btn btn-secondary">
+                    {l s='Na górę' d='Shop.Theme.Actions'}
+                    <i class="material-icons arrow_upward">&#xE316;</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          {/block}
+        </div>
+
+        <div id="js-product-list-bottom">
+          {block name='product_list_bottom'}
+            <div id="js-product-list-bottom"></div>
+          {/block}
+        </div>
+
+      {else}
+        <div id="js-product-list-top"></div>
+
+        <div id="js-product-list">
+          {capture assign="errorContent"}
+            <h4>{l s='No products available yet' d='Shop.Theme.Catalog'}</h4>
+            <p>{l s='Stay tuned! More products will be shown here as they are added.' d='Shop.Theme.Catalog'}</p>
+          {/capture}
+
+          {include file='errors/not-found.tpl' errorContent=$errorContent}
+        </div>
+
+        <div id="js-product-list-bottom"></div>
+      {/if}
+    </section>
+
+    {hook h="displayFooterCategory"}
+
+  </section>
+{/block}
+

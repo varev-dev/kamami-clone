@@ -23,18 +23,26 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='cart_detailed_product'}
-  <div class="cart-overview js-cart" data-refresh-url="{url entity='cart' params=['ajax' => true, 'action' => 'refresh']}">
+  <div class="cart-overview js-cart"
+    data-refresh-url="{url entity='cart' params=['ajax' => true, 'action' => 'refresh']}">
     {if $cart.products}
-    <ul class="cart-items">
-      {foreach from=$cart.products item=product}
-        <li class="cart-item">
+      <div class="fcart-items cart-grid-body">
+        <div class="fcart-items-header">
+          <div></div>
+          <div></div>
+          <div>{l s='Product' d='Shop.Theme.Checkout'}</div>
+          <div>{l s='Availability' d='Shop.Theme.Checkout'}</div>
+          <div>{l s='Price (tax incl.)' d='Shop.Theme.Checkout'}</div>
+          <div>{l s='Quantity' d='Shop.Theme.Checkout'}</div>
+          <div>{l s='Total (tax incl.)' d='Shop.Theme.Checkout'}</div>
+          <div></div>
+        </div>
+        {foreach from=$cart.products item=product name=products}
           {block name='cart_detailed_product_line'}
-            {include file='checkout/_partials/cart-detailed-product-line.tpl' product=$product}
+            {include file='checkout/_partials/cart-detailed-product-line.tpl' product=$product index=$smarty.foreach.products.index}
           {/block}
-        </li>
-        {if is_array($product.customizations) && $product.customizations|count >1}<hr>{/if}
-      {/foreach}
-    </ul>
+        {/foreach}
+      </div>
     {else}
       <span class="no-items">{l s='There are no more items in your cart' d='Shop.Theme.Checkout'}</span>
     {/if}

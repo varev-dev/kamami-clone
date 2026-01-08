@@ -810,7 +810,7 @@ class ProductLazyArray extends AbstractLazyArray
         if ($settings->stock_management_enabled
             && !$product['allow_oosp']
             && ($product['quantity'] <= 0
-            || $product['quantity'] - $this->getQuantityWanted() < 0
+            || $product['quantity'] - $this->getQuantityWanted($product) < 0
             || $product['quantity'] - $this->getMinimalQuantity() < 0)
         ) {
             $shouldEnable = false;
@@ -820,10 +820,14 @@ class ProductLazyArray extends AbstractLazyArray
     }
 
     /**
+     * @param array $product
      * @return int Quantity of product requested by the customer
      */
-    private function getQuantityWanted()
+    private function getQuantityWanted(array $product = [])
     {
+        if (isset($product['quantity_wanted']) && $product['quantity_wanted'] > 0) {
+            return (int) $product['quantity_wanted'];
+        }
         return (int) Tools::getValue('quantity_wanted', 1);
     }
 
@@ -880,7 +884,9 @@ class ProductLazyArray extends AbstractLazyArray
         $show_price = $this->shouldShowPrice($settings, $product);
         $show_availability = $show_price && $settings->stock_management_enabled;
         $this->product['show_availability'] = $show_availability;
-        $product['quantity_wanted'] = $this->getQuantityWanted();
+        if (!isset($product['quantity_wanted']) || $product['quantity_wanted'] <= 0) {
+            $product['quantity_wanted'] = $this->getQuantityWanted($product);
+        }
 
         if (isset($product['available_date'])) {
             $date = new DateTime($product['available_date']);

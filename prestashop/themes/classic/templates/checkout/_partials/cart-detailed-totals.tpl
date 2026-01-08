@@ -38,10 +38,10 @@
           </span>
           <span class="value">
             {if 'discount' == $subtotal.type}-&nbsp;{/if}{$subtotal.value}
+            {if $subtotal.type === 'shipping'}
+              <div style="text-align: right;"><small class="value">{hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
+            {/if}
           </span>
-          {if $subtotal.type === 'shipping'}
-              <div><small class="value">{hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
-          {/if}
         </div>
       {/if}
     {/foreach}
@@ -54,5 +54,19 @@
   {block name='cart_voucher'}
     {include file='checkout/_partials/cart-voucher.tpl'}
   {/block}
+
+  {assign var="hasUnavailableProduct" value=false}
+  {foreach from=$cart.products item=product}
+    {if isset($product.availability) && $product.availability == 'unavailable'}
+      {assign var="hasUnavailableProduct" value=true}
+      {break}
+    {/if}
+  {/foreach}
+  {if $hasUnavailableProduct}
+    <div class="cart-detailed-totals-warn">
+      <p>Obecnie nie mamy w magazynie wystarczającej ilości wybranych produktów. Po dokonaniu zakupu przewidywany termin dostawy prześlemy w wiadomości email.</p>
+      <p><strong>Zamówienie zostanie wysłane po skompletowaniu wszystkich produktów.</strong></p>
+    </div>
+  {/if}
 </div>
 {/block}

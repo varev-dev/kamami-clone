@@ -39,8 +39,11 @@ const SideCart = {
 		// Refresh cart content on PrestaShop cart update
 		prestashop.on("updateCart", (event) => {
 			this.refresh();
-			// Only auto-open when adding, not when deleting
-			if (event?.reason?.linkAction !== "delete-from-cart") {
+			const linkAction = event?.reason?.linkAction;
+			if (
+				linkAction !== "delete-from-cart" &&
+				linkAction !== "update-quantity"
+			) {
 				this.open();
 			}
 		});

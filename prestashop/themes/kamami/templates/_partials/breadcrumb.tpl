@@ -22,7 +22,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-{if $page.page_name != 'index'}
+{if $page.page_name != 'index' && $page.page_name != 'cart'}
   <nav data-depth="{$breadcrumb.count}" class="breadcrumb">
     <div class="breadcrumb-container">
       <div class="container">

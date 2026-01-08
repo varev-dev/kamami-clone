@@ -2612,7 +2612,35 @@
                 "description": "Przetwornice to kluczowe komponenty w świecie nowoczesnej elektroniki, zapewniające elastyczne i efektywne zarządzanie zasilaniem w różnorodnych aplikacjach. Niezależnie od tego, czy potrzebujesz obniżyć napięcie zasilania, zwiększyć je, czy też wykorzystać energię z minimalnych źródeł, odpowiedni moduł przetwornicy może znacząco poprawić wydajność Twoich projektów. Moduły przetwornic DC-DC, takie jak przetwornice Step-down, Step-up czy uniwersalne moduły zasilania DC, umożliwiają dostosowanie napięcia do specyficznych wymagań urządzeń. Dzięki przetwornicom, można zasilać sprzęt z różnorodnych źródeł energii, co zwiększa ich wszechstronność i niezawodność. W tej kategorii znajdziesz również specjalistyczne rozwiązania, takie jak miniaturowe zasilacze modułowe, moduły Energy Harvester Breakout oraz przetwornice wysokiego napięcia, które sprawdzą się w najbardziej wymagających zastosowaniach.",
                 "image_url": "https://kamami.pl/c/15375-category_small/przetwornice.jpg",
                 "local_image": "../data/categories/images/cat_289.jpg",
-                "subcategories": []
+                "subcategories": [
+                  {
+                    "id": 1028,
+                    "name": "Step-Up",
+                    "url": "https://kamami.pl/15378-step-up",
+                    "description": "Są kluczowymi elementami w systemach zasilania, pozwalającymi na podniesienie napięcia wejściowego do wyższych wartości. W ofercie Kamami znajdują się przetwornice DC-DC, takie jak Moduł przetwornicy DC-DC Step-Up 1,23-30V 3A, które są niezastąpione w projektach wymagających precyzyjnego zarządzania napięciem. Przetwornice te znajdują zastosowanie zarówno w systemach przenośnych, jak i bardziej zaawansowanych układach elektronicznych.",
+                    "image_url": "https://kamami.pl/c/15378-category_small/step-up.jpg",
+                    "local_image": "../data/categories/images/cat_1028.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1029,
+                    "name": "Step-Down",
+                    "url": "https://kamami.pl/15379-step-down",
+                    "description": "Moduły Step-Down to niezbędne elementy systemów zasilania, służące do efektywnego obniżania napięcia wejściowego na niższe wartości, co jest kluczowe w projektach elektronicznych. W Kamami znajdziesz szeroki wybór przetwornic DC-DC, takich jak moduł Step-Down LM2596S, który umożliwia regulację napięcia w zakresie 1,5-35V przy wejściu 3-40V. Te moduły zasilające są popularne zarówno w zastosowaniach hobbystycznych, jak i profesjonalnych, pozwalając na bezpieczne zasilanie wrażliwych komponentów.",
+                    "image_url": "https://kamami.pl/c/15379-category_small/step-down.jpg",
+                    "local_image": "../data/categories/images/cat_1029.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1030,
+                    "name": "Step-Up/Step-Down",
+                    "url": "https://kamami.pl/15380-step-upstep-down",
+                    "description": "Moduły Step-Up/Step-Down umożliwiają zarówno podnoszenie, jak i obniżanie napięcia wejściowego, co czyni je idealnym rozwiązaniem w systemach wymagających elastycznego zarządzania napięciem zasilania. Przetwornice te, takie jak Moduł DC-DC Step-Up/Step-Down 3,3V 100mA, znajdują szerokie zastosowanie w projektach elektronicznych, gdzie stabilność napięcia jest kluczowa dla działania urządzeń.",
+                    "image_url": "https://kamami.pl/c/15380-category_small/step-upstep-down.jpg",
+                    "local_image": "../data/categories/images/cat_1030.jpg",
+                    "subcategories": []
+                  }
+                ]
               },
               {
                 "id": 290,
@@ -3013,7 +3041,224 @@
                 "description": "Mikrokontrolery ARM to prawdziwa rewolucja w dziedzinie elektroniki oferująca wszechstronność, wydajność i energooszczędność. Dzięki nim wiele zaawansowanych urządzeń elektronicznych może działać sprawniej i efektywniej. Te zaawansowane układy znajdują zastosowanie zarówno w prostych projektach hobbystycznych jak i w skomplikowanych aplikacjach przemysłowych czy medycznych. Mikrokontrolery ARM cechują się także doskonałym wsparciem technicznym i rozbudowanym ekosystemem narzędzi programistycznych co znacząco ułatwia proces tworzenia i wdrażania nowych projektów. Wśród wielu dostępnych rodzin mikrokontrolerów ARM znajdziesz zarówno ekonomiczne modele jak i zaawansowane jednostki o wysokiej wydajności. Dzięki szerokiemu wyborowi łatwo można dopasować odpowiedni mikrokontroler do specyficznych potrzeb i wymagań każdego projektu. Odkryj różnorodne rodziny mikrokontrolerów ARM takie jak ADuCM, AT91, XMC, LPC1000, Kinetis oraz STM32 i zobacz jak mogą one usprawnić Twoje projekty.",
                 "image_url": "https://kamami.pl/c/6-category_small/mikrokontrolery-arm.jpg",
                 "local_image": "../data/categories/images/cat_333.jpg",
-                "subcategories": []
+                "subcategories": [
+                  {
+                    "id": 1031,
+                    "name": "ADuCM",
+                    "url": "https://kamami.pl/12334-aducm",
+                    "description": "W kategorii ADuCM w sklepie Kamami znajdziesz zaawansowane mikrokontrolery firmy Analog Devices, które są idealnym rozwiązaniem dla wymagających aplikacji. Mikrokontrolery z rodziny ADuCM oferują wysoką wydajność, precyzyjne przetwarzanie sygnałów oraz zintegrowane funkcje analogowe, które sprawiają, że są one doskonałym wyborem dla projektantów systemów embedded. Jednym z popularnych modeli dostępnych w naszej ofercie jest ADUCM360BCPZ128, który charakteryzuje się wysoką niezawodnością i szerokim zakresem funkcjonalności. Ponadto, oferujemy produkty z serii Raspberry Pi RP2040, które cieszą się dużym uznaniem wśród hobbystów i profesjonalistów.",
+                    "image_url": "https://kamami.pl/c/12334-category_small/aducm.jpg",
+                    "local_image": "../data/categories/images/cat_1031.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1032,
+                    "name": "AT91",
+                    "url": "https://kamami.pl/426-at91",
+                    "description": "W kategorii AT91 w sklepie Kamami znajdziesz zaawansowane mikrokontrolery ARM, które są idealnym rozwiązaniem dla różnorodnych zastosowań. Mikrokontrolery z rodziny AT91 oferują wysoką wydajność, elastyczność oraz niezawodność, co czyni je doskonałym wyborem dla projektantów systemów embedded. W naszej ofercie znajduje się m.in. model AT91RM9200-QU-002, który dzięki swojej wszechstronności i wydajności znajduje zastosowanie w wielu profesjonalnych projektach.",
+                    "image_url": "https://kamami.pl/c/426-category_small/at91.jpg",
+                    "local_image": "../data/categories/images/cat_1032.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1033,
+                    "name": "GD32",
+                    "url": "https://kamami.pl/15688-gd32",
+                    "description": "Mikrokontrolery GD32 są doskonałym wyborem dla inżynierów i entuzjastów elektroniki poszukujących komponentów o wysokiej wydajności i elastyczności. Seria GD32 opiera się na architekturze ARM, oferując dużą moc obliczeniową oraz szeroką gamę peryferiów. Dzięki niskiej konsumpcji energii i zaawansowanym funkcjom, mikrokontrolery te są idealne do zastosowań w automatyce, elektronice użytkowej, a także w projektach DIY. W ofercie Kamami znajdują się modele takie jak GD32E230C8T6 (LQFP48), GD32F103RBT6 (LQFP64) oraz GD32F103VCT6 (LQFP100).",
+                    "image_url": "https://kamami.pl/c/15688-category_small/gd32.jpg",
+                    "local_image": "../data/categories/images/cat_1033.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1034,
+                    "name": "LPC1000",
+                    "url": "https://kamami.pl/2483-lpc1000",
+                    "description": "W kategorii LPC1000 w sklepie Kamami znajdziesz nowoczesne mikrokontrolery ARM, które są idealne do różnorodnych zastosowań. Mikrokontrolery z rodziny LPC1000 charakteryzują się wysoką wydajnością, elastycznością i niezawodnością, co czyni je doskonałym wyborem dla projektantów systemów embedded. Nasza oferta obejmuje takie modele jak LPC1114FHN33/201, LPC11C12FBD48/301, LPC1830FET256, LPC11U24FHN33 oraz LPC11U24FBD48/401, które dzięki swojej wszechstronności znajdują zastosowanie w szerokim zakresie profesjonalnych projektów.",
+                    "image_url": "https://kamami.pl/c/2483-category_small/lpc1000.jpg",
+                    "local_image": "../data/categories/images/cat_1034.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1035,
+                    "name": "LPC2000",
+                    "url": "https://kamami.pl/424-lpc2000",
+                    "description": "W kategorii LPC2000 w sklepie Kamami znajdziesz nowoczesne mikrokontrolery ARM, które są idealne do różnorodnych zastosowań. Mikrokontrolery z rodziny LPC2000 charakteryzują się wysoką wydajnością, elastycznością i niezawodnością, co czyni je doskonałym wyborem dla projektantów systemów embedded. Nasza oferta obejmuje takie modele jak LPC2468FBD208, LPC3180FEL320, LPC2132FBD64/01, LPC2888FET180 oraz LPC2148FBD64, które dzięki swojej wszechstronności znajdują zastosowanie w szerokim zakresie profesjonalnych projektów.",
+                    "image_url": "https://kamami.pl/c/424-category_small/lpc2000.jpg",
+                    "local_image": "../data/categories/images/cat_1035.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1036,
+                    "name": "LPC5500",
+                    "url": "https://kamami.pl/15569-lpc5500",
+                    "description": "W kategorii LPC5500 w sklepie Kamami oferujemy nowoczesne mikrokontrolery ARM, które doskonale sprawdzają się w wielu zastosowaniach. Mikrokontrolery z tej rodziny charakteryzują się wysoką wydajnością, elastycznością i niezawodnością, co sprawia, że są idealnym wyborem dla projektantów systemów embedded. W naszej ofercie znajdują się takie modele jak LPC55S26JBD64K (HTQFP-64), LPC55S28JEV98K (VFBGA98), LPC55S66JBD100K (HLQFP100), LPC55S16JBD100E (HLQFP100) oraz LPC55S16JBD64E (HTQFP64), które dzięki swoim wszechstronnym możliwościom znajdują zastosowanie w wielu profesjonalnych projektach.",
+                    "image_url": "https://kamami.pl/c/15569-category_small/lpc5500.jpg",
+                    "local_image": "../data/categories/images/cat_1036.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1037,
+                    "name": "Kinetis E",
+                    "url": "https://kamami.pl/12850-kinetis-e",
+                    "description": "To rodzina mikrokontrolerów ARM, które zyskały popularność dzięki swojej niezawodności, wydajności i szerokiemu zakresowi zastosowań. Te mikrokontrolery, zaprojektowane przez firmę NXP, są dedykowane dla zastosowań w automatyce przemysłowej, domowej oraz w urządzeniach konsumenckich. Rodzina Kinetis E wyróżnia się odpornością na zakłócenia elektromagnetyczne, co czyni je idealnym wyborem w trudnych warunkach przemysłowych. Dzięki zaawansowanym funkcjom, takim jak wbudowane przetworniki analogowo-cyfrowe, liczne interfejsy komunikacyjne oraz niskie zużycie energii, mikrokontrolery Kinetis E zapewniają stabilność i długowieczność projektów. Modele takie jak MKE04Z8VTG4 oferują wyjątkowe możliwości w kompaktowych obudowach, co pozwala na ich zastosowanie w różnorodnych urządzeniach elektronicznych.",
+                    "image_url": "https://kamami.pl/c/12850-category_small/kinetis-e.jpg",
+                    "local_image": "../data/categories/images/cat_1037.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1038,
+                    "name": "Kinetis K",
+                    "url": "https://kamami.pl/9242-kinetis-k",
+                    "description": "To nowoczesna rodzina mikrokontrolerów ARM oferująca szerokie możliwości zastosowań w różnych dziedzinach, od przemysłu po elektronikę konsumencką. Produkty firmy NXP są cenione za wysoką wydajność, niezawodność i wszechstronność. Wyposażone w przetworniki analogowo-cyfrowe, różnorodne interfejsy komunikacyjne oraz zaawansowane zarządzanie energią, mikrokontrolery Kinetis K sprawdzają się nawet w najtrudniejszych warunkach. Modele takie jak K32L2B31VLH0A (LQFP64), MK10DN512ZVLL10, MK60DN512ZVMD10 i MK22FN128VLH10 (LQFP-64) oferują dużą elastyczność projektową.",
+                    "image_url": "https://kamami.pl/c/9242-category_small/kinetis-k.jpg",
+                    "local_image": "../data/categories/images/cat_1038.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1039,
+                    "name": "Kinetis L",
+                    "url": "https://kamami.pl/10834-kinetis-l",
+                    "description": "Kinetis L to linia mikrokontrolerów ARM, które wyróżniają się niskim poborem mocy i wysoką wydajnością. Produkty firmy NXP są wszechstronne i znajdują zastosowanie w wielu dziedzinach, od przemysłowych po konsumenckie. Modele takie jak MKL26Z128VLH4, MKL15Z64VFT4, MKL14Z64VLH4, MKL05Z32VFK4 i MKL05Z32VFM4 oferują szeroką gamę funkcji, dostosowanych do różnych wymagań projektowych.",
+                    "image_url": "https://kamami.pl/c/10834-category_small/kinetis-l.jpg",
+                    "local_image": "../data/categories/images/cat_1039.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1040,
+                    "name": "STM32C0",
+                    "url": "https://kamami.pl/15698-stm32c0",
+                    "description": "Mikrokontrolery STM32C0 to idealne rozwiązanie dla inżynierów i hobbystów szukających komponentów o wysokiej wydajności i niskim zużyciu energii. Seria STM32C0 bazuje na architekturze ARM Cortex-M0+, co zapewnia optymalną moc obliczeniową i elastyczność. Mikrokontrolery te są doskonałe do zastosowań w systemach wbudowanych, IoT oraz urządzeniach przenośnych. W ofercie Kamami znajdziesz modele takie jak STM32C031C6T6, STM32C011J4M6 oraz STM32C031K4T6, które spełnią wymagania najbardziej zaawansowanych projektów.",
+                    "image_url": "https://kamami.pl/c/15698-category_small/stm32c0.jpg",
+                    "local_image": "../data/categories/images/cat_1040.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1041,
+                    "name": "STM32F0",
+                    "url": "https://kamami.pl/9574-stm32f0",
+                    "description": "To wyjątkowe urządzenia, które łączą wydajność 32-bitowego rdzenia ARM Cortex-M0 z przystępną ceną i niskim zużyciem energii. Doskonale nadają się do szerokiego spektrum zastosowań, w tym systemów embedded, automatyki domowej i przemysłowej, a także dla hobbystów DIY i robotyków. Mikrokontrolery te są cenione za swoją niezawodność, elastyczność oraz bogaty zestaw funkcji, co czyni je idealnym wyborem zarówno dla amatorów, jak i profesjonalistów w dziedzinie elektroniki.",
+                    "image_url": "https://kamami.pl/c/9574-category_small/stm32f0.jpg",
+                    "local_image": "../data/categories/images/cat_1041.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1042,
+                    "name": "STM32F1",
+                    "url": "https://kamami.pl/422-stm32f1",
+                    "description": "Są wszechstronnymi urządzeniami, które oferują wydajność 32-bitowego rdzenia ARM Cortex-M3, doskonale sprawdzając się w szerokim zakresie zastosowań. Dzięki swojej niezawodności, niskim poborom mocy i bogatemu zestawowi funkcji, STM32F1 są idealne zarówno dla amatorów, jak i profesjonalistów w dziedzinie elektroniki. Te mikrokontrolery znajdują zastosowanie w systemach embedded, automatyce domowej i przemysłowej, a także w projektach DIY.",
+                    "image_url": "https://kamami.pl/c/422-category_small/stm32f1.jpg",
+                    "local_image": "../data/categories/images/cat_1042.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1043,
+                    "name": "STM32F2",
+                    "url": "https://kamami.pl/7669-stm32f2",
+                    "description": "Mikrokontrolery STM32F2 oferują zaawansowane funkcje dzięki rdzeniowi ARM Cortex-M3, idealne do szerokiej gamy zastosowań w systemach embedded, automatyce domowej i przemysłowej oraz projektach DIY. STM32F2 cechuje się niezawodnością, bogatą funkcjonalnością i niskim zużyciem energii, co czyni je odpowiednimi zarówno dla amatorów, jak i profesjonalistów.",
+                    "image_url": "https://kamami.pl/c/7669-category_small/stm32f2.jpg",
+                    "local_image": "../data/categories/images/cat_1043.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1044,
+                    "name": "STM32F3",
+                    "url": "https://kamami.pl/9715-stm32f3",
+                    "description": "To zaawansowane urządzenia, które łączą moc rdzenia ARM Cortex-M4 z szeroką gamą funkcji i niskim zużyciem energii. Są idealne do różnorodnych zastosowań, takich jak systemy embedded, automatyka przemysłowa i domowa, a także projekty DIY. STM32F3 są cenione za swoją niezawodność, wszechstronność i wydajność, co czyni je idealnym wyborem zarówno dla hobbystów, jak i profesjonalistów.",
+                    "image_url": "https://kamami.pl/c/9715-category_small/stm32f3.jpg",
+                    "local_image": "../data/categories/images/cat_1044.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1045,
+                    "name": "STM32F4",
+                    "url": "https://kamami.pl/7670-stm32f4",
+                    "description": "Oferują zaawansowane funkcje, wysoką wydajność i niski pobór mocy dzięki rdzeniowi ARM Cortex-M4. Są idealne do szerokiego spektrum zastosowań, w tym systemów embedded, automatyki przemysłowej i domowej oraz projektów DIY. Mikrokontrolery STM32F4 są cenione za swoją niezawodność i wszechstronność, co czyni je doskonałym wyborem zarówno dla hobbystów, jak i profesjonalistów.",
+                    "image_url": "https://kamami.pl/c/7670-category_small/stm32f4.jpg",
+                    "local_image": "../data/categories/images/cat_1045.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1046,
+                    "name": "STM32F7",
+                    "url": "https://kamami.pl/15203-stm32f7",
+                    "description": "To zaawansowane urządzenia, które łączą moc rdzenia ARM Cortex-M7 z szerokim zakresem funkcji i niskim zużyciem energii. Są idealne do różnorodnych zastosowań, takich jak systemy embedded, automatyka przemysłowa i domowa, a także projekty DIY. STM32F7 są cenione za swoją niezawodność, wszechstronność i wysoką wydajność, co czyni je idealnym wyborem zarówno dla hobbystów, jak i profesjonalistów.",
+                    "image_url": "https://kamami.pl/c/15203-category_small/stm32f7.jpg",
+                    "local_image": "../data/categories/images/cat_1046.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1047,
+                    "name": "STM32G0",
+                    "url": "https://kamami.pl/15483-stm32g0",
+                    "description": "To nowoczesne rozwiązania, które łączą wysoką wydajność z niskim zużyciem energii dzięki rdzeniowi ARM Cortex-M0+. Doskonale sprawdzają się w systemach embedded, automatyce domowej i przemysłowej, a także w projektach DIY. STM32G0 są cenione za swoją niezawodność i wszechstronność, co czyni je idealnym wyborem zarówno dla hobbystów, jak i profesjonalistów.",
+                    "image_url": "https://kamami.pl/c/15483-category_small/stm32g0.jpg",
+                    "local_image": "../data/categories/images/cat_1047.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1048,
+                    "name": "STM32G4",
+                    "url": "https://kamami.pl/15513-stm32g4",
+                    "description": "Mikrokontrolery STM32G4 to doskonały wybór dla inżynierów i hobbystów poszukujących wydajnych i energooszczędnych rozwiązań. Seria STM32G4 łączy w sobie moc obliczeniową z niskim zużyciem energii, co czyni je idealnymi do zastosowań w automatyce przemysłowej, elektronice użytkowej, a także w projektach DIY. Mikrokontrolery te opierają się na architekturze ARM, zapewniając dużą elastyczność i wsparcie dla zaawansowanych peryferiów. Wśród najpopularniejszych modeli dostępnych w naszej ofercie znajdują się STM32G483CET6 (LQFP48), STM32G491RET6 (LQFP64), STM32G491CET6 (LQFP48) oraz STM32G491VET6 (LQFP100).",
+                    "image_url": "https://kamami.pl/c/15513-category_small/stm32g4.jpg",
+                    "local_image": "../data/categories/images/cat_1048.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1049,
+                    "name": "STM32H5",
+                    "url": "https://kamami.pl/15809-stm32h5",
+                    "description": "Rodzina mikrokontrolerów STM32H5 bazuje na architekturze ARM Cortex-M33, dostarczając wyjątkową wydajność i zaawansowane funkcje, które sprawdzają się w aplikacjach embedded. Model STM32H563RGT6 oferuje taktowanie 250 MHz, pamięć 2MB Flash oraz 640KB RAM, co pozwala na obsługę zaawansowanych systemów IoT, przemysłowych oraz multimedialnych. Mikrokontrolery te charakteryzują się energooszczędnością i wsparciem dla zabezpieczeń sprzętowych, co czyni je idealnym wyborem do projektów wymagających niezawodności i wydajności.",
+                    "image_url": "https://kamami.pl/c/15809-category_small/stm32h5.jpg",
+                    "local_image": "../data/categories/images/cat_1049.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1050,
+                    "name": "STM32H7",
+                    "url": "https://kamami.pl/15486-stm32h7",
+                    "description": "To zaawansowane urządzenia, które oferują wyjątkową moc obliczeniową dzięki rdzeniowi ARM Cortex-M7. Są idealne do zaawansowanych aplikacji w systemach embedded, automatyce przemysłowej i domowej oraz projektach DIY. STM32H7 są cenione za swoją wydajność, niezawodność i bogaty zestaw funkcji, co czyni je doskonałym wyborem zarówno dla profesjonalistów, jak i hobbystów.",
+                    "image_url": "https://kamami.pl/c/15486-category_small/stm32h7.jpg",
+                    "local_image": "../data/categories/images/cat_1050.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1051,
+                    "name": "STM32L",
+                    "url": "https://kamami.pl/9676-stm32l",
+                    "description": "Mikrokontrolery STM32L to idealne rozwiązanie dla inżynierów i entuzjastów elektroniki poszukujących energooszczędnych i wydajnych komponentów. Seria STM32L łączy niskie zużycie energii z wysoką wydajnością, co czyni je doskonałymi do zastosowań w urządzeniach przenośnych, sensorach oraz innych aplikacjach, gdzie oszczędność energii jest kluczowa. Mikrokontrolery te bazują na architekturze ARM, oferując wsparcie dla zaawansowanych funkcji i peryferiów. W naszej ofercie znajdują się modele takie jak STM32L051K6T6, STM32L4S5VIT6 - 32-bitowy mikrokontroler ARM Cortex-M4, STM32L051K8T6 (LQFP-32) oraz STM32L011D4P6 - 32-bitowy mikrokontroler z rdzeniem ARM Cortex-M0+, 16kB Flash, TSSOP.",
+                    "image_url": "https://kamami.pl/c/9676-category_small/stm32l.jpg",
+                    "local_image": "../data/categories/images/cat_1051.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1052,
+                    "name": "STM32U5",
+                    "url": "https://kamami.pl/15690-stm32u5",
+                    "description": "Mikrokontrolery STM32U5 są idealne dla inżynierów i entuzjastów elektroniki, którzy potrzebują wysokowydajnych, energooszczędnych rozwiązań. Seria STM32U5 łączy dużą moc obliczeniową z niskim zużyciem energii, co czyni ją doskonałą do zastosowań w IoT, urządzeniach przenośnych i zaawansowanych systemach wbudowanych. Te mikrokontrolery bazują na architekturze ARM i oferują wsparcie dla zaawansowanych funkcji i peryferiów. W ofercie Kamami znajdują się modele takie jak STM32U585RIT6 (LQFP64), STM32U585CIT6 (LQFP48) oraz STM32U575ZIT6 (LQFP144).",
+                    "image_url": "https://kamami.pl/c/15690-category_small/stm32u5.jpg",
+                    "local_image": "../data/categories/images/cat_1052.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1053,
+                    "name": "STM32W",
+                    "url": "https://kamami.pl/9775-stm32w",
+                    "description": "To zaawansowane komponenty, które doskonale sprawdzą się w aplikacjach wymagających komunikacji bezprzewodowej oraz niskiego zużycia energii. Seria STM32W bazuje na architekturze ARM i oferuje wsparcie dla protokołów takich jak Bluetooth i IEEE 802.15.4. Dzięki wysokiej wydajności i niskiej konsumpcji energii, mikrokontrolery te są idealnym wyborem do zastosowań w IoT, inteligentnych domach oraz systemach automatyki. W naszej ofercie znajdują się modele takie jak STM32WB55CGU6 (UFQFPN-48), STM32W108CBU64TR oraz STM32W108HBU64TR.",
+                    "image_url": "https://kamami.pl/c/9775-category_small/stm32w.jpg",
+                    "local_image": "../data/categories/images/cat_1053.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1054,
+                    "name": "XMC",
+                    "url": "https://kamami.pl/12154-xmc",
+                    "description": "W kategorii XMC w sklepie Kamami znajdziesz nowoczesne mikrokontrolery ARM, idealne do różnorodnych zastosowań. Mikrokontrolery z rodziny XMC łączą w sobie wysoką wydajność, elastyczność oraz niezawodność, co czyni je doskonałym wyborem dla projektantów systemów embedded. Nasza oferta obejmuje takie modele jak XMC1100-Q024F0064 AB, XMC1202-T016X0032, XMC1100-T038X0064 i wiele innych, które dzięki swojej wszechstronności znajdują zastosowanie w szerokim zakresie profesjonalnych projektów.",
+                    "image_url": "https://kamami.pl/c/12154-category_small/xmc.jpg",
+                    "local_image": "../data/categories/images/cat_1054.jpg",
+                    "subcategories": []
+                  }
+                ]
               },
               {
                 "id": 334,
@@ -3276,7 +3521,26 @@
                 "description": "Tranzystory Bipolarne, zwane również tranzystorami BJT (Bipolar Junction Transistor), to fundamentalne elementy w świecie elektroniki. Dzięki nim możliwe jest sterowanie przepływem prądu, co czyni je niezastąpionymi w różnorodnych aplikacjach technologicznych. Wyróżniamy dwa główne typy tranzystorów bipolarnych: NPN i PNP, które znajdują zastosowanie w układach wzmacniających, przełączających oraz w zaawansowanych systemach cyfrowych i analogowych. Ich szerokie zastosowanie i nieustanny rozwój technologiczny sprawiają, że są one nieodzowną częścią nowoczesnych urządzeń elektronicznych. Ponadto, tranzystory bipolarne są często wykorzystywane w projektach DIY, edukacji technicznej oraz w amatorskich projektach elektroniki. Dzięki ich dostępności i różnorodności, zarówno profesjonaliści, jak i hobbyści mogą korzystać z potencjału tych wszechstronnych komponentów. Przyjrzyjmy się bliżej temu, jak te komponenty wpływają na współczesną technologię oraz jakie mają perspektywy rozwoju.",
                 "image_url": "https://kamami.pl/c/7661-category_small/bipolarne.jpg",
                 "local_image": "../data/categories/images/cat_362.jpg",
-                "subcategories": []
+                "subcategories": [
+                  {
+                    "id": 1055,
+                    "name": "NPN",
+                    "url": "https://kamami.pl/7664-npn",
+                    "description": "Kategoria NPN w sklepie Kamami to miejsce, gdzie znajdziesz szeroki asortyment tranzystorów bipolarnych typu NPN, które są podstawowymi elementami wielu układów elektronicznych. Tranzystory NPN, w odróżnieniu od typu PNP, charakteryzują się przepływem prądu od kolektora do emitera, gdy baza jest przyłożona do dodatniego napięcia. To właśnie ta różnica sprawia, że są one często wybierane do zastosowań, gdzie wymagana jest precyzyjna kontrola prądu.",
+                    "image_url": "https://kamami.pl/c/7664-category_small/npn.jpg",
+                    "local_image": "../data/categories/images/cat_1055.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1056,
+                    "name": "PNP",
+                    "url": "https://kamami.pl/7663-pnp",
+                    "description": "Kategoria PNP w sklepie Kamami obejmuje szeroką gamę tranzystorów bipolarnych typu PNP, które są kluczowymi elementami w nowoczesnych układach elektronicznych. Tranzystory te różnią się od tranzystorów typu NPN odwróconą polaryzacją, co sprawia, że prąd płynie od emitera do kolektora, gdy baza jest przyłożona do ujemnego napięcia. Jest to istotne przy projektowaniu i budowie układów, gdzie wymagane są specyficzne właściwości elektryczne.",
+                    "image_url": "https://kamami.pl/c/7663-category_small/pnp.jpg",
+                    "local_image": "../data/categories/images/cat_1056.jpg",
+                    "subcategories": []
+                  }
+                ]
               },
               {
                 "id": 363,
@@ -3285,7 +3549,26 @@
                 "description": "Tranzystory Unipolarne stanowią kluczowy element współczesnych układów elektronicznych, charakteryzują się wysoką wydajnością i szerokim zakresem zastosowań. Dzięki różnym typom kanałów, takim jak kanał typu p oraz kanał typu n, stanowią one fundament dla zaawansowanych technologii, które napędzają innowacje w różnych branżach. Współczesne półprzewodniki nieustannie się rozwijają, co sprawia, że tranzystory unipolarne odgrywają coraz bardziej znaczącą rolę w przyszłości elektroniki. Przewiduje się, że rozwój tej technologii będzie niezmiennie dynamiczny, otwierając nowe możliwości w dziedzinie technologii informacyjnych, motoryzacyjnych oraz przemysłowych. Szerokie zastosowanie tych komponentów obejmuje między innymi telekomunikację, elektronikę użytkową, pojazdy elektryczne oraz różnorodne urządzenia przemysłowe, co świadczy o ich uniwersalności i potencjale przyszłego rozwoju.",
                 "image_url": "https://kamami.pl/c/7662-category_small/unipolarne.jpg",
                 "local_image": "../data/categories/images/cat_363.jpg",
-                "subcategories": []
+                "subcategories": [
+                  {
+                    "id": 1057,
+                    "name": "z kanałem typu p",
+                    "url": "https://kamami.pl/7666-z-kanalem-typu-p",
+                    "description": "Kategoria \"Tranzystory z kanałem typu p\" w Kamami oferuje szeroki wybór unipolarnych tranzystorów MOSFET, które są kluczowymi elementami w wielu współczesnych układach elektronicznych. Tranzystory te, dzięki swojej konstrukcji, pozwalają na skuteczne sterowanie przepływem prądu od źródła do drenu, co czyni je niezbędnymi w projektach wymagających precyzyjnego przełączania i zarządzania energią.",
+                    "image_url": "https://kamami.pl/c/7666-category_small/z-kanalem-typu-p.jpg",
+                    "local_image": "../data/categories/images/cat_1057.jpg",
+                    "subcategories": []
+                  },
+                  {
+                    "id": 1058,
+                    "name": "z kanałem typu n",
+                    "url": "https://kamami.pl/7665-z-kanalem-typu-n",
+                    "description": "W kategorii \"Tranzystory z kanałem typu n\" w sklepie Kamami znajdziesz bogaty asortyment unipolarnych tranzystorów MOSFET, które są kluczowymi komponentami w nowoczesnych układach elektronicznych. Tranzystory te są cenione za niski opór w stanie włączenia, szybkie przełączanie oraz wysoką efektywność energetyczną, co czyni je idealnym rozwiązaniem dla szerokiej gamy aplikacji, od prostych układów przełączających po zaawansowane systemy zasilania.",
+                    "image_url": "https://kamami.pl/c/7665-category_small/z-kanalem-typu-n.jpg",
+                    "local_image": "../data/categories/images/cat_1058.jpg",
+                    "subcategories": []
+                  }
+                ]
               }
             ]
           },

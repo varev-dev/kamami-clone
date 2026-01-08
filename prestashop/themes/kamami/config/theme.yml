@@ -85,3 +85,4 @@ theme_settings:
   layouts:
     password: layout-full-width
     authentication: layout-full-width
+    my-account: layout-full-width

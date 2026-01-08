@@ -9,8 +9,8 @@ prestashop/img/tmp/*
 prestashop/img/p/**/
 !prestashop/**/.env
 
-tools/data/products/images
-tools/data/*.zip
+# tools/data/products/images
+# tools/data/*.zip
 tools/data/*xml/
 
 tools/dataloader/*.json

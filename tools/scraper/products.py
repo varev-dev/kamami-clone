@@ -244,6 +244,9 @@ def scrape_category_products(category_url, category_id, per_category_limit,  lim
             if product_data:
                 kamami_id = product_data['id']
                 
+                product_data['category_id'] = category_id
+                product_data['subcategories'] = []
+
                 products_map[kamami_id] = product_data
                 url_to_id[product_url] = kamami_id
                 

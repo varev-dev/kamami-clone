@@ -84,6 +84,16 @@ assets:
         path: assets/js/show-password.js
         priority: 215
         position: bottom
+    cart:
+      - id: cart-page
+        path: assets/js/cart-page.js
+        priority: 216
+        position: bottom
+    order:
+      - id: cart-page
+        path: assets/js/cart-page.js
+        priority: 216
+        position: bottom
 
 theme_settings:
   default_layout: layout-left-column

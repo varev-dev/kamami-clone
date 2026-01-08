@@ -37,7 +37,8 @@
 
   <!-- Column 3: Product Name -->
   <div>
-    <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+    <a class="label" href="{$product.url}"
+      data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
     {foreach from=$product.attributes key="attribute" item="value"}
       <div class="product-line-info {$attribute|lower}">
         <span class="label">{$attribute}:</span>
@@ -47,8 +48,10 @@
     {if is_array($product.customizations) && $product.customizations|count}
       {block name='cart_detailed_product_line_customization'}
         {foreach from=$product.customizations item="customization"}
-          <a href="#" data-toggle="modal" data-target="#product-customizations-modal-{$customization.id_customization}">{l s='Product customization' d='Shop.Theme.Catalog'}</a>
-          <div class="modal fade customization-modal" id="product-customizations-modal-{$customization.id_customization}" tabindex="-1" role="dialog" aria-hidden="true">
+          <a href="#" data-toggle="modal"
+            data-target="#product-customizations-modal-{$customization.id_customization}">{l s='Product customization' d='Shop.Theme.Catalog'}</a>
+          <div class="modal fade customization-modal" id="product-customizations-modal-{$customization.id_customization}"
+            tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -91,6 +94,10 @@
       <div class="cart_in_stock_prod_l1">{l s='Available' d='Shop.Theme.Checkout'}</div>
     {elseif isset($product.availability) && $product.availability == 'last_remaining_items'}
       <div class="cart_in_stock_prod_l1">{l s='Last items in stock' d='Shop.Theme.Checkout'}</div>
+    {elseif isset($product.availability) && $product.availability == 'unavailable'}
+      <div class="cart_out_of_stock_prod">
+        <div class="cart_out_of_stock_prod_l1">Brak w magazynie</div>
+      </div>
     {else}
       <div class="cart_in_stock_prod_l1">{l s='Available' d='Shop.Theme.Checkout'}</div>
     {/if}
@@ -118,25 +125,19 @@
     {else}
       <div class="input-group bootstrap-touchspin">
         <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
-        <input
-          class="js-cart-line-product-quantity form-control"
-          data-down-url="{$product.down_quantity_url}"
-          data-up-url="{$product.up_quantity_url}"
-          data-update-url="{$product.update_quantity_url}"
-          data-product-id="{$product.id_product}"
-          type="text"
-          inputmode="numeric"
-          pattern="[0-9]*"
-          value="{$product.quantity}"
-          name="product-quantity-spin"
-          aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
-        >
+        <input class="js-cart-line-product-quantity form-control" data-down-url="{$product.down_quantity_url}"
+          data-up-url="{$product.up_quantity_url}" data-update-url="{$product.update_quantity_url}"
+          data-product-id="{$product.id_product}" type="text" inputmode="numeric" pattern="[0-9]*"
+          value="{$product.quantity}" name="product-quantity-spin"
+          aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}">
         <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
         <span class="input-group-btn-vertical">
-          <button class="btn btn-touchspin js-touchspin js-increase-product-quantity bootstrap-touchspin-up" type="button" aria-label="+">
+          <button class="btn btn-touchspin js-touchspin js-increase-product-quantity bootstrap-touchspin-up" type="button"
+            aria-label="+">
             <i class="material-icons touchspin-up">keyboard_arrow_up</i>
           </button>
-          <button class="btn btn-touchspin js-touchspin js-decrease-product-quantity bootstrap-touchspin-down" type="button" aria-label="-">
+          <button class="btn btn-touchspin js-touchspin js-decrease-product-quantity bootstrap-touchspin-down"
+            type="button" aria-label="-">
             <i class="material-icons touchspin-down">keyboard_arrow_down</i>
           </button>
         </span>
@@ -156,15 +157,10 @@
   <!-- Column 8: Actions (Delete) -->
   <div>
     <div class="cart-line-product-actions">
-      <a
-        class="remove-from-cart"
-        rel="nofollow"
-        href="{$product.remove_from_cart_url}"
-        data-link-action="delete-from-cart"
-        data-id-product="{$product.id_product|escape:'javascript'}"
+      <a class="remove-from-cart" rel="nofollow" href="{$product.remove_from_cart_url}"
+        data-link-action="delete-from-cart" data-id-product="{$product.id_product|escape:'javascript'}"
         data-id-product-attribute="{$product.id_product_attribute|escape:'javascript'}"
-        data-id-customization="{$product.id_customization|escape:'javascript'}"
-      >
+        data-id-customization="{$product.id_customization|escape:'javascript'}">
         {if empty($product.is_gift)}
           <i class="material-icons float-xs-left">delete</i>
         {/if}

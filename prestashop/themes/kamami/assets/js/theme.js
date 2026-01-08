@@ -12,7 +12,6 @@ $(document).ready(function () {
 	initCategoryTreeCollapse();
 	initQuickView();
 	initLazyLoadFallback();
-	initCartQuantityButtons();
 });
 
 function initLazyLoadFallback() {
@@ -258,101 +257,6 @@ function initCategoryTreeCollapse() {
 				$target.slideDown(300);
 				$toggle.attr("aria-expanded", "true");
 			}
-		}
-	});
-}
-
-function initCartQuantityButtons() {
-	// Handle increase quantity button in cart
-	$(document).on("click", ".js-increase-product-quantity", function (e) {
-		e.preventDefault();
-		const $button = $(this);
-		const $input = $button.closest(".bootstrap-touchspin").find(".js-cart-line-product-quantity");
-		const upUrl = $input.data("up-url");
-		
-		if (upUrl) {
-			$.get(upUrl + (upUrl.includes("?") ? "&" : "?") + "ajax=1", function (resp) {
-				if (resp && resp.cart) {
-					prestashop.emit("updateCart", {
-						reason: {
-							idProduct: $input.data("product-id"),
-							linkAction: "update-from-cart",
-						},
-						resp: resp,
-					});
-					// Refresh cart if on cart page
-					if ($(".js-cart").length) {
-						const refreshUrl = $(".js-cart").data("refresh-url");
-						if (refreshUrl) {
-							$.get(refreshUrl, function (html) {
-								$(".js-cart").html($(html).find(".js-cart").html() || html);
-							});
-						}
-					}
-				}
-			});
-		}
-	});
-
-	// Handle decrease quantity button in cart
-	$(document).on("click", ".js-decrease-product-quantity", function (e) {
-		e.preventDefault();
-		const $button = $(this);
-		const $input = $button.closest(".bootstrap-touchspin").find(".js-cart-line-product-quantity");
-		const downUrl = $input.data("down-url");
-		
-		if (downUrl) {
-			$.get(downUrl + (downUrl.includes("?") ? "&" : "?") + "ajax=1", function (resp) {
-				if (resp && resp.cart) {
-					prestashop.emit("updateCart", {
-						reason: {
-							idProduct: $input.data("product-id"),
-							linkAction: "update-from-cart",
-						},
-						resp: resp,
-					});
-					// Refresh cart if on cart page
-					if ($(".js-cart").length) {
-						const refreshUrl = $(".js-cart").data("refresh-url");
-						if (refreshUrl) {
-							$.get(refreshUrl, function (html) {
-								$(".js-cart").html($(html).find(".js-cart").html() || html);
-							});
-						}
-					}
-				}
-			});
-		}
-	});
-
-	// Handle quantity input change in cart
-	$(document).on("change", ".js-cart-line-product-quantity", function () {
-		const $input = $(this);
-		const updateUrl = $input.data("update-url");
-		const quantity = parseInt($input.val()) || 1;
-		
-		if (updateUrl && quantity > 0) {
-			const url = updateUrl.replace(/qty=\d+/, "qty=" + quantity) + (updateUrl.includes("?") ? "&" : "?") + "qty=" + quantity + "&ajax=1";
-			$.get(url, function (resp) {
-				if (resp && resp.cart) {
-					prestashop.emit("updateCart", {
-						reason: {
-							idProduct: $input.data("product-id"),
-							linkAction: "update-from-cart",
-						},
-						resp: resp,
-					});
-					// Refresh cart if on cart page
-					if ($(".js-cart").length) {
-						const refreshUrl = $(".js-cart").data("refresh-url");
-						if (refreshUrl) {
-							$.get(refreshUrl, function (html) {
-								$(".js-cart").html($(html).find(".js-cart").html() || html);
-							});
-						}
-					}
-				}
-			});
 		}
 	});
 }

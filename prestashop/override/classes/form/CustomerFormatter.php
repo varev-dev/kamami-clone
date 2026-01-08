@@ -9,10 +9,6 @@ class CustomerFormatter extends CustomerFormatterCore
             unset($format['id_gender']);
         }
 
-        if (isset($format['psgdpr_psgdpr'])) {
-            unset($format['psgdpr_psgdpr']);
-        }
-
         return $format;
     }
 }

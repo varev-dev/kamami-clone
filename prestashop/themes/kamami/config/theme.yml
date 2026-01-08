@@ -74,8 +74,14 @@ assets:
         path: assets/js/listing-page.js
         priority: 214
         position: bottom
+    authentication:
+      - id: show-password
+        path: assets/js/show-password.js
+        priority: 215
+        position: bottom
 
 theme_settings:
   default_layout: layout-left-column
   layouts:
     password: layout-full-width
+    authentication: layout-full-width

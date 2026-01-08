@@ -22,29 +22,29 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-{if $page.page_name != 'index' && $page.page_name != 'cart'}
-  <nav data-depth="{$breadcrumb.count}" class="breadcrumb">
-    <div class="breadcrumb-container">
-      <div class="container">
-        <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-          {block name='breadcrumb'}
-            {foreach from=$breadcrumb.links item=path name=breadcrumb}
-              {block name='breadcrumb_item'}
-                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                  <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-                  {if not $smarty.foreach.breadcrumb.last}
-                    <a itemprop="item" href="{$path.url}">
-                      <span itemprop="name">{$path.title}</span>
-                    </a>
-                  {else}
-                    <span itemprop="name">{$path.title}</span>
-                  {/if}
-                </li>
-              {/block}
-            {/foreach}
-          {/block}
-        </ol>
+{extends file=$layout}
+
+{block name='header'}
+  {include file='checkout/_partials/header.tpl'}
+{/block}
+
+{block name='content'}
+  <section id="content">
+    <div class="row">
+      <div class="cart-grid-body col-xs-12 col-md-8">
+        {block name='checkout_process'}
+          {render file='checkout/checkout-process.tpl' ui=$checkout_process}
+        {/block}
+      </div>
+      <div class="cart-grid-right col-xs-12 col-md-4">
+        {block name='cart_summary'}
+          {include file='checkout/_partials/cart-summary.tpl' cart=$cart}
+        {/block}
       </div>
     </div>
-  </nav>
-{/if}
+  </section>
+{/block}
+
+{block name='footer'}
+  {include file='checkout/_partials/footer.tpl'}
+{/block}

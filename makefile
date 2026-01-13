@@ -14,7 +14,7 @@ help:
 	@echo "  make stop        - Zatrzymuje kontenery i robi backup bazy"
 	@echo "  make restart     - Restartuje środowisko"
 	@echo "  make permissions - Naprawia uprawnienia do folderu sources"
-	@echo "  make dump        - Tworzy zrzut bazy do data/dump.sql"
+	@echo "  make dump        - Tworzy zrzut bazy do data/new_dump.sql"
 	@echo "  make gen-key     - Generuje certyfikaty SSL w config/ssl"
 
 start:
@@ -24,7 +24,7 @@ start:
 stop:
 	@make dump
 	@echo "Stopping docker containers..."
-	@$(COMPOSE) down
+	@$(COMPOSE) down -v
 
 restart:
 	@make stop
@@ -46,7 +46,7 @@ permissions:
 dump:
 	@echo "Dumping database into data/dump.sql..."
 	@mkdir -p data
-	docker exec prestashop-mysql mysqldump $(MYSQL_DATABASE) --user=root -p$(MYSQL_ROOT_PASSWORD) > data/dump.sql
+	docker exec prestashop-mysql mysqldump $(MYSQL_DATABASE) --user=root -p$(MYSQL_ROOT_PASSWORD) > data/new_dump.sql
 	@echo "Backup saved to data/dump.sql"
 
 gen-key:

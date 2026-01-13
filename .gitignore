@@ -2,13 +2,13 @@ config/.env
 .env
 **/venv/
 
-!.gitkeep
-
 sources/var/cache/*
 sources/var/logs/*
 sources/img/tmp/*
 sources/img/p/**/
 !sources/**/.env
+
+!/**/.gitkeep
 
 # tools/data/products/images
 # tools/data/*.zip

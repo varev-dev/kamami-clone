@@ -21,5 +21,6 @@
     'cookie_key' => '9XebMjcDS7yMWH3QCgJKE9f5ksIcFg5TQ9SMJa8IO6cXc3Un4FY0EnRJiVVdJbRa',
     'cookie_iv' => 'BMEDPS73hOZXLftoOKK5RFwL8RHFGpmf',
     'new_cookie_key' => 'def00000368de1dda2e8a67ae80e4881fb426858238db59a6078c1ed7ea1fadca8bbcdfec8ddc2de14097b1e74cd039e593e2ee23035d741db5744e7dce5a1d56f4352fe',
+    'trusted_proxies' => ['127.0.0.1']
   ),
 );

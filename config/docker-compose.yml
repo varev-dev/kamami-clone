@@ -12,7 +12,7 @@ services:
       - prestashop_network
     volumes:
       - dbdata:/var/lib/mysql
-      - ../data/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - ./data/dump.sql:/docker-entrypoint-initdb.d/dump.sql
 
   prestashop:
     container_name: prestashop
@@ -38,7 +38,7 @@ services:
     volumes:
       - ./sources:/var/www/html
       - ./config/ssl/000-default.conf:/etc/apache2/sites-available/000-default.conf
-      - ./config/ssl/certs:/etc/ssl/certs
+      - ./config/ssl/certs:/etc/apache2/ssl
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin

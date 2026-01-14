@@ -6,6 +6,7 @@ sources/var/cache/*
 sources/var/logs/*
 sources/img/tmp/*
 sources/img/p/**/
+sources/img/c/*
 !sources/**/.env
 
 !/**/.gitkeep

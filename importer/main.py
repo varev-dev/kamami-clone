@@ -16,7 +16,7 @@ async def main(args):
     if args.categories:
         await loader.load_categories(top_categories)
     
-    if not args.products and not args.stocks and not args.images:
+    if not args.products and not args.stocks and not args.images and not args.related:
         return
     
     if not top_categories:
@@ -33,6 +33,11 @@ async def main(args):
 
     if args.products:
         await loader.load_products(products)
+    
+    products_map = {prod.name: prod for prod in products}
+    
+    if args.related:
+        await loader.load_related(products_map)
     
     if not products:
         return
@@ -70,6 +75,15 @@ if __name__ == "__main__":
         default=False,
         required=False, 
         help="Products will be loaded"
+    )
+    
+    parser.add_argument(
+        "-r",
+        "--related",
+        action="store_true",
+        default=False,
+        required=False, 
+        help="Related products will be loaded"
     )
     
     parser.add_argument(

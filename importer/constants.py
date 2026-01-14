@@ -1,5 +1,5 @@
 LANG_IDS = [1, 2]
-CERTIFICATE_PATH = '../../ssl/certs/server.crt'
+CERTIFICATE_PATH = '../config/ssl/certs/server.crt'
 LOADED_CATEGORIES_JSON = './categories.json'
 LOADED_PRODUCTS_JSON = './products.json'
 IMAGES_PATH = '../data/products/images'

@@ -51,7 +51,8 @@ class Reader:
                     product['short_description'],
                     product['full_description_html'],
                     categories_map[product['breadcrumb_category']].id,
-                    product['id']
+                    product['id'],
+                    related_products=product['related_products']
                 )
             else:
                 prod = Product.from_dict(product)

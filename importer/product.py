@@ -5,7 +5,7 @@ from constants import LANG_IDS
 import random
 
 class Product:
-    def __init__(self, name, price, description, html_description, category_id, images_id, id=None, quantity=None):
+    def __init__(self, name, price, description, html_description, category_id, images_id, related_products=[], id=None, quantity=None):
         self.id = None if id is None else id
         self.name = name
         self.price = price
@@ -15,6 +15,7 @@ class Product:
         self.link = slugify(name)
         self.images_id = images_id
         self.quantity = random.randint(0, 10) if quantity is None else quantity
+        self.related_products = related_products
         
     def __str__(self):
         return f"""Product (
@@ -22,6 +23,7 @@ class Product:
     price: {self.price}
     category: {self.category_id}
     link: {self.link}
+    related_count: {len(self.related_products)}
 )"""
 
     def to_dict(self):
@@ -34,7 +36,8 @@ class Product:
             "category_id": self.category_id,
             "link": self.link,
             "images_id": self.images_id,
-            "quantity": self.quantity
+            "quantity": self.quantity,
+            "related_products": self.related_products
         }
 
     @classmethod
@@ -47,7 +50,8 @@ class Product:
             html_description=data["html_description"],
             category_id=data["category_id"],
             images_id=data["images_id"],
-            quantity=data['quantity']
+            quantity=data['quantity'],
+            related_products=data['related_products']
         )
         
         return product

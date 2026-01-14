@@ -1,4 +1,4 @@
-include ../../.env
+include ../config/.env
 export $(shell sed 's/=.*//' ../../.env)
 
 delete-products:

@@ -115,7 +115,7 @@ class Loader:
                         raise Exception(f"HTTP {status}: {response_text.strip()}")
 
                     root = ET.fromstring(response_text)
-                    product_id = root.find(".//id")    
+                    product_id = root.find(".//id")
                     
                     if product_id is not None:
                         product.id = int(product_id.text)
@@ -151,6 +151,73 @@ class Loader:
 
         print("Products loaded and saved to products.json!")
         
+    async def load_related(self, products_map):
+        print('Loading related products...')
+        
+        async with aiohttp.ClientSession(
+            connector=self.connector,
+            timeout=self.timeout
+        ) as session:
+            tasks = []
+            for product in products_map.values():
+                related = []
+                for rel in product.related_products:
+                    if rel['name'] in products_map.keys():
+                        related.append(products_map[rel['name']])
+                        
+                if related:
+                    tasks.append(self.load_related_products(session, product, related))
+
+            await asyncio.gather(*tasks)
+
+        # import json
+        # with open(LOADED_PRODUCTS_JSON, "w", encoding="utf-8") as f:
+        #     data = [prod.to_dict() for prod in products]
+        #     json.dump(data, f, indent=4, ensure_ascii=False)
+
+        print("Related products loaded!")
+        
+    async def load_related_products(self, session, product, related_products):
+        async with self.semaphore:
+            try:
+                xml = product.to_xml()
+                root = ET.fromstring(xml)
+                id_elem = root.find(".//id")
+                id_elem.text = str(product.id)
+                
+                # 2. Usuń istniejące accessories (opcjonalnie)
+                associations = root.find(".//associations")
+                if associations is None:
+                    associations = ET.SubElement(root.find(".//product"), "associations")
+                accessories = associations.find("accessories")
+                if accessories is not None:
+                    associations.remove(accessories)
+                accessories = ET.SubElement(associations, "accessories")
+
+                # 3. Dodaj powiązane produkty
+                for p in related_products:
+                    prod_el = ET.SubElement(accessories, "product")
+                    ET.SubElement(prod_el, "id").text = str(p.id)
+
+                # 4. Wyślij PUT z pełnym XML
+                xml_str = ET.tostring(root, encoding="utf-8", method="xml")
+                async with session.put(
+                    f"{self.api_url}/products/{product.id}",
+                    data=xml_str,
+                    auth=aiohttp.BasicAuth(self.api_key, ""),
+                    headers={"Content-Type": "application/xml"},
+                ) as resp_put:
+                    text = await resp_put.text()
+                    if resp_put.status >= 400:
+                        raise Exception(f"PUT failed {resp_put.status}: {text}")
+
+                print(f"Product {product.id}: {product.name}, related products updated")
+                return True
+
+            except Exception as e:
+                print(f"ERROR [{product.id}: {product.name}]: {e}")
+                return False
+
     async def load_stock(self, products):
         print("Loading stock...")
 

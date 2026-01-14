@@ -24,3 +24,6 @@ data/*.sql
 !sources/**/*.sql
 
 config/ssl/certs/*
+
+*.bak
+!./source/**/*.bak

@@ -1,1 +1,0 @@
-{extends file='_partials/header.tpl'}

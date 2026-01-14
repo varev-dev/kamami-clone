@@ -5,7 +5,7 @@ import os
 import xml.etree.ElementTree as ET
 
 from category import Category
-from constants import CERTIFICATE_PATH, LOADED_CATEGORIES_JSON, LOADED_PRODUCTS_JSON, IMAGES_PATH
+from constants import CERTIFICATE_PATH, LOADED_CATEGORIES_JSON, LOADED_PRODUCTS_JSON, PRODUCT_IMAGES_PATH, CATEGORY_IMAGES_PATH
 
 class Loader:
     def __init__(self, concurrent_requests=1):
@@ -295,7 +295,7 @@ class Loader:
                     except Exception as e:
                         print(f"ERROR [STOCK {product.id}]: {e}")
                         
-    async def _upload_image(self, session, product_id, image_path):
+    async def _upload_product_image(self, session, product_id, image_path):
         async with self.semaphore:
             try:
                 with open(image_path, "rb") as f:
@@ -321,9 +321,36 @@ class Loader:
 
             except Exception as e:
                 print(f"ERROR [IMAGE {product_id}]: {e}")
-                        
-    async def load_images(self, products):
-        print("Loading images...")
+                
+    async def _upload_category_image(self, session, category_id, image_path):
+        async with self.semaphore:
+            try:
+                with open(image_path, "rb") as f:
+                    data = aiohttp.FormData()
+                    data.add_field(
+                        "image",
+                        f,
+                        filename=os.path.basename(image_path),
+                        content_type="image/jpeg"
+                    )
+
+                    async with session.post(
+                        f"{self.api_url}/images/categories/{category_id}",
+                        data=data,
+                        auth=aiohttp.BasicAuth(self.api_key, ""),
+                    ) as response:
+
+                        if response.status not in (200, 201):
+                            text = await response.text()
+                            raise Exception(f"{response.status}: {text}")
+
+                    print(f"Product {category_id}: image uploaded → {os.path.basename(image_path)}")
+
+            except Exception as e:
+                print(f"ERROR [IMAGE {category_id}]: {e}")
+                                
+    async def load_product_images(self, products):
+        print("Loading products images...")
 
         async with aiohttp.ClientSession(
             connector=self.connector,
@@ -340,7 +367,7 @@ class Loader:
                 image_dir = os.path.abspath(
                     os.path.join(
                         os.path.dirname(__file__),
-                        f"{IMAGES_PATH}/{product.images_id}"
+                        f"{PRODUCT_IMAGES_PATH}/{product.images_id}"
                     )
                 )
 
@@ -355,7 +382,7 @@ class Loader:
                     image_path = os.path.join(image_dir, filename)
 
                     tasks.append(
-                        self._upload_image(
+                        self._upload_product_image(
                             session,
                             product.id,
                             image_path
@@ -364,4 +391,36 @@ class Loader:
 
             await asyncio.gather(*tasks)
 
-        print("Images loaded")
+        print("Product images loaded")
+
+    async def load_category_images(self, categories):
+        print("Loading category images...")
+
+        async with aiohttp.ClientSession(
+            connector=self.connector,
+            timeout=self.timeout
+        ) as session:
+
+            tasks = []
+
+            for category in categories:
+                if not category.image:
+                    continue
+                
+                image_file = f"{CATEGORY_IMAGES_PATH}/{category.image}"
+
+                if not os.path.isfile(image_file):
+                    print(f"No image for category {category.id}: {image_file}")
+                    continue
+
+                tasks.append(
+                    self._upload_category_image(
+                        session,
+                        category.id,
+                        image_file
+                    )
+                )
+
+            await asyncio.gather(*tasks)
+
+        print("Category images loaded")

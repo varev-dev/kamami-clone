@@ -3,9 +3,10 @@ from utils import prettify_xml
 from constants import LANG_IDS
 
 class Category:
-    def __init__(self, name, subcategories, parent_id, id=None, link=None):
+    def __init__(self, name, subcategories, parent_id, image, id=None, link=None):
         self.parent_id = parent_id
         self.id = None if id is None else id
+        self.image = image
         self.name = name
         self.subcategories = subcategories
         self.link = slugify(name) if link is None else link
@@ -24,6 +25,7 @@ class Category:
             "parent_id": self.parent_id,
             "name": self.name,
             "link": self.link,
+            "image": self.image,
             "subcategories": [
                 subcat.to_dict() for subcat in self.subcategories
             ]
@@ -39,7 +41,8 @@ class Category:
         category = cls(
             name=data["name"],
             parent_id=data["parent_id"],
-            subcategories=subcategories
+            image=data["image"],
+            subcategories=subcategories,
         )
 
         category.id = data.get("id")

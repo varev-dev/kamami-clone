@@ -15,7 +15,9 @@ class Reader:
             name = category['name']
             
             if load_categories:
-                cat = Category(name, [], root_category_id)
+                image = os.path.basename(category['local_image']) if category['local_image'] else None
+                
+                cat = Category(name, [], root_category_id, image)
                 
                 if category.get('subcategories'):
                     cat.subcategories = self.process_categories(
@@ -38,7 +40,7 @@ class Reader:
             
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-         
+
         return self.process_categories(load_categories, data)
     
     def process_products(self, data, categories_map, load_products):

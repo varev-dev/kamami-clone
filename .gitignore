@@ -1,24 +1,26 @@
+config/.env
 .env
 **/venv/
 
-!.gitkeep
+sources/var/cache/*
+sources/var/logs/*
+sources/img/tmp/*
+sources/img/p/**/
+!sources/**/.env
 
-prestashop/var/cache/*
-prestashop/var/logs/*
-prestashop/img/tmp/*
-prestashop/img/p/**/
-!prestashop/**/.env
+!/**/.gitkeep
 
 # tools/data/products/images
 # tools/data/*.zip
-tools/data/*xml/
 
-tools/dataloader/*.json
+data/*xml/
+
+importer/*.json
 
 __pycache__/
 
-*.sql
-!dump.sql
-!prestashop/**/*.sql
+data/*.sql
+!data/dump.sql
+!sources/**/*.sql
 
-ssl/certs/*
+config/ssl/certs/*

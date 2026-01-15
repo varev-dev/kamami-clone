@@ -46,17 +46,29 @@ class Reader:
     def process_products(self, data, categories_map, load_products):
         products = []
         for product in data:
-            if load_products and product['price_netto'] != "":
+            if load_products:
+                if product['price_netto'] == "" or product['breadcrumb_category'] not in categories_map.keys():
+                    continue
+                
                 price = float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', ''))
+                variant_name = None
+                if product['variant_group'] is not None:
+                    for v in product['variants']:
+                        if v['url'] is None:
+                            variant_name = v['name']
                 
                 prod = Product(
-                    product['name'], 
+                    product['id'],
+                    product['name'],
                     price,
                     product['short_description'],
                     product['full_description_html'],
                     categories_map[product['breadcrumb_category']].id,
                     product['id'],
-                    related_products=product['related_products']
+                    related_products=product['related_products'],
+                    variant_group=product['variant_group'],
+                    variant_name=variant_name,
+                    variants=product['variants']
                 )
             else:
                 prod = Product.from_dict(product)

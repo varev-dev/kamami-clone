@@ -97,7 +97,7 @@ class Loader:
 
         print("Categories loaded and saved to categories.json file!")
 
-    async def load_product(self, session, product):
+    async def load_product(self, session, product, load_variants):
         async with self.semaphore:
             try:
                 xml_content = product.to_xml()
@@ -121,6 +121,9 @@ class Loader:
                         product.id = int(product_id.text)
                     else:
                         raise ValueError("No product id in response")  
+                    
+                    if load_variants:
+                        await self.load_variants(session, product)
 
                     print(f"Product {product.id}: {product.name}, loaded")
                     return True
@@ -129,8 +132,29 @@ class Loader:
                 print(f"ERROR [{product.id}: {product.name}]: {e}")
                 return False
 
-    async def load_products(self, products):
+    async def load_products(self, products_map, load_variants):
         print('Loading products...')
+
+        # delete variants from map
+        to_delete = []
+        if load_variants:
+            for product in products_map.values():
+                if product.variant_group is None or product in to_delete:
+                    continue
+                
+                product.variants = [
+                    products_map[v['id']]
+                    for v in product.variants
+                    if v['id'] in products_map and v['name'] != product.variant_name
+                ]
+                
+                for variant in product.variants:
+                    to_delete.append(variant)
+                    
+        for variant in to_delete:
+            products_map.pop(variant.kamami_id, None)
+        
+        products = products_map.values()
         
         async with aiohttp.ClientSession(
             connector=self.connector,
@@ -138,7 +162,7 @@ class Loader:
         ) as session:
 
             tasks = [
-                self.load_product(session, product)
+                self.load_product(session, product, load_variants)
                 for product in products
             ]
 
@@ -162,8 +186,8 @@ class Loader:
             for product in products_map.values():
                 related = []
                 for rel in product.related_products:
-                    if rel['name'] in products_map.keys():
-                        related.append(products_map[rel['name']])
+                    if rel['id'] in products_map.keys():
+                        related.append(products_map[rel['id']])
                         
                 if related:
                     tasks.append(self.load_related_products(session, product, related))
@@ -295,6 +319,120 @@ class Loader:
                     except Exception as e:
                         print(f"ERROR [STOCK {product.id}]: {e}")
                         
+    async def load_variants(self, session, product):
+        if not product.variant_group or not product.variants:
+            return
+
+        group_id = await self.create_attribute_group(session, product.variant_group)
+
+        for variant in product.variants:
+            value_id = await self.create_attribute_value(
+                session, group_id, variant.variant_name
+            )
+
+            await self.create_combination(
+                session,
+                product,
+                variant,
+                value_id
+            )
+            
+    async def set_default_combination(self, session, product, combination_id):
+        xml = f"""
+        <prestashop>
+        <product>
+            <id_product_attribute>{combination_id}</id_product_attribute>
+        </product>
+        </prestashop>
+        """
+
+        async with session.put(
+            f"{self.api_url}/products/{product.id}",
+            data=xml.encode(),
+            auth=aiohttp.BasicAuth(self.api_key, ""),
+            headers={"Content-Type": "application/xml"},
+        ) as resp:
+            if resp.status >= 400:
+                text = await resp.text()
+                raise Exception(f"Error setting default combination: {resp.status} {text}")
+                        
+    async def create_combination(self, session, product, variant, option_value_id):
+        xml = f"""
+        <prestashop>
+            <product_combination>
+                <id_product>{product.id}</id_product>
+                <quantity>{variant.quantity or 0}</quantity>
+                <price>{variant.price - product.price}</price>
+                <reference>{variant.name}</reference>
+                <associations>
+                    <product_option_values>
+                        <product_option_value>
+                            <id>{option_value_id}</id>
+                        </product_option_value>
+                    </product_option_values>
+                </associations>
+            </product_combination>
+        </prestashop>
+        """
+
+        async with session.post(
+            f"{self.api_url}/combinations",
+            data=xml.encode(),
+            auth=aiohttp.BasicAuth(self.api_key, ""),
+            headers={"Content-Type": "application/xml"},
+        ):
+            pass
+
+    async def create_attribute_value(self, session, group_id, value_name):
+        xml = f"""
+        <prestashop>
+            <product_option_value>
+                <id_attribute_group>{group_id}</id_attribute_group>
+                <name>
+                    <language id="1">{value_name}</language>
+                    <language id="2">{value_name}</language>
+                </name>
+            </product_option_value>
+        </prestashop>
+        """
+
+        async with session.post(
+            f"{self.api_url}/product_option_values",
+            data=xml.encode(),
+            auth=aiohttp.BasicAuth(self.api_key, ""),
+            headers={"Content-Type": "application/xml"},
+        ) as resp:
+            root = ET.fromstring(await resp.text())
+            return int(root.find(".//id").text)
+                    
+    async def create_attribute_group(self, session, group_name):
+        public_name = group_name if len(group_name) <= 64 else group_name[:64] # 64 to max liczba znakow dla public_name
+
+        xml = f"""
+        <prestashop>
+            <product_option>
+                <name>
+                    <language id="1">{group_name}</language>
+                    <language id="2">{group_name}</language>
+                </name>
+                <public_name>
+                    <language id="1">{public_name}</language>
+                    <language id="2">{public_name}</language>
+                </public_name>
+                <group_type>radio</group_type>
+            </product_option>
+        </prestashop>
+        """
+
+        async with session.post(
+            f"{self.api_url}/product_options",
+            data=xml.encode(),
+            auth=aiohttp.BasicAuth(self.api_key, ""),
+            headers={"Content-Type": "application/xml"},
+        ) as resp:
+            root = ET.fromstring(await resp.text())
+            return int(root.find('.//id').text)
+                    
     async def _upload_product_image(self, session, product_id, image_path):
         async with self.semaphore:
             try:

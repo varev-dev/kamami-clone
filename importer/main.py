@@ -27,17 +27,16 @@ async def main(args):
     if not args.products and not args.stocks and not args.images and not args.related:
         return
     
-    if not top_categories:
-        return
-    
     categories_map = {cat.name: cat for cat in all_categories}
     
     products = reader.read_products(categories_map, args.products)
+    
+    products = [product for product in products if product.variant_group is not None]
+    
+    products_map = {prod.kamami_id: prod for prod in products}
 
     if args.products:
-        await loader.load_products(products)
-    
-    products_map = {prod.name: prod for prod in products}
+        await loader.load_products(products_map, args.variants)
     
     if args.related:
         await loader.load_related(products_map)
@@ -96,6 +95,15 @@ if __name__ == "__main__":
         default=False,
         required=False, 
         help="Related products will be loaded"
+    )
+    
+    parser.add_argument(
+        "-v",
+        "--variants",
+        action="store_true",
+        default=False,
+        required=False, 
+        help="Variants will be loaded"
     )
     
     parser.add_argument(

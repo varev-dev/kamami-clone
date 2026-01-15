@@ -290,9 +290,9 @@ def scrape_product_details(product_url):
 
     desc_div = main.select_one("#description .product-description")
     
-    if desc_div:
-        for iframe in desc_div.find_all("iframe"):
-            iframe.decompose()
+    # if desc_div:
+    #     for iframe in desc_div.find_all("iframe"):
+    #         iframe.decompose()
     
     full_description = desc_div.decode_contents() if desc_div else ""
 

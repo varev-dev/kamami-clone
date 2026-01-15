@@ -342,8 +342,6 @@ class Ps_CategoryTree extends Module implements WidgetInterface
         // Try to get current category from controller
         if (method_exists($this->context->controller, 'getCategory') && ($category = $this->context->controller->getCategory())) {
             $currentCategoryId = $category->id;
-        } elseif (!empty($this->context->cookie->last_visited_category)) {
-            $currentCategoryId = (int) $this->context->cookie->last_visited_category;
         } elseif (method_exists($this->context->controller, 'getProduct') && ($product = $this->context->controller->getProduct())) {
             $currentCategoryId = (int) $product->id_category_default;
         }

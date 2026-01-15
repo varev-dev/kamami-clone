@@ -103,3 +103,4 @@ theme_settings:
     my-account: layout-full-width
     identity: layout-full-width
     order: layout-full-width
+    cms: layout-full-width

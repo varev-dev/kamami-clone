@@ -1,8 +1,3 @@
-{**
- * Kamami theme - GDPR Consent override
- * Based on kamami.pl footer GDPR consent structure
- *}
-
 {block name='gdpr_checkbox'}
   <div id="gdpr_consent" class="gdpr_module_{$psgdpr_id_module|escape:'htmlall':'UTF-8'}">
     <span class="custom-checkbox">
@@ -10,7 +5,7 @@
         <input id="psgdpr_consent_checkbox_{$psgdpr_id_module|escape:'htmlall':'UTF-8'}" name="psgdpr_consent_checkbox"
           type="checkbox" value="1" class="psgdpr_consent_checkboxes_{$psgdpr_id_module|escape:'htmlall':'UTF-8'}">
         <span><i class="material-icons assignment rtl-no-flip checkbox-checked psgdpr_consent_icon">assignment</i></span>
-        <span>Akceptuję <a href="{$urls.pages.cms}?id_cms=7">politykę prywatności</a></span>
+        <span>Akceptuję <a href="{$link->getCMSLink(2)}">politykę prywatności</a></span>
       </label>
     </span>
   </div>

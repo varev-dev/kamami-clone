@@ -47,9 +47,11 @@ class Reader:
         products = []
         for product in data:
             if load_products:
+                price = float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', '')) if product['price_netto'] is not "" else None
+                
                 prod = Product(
                     product['name'], 
-                    float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', '')),
+                    price,
                     product['short_description'],
                     product['full_description_html'],
                     categories_map[product['breadcrumb_category']].id,

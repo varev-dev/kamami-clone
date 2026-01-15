@@ -46,8 +46,8 @@ class Reader:
     def process_products(self, data, categories_map, load_products):
         products = []
         for product in data:
-            if load_products:
-                price = float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', '')) if product['price_netto'] != "" else None
+            if load_products and product['price_netto'] != "":
+                price = float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', ''))
                 
                 prod = Product(
                     product['name'], 

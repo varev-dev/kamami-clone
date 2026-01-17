@@ -15,7 +15,9 @@ class Reader:
             name = category['name']
             
             if load_categories:
-                cat = Category(name, [], root_category_id)
+                image = os.path.basename(category['local_image']) if category['local_image'] else None
+                
+                cat = Category(name, [], root_category_id, image)
                 
                 if category.get('subcategories'):
                     cat.subcategories = self.process_categories(
@@ -38,20 +40,35 @@ class Reader:
             
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-         
+
         return self.process_categories(load_categories, data)
     
     def process_products(self, data, categories_map, load_products):
         products = []
         for product in data:
             if load_products:
+                if product['price_netto'] == "" or product['breadcrumb_category'] not in categories_map.keys():
+                    continue
+                
+                price = float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', ''))
+                variant_name = None
+                if product['variant_group'] is not None:
+                    for v in product['variants']:
+                        if v['url'] is None:
+                            variant_name = v['name']
+                
                 prod = Product(
-                    product['name'], 
-                    float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', '')),
+                    product['id'],
+                    product['name'],
+                    price,
                     product['short_description'],
                     product['full_description_html'],
                     categories_map[product['breadcrumb_category']].id,
-                    product['id']
+                    product['id'],
+                    related_products=product['related_products'],
+                    variant_group=product['variant_group'],
+                    variant_name=variant_name,
+                    variants=product['variants']
                 )
             else:
                 prod = Product.from_dict(product)

@@ -5,8 +5,10 @@ from constants import LANG_IDS
 import random
 
 class Product:
-    def __init__(self, name, price, description, html_description, category_id, images_id, id=None, quantity=None):
+    def __init__(self, kamami_id, name, price, description, html_description, category_id, images_id, 
+                 variants=[], variant_group=None, variant_name=None, related_products=[], id=None, quantity=None):
         self.id = None if id is None else id
+        self.kamami_id = kamami_id
         self.name = name
         self.price = price
         self.description = description
@@ -15,6 +17,10 @@ class Product:
         self.link = slugify(name)
         self.images_id = images_id
         self.quantity = random.randint(0, 10) if quantity is None else quantity
+        self.related_products = related_products
+        self.variant_group = variant_group
+        self.variant_name = variant_name
+        self.variants = variants
         
     def __str__(self):
         return f"""Product (
@@ -22,11 +28,23 @@ class Product:
     price: {self.price}
     category: {self.category_id}
     link: {self.link}
+    related_count: {len(self.related_products)}
+    variant_group: {self.variant_group}
+    variant_name: {self.variant_name}
+    variants: {self.variants}
 )"""
 
     def to_dict(self):
+        variants = []
+        for variant in self.variants:
+            if isinstance(variant, Product):
+                variants.append(variant.to_dict())
+            else:
+                variants.append(variant)
+        
         return {
             "id": self.id,
+            "kamami_id": self.kamami_id,
             "name": self.name,
             "price": self.price,
             "description": self.description,
@@ -34,20 +52,37 @@ class Product:
             "category_id": self.category_id,
             "link": self.link,
             "images_id": self.images_id,
-            "quantity": self.quantity
+            "quantity": self.quantity,
+            "related_products": self.related_products,
+            "variant_group": self.variant_group,
+            "variant_name": self.variant_name,
+            "variants": variants
         }
 
     @classmethod
     def from_dict(cls, data):
+        variants = []
+        for variant_data in data.get('variants', []):
+            try:
+                variant = cls.from_dict(variant_data)
+                variants.append(variant)
+            except Exception as e:
+                continue
+                    
         product = cls(
             id=data['id'],
+            kamami_id=data['kamami_id'],
             name=data["name"],
             price=data["price"],
             description=data["description"],
             html_description=data["html_description"],
             category_id=data["category_id"],
             images_id=data["images_id"],
-            quantity=data['quantity']
+            quantity=data['quantity'],
+            related_products=data['related_products'],
+            variant_group=data['variant_group'],
+            variant_name=data['variant_name'],
+            variants=variants
         )
         
         return product

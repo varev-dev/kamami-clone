@@ -92,7 +92,7 @@ def scrape_additional_products(products_map, url_to_id, scrape_variants=True, sc
     processed_ids = set(products_map.keys())
     
     iteration = 0
-    max_iterations = 2  # Prevent infinite loops
+    max_iterations = 1  # Prevent infinite loops
     
     total_variants_scraped = 0
     total_related_scraped = 0
@@ -289,6 +289,11 @@ def scrape_product_details(product_url):
             main_category_name = breadcrumb_path[-2]
 
     desc_div = main.select_one("#description .product-description")
+    
+    # if desc_div:
+    #     for iframe in desc_div.find_all("iframe"):
+    #         iframe.decompose()
+    
     full_description = desc_div.decode_contents() if desc_div else ""
 
     images = []
@@ -365,7 +370,7 @@ def scrape_product_details(product_url):
             
             # Extract name
             r_name = ""
-            name_el = art.select_one("h3.h3.product-title a")
+            name_el = art.select_one("a.name")
             if name_el:
                 r_name = name_el.get_text(strip=True)
             

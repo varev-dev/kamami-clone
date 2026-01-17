@@ -74,6 +74,11 @@ assets:
         path: assets/js/listing-page.js
         priority: 214
         position: bottom
+    search:
+      - id: listing-page
+        path: assets/js/listing-page.js
+        priority: 214
+        position: bottom
     authentication:
       - id: show-password
         path: assets/js/show-password.js

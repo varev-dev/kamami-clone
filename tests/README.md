@@ -1,6 +1,6 @@
-# Kamami Clone E2E Tests
+# E2E Tests
 
-End-to-end test suite for the Kamami Clone e-commerce application using Selenium and pytest.
+End-to-end test suite using Selenium and pytest.
 
 ## Project Structure
 
@@ -117,18 +117,3 @@ The test suite uses the Page Object Model (POM) design pattern for better mainta
 ## Download Directory
 
 Test downloads (invoices) are saved to `./Resources/downloads/` by default, configurable through the `DOWNLOAD_PATH` in `config.py`.
-
-## Test Flow
-
-The main E2E test (`test_ecommerce_flow`) performs the following:
-
-1. Navigate to homepage and get category links
-2. Browse multiple categories and add products to cart
-3. Search for products and add one to cart
-4. View cart and remove some items
-5. Complete checkout process:
-   - Register new user account
-   - Fill address information
-   - Select delivery method
-   - Select payment method
-6. Download invoice from confirmation page

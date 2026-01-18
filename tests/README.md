@@ -24,6 +24,16 @@ tests/
 └── requirements.txt       # Python dependencies
 ```
 
+## Prerequisites
+
+**Google Chrome Browser**: The tests use Chrome WebDriver. Ensure Chrome is installed on your system:
+
+- **Linux**: `sudo apt install google-chrome-stable` or download from [google.com/chrome](https://www.google.com/chrome/)
+- **macOS**: Download from [google.com/chrome](https://www.google.com/chrome/) or `brew install --cask google-chrome`
+- **Windows**: Download from [google.com/chrome](https://www.google.com/chrome/)
+
+The ChromeDriver (browser automation driver) is automatically managed by `webdriver-manager` and does not need manual installation.
+
 ## Setup
 
 Create a virtual environment and install dependencies:

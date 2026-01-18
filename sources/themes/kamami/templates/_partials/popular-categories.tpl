@@ -1,7 +1,7 @@
 {assign var='popular_categories' value=[
   ['id' => 13, 'link_rewrite' => 'raspberry-pi', 'name' => 'RASPBERRY PI', 'image' => 'raspberry-pi.jpg'],
-  ['id' => 14, 'link_rewrite' => 'warsztat', 'name' => 'WARSZTAT', 'image' => 'warsztat.jpg'],
   ['id' => 3, 'link_rewrite' => 'arduino', 'name' => 'ARDUINO', 'image' => 'arduino.jpg'],
+  ['id' => 14, 'link_rewrite' => 'warsztat', 'name' => 'WARSZTAT', 'image' => 'warsztat.jpg'],
   ['id' => 45, 'link_rewrite' => 'robotyka', 'name' => 'Robotyka', 'image' => 'robotyka.jpg'],
   ['id' => 124, 'link_rewrite' => 'oscyloskopy', 'name' => 'Oscyloskopy', 'image' => 'oscyloskopy.jpg'],
   ['id' => 35, 'link_rewrite' => 'drukarki-3d', 'name' => 'Drukarki 3D', 'image' => 'drukarki-3d.jpg']

@@ -1,16 +1,18 @@
-import pytest
-from selenium.webdriver.common.by import By
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support.ui import WebDriverWait
-from random import randint, choice, sample
-from os import getenv
+from os import getenv, makedirs, path
+from random import choice, randint, sample
 import time
-from selenium.webdriver.support import expected_conditions as EC
+
+import pytest
+from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
 
 BASE_URL = getenv("BASE_URL", "https://localhost:8443/pl/")
+DOWNLOAD_PATH = "./Resources/downloads"
 
 CATEGORY_COUNT = 2
 PRODUCTS_PER_CATEGORY = 10
@@ -24,7 +26,7 @@ PAYMENT_OPTION_ID = 2
 # Registration form data
 TEST_FIRST_NAME = "John"
 TEST_LAST_NAME = "Doe"
-TEST_EMAIL = "john.doe2312@example.com"
+TEST_EMAIL = "john.doe@example.com"
 TEST_PASSWORD = "password"
 
 # Address form data
@@ -35,11 +37,22 @@ TEST_CITY = "Anytown"
 
 @pytest.fixture(scope="function")
 def driver():
+    download_dir = path.abspath(DOWNLOAD_PATH)
+    makedirs(download_dir, exist_ok=True)
+
     location = ChromeDriverManager().install()
     service = Service(location)
     options = webdriver.ChromeOptions()
     options.add_argument("--ignore-certificate-errors")
     options.add_argument("--accept-lang=pl")
+    options.add_experimental_option(
+        "prefs",
+        {
+            "download.default_directory": download_dir,
+            "download.prompt_for_download": False,
+            "download.directory_upgrade": True,
+        },
+    )
     driver = webdriver.Chrome(service=service, options=options)
     driver.set_window_size(1920, 1080)
     driver.maximize_window()

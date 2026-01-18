@@ -1,38 +1,3 @@
-# E-Business Project: Kamami.pl Clone
-
-## 1. Project Description
-This project is a fully functional e-commerce store based on **PrestaShop 1.7.8**, developed as part of the E-Business course. The store is a clone of *Kamami.pl* and is populated with data automatically scraped from the source site.
-
-The system runs in a Dockerized environment, featuring a custom theme, Polish payment/shipping methods, and automated testing scripts.
-
-## 2. Team Composition
-The project was developed using Git flow (Feature Branches, Pull Requests, Issues).
-
-* **Dawid Wołoszyn** - *Back-End, DevOps*
-* **Patryk Przybysz** - *Front-End, Automation Testing*
-* **Kacper Doga** - *Scraping, Data Processing*
-
-## 3. Project Structure
-
-```text
-├── config/                 # Configuration files (Docker, SSL, env)
-│   ├── .env                # Environment variables
-│   ├── docker-compose.yml  # Container orchestration
-│   ├── Dockerfile          # Custom PrestaShop image build
-│   └── ssl/                # Self-signed certificates
-├── data/                   # Scraped data & Backup
-│   ├── categories.json     # Scraped categories (UTF-8)
-│   ├── products_all.json   # Scraped products with attributes/images
-│   └── dump.sql            # Full database backup (Settings Export)
-├── importer/               # API Importer source code
-├── scraper/                # Python To
-├── sources/                # Store source code
-├── tests/                  # Selenium automation scripts
-├── makefile                # Project management commands
-├── TOOLS.md                # Scraper & Importer documentation
-└── README.md               # Project documentation
-```
-
 # PrestaShop Development Environment - Makefile
 
 ## Description
@@ -93,19 +58,6 @@ make gen-key
 4. Stop the environment (automatically creates a backup):
 ```bash
    make stop
-```
-
-## Project Structure
-```
-.
-├── .env                   # Environment variables
-├── Makefile               # Make targets
-├── prestashop/            # PrestaShop files directory
-├── new_dump.sql           # Database dump (generated)
-├── docker-compose.yml     # Docker Compose configuration
-├── dump.sql               # Dump that will be used on startup
-├── tools/                 # Python scripts (scraper, REST API)
-└── ssl/                   # SSL certificates and Apache config
 ```
 
 ## Notes

@@ -43,19 +43,15 @@ class Reader:
 
         return self.process_categories(load_categories, data)
     
-    def process_products(self, data, categories_map, load_products):
+    def process_products(self, data, categories_map, load_products, limit=1000):
         products = []
+        
         for product in data:
             if load_products:
                 if product['price_netto'] == "" or product['breadcrumb_category'] not in categories_map.keys():
                     continue
                 
                 price = float(product['price_netto'].replace(" zł Netto", "").replace(',', '.').replace(' ', ''))
-                variant_name = None
-                if product['variant_group'] is not None:
-                    for v in product['variants']:
-                        if v['url'] is None:
-                            variant_name = v['name']
                 
                 prod = Product(
                     product['id'],
@@ -66,16 +62,14 @@ class Reader:
                     categories_map[product['breadcrumb_category']].id,
                     product['id'],
                     related_products=product['related_products'],
-                    variant_group=product['variant_group'],
-                    variant_name=variant_name,
-                    variants=product['variants']
+                    weight=product['weight_kg']
                 )
             else:
                 prod = Product.from_dict(product)
             
             products.append(prod)
         
-        return products
+        return products, {prod.kamami_id: prod for prod in products}
     
     def read_products(self, categories_map, load_products):
         if load_products:
@@ -87,5 +81,35 @@ class Reader:
             data = json.load(f)
             
         return self.process_products(data, categories_map, load_products)
-            
-        
+    
+    def limit_products(self, products_map, limit=1000, related_limit=2):
+        products = []
+        seen = set()
+
+        for product in products_map.values():
+            if len(seen) >= limit:
+                break
+            if product.kamami_id in seen:
+                continue
+
+            seen.add(product.kamami_id)
+            products.append(product)
+
+            unique_related = []
+            for rel in product.related_products:
+                if len(unique_related) >= related_limit:
+                    break
+                if rel['id'] in products_map and rel['id'] not in seen:
+                    rp = products_map[rel['id']]
+                    unique_related.append(rp)
+                    seen.add(rel['id'])
+                    products.append(rp)
+                    
+                    if len(rp.related_products) > 0 and not isinstance(rp.related_products[0], Product):
+                        rp.related_products = []
+                    
+                    rp.related_products.append(product)
+
+            product.related_products = unique_related
+
+        return products, {p.kamami_id: p for p in products}

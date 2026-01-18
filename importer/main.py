@@ -29,14 +29,11 @@ async def main(args):
     
     categories_map = {cat.name: cat for cat in all_categories}
     
-    products = reader.read_products(categories_map, args.products)
-    
-    products = [product for product in products if product.variant_group is not None]
-    
-    products_map = {prod.kamami_id: prod for prod in products}
+    products, products_map = reader.read_products(categories_map, args.products)
+    products, products_map = reader.limit_products(products_map, limit=1000, related_limit=2)
 
     if args.products:
-        await loader.load_products(products_map, args.variants)
+        await loader.load_products(products_map)
     
     if args.related:
         await loader.load_related(products_map)
@@ -98,30 +95,12 @@ if __name__ == "__main__":
     )
     
     parser.add_argument(
-        "-v",
-        "--variants",
-        action="store_true",
-        default=False,
-        required=False, 
-        help="Variants will be loaded"
-    )
-    
-    parser.add_argument(
         "-s",
         "--stocks",
         action="store_true",
         default=False,
         required=False, 
         help="Stocks will be updated"
-    )
-    
-    parser.add_argument(
-        "-a",
-        "--attributes",
-        action="store_true",
-        default=False,
-        required=False, 
-        help="Attributes will be created and updated"
     )
     
     args = parser.parse_args()

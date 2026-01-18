@@ -29,6 +29,8 @@ from config import (
 
 
 def test_ecommerce_flow(driver, wait):
+    print("\n[TEST] Starting e-commerce flow test")
+    
     # 1. Home page
     home_page = HomePage(driver)
     home_page.navigate()
@@ -40,85 +42,80 @@ def test_ecommerce_flow(driver, wait):
         f"Expected at least {CATEGORY_COUNT} categories, got {len(category_urls)}"
     )
 
-    for category_url in category_urls:
-        # 2. Category listing page
+    print(f"[STEP 1] Adding {PRODUCTS_PER_CATEGORY} products from {CATEGORY_COUNT} categories to cart...")
+    products_added = 0
+    for category_idx, category_url in enumerate(category_urls, 1):
         category_page = CategoryPage(driver)
         category_page.navigate_to(category_url)
 
-        # 2.1. Get product URLs
         product_urls = category_page.get_product_urls(PRODUCTS_PER_CATEGORY)
         assert len(product_urls) >= PRODUCTS_PER_CATEGORY, (
             f"Expected at least {PRODUCTS_PER_CATEGORY} products, got {len(product_urls)}"
         )
 
         for product_url in product_urls:
-            # 3. Product page - Add products to cart
             quantity = randint(*QUANTITY_RANGE)
             product_page = ProductPage(driver)
             product_page.navigate_to(product_url)
             product_page.add_to_cart(quantity)
+            products_added += 1
+    
+    print(f"         Added {products_added} products to cart")
 
-    # 4. Search for products
+    print(f"[STEP 2] Searching for '{SEARCH_QUERY}' and adding random product to cart...")
     home_page.search(SEARCH_QUERY)
     
-    # 4.1. Verify we're on the search page
     search_page = SearchPage(driver)
     expected_url = search_page.get_search_url(SEARCH_QUERY)
     assert driver.current_url == expected_url, (
         f"Expected to be on search page {expected_url}, got {driver.current_url} instead"
     )
 
-    # 5. Search page - Find and add a random product
     found_product_urls = search_page.get_product_urls(PRODUCTS_PER_CATEGORY)
     assert found_product_urls, "No products found"
 
     random_product_url = choice(found_product_urls)
-
-    # 5.1. Add the random product to cart
     quantity = randint(*QUANTITY_RANGE)
     product_page = ProductPage(driver)
     product_page.navigate_to(random_product_url)
     product_page.add_to_cart(quantity)
+    print(f"         Added 1 product from search results")
 
-    # 6. Cart page
+    print(f"[STEP 3] Removing {PRODUCTS_TO_REMOVE} products from cart...")
     cart_page = CartPage(driver)
     cart_page.navigate()
 
-    # 6.1. Get cart item IDs
     cart_item_ids = cart_page.get_cart_item_ids()
     assert cart_item_ids, "The cart is empty"
-
-    # 6.2. Remove some products from cart
+    
+    items_before = len(cart_item_ids)
     product_ids_to_remove = sample(cart_item_ids, PRODUCTS_TO_REMOVE)
     cart_page.remove_products_by_ids(product_ids_to_remove)
+    print(f"         Cart items: {items_before} -> {items_before - PRODUCTS_TO_REMOVE}")
 
-    # TODO: add an assert that checks if proper products were removed
-
-    # 7. Checkout page - Complete multi-step checkout
+    print(f"[STEP 4] Registering new account ({TEST_EMAIL})...")
     checkout_page = CheckoutPage(driver)
     checkout_page.navigate()
-
-    # 7.1. Registration
     checkout_page.fill_registration_form(
         TEST_FIRST_NAME, TEST_LAST_NAME, TEST_EMAIL, TEST_PASSWORD
     )
     checkout_page.submit_registration_form()
 
-    # 7.2. Address
+    print(f"[STEP 5] Filling address information...")
     checkout_page.fill_address_form(TEST_ADDRESS, TEST_POSTCODE, TEST_CITY)
     checkout_page.submit_address_form()
 
-    # 7.3. Delivery
+    print(f"[STEP 6] Selecting delivery option (ID: {DELIVERY_OPTION_ID})...")
     checkout_page.select_delivery_option(DELIVERY_OPTION_ID)
     checkout_page.submit_delivery_form()
 
-    # 7.4. Payment
+    print(f"[STEP 7] Selecting payment method (ID: {PAYMENT_OPTION_ID})...")
     checkout_page.select_payment_option(PAYMENT_OPTION_ID)
     checkout_page.submit_payment_form()
 
-    # 8. Order confirmation page
+    print(f"[STEP 8] Order confirmed - downloading invoice...")
     confirmation_page = ConfirmationPage(driver)
     confirmation_page.download_invoice()
 
-    # Wait for download to complete
     time.sleep(3)
+    print("[TEST] E-commerce flow test completed successfully ✓")

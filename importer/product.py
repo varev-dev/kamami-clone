@@ -11,7 +11,7 @@ class Product:
         self.kamami_id = kamami_id
         self.name = name
         self.price = price
-        self.weight = round(random.uniform(0.001, 50), 2) if weight is None else weight
+        self.weight = 0 if weight is None else weight
         self.description = description
         self.html_description = html_description
         self.category_id = category_id

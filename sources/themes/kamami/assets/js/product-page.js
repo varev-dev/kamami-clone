@@ -284,9 +284,38 @@
 		});
 	}
 
-	$(document).ready(init);
+	$(document).on("click", ".js-variant-selector", function (event) {
+		event.preventDefault();
+		const groupId = $(this).data("product-attribute");
+		const value = $(this).data("attribute-value");
+		$(`input[data-product-attribute="${groupId}"][value="${value}"]`)
+			.prop("checked", true)
+			.trigger("change");
+		$(`select[data-product-attribute="${groupId}"]`)
+			.val(value)
+			.trigger("change");
+	});
 
-	$(document).on("updatedProduct", function () {
+	prestashop.on("updatedProduct", function (event) {
+		if (!event) return;
+
+		const $stock = $(event.product_add_to_cart).find(".product-stock-k-dlg");
+		if ($stock.length) {
+			$(".product-stock-k-dlg").html($stock.html());
+			$(".product-stock-k").show();
+		} else {
+			$(".product-stock-k").hide();
+		}
+
+		const $quantity = $(event.product_details).find("span[data-stock]");
+		if ($quantity.length) {
+			$(".product-quantities span[data-stock]")
+				.attr("data-stock", $quantity.attr("data-stock"))
+				.text($quantity.text());
+		}
+
 		init();
 	});
+
+	$(document).ready(init);
 })();

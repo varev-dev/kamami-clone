@@ -6,11 +6,12 @@ import random
 
 class Product:
     def __init__(self, kamami_id, name, price, description, html_description, category_id, images_id, 
-                 variants=[], variant_group=None, variant_name=None, related_products=[], id=None, quantity=None):
+                 related_products=[], id=None, quantity=None, weight=None):
         self.id = None if id is None else id
         self.kamami_id = kamami_id
         self.name = name
         self.price = price
+        self.weight = 0 if weight is None else weight
         self.description = description
         self.html_description = html_description
         self.category_id = category_id
@@ -18,9 +19,6 @@ class Product:
         self.images_id = images_id
         self.quantity = random.randint(0, 10) if quantity is None else quantity
         self.related_products = related_products
-        self.variant_group = variant_group
-        self.variant_name = variant_name
-        self.variants = variants
         
     def __str__(self):
         return f"""Product (
@@ -29,18 +27,13 @@ class Product:
     category: {self.category_id}
     link: {self.link}
     related_count: {len(self.related_products)}
-    variant_group: {self.variant_group}
-    variant_name: {self.variant_name}
-    variants: {self.variants}
 )"""
 
     def to_dict(self):
-        variants = []
-        for variant in self.variants:
-            if isinstance(variant, Product):
-                variants.append(variant.to_dict())
-            else:
-                variants.append(variant)
+        related = []
+        
+        for rel in self.related_products:
+            related.append({'id': rel.kamami_id})
         
         return {
             "id": self.id,
@@ -50,39 +43,27 @@ class Product:
             "description": self.description,
             "html_description": self.html_description,
             "category_id": self.category_id,
+            "weight": self.weight,
             "link": self.link,
             "images_id": self.images_id,
             "quantity": self.quantity,
-            "related_products": self.related_products,
-            "variant_group": self.variant_group,
-            "variant_name": self.variant_name,
-            "variants": variants
+            "related_products": related,
         }
 
     @classmethod
-    def from_dict(cls, data):
-        variants = []
-        for variant_data in data.get('variants', []):
-            try:
-                variant = cls.from_dict(variant_data)
-                variants.append(variant)
-            except Exception as e:
-                continue
-                    
+    def from_dict(cls, data):       
         product = cls(
             id=data['id'],
             kamami_id=data['kamami_id'],
             name=data["name"],
             price=data["price"],
+            weight=data['weight'],
             description=data["description"],
             html_description=data["html_description"],
             category_id=data["category_id"],
             images_id=data["images_id"],
             quantity=data['quantity'],
-            related_products=data['related_products'],
-            variant_group=data['variant_group'],
-            variant_name=data['variant_name'],
-            variants=variants
+            related_products=data['related_products']
         )
         
         return product
@@ -108,7 +89,7 @@ class Product:
         SubElement(product_el, 'price').text = str(self.price)
         SubElement(product_el, 'available_for_order').text = '1'
         
-        SubElement(product_el, 'weight').text = str(random.randint(0, 50))
+        SubElement(product_el, 'weight').text = str(self.weight)
 
         name = SubElement(product_el, 'name')
         for lang_id in LANG_IDS:

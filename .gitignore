@@ -11,9 +11,6 @@ sources/img/c/*
 
 !/**/.gitkeep
 
-# tools/data/products/images
-# tools/data/*.zip
-
 data/*xml/
 
 importer/*.json

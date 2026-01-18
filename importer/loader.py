@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 
 from category import Category
 from constants import CERTIFICATE_PATH, LOADED_CATEGORIES_JSON, LOADED_PRODUCTS_JSON, PRODUCT_IMAGES_PATH, CATEGORY_IMAGES_PATH
+from product import Product
 
 class Loader:
     def __init__(self, concurrent_requests=1):
@@ -97,7 +98,7 @@ class Loader:
 
         print("Categories loaded and saved to categories.json file!")
 
-    async def load_product(self, session, product, load_variants):
+    async def load_product(self, session, product):
         async with self.semaphore:
             try:
                 xml_content = product.to_xml()
@@ -121,9 +122,6 @@ class Loader:
                         product.id = int(product_id.text)
                     else:
                         raise ValueError("No product id in response")  
-                    
-                    if load_variants:
-                        await self.load_variants(session, product)
 
                     print(f"Product {product.id}: {product.name}, loaded")
                     return True
@@ -132,28 +130,9 @@ class Loader:
                 print(f"ERROR [{product.id}: {product.name}]: {e}")
                 return False
 
-    async def load_products(self, products_map, load_variants):
+    async def load_products(self, products_map):
         print('Loading products...')
-
-        # delete variants from map
-        to_delete = []
-        if load_variants:
-            for product in products_map.values():
-                if product.variant_group is None or product in to_delete:
-                    continue
-                
-                product.variants = [
-                    products_map[v['id']]
-                    for v in product.variants
-                    if v['id'] in products_map and v['name'] != product.variant_name
-                ]
-                
-                for variant in product.variants:
-                    to_delete.append(variant)
                     
-        for variant in to_delete:
-            products_map.pop(variant.kamami_id, None)
-        
         products = products_map.values()
         
         async with aiohttp.ClientSession(
@@ -162,7 +141,7 @@ class Loader:
         ) as session:
 
             tasks = [
-                self.load_product(session, product, load_variants)
+                self.load_product(session, product)
                 for product in products
             ]
 
@@ -186,18 +165,14 @@ class Loader:
             for product in products_map.values():
                 related = []
                 for rel in product.related_products:
-                    if rel['id'] in products_map.keys():
-                        related.append(products_map[rel['id']])
+                    id = rel.kamami_id if isinstance(rel, Product) else rel['id']
+                    if id in products_map.keys():
+                        related.append(products_map[id])
                         
                 if related:
                     tasks.append(self.load_related_products(session, product, related))
 
             await asyncio.gather(*tasks)
-
-        # import json
-        # with open(LOADED_PRODUCTS_JSON, "w", encoding="utf-8") as f:
-        #     data = [prod.to_dict() for prod in products]
-        #     json.dump(data, f, indent=4, ensure_ascii=False)
 
         print("Related products loaded!")
         

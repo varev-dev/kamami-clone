@@ -24,7 +24,7 @@ PAYMENT_OPTION_ID = 2
 # Registration form data
 TEST_FIRST_NAME = "John"
 TEST_LAST_NAME = "Doe"
-TEST_EMAIL = "john.doe231@example.com"
+TEST_EMAIL = "john.doe2312@example.com"
 TEST_PASSWORD = "password"
 
 # Address form data
@@ -169,6 +169,11 @@ def submit_payment_form(driver):
     driver.find_element(*selector).click()
 
 
+def download_invoice(driver):
+    selector = (By.CSS_SELECTOR, "#content-hook_order_confirmation a")
+    driver.find_element(*selector).click()
+
+
 def test_ecommerce_flow(driver, wait):
     # 1. Home page
     driver.get(BASE_URL)
@@ -248,5 +253,8 @@ def test_ecommerce_flow(driver, wait):
 
     fill_payment_form(driver, PAYMENT_OPTION_ID)
     submit_payment_form(driver)
+
+    # 8. Order confirmation page
+    download_invoice(driver)
 
     time.sleep(3)

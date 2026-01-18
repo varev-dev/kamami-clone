@@ -6,7 +6,7 @@ export $(shell sed 's/=.*//' config/.env)
 # --project-directory . sprawia, że ścieżki w compose (np. ../data) są liczone od głównego katalogu
 COMPOSE = docker compose -f config/docker-compose.yml --env-file config/.env --project-directory .
 
-.PHONY: start stop restart permissions dump gen-key help
+.PHONY: start stop restart permissions dump gen-key test help
 
 help:
 	@echo "Dostępne komendy:"
@@ -16,6 +16,7 @@ help:
 	@echo "  make permissions - Naprawia uprawnienia do folderu sources"
 	@echo "  make dump        - Tworzy zrzut bazy do data/new_dump.sql"
 	@echo "  make gen-key     - Generuje certyfikaty SSL w config/ssl"
+	@echo "  make test        - Uruchamia testy E2E (wymaga aktywnego venv w tests/)"
 
 start:
 	@echo "Starting docker containers..."
@@ -81,3 +82,13 @@ gen-key:
 		-days 365 \
 		-config config/ssl/certs/san.cnf -extensions v3_req
 	@echo "Certificate generated."
+
+test:
+	@echo "Running E2E tests..."
+	@cd tests && \
+	if [ ! -d "venv" ]; then \
+		echo "Error: Virtual environment not found in tests/"; \
+		echo "Please run: cd tests && python -m venv venv && source venv/bin/activate && pip install -r requirements.txt"; \
+		exit 1; \
+	fi && \
+	. venv/bin/activate && pytest -v -s

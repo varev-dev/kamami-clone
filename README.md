@@ -54,15 +54,21 @@ make gen-key
 make start
 ```
 
-3. **Fix Permissions (if needed):** RUn this if images are missing or you encounter write errors.
+3. **Fix Permissions (if needed):** Run this if images are missing or you encounter write errors.
 ```bash
 make permissions
 ```
 
-4. **Stop & Backup:** Stops containers and automatically exports the database settings to `data/dump.sql`
+4. **Run E2E Tests:** Executes automated Selenium tests (requires venv setup in `tests/`)
+```bash
+make test
+```
+
+5. **Stop & Backup:** Stops containers and automatically exports the database settings to `data/dump.sql`
 ```bash
 make stop
 ```
 
-More about availabe commands, and usage available here: [MAKEFILE.md](MAKEFILE.md)
+More about available commands, and usage available here: [MAKEFILE.md](MAKEFILE.md)
 Detailed description on how to use scraper and importer: [TOOLS.md](TOOLS.md)
+For detailed test documentation: [tests/README.md](tests/README.md) 

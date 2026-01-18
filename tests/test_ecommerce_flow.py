@@ -18,6 +18,9 @@ QUANTITY_RANGE = (1, 3)
 SEARCH_QUERY = "druk"
 PRODUCTS_TO_REMOVE = 3
 
+DELIVERY_OPTION_ID = 2
+PAYMENT_OPTION_ID = 2
+
 # Registration form data
 TEST_FIRST_NAME = "John"
 TEST_LAST_NAME = "Doe"
@@ -154,9 +157,14 @@ def submit_delivery_form(driver):
     driver.find_element(*selector).click()
 
 
+def fill_payment_form(driver, payment_option_id):
+    selector = (By.ID, f"payment-option-{payment_option_id}")
+    driver.find_element(*selector).click()
+    selector = (By.ID, "conditions_to_approve[terms-and-conditions]")
+    driver.find_element(*selector).click()
+
+
 def submit_payment_form(driver):
-    driver.find_element(By.ID, "payment-option-1").click()
-    driver.find_element(By.ID, "conditions_to_approve[terms-and-conditions]").click()
     selector = (By.CSS_SELECTOR, "#payment-confirmation button[type='submit']")
     driver.find_element(*selector).click()
 
@@ -227,7 +235,6 @@ def test_ecommerce_flow(driver, wait):
     checkout_url = f"{BASE_URL}zamówienie"
     driver.get(checkout_url)
 
-    # 7.1. Fill registration form
     fill_registration_form(
         driver, TEST_FIRST_NAME, TEST_LAST_NAME, TEST_EMAIL, TEST_PASSWORD
     )
@@ -236,10 +243,10 @@ def test_ecommerce_flow(driver, wait):
     fill_address_form(driver, TEST_ADDRESS, TEST_POSTCODE, TEST_CITY)
     submit_address_form(driver)
 
-    delivery_option_id = randint(2, 3)
-    fill_delivery_form(driver, delivery_option_id)
+    fill_delivery_form(driver, DELIVERY_OPTION_ID)
     submit_delivery_form(driver)
 
+    fill_payment_form(driver, PAYMENT_OPTION_ID)
     submit_payment_form(driver)
 
     time.sleep(3)

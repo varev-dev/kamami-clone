@@ -8,6 +8,7 @@ from random import randint, choice, sample
 from os import getenv
 import time
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
 
 BASE_URL = getenv("BASE_URL", "https://localhost:8443/pl/")
 
@@ -20,8 +21,13 @@ PRODUCTS_TO_REMOVE = 3
 # Registration form data
 TEST_FIRST_NAME = "John"
 TEST_LAST_NAME = "Doe"
-TEST_EMAIL = "john.doe@example.com"
+TEST_EMAIL = "john.doe231@example.com"
 TEST_PASSWORD = "password"
+
+# Address form data
+TEST_ADDRESS = "123 Main St"
+TEST_POSTCODE = "12-345"
+TEST_CITY = "Anytown"
 
 
 @pytest.fixture(scope="function")
@@ -81,11 +87,12 @@ def search_products(driver, query):
 
 
 def fill_registration_form(driver, first_name, last_name, email, password):
-    first_name_input = driver.find_element(By.ID, "field-firstname")
-    last_name_input = driver.find_element(By.ID, "field-lastname")
-    email_input = driver.find_element(By.ID, "field-email")
-    password_input = driver.find_element(By.ID, "field-password")
-    privacy_checkbox = driver.find_element(By.NAME, "customer_privacy")
+    guest_form = driver.find_element(By.ID, "customer-form")
+    first_name_input = guest_form.find_element(By.ID, "field-firstname")
+    last_name_input = guest_form.find_element(By.ID, "field-lastname")
+    email_input = guest_form.find_element(By.ID, "field-email")
+    password_input = guest_form.find_element(By.ID, "field-password")
+    privacy_checkbox = guest_form.find_element(By.NAME, "customer_privacy")
 
     first_name_input.send_keys(first_name)
     last_name_input.send_keys(last_name)
@@ -95,7 +102,8 @@ def fill_registration_form(driver, first_name, last_name, email, password):
 
 
 def submit_registration_form(driver):
-    driver.find_element(By.CLASS_NAME, "form-control-submit").click()
+    selector = (By.CSS_SELECTOR, "[data-link-action='register-new-customer']")
+    driver.find_element(*selector).click()
 
 
 def get_cart_item_ids(driver):
@@ -114,6 +122,43 @@ def remove_products_from_cart(driver, wait, product_ids):
         )
         href = driver.find_element(*selector).get_attribute("href")
         driver.get(href)
+
+
+def fill_address_form(driver, address, postcode, city):
+    address_input = driver.find_element(By.ID, "field-address1")
+    postcode_input = driver.find_element(By.ID, "field-postcode")
+    city_input = driver.find_element(By.ID, "field-city")
+    address_input.send_keys(address)
+    postcode_input.send_keys(postcode)
+    city_input.send_keys(city)
+
+
+def submit_address_form(driver):
+    selector = (By.NAME, "confirm-addresses")
+    driver.find_element(*selector).click()
+
+
+def fill_delivery_form(driver, option_id):
+    selector = (By.CSS_SELECTOR, f"label[for='delivery_option_{option_id}']")
+    try:
+        driver.find_element(*selector).click()
+    except NoSuchElementException:
+        # If the total weight of the cart exceeds 50kg,
+        # the delivery option will not be found
+        # in this case, we fill the default delivery form
+        fill_delivery_form(driver, 1)
+
+
+def submit_delivery_form(driver):
+    selector = (By.NAME, "confirmDeliveryOption")
+    driver.find_element(*selector).click()
+
+
+def submit_payment_form(driver):
+    driver.find_element(By.ID, "payment-option-1").click()
+    driver.find_element(By.ID, "conditions_to_approve[terms-and-conditions]").click()
+    selector = (By.CSS_SELECTOR, "#payment-confirmation button[type='submit']")
+    driver.find_element(*selector).click()
 
 
 def test_ecommerce_flow(driver, wait):
@@ -179,5 +224,22 @@ def test_ecommerce_flow(driver, wait):
     # TODO: add an assert that checks if proper products were removed
 
     # 7. Checkout page
-    checkout_url = f"{BASE_URL}koszyk?action=checkout"
+    checkout_url = f"{BASE_URL}zamówienie"
     driver.get(checkout_url)
+
+    # 7.1. Fill registration form
+    fill_registration_form(
+        driver, TEST_FIRST_NAME, TEST_LAST_NAME, TEST_EMAIL, TEST_PASSWORD
+    )
+    submit_registration_form(driver)
+
+    fill_address_form(driver, TEST_ADDRESS, TEST_POSTCODE, TEST_CITY)
+    submit_address_form(driver)
+
+    delivery_option_id = randint(2, 3)
+    fill_delivery_form(driver, delivery_option_id)
+    submit_delivery_form(driver)
+
+    submit_payment_form(driver)
+
+    time.sleep(3)

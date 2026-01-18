@@ -106,7 +106,9 @@
 
                     <div class="product_attributes">
                       {block name='product_variants'}
-                        {include file='catalog/_partials/product-variants.tpl'}
+                        <div style="display: none;">
+                          {include file='catalog/_partials/product-variants.tpl'}
+                        </div>
                       {/block}
                     </div>
 

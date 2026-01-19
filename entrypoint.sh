@@ -14,7 +14,7 @@ fi
 HTACCESS_FILE="/var/www/html/.htaccess"
 if [ -f "$HTACCESS_FILE" ]; then
     echo "Podmiana wszystkich portów na $PUBLISHED_PORT w .htaccess..."
-    sed -i "s/8443/$PUBLISHED_PORT/g" "$HTACCESS_FILE"
+    sed -i "s/8443/$PUBLISHED_PORT/g" $HTACCESS_FILE
 fi
 
 exec apache2-foreground

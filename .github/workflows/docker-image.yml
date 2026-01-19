@@ -1,3 +1,11 @@
+name: Build and Push PrestaShop Image
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest

@@ -2,3 +2,9 @@
 !Dockerfile
 !sources/**/*
 !config/**/*
+!entrypoint.sh
+
+sources/var/cache/*
+sources/var/logs/*
+
+!sources/**/.gitkeep

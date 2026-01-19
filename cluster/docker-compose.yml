@@ -1,0 +1,36 @@
+services:
+  prestashop:
+    image: dayzu/prestashop:latest
+
+    ports:
+      - target: 443
+        published: 19802
+        protocol: tcp
+        mode: host
+
+    environment:
+      PUBLISHED_PORT: 19802
+      PS_DEV_MODE: "1"
+      DB_SERVER: admin-mysql_db
+      DB_NAME: BE_198020
+      DB_USER: root
+      DB_PASSWD: student
+      DB_PORT: 3306
+      
+    networks:
+      - admin-mysql_default
+
+    deploy:
+      resources:
+        reservations:
+          cpus: "1.0"
+          memory: 512M
+        limits:
+          cpus: "1.5"
+          memory: 1024M
+      restart_policy:
+        condition: on-failure
+
+networks:
+  admin-mysql_default:
+    external: true

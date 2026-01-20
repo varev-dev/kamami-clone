@@ -225,7 +225,7 @@ function initCategoryTreeCollapse() {
 			$toggle.attr("aria-expanded", isExpanded ? "true" : "false");
 
 			if ($collapse.hasClass("in") && !$collapse.is(":visible")) {
-				$collapse.css("display", "block");
+				$collapse.css("display", "block !important");
 			}
 		}
 	});
@@ -251,10 +251,11 @@ function initCategoryTreeCollapse() {
 			const isExpanded = $toggle.attr("aria-expanded") === "true";
 
 			if (isExpanded) {
+				$target.removeClass("in").css("display", "none !important");
 				$target.slideUp(300);
 				$toggle.attr("aria-expanded", "false");
 			} else {
-				$target.slideDown(300);
+				$target.addClass("in").slideDown(300);
 				$toggle.attr("aria-expanded", "true");
 			}
 		}

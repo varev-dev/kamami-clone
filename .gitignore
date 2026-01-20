@@ -2,6 +2,7 @@ config/.env
 .env
 **/venv/
 
+sources/themes/kamami/assets/cache
 sources/var/cache/*
 sources/var/logs/*
 sources/img/tmp/*
